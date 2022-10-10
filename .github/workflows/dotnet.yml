@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    name: Build on Windows
+    name: Build
     #runs-on: ubuntu-latest
     runs-on: windows-latest
 
@@ -31,6 +31,7 @@ jobs:
       
       
   unitTesting:
+    name: Unit Testing
     - name: Run BL Unit Tests
       run: dotnet test BL.Tests --no-build --verbosity normal #normal #detailed
       working-directory: SkiResort
