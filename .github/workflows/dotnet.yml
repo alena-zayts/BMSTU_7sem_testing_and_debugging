@@ -28,9 +28,9 @@ jobs:
       run: dotnet build --no-restore
       working-directory: SkiResort
 
-  unitTesting:
-    name: Unit Testing
-    needs: build
+  #unitTesting:
+    #name: Unit Testing
+    #needs: build
     - name: Run BL Unit Tests
       run: dotnet test BL.Tests --no-build --verbosity normal #normal #detailed
       working-directory: SkiResort
