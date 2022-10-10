@@ -1,0 +1,12 @@
+{
+  "uuid": "23ab941b-d17d-490d-96e9-a940a9847fde-BL.Tests.CheckPermissionsServiceTests",
+  "name": "BL.Tests.CheckPermissionsServiceTests",
+  "children": [
+    "f44ec34e-bafe-4558-b2d4-de4f7d5470dd-BL.Tests.CheckPermissionsServiceTests.AuthorizedHasNoAccessToAdminSkiPatrolFunctions(functionName: \"GetMessagesAsync\")"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1665419839496,
+  "stop": 1665419839506
+}

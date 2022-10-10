@@ -1,0 +1,46 @@
+{
+  "uuid": "bfd668c3-ac61-4d18-a5b0-d2eb63ff1d44-BL.Tests.CheckPermissionsServiceTests.SkiPatrolHasNoAccessToAdminFunctions",
+  "historyId": "BL.Tests.CheckPermissionsServiceTests.SkiPatrolHasNoAccessToAdminFunctions",
+  "fullName": "BL.Tests.CheckPermissionsServiceTests.SkiPatrolHasNoAccessToAdminFunctions",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "BL.Tests.CheckPermissionsServiceTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "BL.Tests.CheckPermissionsServiceTests.SkiPatrolHasNoAccessToAdminFunctions"
+    },
+    {
+      "name": "package",
+      "value": "BL.Tests.CheckPermissionsServiceTests"
+    },
+    {
+      "name": "suite",
+      "value": "CheckPermissionsServiceSuite"
+    }
+  ],
+  "links": [],
+  "name": "BL.Tests.CheckPermissionsServiceTests.SkiPatrolHasNoAccessToAdminFunctions",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1665419839528,
+  "stop": 1665419839530
+}

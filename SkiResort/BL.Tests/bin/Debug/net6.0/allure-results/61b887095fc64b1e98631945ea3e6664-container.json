@@ -1,0 +1,12 @@
+{
+  "uuid": "de2d029b-a12d-4445-b051-85bdab893d97-BL.Tests.LiftsSlopesServiceTests",
+  "name": "BL.Tests.LiftsSlopesServiceTests",
+  "children": [
+    "8e83623a-522d-43b7-990d-8dfe5dba56f9-BL.Tests.LiftsSlopesServiceTests.TestAdminDeleteLiftSlopeAsync(lift: Lift { LiftID = 118, LiftName = liftNamefefd4c3c-af41-4e06-bb19-9ea94a4eee37, IsOpen = True, SeatsAmount = 254, LiftingTime = 130, QueueTime = 51, ConnectedSlopes =  }, slope: Slope { SlopeID = 46, SlopeName = slopeName48d71074-fe95-4b65-8b95-e1673e8514b6, IsOpen = False, DifficultyLevel = 227, ConnectedLifts =  }, slopesRepositoryStub: Mock<ISlopesRepository:2>, liftsRepositoryStub: Mock<ILiftsRepository:7>, liftsSlopesRepositoryStub: Mock<ILiftsSlopesRepository:7>)"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1665419948681,
+  "stop": 1665419948868
+}
