@@ -10,7 +10,7 @@ using Allure.Xunit.Attributes;
 // лондонский вариант -- изоляция кода от зависимостей
 // используется mock для: ICheckPermissionsService, (вызовы и взаимодействия, которые исполняются SUT к зависимым объектам)
 // используется stub для: ILiftsRepository, ILiftsSlopesRepository (вызовы и взаимодействия,  которые исполняются SUT к зависимым объектам, чтобы запросить и получить  данные)
-// используется fixture: AutoMoqData (есть вариант и без него)
+// используется fixture: AutoMoqData (по сути Dummy)
 
 namespace BL.Tests
 {

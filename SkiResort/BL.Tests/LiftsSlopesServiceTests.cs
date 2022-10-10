@@ -12,7 +12,7 @@ using BL.Tests.ArrangeHelpers;
 // код не изолируется от зависимостей внутри unit-а (то есть В отличие от других тестов, НЕ использутеся mock: ICheckPermissionService)
 // код изолируется от shared-зависимостей. Для этого используются stub-ы: ILiftsRepository, ISlopesRepository, ILiftsSlopesRepository, IUsersRepository (вызовы и взаимодействия,  которые исполняются SUT к зависимым объектам, чтобы запросить и получить  данные)
 // используется Fabric (Object Mother) для генерации объектов для тестов
-// используется fixture: AutoMoqData
+// используется fixture: AutoMoqData (по сути Dummy)
 
 namespace BL.Tests
 {
