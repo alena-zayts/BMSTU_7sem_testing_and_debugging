@@ -20,15 +20,17 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 2.1.x
+        
     - name: Restore dependencies
       run: dotnet restore
-      working-directory: code
+      working-directory: SkiResort
+      
     - name: Build
       run: dotnet build --no-restore
-      working-directory: code
+      working-directory: SkiResort
     - name: Unit Tests
       run: dotnet test BL.Tests --no-build --verbosity normal
-      working-directory: code
+      working-directory: SkiResort
 
 # uses позволяет переиспользовать другие экшены  
 # При помощи with мы можем указать параметры с которыми запускаем действие, по сути это аргументы, которые будут передаваться в экшен.
