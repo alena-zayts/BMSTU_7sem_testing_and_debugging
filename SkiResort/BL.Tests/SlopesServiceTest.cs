@@ -13,7 +13,7 @@ using Allure.Xunit.Attributes;
 
 namespace BL.Tests
 {
-    [AllureSuite("Suite for SlopesService class")]
+    [AllureSuite("SlopesServiceSuite")]
     public class SlopesServiceTest
     {
         // with fixture
@@ -69,9 +69,9 @@ namespace BL.Tests
             Assert.Equal(slopes.Count, slopesFromService.Count);
         }
 
-        
 
-        [Theory, AutoMoqData]
+        [AllureXunitTheory]
+        [AutoMoqData]
         public async void TestUpdateSlopeInfoAsync(
             uint userID,
             Slope slope,
@@ -91,7 +91,8 @@ namespace BL.Tests
             slopesRepositoryMock.Verify(m => m.UpdateSlopeByIDAsync(slope.SlopeID, slope.SlopeName, slope.IsOpen, slope.DifficultyLevel), Times.Once);
         }
 
-        [Theory, AutoMoqData]
+        [AllureXunitTheory]
+        [AutoMoqData]
         public async void TestAdminDeleteSlopeAsync(
             uint userID,
             Slope slope,
@@ -115,7 +116,8 @@ namespace BL.Tests
             slopesRepositoryMock.Verify(m => m.DeleteSlopeByIDAsync(slope.SlopeID), Times.Once);
         }
 
-        [Theory, AutoMoqData]
+        [AllureXunitTheory]
+        [AutoMoqData]
         public async void TestAdminAddAutoIncrementSlopeAsync(
             uint userID,
             Slope slope,
@@ -137,7 +139,8 @@ namespace BL.Tests
             Assert.Equal(slope.SlopeID, slopeIDFromService);
         }
 
-        [Theory, AutoMoqData]
+        [AllureXunitTheory]
+        [AutoMoqData]
         public async void TestAdminAddSlopeAsync(
             uint userID,
             Slope slope,
@@ -158,7 +161,7 @@ namespace BL.Tests
         // если убрать frozen, то при verify проблемы
 
         //    // without Fixture
-        //    [Fact]
+        //    [AllureXunit]
         //    public async void TestGetSlopeInfoAsyncWithoutFixture()
         //    {
         //        // arrange

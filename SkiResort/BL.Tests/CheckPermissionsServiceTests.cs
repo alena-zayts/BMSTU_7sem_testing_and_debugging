@@ -10,7 +10,7 @@ using AutoFixture.AutoMoq;
 using BL.Exceptions.PermissionExceptions;
 using System.Runtime.InteropServices;
 using System;
-
+using Allure.Xunit.Attributes;
 
 // лондонский вариант -- изоляция кода от зависимостей
 // используется mock для: IUsersRepository
@@ -22,7 +22,7 @@ namespace BL.Tests
     internal class UsersObjectMother
     {
 
-         public static User UnauthorizedUser() 
+        public static User UnauthorizedUser()
         {
             return new User(1, 0, "", "", PermissionsEnum.UNAUTHORIZED);
         }
@@ -44,9 +44,10 @@ namespace BL.Tests
 
     }
 
+    [AllureSuite("CheckPermissionsServiceSuite")]
     public class CheckPermissionsServiceTests
     {
-        [Fact]
+        [AllureXunit]
         public async void UnauthorizedHasNoAccessToAdminFunctions()
         {
             //Console.WriteLine(System.Runtime.InteropServices.Des);
@@ -67,7 +68,7 @@ namespace BL.Tests
             usersRepositoryMock.Verify(m => m.GetUserByIdAsync(user.UserID), Times.Once);
         }
 
-        [Fact]
+        [AllureXunit]
         public async void AuthorizedHasNoAccessToAdminFunctions()
         {
             // arrange
@@ -87,7 +88,7 @@ namespace BL.Tests
             usersRepositoryMock.Verify(m => m.GetUserByIdAsync(user.UserID), Times.Once);
         }
 
-        [Fact]
+        [AllureXunit]
         public async void SkiPatrolHasNoAccessToAdminFunctions()
         {
             // arrange
@@ -107,7 +108,7 @@ namespace BL.Tests
             usersRepositoryMock.Verify(m => m.GetUserByIdAsync(user.UserID), Times.Once);
         }
 
-        [Fact]
+        [AllureXunit]
         public async void AdminHasAccessToAllFunctions()
         {
             // arrange
@@ -128,7 +129,7 @@ namespace BL.Tests
             usersRepositoryMock.Verify(m => m.GetUserByIdAsync(user.UserID), Times.Once);
         }
 
-        [Theory]
+        [AllureXunitTheory]
         [InlineData("MarkMessageReadByUserAsync")]
         [InlineData("GetMessagesAsync")]
         [InlineData("GetLiftsSlopesInfoAsync")]
@@ -150,7 +151,7 @@ namespace BL.Tests
             usersRepositoryMock.Verify(m => m.GetUserByIdAsync(user.UserID), Times.Once);
         }
 
-        [Theory]
+        [AllureXunitTheory]
         [InlineData("MarkMessageReadByUserAsync")]
         [InlineData("GetMessagesAsync")]
         [InlineData("GetLiftsSlopesInfoAsync")]
@@ -172,7 +173,7 @@ namespace BL.Tests
             usersRepositoryMock.Verify(m => m.GetUserByIdAsync(user.UserID), Times.Once);
         }
 
-        [Theory]
+        [AllureXunitTheory]
         [InlineData("MarkMessageReadByUserAsync")]
         [InlineData("GetMessagesAsync")]
         [InlineData("GetLiftsSlopesInfoAsync")]
@@ -195,7 +196,7 @@ namespace BL.Tests
             usersRepositoryMock.Verify(m => m.GetUserByIdAsync(user.UserID), Times.Once);
         }
 
-        [Theory]
+        [AllureXunitTheory]
         [InlineData("SendMessageAsync")]
         [InlineData("LogOutAsync")]
         public async void UnauthorizedHasNoAccessToAuthorizedFunctions(string functionName)
@@ -216,7 +217,7 @@ namespace BL.Tests
             usersRepositoryMock.Verify(m => m.GetUserByIdAsync(user.UserID), Times.Once);
         }
 
-        [Theory]
+        [AllureXunitTheory]
         [InlineData("SendMessageAsync")]
         [InlineData("LogOutAsync")]
         public async void AuthorizedHasAccessToAuthorizedFunctions(string functionName)

@@ -1,0 +1,12 @@
+{
+  "uuid": "665a2b36-e4b5-4d4d-8e0a-43c8942a9092-BL.Tests.CheckPermissionsServiceTests",
+  "name": "BL.Tests.CheckPermissionsServiceTests",
+  "children": [
+    "4b8cb462-dd04-442b-87cc-326671a7da23-BL.Tests.CheckPermissionsServiceTests.UnauthorizedHasNoAccessToAdminSkiPatrolFunctions(functionName: \"GetLiftsSlopesInfoAsync\")"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1665409586487,
+  "stop": 1665409586495
+}

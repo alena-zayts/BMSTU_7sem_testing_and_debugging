@@ -13,18 +13,8 @@ jobs:
     runs-on: windows-latest
 
     steps:
-    
     - uses: actions/checkout@v3
     
-    # - uses: actions/setup-dotnet@v3
-    
-    
-    # - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
-        # with:
-            # dotnet-version: ${{ matrix.dotnet-version }}
-          
-          
-          
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
@@ -37,8 +27,18 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
       working-directory: SkiResort
-    - name: Unit Tests
-      run: dotnet test BL.Tests --no-build --verbosity normal
+      
+    - name: Run BL Unit Tests
+      run: dotnet test BL.Tests --no-build --verbosity detailed #normal #detailed
+      working-directory: SkiResort
+      
+    - name: Run BL Unit Tests 2
+      run: dotnet test BL.Tests --no-build --logger:trx --verbosity detailed #normal #detailed
+      working-directory: SkiResort
+      
+    - name: Generate BL Unit Tests report
+      run: allure generate BL.Tests\bin\Debug\net6.0\allure-results --clean -o BL.Tests\bin\Debug\net6.0\allure-report
+      run: allure open BL.Tests\bin\Debug\net6.0\allure-report
       working-directory: SkiResort
 
 # uses позволяет переиспользовать другие экшены  

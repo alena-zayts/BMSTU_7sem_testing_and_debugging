@@ -1,0 +1,42 @@
+{
+  "uuid": "c3efc183-efff-4d18-9cd3-47b18ba7de70-BL.Tests.UsersServiceTests.TestAdminGetUserByIDAsync",
+  "historyId": "BL.Tests.UsersServiceTests.TestAdminGetUserByIDAsync",
+  "fullName": "BL.Tests.UsersServiceTests.TestAdminGetUserByIDAsync",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "BL.Tests.UsersServiceTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "BL.Tests.UsersServiceTests.TestAdminGetUserByIDAsync"
+    },
+    {
+      "name": "package",
+      "value": "BL.Tests.UsersServiceTests"
+    }
+  ],
+  "links": [],
+  "name": "BL.Tests.UsersServiceTests.TestAdminGetUserByIDAsync",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1665409586554,
+  "stop": 1665409586558
+}

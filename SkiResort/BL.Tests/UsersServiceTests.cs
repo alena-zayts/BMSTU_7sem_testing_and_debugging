@@ -6,6 +6,7 @@ using BL.IRepositories;
 using System.Collections.Generic;
 using AutoFixture.Xunit2;
 using BL.Exceptions.UserExceptions;
+using Allure.Xunit.Attributes;
 
 
 
@@ -103,10 +104,10 @@ namespace BL.Tests
         }
     }
 
-
+    [AllureSuite("UsersServiceSuite")]
     public class UsersServiceTests
     {
-        [Fact]
+        [AllureXunit]
         public async void TestRegisterOk()
         {
             // Arrange
@@ -132,7 +133,7 @@ namespace BL.Tests
             Assert.Equal(authorizedUser, resultUser);
         }
 
-        [Fact]
+        [AllureXunit]
         public async void TestRegisterUserWithNoEmail()
         {
             // Arrange
@@ -145,7 +146,7 @@ namespace BL.Tests
             _ = Assert.ThrowsAsync<UserRegistrationException>(async () => await sut.RegisterAsync(unauthorizedUser.CardID, unauthorizedUser.UserEmail, unauthorizedUser.Password));
         }
 
-        [Fact]
+        [AllureXunit]
         public async void TestRegisterUserWithNoPassword()
         {
             // Arrange
@@ -158,7 +159,7 @@ namespace BL.Tests
             _ = Assert.ThrowsAsync<UserRegistrationException>(async () => await sut.RegisterAsync(unauthorizedUser.CardID, unauthorizedUser.UserEmail, unauthorizedUser.Password));
         }
 
-        [Fact]
+        [AllureXunit]
         public async void TestRegisterUserWithRepeatedEmail()
         {
             // Arrange
@@ -174,7 +175,7 @@ namespace BL.Tests
             _ = Assert.ThrowsAsync<UserRegistrationException>(async () => await sut.RegisterAsync(unauthorizedUser.CardID, unauthorizedUser.UserEmail, unauthorizedUser.Password));
         }
 
-        [Fact]
+        [AllureXunit]
         public async void TestLogInOk()
         {
             // Arrange
@@ -197,7 +198,7 @@ namespace BL.Tests
             Assert.Equal(registeredUser, resultUser);
         }
 
-        [Fact]
+        [AllureXunit]
         public async void TestLogInWithWrongPassword()
         {
             // Arrange
@@ -215,7 +216,7 @@ namespace BL.Tests
             _ = Assert.ThrowsAsync<UserAuthorizationException>(async () => await sut.LogInAsync(unauthorizedUser.UserEmail, unauthorizedUser.Password));
         }
 
-        [Fact]
+        [AllureXunit]
         public async void TestAdminGetUsers()
         {
             // Arrange
@@ -226,7 +227,7 @@ namespace BL.Tests
             {
                 usersRepositoryMock.Setup(m => m.GetUsersAsync(It.IsAny<uint>(), It.IsAny<uint>())).ReturnsAsync(usersList);
             }
-            
+
             var sut = new UsersService(checkPermissionServiceMock.Object, usersRepositoryMock.Object);
 
             // act
@@ -238,12 +239,12 @@ namespace BL.Tests
             Assert.Equal(usersList, resultUsers);
         }
 
-        [Fact]
+        [AllureXunit]
         public async void TestAdminAddAutoIncrementUser()
         {
             // Arrange
             uint userID = 0;
-            User newUser =  UserBuilder.aUser().build();
+            User newUser = UserBuilder.aUser().build();
             var usersRepositoryMock = new Mock<IUsersRepository>();
             var checkPermissionServiceMock = new Mock<ICheckPermissionService>();
             {
@@ -261,7 +262,7 @@ namespace BL.Tests
             Assert.Equal(newUser.UserID, newUserID);
         }
 
-        [Fact]
+        [AllureXunit]
         public async void TestAdminUpdateUser()
         {
             // Arrange
@@ -280,7 +281,7 @@ namespace BL.Tests
             usersRepositoryMock.Verify(m => m.UpdateUserByIDAsync(newUser.UserID, newUser.CardID, newUser.UserEmail, newUser.Password, newUser.Permissions), Times.Once);
         }
 
-        [Fact]
+        [AllureXunit]
         public async void TestAdminDeleteUser()
         {
             // Arrange
@@ -299,7 +300,7 @@ namespace BL.Tests
             usersRepositoryMock.Verify(m => m.DeleteUserByIDAsync(userToDeleteID), Times.Once);
         }
 
-        [Fact]
+        [AllureXunit]
         public async void TestAdminGetUserByIDAsync()
         {
             // Arrange

@@ -5,6 +5,7 @@ using BL.Models;
 using BL.IRepositories;
 using System.Collections.Generic;
 using AutoFixture.Xunit2;
+using Allure.Xunit.Attributes;
 
 // лондонский вариант -- изоляция кода от зависимостей
 // используется mock для: ICheckPermissionsService, ILiftsRepository, ILiftsSlopesRepository
@@ -12,13 +13,15 @@ using AutoFixture.Xunit2;
 
 namespace BL.Tests
 {
+    [AllureSuite("LiftsServiceSuite")]
     public class LiftsServiceTest
     {
-        [Theory, AutoMoqData] 
+        [AllureXunitTheory] 
+        [AutoMoqData]
         public async void TestGetLiftInfoAsync(
-            uint userID, 
-            Lift lift, 
-            [Frozen] Mock<ICheckPermissionService> checkPermissionServiceMock, 
+            uint userID,
+            Lift lift,
+            [Frozen] Mock<ICheckPermissionService> checkPermissionServiceMock,
             [Frozen] Mock<ILiftsRepository> liftsRepositoryMock,
             [Frozen] Mock<ILiftsSlopesRepository> liftsSlopesRepositoryMock,
             LiftsService sut)
@@ -37,7 +40,8 @@ namespace BL.Tests
             Assert.Equal(lift, liftFromService);
         }
 
-        [Theory, AutoMoqData] // тест вызывается с параметрами. какими -- автоматически сгенерированными
+        [AllureXunitTheory]
+        [AutoMoqData] // тест вызывается с параметрами. какими -- автоматически сгенерированными
         public async void TestGetLiftsInfoAsync(
             uint userID,
             [Frozen] List<Lift> initialLifts,
@@ -64,9 +68,10 @@ namespace BL.Tests
             Assert.Equal(lifts.Count, liftsFromService.Count);
         }
 
-        
 
-        [Theory, AutoMoqData]
+
+        [AllureXunitTheory]
+        [AutoMoqData]
         public async void TestUpdateLiftInfoAsync(
             uint userID,
             Lift lift,
@@ -85,7 +90,8 @@ namespace BL.Tests
             liftsRepositoryMock.Verify(m => m.UpdateLiftByIDAsync(lift.LiftID, lift.LiftName, lift.IsOpen, lift.SeatsAmount, lift.LiftingTime), Times.Once);
         }
 
-        [Theory, AutoMoqData]
+        [AllureXunitTheory]
+        [AutoMoqData]
         public async void TestAdminDeleteLiftAsync(
             uint userID,
             Lift lift,
@@ -106,7 +112,8 @@ namespace BL.Tests
             liftsRepositoryMock.Verify(m => m.DeleteLiftByIDAsync(lift.LiftID), Times.Once);
         }
 
-        [Theory, AutoMoqData]
+        [AllureXunitTheory] 
+        [AutoMoqData]
         public async void TestAdminAddAutoIncrementLiftAsync(
             uint userID,
             Lift lift,

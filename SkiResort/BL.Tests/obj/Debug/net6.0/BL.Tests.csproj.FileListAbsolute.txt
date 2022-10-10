@@ -109,3 +109,10 @@ C:\Users\alena\Desktop\7_sem\testing_and_debugging\SkiResort\BL.Tests\bin\Debug\
 C:\Users\alena\Desktop\7_sem\testing_and_debugging\SkiResort\BL.Tests\bin\Debug\net6.0\AutoFixture.AutoMoq.dll
 C:\Users\alena\Desktop\7_sem\testing_and_debugging\SkiResort\BL.Tests\bin\Debug\net6.0\AutoFixture.Xunit2.dll
 C:\Users\alena\Desktop\7_sem\testing_and_debugging\SkiResort\BL.Tests\bin\Debug\net6.0\Fare.dll
+C:\Users\alena\Desktop\7_sem\testing_and_debugging\SkiResort\BL.Tests\bin\Debug\net6.0\Allure.Commons.dll
+C:\Users\alena\Desktop\7_sem\testing_and_debugging\SkiResort\BL.Tests\bin\Debug\net6.0\Allure.XUnit.dll
+C:\Users\alena\Desktop\7_sem\testing_and_debugging\SkiResort\BL.Tests\bin\Debug\net6.0\MimeTypesMap.dll
+C:\Users\alena\Desktop\7_sem\testing_and_debugging\SkiResort\BL.Tests\bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.Extension.Xunit.Xml.TestLogger.dll
+C:\Users\alena\Desktop\7_sem\testing_and_debugging\SkiResort\BL.Tests\bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.Extension.Xunit.Xml.TestAdapter.dll
+C:\Users\alena\Desktop\7_sem\testing_and_debugging\SkiResort\BL.Tests\bin\Debug\net6.0\Spekt.TestLogger.dll
+C:\Users\alena\Desktop\7_sem\testing_and_debugging\SkiResort\BL.Tests\bin\Debug\net6.0\allureConfig.json

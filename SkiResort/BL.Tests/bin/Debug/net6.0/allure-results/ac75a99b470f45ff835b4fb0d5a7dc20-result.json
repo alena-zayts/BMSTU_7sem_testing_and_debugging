@@ -1,0 +1,46 @@
+{
+  "uuid": "bc3f0635-7368-4b9c-8a89-119402480ed2-BL.Tests.SlopesServiceTest.TestAdminAddAutoIncrementSlopeAsync(userID: 77, slope: Slope { SlopeID = 111, SlopeName = slopeName035a2b1d-36b6-411e-a9bb-ab409aad65b9, IsOpen = True, DifficultyLevel = 24, ConnectedLifts =  }, checkPermissionServiceMock: Mock<ICheckPermissionService:10>, slopesRepositoryMock: Mock<ISlopesRepository:5>, sut: SlopesService { })",
+  "historyId": "BL.Tests.SlopesServiceTest.TestAdminAddAutoIncrementSlopeAsync(userID: 77, slope: Slope { SlopeID = 111, SlopeName = slopeName035a2b1d-36b6-411e-a9bb-ab409aad65b9, IsOpen = True, DifficultyLevel = 24, ConnectedLifts =  }, checkPermissionServiceMock: Mock<ICheckPermissionService:10>, slopesRepositoryMock: Mock<ISlopesRepository:5>, sut: SlopesService { })",
+  "fullName": "BL.Tests.SlopesServiceTest.TestAdminAddAutoIncrementSlopeAsync(userID: 77, slope: Slope { SlopeID = 111, SlopeName = slopeName035a2b1d-36b6-411e-a9bb-ab409aad65b9, IsOpen = True, DifficultyLevel = 24, ConnectedLifts =  }, checkPermissionServiceMock: Mock<ICheckPermissionService:10>, slopesRepositoryMock: Mock<ISlopesRepository:5>, sut: SlopesService { })",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "BL.Tests.SlopesServiceTest"
+    },
+    {
+      "name": "testMethod",
+      "value": "BL.Tests.SlopesServiceTest.TestAdminAddAutoIncrementSlopeAsync(userID: 77, slope: Slope { SlopeID = 111, SlopeName = slopeName035a2b1d-36b6-411e-a9bb-ab409aad65b9, IsOpen = True, DifficultyLevel = 24, ConnectedLifts =  }, checkPermissionServiceMock: Mock<ICheckPermissionService:10>, slopesRepositoryMock: Mock<ISlopesRepository:5>, sut: SlopesService { })"
+    },
+    {
+      "name": "package",
+      "value": "BL.Tests.SlopesServiceTest"
+    },
+    {
+      "name": "suite",
+      "value": "SlopesServiceSuite"
+    }
+  ],
+  "links": [],
+  "name": "BL.Tests.SlopesServiceTest.TestAdminAddAutoIncrementSlopeAsync(userID: 77, slope: Slope { SlopeID = 111, SlopeName = slopeName035a2b1d-36b6-411e-a9bb-ab409aad65b9, IsOpen = True, DifficultyLevel = 24, ConnectedLifts =  }, checkPermissionServiceMock: Mock<ICheckPermissionService:10>, slopesRepositoryMock: Mock<ISlopesRepository:5>, sut: SlopesService { })",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1665410148984,
+  "stop": 1665410148999
+}
