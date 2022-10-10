@@ -114,7 +114,7 @@ namespace AccessToDB.Tests
             // arrange
 
             // act & assert
-            await Assert.ThrowsAsync<SlopeAddException>(async () => await sut.GetSlopeByNameAsync(slopeName));
+            await Assert.ThrowsAsync<SlopeNotFoundException>(async () => await sut.GetSlopeByNameAsync(slopeName));
         }
 
         [AllureXunitTheory]
@@ -139,7 +139,7 @@ namespace AccessToDB.Tests
             // arrange
 
             // act & assert
-            await Assert.ThrowsAsync<SlopeAddException>(async () => await sut.DeleteSlopeByIDAsync(slopeID));
+            await Assert.ThrowsAsync<SlopeNotFoundException>(async () => await sut.DeleteSlopeByIDAsync(slopeID));
         }
     }
 }

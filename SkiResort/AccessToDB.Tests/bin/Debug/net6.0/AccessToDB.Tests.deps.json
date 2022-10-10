@@ -10,7 +10,6 @@
         "dependencies": {
           "AccessToDB": "1.0.0",
           "Allure.XUnit": "2.1.3",
-          "AutoFixture": "4.17.0",
           "AutoFixture.AutoMoq": "4.17.0",
           "AutoFixture.Xunit2": "4.17.0",
           "BL": "1.0.0",

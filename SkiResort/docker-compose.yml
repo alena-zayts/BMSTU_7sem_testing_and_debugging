@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  tarantool:
+    container_name: tarantool_ski_resort
+    image: tarantool/tarantool:2.8
+    command: tarantool /usr/local/share/tarantool/app.init.lua
+    ports:
+      - 3301:3301
+    volumes:
+      - /mnt/c/BMSTU_7sem_web/src/tarantool/app:/usr/local/share/tarantool
+      - /mnt/c/BMSTU_7sem_web/src/tarantool/data:/var/lib/tarantool
