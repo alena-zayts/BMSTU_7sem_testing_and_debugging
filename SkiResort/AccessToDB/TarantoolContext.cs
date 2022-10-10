@@ -29,7 +29,7 @@ namespace AccessToDB
         public IIndex users_index_email;
 
 
-        public TarantoolContext(string? connection_string=null) => (
+        public TarantoolContext(string connection_string) => (
             box,
             liftsSpace, liftsIndexPrimary, liftsIndexName,
             slopesSpace, slopesIndexPrimary, slopesIndexName,
@@ -46,16 +46,8 @@ namespace AccessToDB
         ISpace, IIndex, IIndex, IIndex,
         ISpace, IIndex, IIndex,
         ISpace, IIndex, IIndex)> 
-            Initialize(string? connection_string)
+            Initialize(string connection_string)
         {
-            if (connection_string == null)
-            {
-                var configurationBuilder = new ConfigurationBuilder()
-                    .AddJsonFile("appsettings.json")
-                    .AddEnvironmentVariables();
-                var config = configurationBuilder.Build();
-                connection_string = config["Connections:ConnectAsAdmin"];
-            }
 
             var box = await Box.Connect(connection_string);
             var schema = box.GetSchema();
@@ -92,6 +84,11 @@ namespace AccessToDB
                 turnstilesSpace, turnstilesIndexPrimary, turnstilesIndexLiftID,
                 usersSpace, users_indexPrimary, users_index_email
             );
+        }
+
+        public void Dispose()
+        {
+            box.Dispose();
         }
     }
 }

@@ -1,0 +1,12 @@
+{
+  "uuid": "c98aa5a9-35ff-4a5c-9f3b-ea318bdbfdf7-BL.Tests.CheckPermissionsServiceTests",
+  "name": "BL.Tests.CheckPermissionsServiceTests",
+  "children": [
+    "592e3279-cda1-49af-a89f-bc9792f6367c-BL.Tests.CheckPermissionsServiceTests.AuthorizedHasAccessToAuthorizedFunctions(functionName: \"SendMessageAsync\")"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1665437036961,
+  "stop": 1665437036965
+}

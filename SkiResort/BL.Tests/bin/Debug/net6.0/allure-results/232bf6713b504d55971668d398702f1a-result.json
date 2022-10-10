@@ -1,0 +1,46 @@
+{
+  "uuid": "e25f92ff-2363-4cef-8c74-dff4c30a41a4-BL.Tests.UsersServiceTests.TestRegisterUserWithNoEmail",
+  "historyId": "BL.Tests.UsersServiceTests.TestRegisterUserWithNoEmail",
+  "fullName": "BL.Tests.UsersServiceTests.TestRegisterUserWithNoEmail",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "BL.Tests.UsersServiceTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "BL.Tests.UsersServiceTests.TestRegisterUserWithNoEmail"
+    },
+    {
+      "name": "package",
+      "value": "BL.Tests.UsersServiceTests"
+    },
+    {
+      "name": "suite",
+      "value": "UsersServiceSuite"
+    }
+  ],
+  "links": [],
+  "name": "BL.Tests.UsersServiceTests.TestRegisterUserWithNoEmail",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1665437036865,
+  "stop": 1665437036867
+}

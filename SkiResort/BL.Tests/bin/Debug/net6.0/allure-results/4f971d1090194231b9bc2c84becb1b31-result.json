@@ -1,0 +1,46 @@
+{
+  "uuid": "524db0c3-eb4b-4725-95bc-1095d7e3c0b9-BL.Tests.CheckPermissionsServiceTests.AuthorizedHasNoAccessToAdminSkiPatrolFunctions(functionName: \"MarkMessageReadByUserAsync\")",
+  "historyId": "BL.Tests.CheckPermissionsServiceTests.AuthorizedHasNoAccessToAdminSkiPatrolFunctions(functionName: \"MarkMessageReadByUserAsync\")",
+  "fullName": "BL.Tests.CheckPermissionsServiceTests.AuthorizedHasNoAccessToAdminSkiPatrolFunctions(functionName: \"MarkMessageReadByUserAsync\")",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "BL.Tests.CheckPermissionsServiceTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "BL.Tests.CheckPermissionsServiceTests.AuthorizedHasNoAccessToAdminSkiPatrolFunctions(functionName: \"MarkMessageReadByUserAsync\")"
+    },
+    {
+      "name": "package",
+      "value": "BL.Tests.CheckPermissionsServiceTests"
+    },
+    {
+      "name": "suite",
+      "value": "CheckPermissionsServiceSuite"
+    }
+  ],
+  "links": [],
+  "name": "BL.Tests.CheckPermissionsServiceTests.AuthorizedHasNoAccessToAdminSkiPatrolFunctions(functionName: \"MarkMessageReadByUserAsync\")",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1665437036949,
+  "stop": 1665437036950
+}

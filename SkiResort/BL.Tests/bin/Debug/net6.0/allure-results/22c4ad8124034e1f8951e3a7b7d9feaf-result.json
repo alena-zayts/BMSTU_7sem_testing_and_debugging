@@ -1,0 +1,46 @@
+{
+  "uuid": "8232cdac-1f5f-4828-b0c2-909b3be95762-BL.Tests.SlopesServiceTest.TestAdminDeleteSlopeAsync(userID: 170, slope: Slope { SlopeID = 126, SlopeName = slopeNamec370dd99-eb91-4521-ac64-f60379c81865, IsOpen = True, DifficultyLevel = 244, ConnectedLifts =  }, checkPermissionServiceMock: Mock<ICheckPermissionService:9>, slopesRepositoryStub: Mock<ISlopesRepository:7>, liftsSlopesRepositoryStub: Mock<ILiftsSlopesRepository:12>, sut: SlopesService { })",
+  "historyId": "BL.Tests.SlopesServiceTest.TestAdminDeleteSlopeAsync(userID: 170, slope: Slope { SlopeID = 126, SlopeName = slopeNamec370dd99-eb91-4521-ac64-f60379c81865, IsOpen = True, DifficultyLevel = 244, ConnectedLifts =  }, checkPermissionServiceMock: Mock<ICheckPermissionService:9>, slopesRepositoryStub: Mock<ISlopesRepository:7>, liftsSlopesRepositoryStub: Mock<ILiftsSlopesRepository:12>, sut: SlopesService { })",
+  "fullName": "BL.Tests.SlopesServiceTest.TestAdminDeleteSlopeAsync(userID: 170, slope: Slope { SlopeID = 126, SlopeName = slopeNamec370dd99-eb91-4521-ac64-f60379c81865, IsOpen = True, DifficultyLevel = 244, ConnectedLifts =  }, checkPermissionServiceMock: Mock<ICheckPermissionService:9>, slopesRepositoryStub: Mock<ISlopesRepository:7>, liftsSlopesRepositoryStub: Mock<ILiftsSlopesRepository:12>, sut: SlopesService { })",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "BL.Tests.SlopesServiceTest"
+    },
+    {
+      "name": "testMethod",
+      "value": "BL.Tests.SlopesServiceTest.TestAdminDeleteSlopeAsync(userID: 170, slope: Slope { SlopeID = 126, SlopeName = slopeNamec370dd99-eb91-4521-ac64-f60379c81865, IsOpen = True, DifficultyLevel = 244, ConnectedLifts =  }, checkPermissionServiceMock: Mock<ICheckPermissionService:9>, slopesRepositoryStub: Mock<ISlopesRepository:7>, liftsSlopesRepositoryStub: Mock<ILiftsSlopesRepository:12>, sut: SlopesService { })"
+    },
+    {
+      "name": "package",
+      "value": "BL.Tests.SlopesServiceTest"
+    },
+    {
+      "name": "suite",
+      "value": "SlopesServiceSuite"
+    }
+  ],
+  "links": [],
+  "name": "BL.Tests.SlopesServiceTest.TestAdminDeleteSlopeAsync(userID: 170, slope: Slope { SlopeID = 126, SlopeName = slopeNamec370dd99-eb91-4521-ac64-f60379c81865, IsOpen = True, DifficultyLevel = 244, ConnectedLifts =  }, checkPermissionServiceMock: Mock<ICheckPermissionService:9>, slopesRepositoryStub: Mock<ISlopesRepository:7>, liftsSlopesRepositoryStub: Mock<ILiftsSlopesRepository:12>, sut: SlopesService { })",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1665437036754,
+  "stop": 1665437036825
+}

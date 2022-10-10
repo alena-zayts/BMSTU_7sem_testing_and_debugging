@@ -1,0 +1,46 @@
+{
+  "uuid": "7a714c07-3dc0-48c6-bc14-d4bafb391dc9-BL.Tests.UsersServiceTests.TestLogInWithWrongPassword",
+  "historyId": "BL.Tests.UsersServiceTests.TestLogInWithWrongPassword",
+  "fullName": "BL.Tests.UsersServiceTests.TestLogInWithWrongPassword",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "BL.Tests.UsersServiceTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "BL.Tests.UsersServiceTests.TestLogInWithWrongPassword"
+    },
+    {
+      "name": "package",
+      "value": "BL.Tests.UsersServiceTests"
+    },
+    {
+      "name": "suite",
+      "value": "UsersServiceSuite"
+    }
+  ],
+  "links": [],
+  "name": "BL.Tests.UsersServiceTests.TestLogInWithWrongPassword",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1665436736845,
+  "stop": 1665436736848
+}

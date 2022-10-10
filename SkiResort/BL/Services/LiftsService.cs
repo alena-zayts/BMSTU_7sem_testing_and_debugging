@@ -12,7 +12,6 @@ namespace BL.Services
     public class LiftsService
     {
         private ILiftsRepository _liftsRepository;
-        private IUsersRepository _usersRepository;
         private ILiftsSlopesRepository _liftsSlopesRepository;
         private ITurnstilesRepository _turnstilesRepository;
         private ICheckPermissionService _checkPermissionsService;
@@ -20,7 +19,6 @@ namespace BL.Services
         public LiftsService(ICheckPermissionService checkPermissionsService, ILiftsRepository liftsRepository, IUsersRepository usersRepository, ILiftsSlopesRepository liftsSlopesRepository, ITurnstilesRepository turnstilesRepository)
         {
             _liftsRepository = liftsRepository;
-            _usersRepository = usersRepository;
             _liftsSlopesRepository = liftsSlopesRepository;
             _turnstilesRepository = turnstilesRepository;
             _checkPermissionsService = checkPermissionsService;

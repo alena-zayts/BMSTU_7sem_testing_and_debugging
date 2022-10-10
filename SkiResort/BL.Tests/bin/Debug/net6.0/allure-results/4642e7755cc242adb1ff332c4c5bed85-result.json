@@ -1,0 +1,46 @@
+{
+  "uuid": "02fa2baa-1928-420b-8951-5d6bd783790e-BL.Tests.UsersServiceTests.TestRegisterOk",
+  "historyId": "BL.Tests.UsersServiceTests.TestRegisterOk",
+  "fullName": "BL.Tests.UsersServiceTests.TestRegisterOk",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "BL.Tests.UsersServiceTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "BL.Tests.UsersServiceTests.TestRegisterOk"
+    },
+    {
+      "name": "package",
+      "value": "BL.Tests.UsersServiceTests"
+    },
+    {
+      "name": "suite",
+      "value": "UsersServiceSuite"
+    }
+  ],
+  "links": [],
+  "name": "BL.Tests.UsersServiceTests.TestRegisterOk",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1665436736826,
+  "stop": 1665436736836
+}
