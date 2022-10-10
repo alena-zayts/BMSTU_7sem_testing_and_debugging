@@ -1,0 +1,12 @@
+{
+  "uuid": "e1354db9-dd13-4e9e-941d-78cb45b704df-BL.Tests.LiftsServiceTest",
+  "name": "BL.Tests.LiftsServiceTest",
+  "children": [
+    "0de780b0-99f6-4c75-a41c-7bcfe8bf6e2a-BL.Tests.LiftsServiceTest.TestGetLiftInfoAsync(userID: 171, lift: Lift { LiftID = 117, LiftName = liftNameece2c934-0fe0-46fb-8809-5083501fc045, IsOpen = True, SeatsAmount = 168, LiftingTime = 5, QueueTime = 204, ConnectedSlopes =  }, checkPermissionServiceMock: Mock<ICheckPermissionService:1>, liftsRepositoryStub: Mock<ILiftsRepository:1>, liftsSlopesRepositoryStub: Mock<ILiftsSlopesRepository:1>, sut: LiftsService { })"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1665418160309,
+  "stop": 1665418160318
+}

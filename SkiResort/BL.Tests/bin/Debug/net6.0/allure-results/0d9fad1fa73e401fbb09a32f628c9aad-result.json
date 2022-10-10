@@ -1,0 +1,46 @@
+{
+  "uuid": "bb0fc318-8b04-4a80-8f99-acba228941ff-BL.Tests.UsersServiceTests.TestRegisterUserWithNoPassword",
+  "historyId": "BL.Tests.UsersServiceTests.TestRegisterUserWithNoPassword",
+  "fullName": "BL.Tests.UsersServiceTests.TestRegisterUserWithNoPassword",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "BL.Tests.UsersServiceTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "BL.Tests.UsersServiceTests.TestRegisterUserWithNoPassword"
+    },
+    {
+      "name": "package",
+      "value": "BL.Tests.UsersServiceTests"
+    },
+    {
+      "name": "suite",
+      "value": "UsersServiceSuite"
+    }
+  ],
+  "links": [],
+  "name": "BL.Tests.UsersServiceTests.TestRegisterUserWithNoPassword",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1665411429762,
+  "stop": 1665411429764
+}

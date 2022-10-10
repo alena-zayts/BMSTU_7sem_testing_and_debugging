@@ -11,38 +11,15 @@ using BL.Exceptions.PermissionExceptions;
 using System.Runtime.InteropServices;
 using System;
 using Allure.Xunit.Attributes;
+using BL.Tests.ArrangeHelpers;
 
 // лондонский вариант -- изоляция кода от зависимостей
-// используется mock для: IUsersRepository
+// используется stub для: IUsersRepository (вызовы и взаимодействия,  которые исполняются SUT к зависимым объектам, чтобы запросить и получить данные)
 // не используется AutoMoqData, вместо него прямое создание Mock и InlineData
 // Используется Fabric (Object Mother) для генерации объектов для тестов
 
 namespace BL.Tests
 {
-    internal class UsersObjectMother
-    {
-
-        public static User UnauthorizedUser()
-        {
-            return new User(1, 0, "", "", PermissionsEnum.UNAUTHORIZED);
-        }
-
-        public static User AuthorizedUser()
-        {
-            return new User(2, 2, "authorized_user_email", "authorized_user_password", PermissionsEnum.AUTHORIZED);
-        }
-
-        public static User SkiPatrolUser()
-        {
-            return new User(3, 3, "skipatrol_user_email", "skipatrol_user_password", PermissionsEnum.SKI_PATROL);
-        }
-
-        public static User AdminUser()
-        {
-            return new User(4, 1, "admin_user_email", "admin_user_password", PermissionsEnum.ADMIN);
-        }
-
-    }
 
     [AllureSuite("CheckPermissionsServiceSuite")]
     public class CheckPermissionsServiceTests
@@ -50,22 +27,21 @@ namespace BL.Tests
         [AllureXunit]
         public async void UnauthorizedHasNoAccessToAdminFunctions()
         {
-            //Console.WriteLine(System.Runtime.InteropServices.Des);
             // arrange
             string functionName = "smthWithAdminProperty";
             User user = UsersObjectMother.UnauthorizedUser();
-            var usersRepositoryMock = new Mock<IUsersRepository>();
+            var usersRepositoryStub = new Mock<IUsersRepository>();
             {
-                usersRepositoryMock.Setup(m => m.GetUserByIdAsync(user.UserID)).ReturnsAsync(user);
+                usersRepositoryStub.Setup(m => m.GetUserByIdAsync(user.UserID)).ReturnsAsync(user);
             }
-            var sut = new CheckPermissionsService(usersRepositoryMock.Object);
+            var sut = new CheckPermissionsService(usersRepositoryStub.Object);
 
 
             // act & assert
             _ = Assert.ThrowsAsync<PermissionException>(async () => await sut.CheckPermissionsAsync(user.UserID, functionName));
 
             //assert
-            usersRepositoryMock.Verify(m => m.GetUserByIdAsync(user.UserID), Times.Once);
+            usersRepositoryStub.Verify(m => m.GetUserByIdAsync(user.UserID), Times.Once);
         }
 
         [AllureXunit]
@@ -74,18 +50,18 @@ namespace BL.Tests
             // arrange
             string functionName = "smthWithAdminProperty";
             User user = UsersObjectMother.AuthorizedUser();
-            var usersRepositoryMock = new Mock<IUsersRepository>();
+            var usersRepositoryStub = new Mock<IUsersRepository>();
             {
-                usersRepositoryMock.Setup(m => m.GetUserByIdAsync(user.UserID)).ReturnsAsync(user);
+                usersRepositoryStub.Setup(m => m.GetUserByIdAsync(user.UserID)).ReturnsAsync(user);
             }
-            var sut = new CheckPermissionsService(usersRepositoryMock.Object);
+            var sut = new CheckPermissionsService(usersRepositoryStub.Object);
 
 
             // act & assert
             _ = Assert.ThrowsAsync<PermissionException>(async () => await sut.CheckPermissionsAsync(user.UserID, functionName));
 
             //assert
-            usersRepositoryMock.Verify(m => m.GetUserByIdAsync(user.UserID), Times.Once);
+            usersRepositoryStub.Verify(m => m.GetUserByIdAsync(user.UserID), Times.Once);
         }
 
         [AllureXunit]
@@ -94,18 +70,18 @@ namespace BL.Tests
             // arrange
             string functionName = "smthWithAdminProperty";
             User user = UsersObjectMother.SkiPatrolUser();
-            var usersRepositoryMock = new Mock<IUsersRepository>();
+            var usersRepositoryStub = new Mock<IUsersRepository>();
             {
-                usersRepositoryMock.Setup(m => m.GetUserByIdAsync(user.UserID)).ReturnsAsync(user);
+                usersRepositoryStub.Setup(m => m.GetUserByIdAsync(user.UserID)).ReturnsAsync(user);
             }
-            var sut = new CheckPermissionsService(usersRepositoryMock.Object);
+            var sut = new CheckPermissionsService(usersRepositoryStub.Object);
 
 
             // act & assert
             _ = Assert.ThrowsAsync<PermissionException>(async () => await sut.CheckPermissionsAsync(user.UserID, functionName));
 
             //assert
-            usersRepositoryMock.Verify(m => m.GetUserByIdAsync(user.UserID), Times.Once);
+            usersRepositoryStub.Verify(m => m.GetUserByIdAsync(user.UserID), Times.Once);
         }
 
         [AllureXunit]
@@ -114,11 +90,11 @@ namespace BL.Tests
             // arrange
             string functionName = "any";
             User user = UsersObjectMother.AdminUser();
-            var usersRepositoryMock = new Mock<IUsersRepository>();
+            var usersRepositoryStub = new Mock<IUsersRepository>();
             {
-                usersRepositoryMock.Setup(m => m.GetUserByIdAsync(user.UserID)).ReturnsAsync(user);
+                usersRepositoryStub.Setup(m => m.GetUserByIdAsync(user.UserID)).ReturnsAsync(user);
             }
-            var sut = new CheckPermissionsService(usersRepositoryMock.Object);
+            var sut = new CheckPermissionsService(usersRepositoryStub.Object);
 
 
             // act 
@@ -126,7 +102,7 @@ namespace BL.Tests
 
             //assert
             Assert.Equal(TaskStatus.RanToCompletion, task.Status);
-            usersRepositoryMock.Verify(m => m.GetUserByIdAsync(user.UserID), Times.Once);
+            usersRepositoryStub.Verify(m => m.GetUserByIdAsync(user.UserID), Times.Once);
         }
 
         [AllureXunitTheory]
@@ -137,18 +113,18 @@ namespace BL.Tests
         {
             // arrange
             User user = UsersObjectMother.UnauthorizedUser();
-            var usersRepositoryMock = new Mock<IUsersRepository>();
+            var usersRepositoryStub = new Mock<IUsersRepository>();
             {
-                usersRepositoryMock.Setup(m => m.GetUserByIdAsync(user.UserID)).ReturnsAsync(user);
+                usersRepositoryStub.Setup(m => m.GetUserByIdAsync(user.UserID)).ReturnsAsync(user);
             }
-            var sut = new CheckPermissionsService(usersRepositoryMock.Object);
+            var sut = new CheckPermissionsService(usersRepositoryStub.Object);
 
 
             // act & assert
             _ = Assert.ThrowsAsync<PermissionException>(async () => await sut.CheckPermissionsAsync(user.UserID, functionName));
 
             //assert
-            usersRepositoryMock.Verify(m => m.GetUserByIdAsync(user.UserID), Times.Once);
+            usersRepositoryStub.Verify(m => m.GetUserByIdAsync(user.UserID), Times.Once);
         }
 
         [AllureXunitTheory]
@@ -159,18 +135,18 @@ namespace BL.Tests
         {
             // arrange
             User user = UsersObjectMother.AuthorizedUser();
-            var usersRepositoryMock = new Mock<IUsersRepository>();
+            var usersRepositoryStub = new Mock<IUsersRepository>();
             {
-                usersRepositoryMock.Setup(m => m.GetUserByIdAsync(user.UserID)).ReturnsAsync(user);
+                usersRepositoryStub.Setup(m => m.GetUserByIdAsync(user.UserID)).ReturnsAsync(user);
             }
-            var sut = new CheckPermissionsService(usersRepositoryMock.Object);
+            var sut = new CheckPermissionsService(usersRepositoryStub.Object);
 
 
             // act & assert
             _ = Assert.ThrowsAsync<PermissionException>(async () => await sut.CheckPermissionsAsync(user.UserID, functionName));
 
             //assert
-            usersRepositoryMock.Verify(m => m.GetUserByIdAsync(user.UserID), Times.Once);
+            usersRepositoryStub.Verify(m => m.GetUserByIdAsync(user.UserID), Times.Once);
         }
 
         [AllureXunitTheory]
@@ -181,11 +157,11 @@ namespace BL.Tests
         {
             // arrange
             User user = UsersObjectMother.SkiPatrolUser();
-            var usersRepositoryMock = new Mock<IUsersRepository>();
+            var usersRepositoryStub = new Mock<IUsersRepository>();
             {
-                usersRepositoryMock.Setup(m => m.GetUserByIdAsync(user.UserID)).ReturnsAsync(user);
+                usersRepositoryStub.Setup(m => m.GetUserByIdAsync(user.UserID)).ReturnsAsync(user);
             }
-            var sut = new CheckPermissionsService(usersRepositoryMock.Object);
+            var sut = new CheckPermissionsService(usersRepositoryStub.Object);
 
 
             // act 
@@ -193,7 +169,7 @@ namespace BL.Tests
 
             //assert
             Assert.Equal(TaskStatus.RanToCompletion, task.Status);
-            usersRepositoryMock.Verify(m => m.GetUserByIdAsync(user.UserID), Times.Once);
+            usersRepositoryStub.Verify(m => m.GetUserByIdAsync(user.UserID), Times.Once);
         }
 
         [AllureXunitTheory]
@@ -203,18 +179,18 @@ namespace BL.Tests
         {
             // arrange
             User user = UsersObjectMother.UnauthorizedUser();
-            var usersRepositoryMock = new Mock<IUsersRepository>();
+            var usersRepositoryStub = new Mock<IUsersRepository>();
             {
-                usersRepositoryMock.Setup(m => m.GetUserByIdAsync(user.UserID)).ReturnsAsync(user);
+                usersRepositoryStub.Setup(m => m.GetUserByIdAsync(user.UserID)).ReturnsAsync(user);
             }
-            var sut = new CheckPermissionsService(usersRepositoryMock.Object);
+            var sut = new CheckPermissionsService(usersRepositoryStub.Object);
 
 
             // act & assert
             _ = Assert.ThrowsAsync<PermissionException>(async () => await sut.CheckPermissionsAsync(user.UserID, functionName));
 
             //assert
-            usersRepositoryMock.Verify(m => m.GetUserByIdAsync(user.UserID), Times.Once);
+            usersRepositoryStub.Verify(m => m.GetUserByIdAsync(user.UserID), Times.Once);
         }
 
         [AllureXunitTheory]
@@ -224,11 +200,11 @@ namespace BL.Tests
         {
             // arrange
             User user = UsersObjectMother.AuthorizedUser();
-            var usersRepositoryMock = new Mock<IUsersRepository>();
+            var usersRepositoryStub = new Mock<IUsersRepository>();
             {
-                usersRepositoryMock.Setup(m => m.GetUserByIdAsync(user.UserID)).ReturnsAsync(user);
+                usersRepositoryStub.Setup(m => m.GetUserByIdAsync(user.UserID)).ReturnsAsync(user);
             }
-            var sut = new CheckPermissionsService(usersRepositoryMock.Object);
+            var sut = new CheckPermissionsService(usersRepositoryStub.Object);
 
 
             // act 
@@ -236,7 +212,7 @@ namespace BL.Tests
 
             //assert
             Assert.Equal(TaskStatus.RanToCompletion, task.Status);
-            usersRepositoryMock.Verify(m => m.GetUserByIdAsync(user.UserID), Times.Once);
+            usersRepositoryStub.Verify(m => m.GetUserByIdAsync(user.UserID), Times.Once);
         }
     }
 }

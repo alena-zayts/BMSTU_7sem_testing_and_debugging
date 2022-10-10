@@ -1,0 +1,12 @@
+{
+  "uuid": "f86e4138-ee3d-4cc2-96c6-ebc9609fbe20-BL.Tests.CheckPermissionsServiceTests",
+  "name": "BL.Tests.CheckPermissionsServiceTests",
+  "children": [
+    "11c6b860-20df-49f3-960f-278b16cb4f90-BL.Tests.CheckPermissionsServiceTests.SkiPatrolHasNoAccessToAdminFunctions"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1665411429825,
+  "stop": 1665411429828
+}

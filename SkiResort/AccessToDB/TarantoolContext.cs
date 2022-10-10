@@ -24,21 +24,9 @@ namespace AccessToDB
         public IIndex turnstilesIndexPrimary;
         public IIndex turnstilesIndexLiftID;
 
-        public ISpace cardReadingsSpace;
-        public IIndex cardReadingsIndexPrimary;
-        public IIndex cardReadingsIndexTurnstile;
-
-        public ISpace cardsSpace;
-        public IIndex cardsIndexPrimary;
-
         public ISpace usersSpace;
         public IIndex users_indexPrimary;
         public IIndex users_index_email;
-
-        public ISpace messagesSpace;
-        public IIndex messagesIndexPrimary;
-        public IIndex messagesIndexSenderID;
-        public IIndex messagesIndexCheckedByID;
 
 
         public TarantoolContext(string? connection_string=null) => (
@@ -47,10 +35,7 @@ namespace AccessToDB
             slopesSpace, slopesIndexPrimary, slopesIndexName,
             liftsSlopesSpace, liftsSlopesIndexPrimary, liftsSlopesIndexLiftID, liftsSlopesIndexSlopeID,
             turnstilesSpace, turnstilesIndexPrimary, turnstilesIndexLiftID,
-            cardReadingsSpace, cardReadingsIndexPrimary, cardReadingsIndexTurnstile,
-            cardsSpace, cardsIndexPrimary,
-            usersSpace, users_indexPrimary, users_index_email,
-            messagesSpace, messagesIndexPrimary, messagesIndexSenderID, messagesIndexCheckedByID
+            usersSpace, users_indexPrimary, users_index_email
             ) = Initialize(connection_string).GetAwaiter().GetResult();
 
 
@@ -60,10 +45,7 @@ namespace AccessToDB
         ISpace, IIndex, IIndex,
         ISpace, IIndex, IIndex, IIndex,
         ISpace, IIndex, IIndex,
-        ISpace, IIndex, IIndex,
-        ISpace, IIndex,
-        ISpace, IIndex, IIndex,
-        ISpace, IIndex, IIndex, IIndex)> 
+        ISpace, IIndex, IIndex)> 
             Initialize(string? connection_string)
         {
             if (connection_string == null)
@@ -97,26 +79,9 @@ namespace AccessToDB
             var turnstilesIndexLiftID = await turnstilesSpace.GetIndex("index_lift_id");
 
 
-            var cardReadingsSpace = await schema.GetSpace("card_readings");
-            var cardReadingsIndexPrimary = await cardReadingsSpace.GetIndex("primary");
-            var cardReadingsIndexTurnstile = await cardReadingsSpace.GetIndex("index_turnstile");
-
-
-            var cardsSpace = await schema.GetSpace("cards");
-            var cardsIndexPrimary = await cardsSpace.GetIndex("primary");
-
-
             var usersSpace = await schema.GetSpace("users");
             var users_indexPrimary = await usersSpace.GetIndex("primary");
             var users_index_email = await usersSpace.GetIndex("index_email");
-
-
-            var messagesSpace = await schema.GetSpace("messages");
-            var messagesIndexPrimary = await messagesSpace.GetIndex("primary");
-            var messagesIndexSenderID = await messagesSpace.GetIndex("index_sender_id");
-            var messagesIndexCheckedByID = await messagesSpace.GetIndex("index_checked_by_id");
-
-
 
 
             return (
@@ -125,10 +90,7 @@ namespace AccessToDB
                 slopesSpace, slopesIndexPrimary, slopesIndexName,
                 liftsSlopesSpace, liftsSlopesIndexPrimary, liftsSlopesIndexLiftID, liftsSlopesIndexSlopeID,
                 turnstilesSpace, turnstilesIndexPrimary, turnstilesIndexLiftID,
-                cardReadingsSpace, cardReadingsIndexPrimary, cardReadingsIndexTurnstile,
-                cardsSpace, cardsIndexPrimary,
-                usersSpace, users_indexPrimary, users_index_email,
-                messagesSpace, messagesIndexPrimary, messagesIndexSenderID, messagesIndexCheckedByID
+                usersSpace, users_indexPrimary, users_index_email
             );
         }
     }

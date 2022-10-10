@@ -39,12 +39,6 @@ namespace BL.Services
             await _liftsSlopesRepository.DeleteLiftSlopesByIDsAsync(lift.LiftID, slope.SlopeID);
         }
 
-        public async Task AdminAddLiftSlopeAsync(uint requesterUserID, uint recordID, uint liftID, uint slopeID)
-        {
-            await _checkPermissionsService.CheckPermissionsAsync(requesterUserID);
-            await _liftsSlopesRepository.AddLiftSlopeAsync(recordID, liftID, slopeID);
-        }
-
         public async Task<uint> AdminAddAutoIncrementLiftSlopeAsync(uint requesterUserID, string liftName, string slopeName)
         {
             await _checkPermissionsService.CheckPermissionsAsync(requesterUserID);

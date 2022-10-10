@@ -1,0 +1,12 @@
+{
+  "uuid": "5ef55667-3d89-40d2-a14c-409b76fe0762-BL.Tests.SlopesServiceTest",
+  "name": "BL.Tests.SlopesServiceTest",
+  "children": [
+    "ec6a6d59-b501-4090-a595-d818586c0f23-BL.Tests.SlopesServiceTest.TestAdminDeleteSlopeAsync(userID: 51, slope: Slope { SlopeID = 72, SlopeName = slopeName3b68c9fa-4350-4571-a94b-0ec7998cb769, IsOpen = True, DifficultyLevel = 253, ConnectedLifts =  }, checkPermissionServiceMock: Mock<ICheckPermissionService:9>, slopesRepositoryMock: Mock<ISlopesRepository:4>, liftsSlopesRepositoryMock: Mock<ILiftsSlopesRepository:9>, sut: SlopesService { })"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1665411596589,
+  "stop": 1665411596595
+}

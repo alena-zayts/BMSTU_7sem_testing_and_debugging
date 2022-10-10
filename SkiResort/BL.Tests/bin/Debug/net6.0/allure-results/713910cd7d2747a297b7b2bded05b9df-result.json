@@ -1,0 +1,46 @@
+{
+  "uuid": "fb46fc36-7a77-4673-8ffa-9fbfc3cacb67-BL.Tests.UsersServiceTests.TestAdminUpdateUser",
+  "historyId": "BL.Tests.UsersServiceTests.TestAdminUpdateUser",
+  "fullName": "BL.Tests.UsersServiceTests.TestAdminUpdateUser",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "BL.Tests.UsersServiceTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "BL.Tests.UsersServiceTests.TestAdminUpdateUser"
+    },
+    {
+      "name": "package",
+      "value": "BL.Tests.UsersServiceTests"
+    },
+    {
+      "name": "suite",
+      "value": "UsersServiceSuite"
+    }
+  ],
+  "links": [],
+  "name": "BL.Tests.UsersServiceTests.TestAdminUpdateUser",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1665411596579,
+  "stop": 1665411596585
+}

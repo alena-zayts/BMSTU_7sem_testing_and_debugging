@@ -69,7 +69,7 @@ namespace AccessToDB.RepositoriesTarantool
             {
                 await _space.Insert(new UserDB(userID, cardID, UserEmail, password, (uint) permissions));
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 throw new UserAddException();
             }

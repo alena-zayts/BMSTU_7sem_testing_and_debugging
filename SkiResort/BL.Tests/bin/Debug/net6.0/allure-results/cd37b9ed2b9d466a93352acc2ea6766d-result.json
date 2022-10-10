@@ -1,0 +1,46 @@
+{
+  "uuid": "1e2725f9-f500-4ca3-b786-3f54bac9a45b-BL.Tests.UsersServiceTests.TestRegisterUserWithRepeatedEmail",
+  "historyId": "BL.Tests.UsersServiceTests.TestRegisterUserWithRepeatedEmail",
+  "fullName": "BL.Tests.UsersServiceTests.TestRegisterUserWithRepeatedEmail",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "BL.Tests.UsersServiceTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "BL.Tests.UsersServiceTests.TestRegisterUserWithRepeatedEmail"
+    },
+    {
+      "name": "package",
+      "value": "BL.Tests.UsersServiceTests"
+    },
+    {
+      "name": "suite",
+      "value": "UsersServiceSuite"
+    }
+  ],
+  "links": [],
+  "name": "BL.Tests.UsersServiceTests.TestRegisterUserWithRepeatedEmail",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1665411596573,
+  "stop": 1665411596576
+}

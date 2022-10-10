@@ -8,7 +8,8 @@ using AutoFixture.Xunit2;
 using Allure.Xunit.Attributes;
 
 // лондонский вариант -- изол€ци€ кода от зависимостей
-// используетс€ mock дл€: ICheckPermissionsService, ISlopesRepository, ILiftsSlopesRepository
+// используетс€ mock дл€: ICheckPermissionsService, (вызовы и взаимодействи€, которые исполн€ютс€ SUT к зависимым объектам)
+// используетс€ stub дл€: ISlopesRepository, ILiftsSlopesRepository (вызовы и взаимодействи€,  которые исполн€ютс€ SUT к зависимым объектам, чтобы запросить и получить  данные)
 // используетс€ fixture: AutoMoqData (есть вариант и без него)
 
 namespace BL.Tests
@@ -24,21 +25,21 @@ namespace BL.Tests
             uint userID, 
             Slope slope, 
             [Frozen] Mock<ICheckPermissionService> checkPermissionServiceMock, 
-            [Frozen] Mock<ISlopesRepository> slopesRepositoryMock,
-            [Frozen] Mock<ILiftsSlopesRepository> liftsSlopesRepositoryMock,
+            [Frozen] Mock<ISlopesRepository> slopesRepositoryStub,
+            [Frozen] Mock<ILiftsSlopesRepository> liftsSlopesRepositoryStub,
             SlopesService sut)
         {
             // Arrange
-            slopesRepositoryMock.Setup(m => m.GetSlopeByNameAsync(slope.SlopeName)).ReturnsAsync(slope);
-            liftsSlopesRepositoryMock.Setup(m => m.GetLiftsBySlopeIdAsync(slope.SlopeID)).ReturnsAsync(slope.ConnectedLifts);
+            slopesRepositoryStub.Setup(m => m.GetSlopeByNameAsync(slope.SlopeName)).ReturnsAsync(slope);
+            liftsSlopesRepositoryStub.Setup(m => m.GetLiftsBySlopeIdAsync(slope.SlopeID)).ReturnsAsync(slope.ConnectedLifts);
 
             // act
             Slope slopeFromService = await sut.GetSlopeInfoAsync(userID, slope.SlopeName);
 
             //assert
             checkPermissionServiceMock.Verify(m => m.CheckPermissionsAsync(userID, It.IsAny<string>()), Times.Once);
-            slopesRepositoryMock.Verify(m => m.GetSlopeByNameAsync(slope.SlopeName), Times.Once);
-            liftsSlopesRepositoryMock.Verify(m => m.GetLiftsBySlopeIdAsync(slope.SlopeID), Times.Once);
+            slopesRepositoryStub.Verify(m => m.GetSlopeByNameAsync(slope.SlopeName), Times.Once);
+            liftsSlopesRepositoryStub.Verify(m => m.GetLiftsBySlopeIdAsync(slope.SlopeID), Times.Once);
             Assert.Equal(slope, slopeFromService);
         }
         [AllureXunitTheory]
@@ -47,12 +48,12 @@ namespace BL.Tests
             uint userID,
             [Frozen] List<Slope> initialSlopes,
             [Frozen] Mock<ICheckPermissionService> checkPermissionServiceMock,
-            [Frozen] Mock<ISlopesRepository> slopesRepositoryMock,
-            [Frozen] Mock<ILiftsSlopesRepository> liftsSlopesRepositoryMock,
+            [Frozen] Mock<ISlopesRepository> slopesRepositoryStub,
+            [Frozen] Mock<ILiftsSlopesRepository> liftsSlopesRepositoryStub,
             SlopesService sut)
         {
             // arrange
-            slopesRepositoryMock.Setup(m => m.GetSlopesAsync(It.IsAny<uint>(), It.IsAny<uint>())).ReturnsAsync(initialSlopes);
+            slopesRepositoryStub.Setup(m => m.GetSlopesAsync(It.IsAny<uint>(), It.IsAny<uint>())).ReturnsAsync(initialSlopes);
             List<Slope> slopes = new List<Slope> { };
             foreach (Slope slope in initialSlopes)
             {
@@ -64,8 +65,8 @@ namespace BL.Tests
 
             //assert
             checkPermissionServiceMock.Verify(m => m.CheckPermissionsAsync(userID, It.IsAny<string>()), Times.Once);
-            slopesRepositoryMock.Verify(m => m.GetSlopesAsync(It.IsAny<uint>(), It.IsAny<uint>()), Times.Once);
-            liftsSlopesRepositoryMock.Verify(m => m.GetLiftsBySlopeIdAsync(It.IsAny<uint>()), Times.Exactly(slopes.Count));
+            slopesRepositoryStub.Verify(m => m.GetSlopesAsync(It.IsAny<uint>(), It.IsAny<uint>()), Times.Once);
+            liftsSlopesRepositoryStub.Verify(m => m.GetLiftsBySlopeIdAsync(It.IsAny<uint>()), Times.Exactly(slopes.Count));
             Assert.Equal(slopes.Count, slopesFromService.Count);
         }
 
@@ -76,19 +77,19 @@ namespace BL.Tests
             uint userID,
             Slope slope,
             [Frozen] Mock<ICheckPermissionService> checkPermissionServiceMock,
-            [Frozen] Mock<ISlopesRepository> slopesRepositoryMock,
+            [Frozen] Mock<ISlopesRepository> slopesRepositoryStub,
             SlopesService sut)
         {
             // arrange
-            slopesRepositoryMock.Setup(m => m.GetSlopeByNameAsync(slope.SlopeName)).ReturnsAsync(slope);
+            slopesRepositoryStub.Setup(m => m.GetSlopeByNameAsync(slope.SlopeName)).ReturnsAsync(slope);
 
             // act
             await sut.UpdateSlopeInfoAsync(userID, slope.SlopeName, slope.IsOpen, slope.DifficultyLevel);
 
             //assert
             checkPermissionServiceMock.Verify(m => m.CheckPermissionsAsync(userID, It.IsAny<string>()), Times.Once);
-            //slopesRepositoryMock.Verify(m => m.GetSlopeByNameAsync(slope.SlopeName), Times.Once); не нужны детали реализации
-            slopesRepositoryMock.Verify(m => m.UpdateSlopeByIDAsync(slope.SlopeID, slope.SlopeName, slope.IsOpen, slope.DifficultyLevel), Times.Once);
+            //slopesRepositoryStub.Verify(m => m.GetSlopeByNameAsync(slope.SlopeName), Times.Once); не нужны детали реализации
+            slopesRepositoryStub.Verify(m => m.UpdateSlopeByIDAsync(slope.SlopeID, slope.SlopeName, slope.IsOpen, slope.DifficultyLevel), Times.Once);
         }
 
         [AllureXunitTheory]
@@ -97,23 +98,23 @@ namespace BL.Tests
             uint userID,
             Slope slope,
             [Frozen] Mock<ICheckPermissionService> checkPermissionServiceMock,
-            [Frozen] Mock<ISlopesRepository> slopesRepositoryMock,
-            [Frozen] Mock<ILiftsSlopesRepository> liftsSlopesRepositoryMock,
+            [Frozen] Mock<ISlopesRepository> slopesRepositoryStub,
+            [Frozen] Mock<ILiftsSlopesRepository> liftsSlopesRepositoryStub,
             SlopesService sut)
         {
             // arrange
-            slopesRepositoryMock.Setup(m => m.GetSlopeByNameAsync(slope.SlopeName)).ReturnsAsync(slope);
-            liftsSlopesRepositoryMock.Setup(m => m.GetLiftsSlopesAsync(It.IsAny<uint>(), It.IsAny<uint>())).ReturnsAsync(new List<LiftSlope> { });
+            slopesRepositoryStub.Setup(m => m.GetSlopeByNameAsync(slope.SlopeName)).ReturnsAsync(slope);
+            liftsSlopesRepositoryStub.Setup(m => m.GetLiftsSlopesAsync(It.IsAny<uint>(), It.IsAny<uint>())).ReturnsAsync(new List<LiftSlope> { });
 
             // act
             await sut.AdminDeleteSlopeAsync(userID, slope.SlopeName);
 
             //assert
             checkPermissionServiceMock.Verify(m => m.CheckPermissionsAsync(userID, It.IsAny<string>()), Times.Once);
-            //slopesRepositoryMock.Verify(m => m.GetSlopeByNameAsync(slope.SlopeName), Times.Once); не нужны детали реализации
-            //liftsSlopesRepositoryMock.Verify(m => m.GetLiftsSlopesAsync(It.IsAny<uint>(), It.IsAny<uint>()), Times.Once);
-            //liftsSlopesRepositoryMock.Verify(m => m.DeleteLiftSlopesByIDAsync(It.IsAny<uint>()), Times.Never);
-            slopesRepositoryMock.Verify(m => m.DeleteSlopeByIDAsync(slope.SlopeID), Times.Once);
+            //slopesRepositoryStub.Verify(m => m.GetSlopeByNameAsync(slope.SlopeName), Times.Once); не нужны детали реализации
+            //liftsSlopesRepositoryStub.Verify(m => m.GetLiftsSlopesAsync(It.IsAny<uint>(), It.IsAny<uint>()), Times.Once);
+            //liftsSlopesRepositoryStub.Verify(m => m.DeleteLiftSlopesByIDAsync(It.IsAny<uint>()), Times.Never);
+            slopesRepositoryStub.Verify(m => m.DeleteSlopeByIDAsync(slope.SlopeID), Times.Once);
         }
 
         [AllureXunitTheory]
@@ -122,12 +123,12 @@ namespace BL.Tests
             uint userID,
             Slope slope,
             [Frozen] Mock<ICheckPermissionService> checkPermissionServiceMock,
-            [Frozen] Mock<ISlopesRepository> slopesRepositoryMock,
+            [Frozen] Mock<ISlopesRepository> slopesRepositoryStub,
             SlopesService sut)
         {
             // arrange
             {
-                slopesRepositoryMock.Setup(m => m.AddSlopeAutoIncrementAsync(slope.SlopeName, slope.IsOpen, slope.DifficultyLevel)).ReturnsAsync(slope.SlopeID);
+                slopesRepositoryStub.Setup(m => m.AddSlopeAutoIncrementAsync(slope.SlopeName, slope.IsOpen, slope.DifficultyLevel)).ReturnsAsync(slope.SlopeID);
             }
 
             // act
@@ -135,7 +136,7 @@ namespace BL.Tests
 
             //assert
             checkPermissionServiceMock.Verify(m => m.CheckPermissionsAsync(userID, It.IsAny<string>()), Times.Once);
-            slopesRepositoryMock.Verify(m => m.AddSlopeAutoIncrementAsync(slope.SlopeName, slope.IsOpen, slope.DifficultyLevel), Times.Once);
+            slopesRepositoryStub.Verify(m => m.AddSlopeAutoIncrementAsync(slope.SlopeName, slope.IsOpen, slope.DifficultyLevel), Times.Once);
             Assert.Equal(slope.SlopeID, slopeIDFromService);
         }
 
@@ -145,7 +146,7 @@ namespace BL.Tests
             uint userID,
             Slope slope,
             [Frozen] Mock<ICheckPermissionService> checkPermissionServiceMock,
-            [Frozen] Mock<ISlopesRepository> slopesRepositoryMock,
+            [Frozen] Mock<ISlopesRepository> slopesRepositoryStub,
             SlopesService sut)
         {
             // arrange
@@ -155,7 +156,7 @@ namespace BL.Tests
 
             //assert
             checkPermissionServiceMock.Verify(m => m.CheckPermissionsAsync(userID, It.IsAny<string>()), Times.Once);
-            slopesRepositoryMock.Verify(m => m.AddSlopeAsync(slope.SlopeID, slope.SlopeName, slope.IsOpen, slope.DifficultyLevel), Times.Once);
+            slopesRepositoryStub.Verify(m => m.AddSlopeAsync(slope.SlopeID, slope.SlopeName, slope.IsOpen, slope.DifficultyLevel), Times.Once);
         }
 
         // если убрать frozen, то при verify проблемы
@@ -168,22 +169,22 @@ namespace BL.Tests
         //        uint userID = 0;
         //        Slope slope = new(slopeID: 0, slopeName: "A0", isOpen: true, difficultyLevel: 1);
         //        var checkPermissionServiceMock = new Mock<ICheckPermissionService>();
-        //        var slopesRepositoryMock = new Mock<ISlopesRepository>();
-        //        var liftsSlopesRepositoryMock = new Mock<ILiftsSlopesRepository>();
+        //        var slopesRepositoryStub = new Mock<ISlopesRepository>();
+        //        var liftsSlopesRepositoryStub = new Mock<ILiftsSlopesRepository>();
         //        {
-        //            slopesRepositoryMock.Setup(m => m.GetSlopeByNameAsync(slope.SlopeName)).ReturnsAsync(slope);
-        //            liftsSlopesRepositoryMock.Setup(m => m.GetLiftsBySlopeIdAsync(slope.SlopeID)).ReturnsAsync(new List<Lift> { });
+        //            slopesRepositoryStub.Setup(m => m.GetSlopeByNameAsync(slope.SlopeName)).ReturnsAsync(slope);
+        //            liftsSlopesRepositoryStub.Setup(m => m.GetLiftsBySlopeIdAsync(slope.SlopeID)).ReturnsAsync(new List<Lift> { });
         //        }
 
-        //        var sut = new SlopesService(checkPermissionServiceMock.Object, slopesRepositoryMock.Object, liftsSlopesRepositoryMock.Object);
+        //        var sut = new SlopesService(checkPermissionServiceMock.Object, slopesRepositoryStub.Object, liftsSlopesRepositoryStub.Object);
 
         //        // act
         //        Slope slopeFromService = await sut.GetSlopeInfoAsync(userID, slope.SlopeName);
 
         //        //assert
         //        checkPermissionServiceMock.Verify(m => m.CheckPermissionsAsync(userID, It.IsAny<string>()), Times.Once);
-        //        slopesRepositoryMock.Verify(m => m.GetSlopeByNameAsync(slope.SlopeName), Times.Once);
-        //        liftsSlopesRepositoryMock.Verify(m => m.GetLiftsBySlopeIdAsync(slope.SlopeID), Times.Once);
+        //        slopesRepositoryStub.Verify(m => m.GetSlopeByNameAsync(slope.SlopeName), Times.Once);
+        //        liftsSlopesRepositoryStub.Verify(m => m.GetLiftsBySlopeIdAsync(slope.SlopeID), Times.Once);
         //        Assert.Equal(slope, slopeFromService);
         //    }
     }

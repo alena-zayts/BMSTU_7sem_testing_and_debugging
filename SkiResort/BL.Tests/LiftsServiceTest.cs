@@ -8,7 +8,8 @@ using AutoFixture.Xunit2;
 using Allure.Xunit.Attributes;
 
 // лондонский вариант -- изоляция кода от зависимостей
-// используется mock для: ICheckPermissionsService, ILiftsRepository, ILiftsSlopesRepository
+// используется mock для: ICheckPermissionsService, (вызовы и взаимодействия, которые исполняются SUT к зависимым объектам)
+// используется stub для: ILiftsRepository, ILiftsSlopesRepository (вызовы и взаимодействия,  которые исполняются SUT к зависимым объектам, чтобы запросить и получить  данные)
 // используется fixture: AutoMoqData (есть вариант и без него)
 
 namespace BL.Tests
@@ -22,21 +23,21 @@ namespace BL.Tests
             uint userID,
             Lift lift,
             [Frozen] Mock<ICheckPermissionService> checkPermissionServiceMock,
-            [Frozen] Mock<ILiftsRepository> liftsRepositoryMock,
-            [Frozen] Mock<ILiftsSlopesRepository> liftsSlopesRepositoryMock,
+            [Frozen] Mock<ILiftsRepository> liftsRepositoryStub,
+            [Frozen] Mock<ILiftsSlopesRepository> liftsSlopesRepositoryStub,
             LiftsService sut)
         {
             // Arrange
-            liftsRepositoryMock.Setup(m => m.GetLiftByNameAsync(lift.LiftName)).ReturnsAsync(lift);
-            liftsSlopesRepositoryMock.Setup(m => m.GetSlopesByLiftIdAsync(lift.LiftID)).ReturnsAsync(lift.ConnectedSlopes);
+            liftsRepositoryStub.Setup(m => m.GetLiftByNameAsync(lift.LiftName)).ReturnsAsync(lift);
+            liftsSlopesRepositoryStub.Setup(m => m.GetSlopesByLiftIdAsync(lift.LiftID)).ReturnsAsync(lift.ConnectedSlopes);
 
             // act
             Lift liftFromService = await sut.GetLiftInfoAsync(userID, lift.LiftName);
 
             //assert
             checkPermissionServiceMock.Verify(m => m.CheckPermissionsAsync(userID, It.IsAny<string>()), Times.Once);
-            liftsRepositoryMock.Verify(m => m.GetLiftByNameAsync(lift.LiftName), Times.Once);
-            liftsSlopesRepositoryMock.Verify(m => m.GetSlopesByLiftIdAsync(lift.LiftID), Times.Once);
+            liftsRepositoryStub.Verify(m => m.GetLiftByNameAsync(lift.LiftName), Times.Once);
+            liftsSlopesRepositoryStub.Verify(m => m.GetSlopesByLiftIdAsync(lift.LiftID), Times.Once);
             Assert.Equal(lift, liftFromService);
         }
 
@@ -46,12 +47,12 @@ namespace BL.Tests
             uint userID,
             [Frozen] List<Lift> initialLifts,
             [Frozen] Mock<ICheckPermissionService> checkPermissionServiceMock,
-            [Frozen] Mock<ILiftsRepository> liftsRepositoryMock,
-            [Frozen] Mock<ILiftsSlopesRepository> liftsSlopesRepositoryMock,
+            [Frozen] Mock<ILiftsRepository> liftsRepositoryStub,
+            [Frozen] Mock<ILiftsSlopesRepository> liftsSlopesRepositoryStub,
             LiftsService sut)
         {
             // arrange
-            liftsRepositoryMock.Setup(m => m.GetLiftsAsync(It.IsAny<uint>(), It.IsAny<uint>())).ReturnsAsync(initialLifts);
+            liftsRepositoryStub.Setup(m => m.GetLiftsAsync(It.IsAny<uint>(), It.IsAny<uint>())).ReturnsAsync(initialLifts);
             List<Lift> lifts = new List<Lift> { };
             foreach (Lift lift in initialLifts)
             {
@@ -63,8 +64,8 @@ namespace BL.Tests
 
             //assert
             checkPermissionServiceMock.Verify(m => m.CheckPermissionsAsync(userID, It.IsAny<string>()), Times.Once);
-            liftsRepositoryMock.Verify(m => m.GetLiftsAsync(It.IsAny<uint>(), It.IsAny<uint>()), Times.Once);
-            liftsSlopesRepositoryMock.Verify(m => m.GetSlopesByLiftIdAsync(It.IsAny<uint>()), Times.Exactly(lifts.Count));
+            liftsRepositoryStub.Verify(m => m.GetLiftsAsync(It.IsAny<uint>(), It.IsAny<uint>()), Times.Once);
+            liftsSlopesRepositoryStub.Verify(m => m.GetSlopesByLiftIdAsync(It.IsAny<uint>()), Times.Exactly(lifts.Count));
             Assert.Equal(lifts.Count, liftsFromService.Count);
         }
 
@@ -76,18 +77,18 @@ namespace BL.Tests
             uint userID,
             Lift lift,
             [Frozen] Mock<ICheckPermissionService> checkPermissionServiceMock,
-            [Frozen] Mock<ILiftsRepository> liftsRepositoryMock,
+            [Frozen] Mock<ILiftsRepository> liftsRepositoryStub,
             LiftsService sut)
         {
             // arrange
-            liftsRepositoryMock.Setup(m => m.GetLiftByNameAsync(lift.LiftName)).ReturnsAsync(lift);
+            liftsRepositoryStub.Setup(m => m.GetLiftByNameAsync(lift.LiftName)).ReturnsAsync(lift);
 
             // act
             await sut.UpdateLiftInfoAsync(userID, lift.LiftName, lift.IsOpen, lift.SeatsAmount, lift.LiftingTime);
 
             //assert
             checkPermissionServiceMock.Verify(m => m.CheckPermissionsAsync(userID, It.IsAny<string>()), Times.Once);
-            liftsRepositoryMock.Verify(m => m.UpdateLiftByIDAsync(lift.LiftID, lift.LiftName, lift.IsOpen, lift.SeatsAmount, lift.LiftingTime), Times.Once);
+            liftsRepositoryStub.Verify(m => m.UpdateLiftByIDAsync(lift.LiftID, lift.LiftName, lift.IsOpen, lift.SeatsAmount, lift.LiftingTime), Times.Once);
         }
 
         [AllureXunitTheory]
@@ -96,20 +97,20 @@ namespace BL.Tests
             uint userID,
             Lift lift,
             [Frozen] Mock<ICheckPermissionService> checkPermissionServiceMock,
-            [Frozen] Mock<ILiftsRepository> liftsRepositoryMock,
-            [Frozen] Mock<ILiftsSlopesRepository> liftsSlopesRepositoryMock,
+            [Frozen] Mock<ILiftsRepository> liftsRepositoryStub,
+            [Frozen] Mock<ILiftsSlopesRepository> liftsSlopesRepositoryStub,
             LiftsService sut)
         {
             // arrange
-            liftsRepositoryMock.Setup(m => m.GetLiftByNameAsync(lift.LiftName)).ReturnsAsync(lift);
-            liftsSlopesRepositoryMock.Setup(m => m.GetLiftsSlopesAsync(It.IsAny<uint>(), It.IsAny<uint>())).ReturnsAsync(new List<LiftSlope> { });
+            liftsRepositoryStub.Setup(m => m.GetLiftByNameAsync(lift.LiftName)).ReturnsAsync(lift);
+            liftsSlopesRepositoryStub.Setup(m => m.GetLiftsSlopesAsync(It.IsAny<uint>(), It.IsAny<uint>())).ReturnsAsync(new List<LiftSlope> { });
 
             // act
             await sut.AdminDeleteLiftAsync(userID, lift.LiftName);
 
             //assert
             checkPermissionServiceMock.Verify(m => m.CheckPermissionsAsync(userID, It.IsAny<string>()), Times.Once);
-            liftsRepositoryMock.Verify(m => m.DeleteLiftByIDAsync(lift.LiftID), Times.Once);
+            liftsRepositoryStub.Verify(m => m.DeleteLiftByIDAsync(lift.LiftID), Times.Once);
         }
 
         [AllureXunitTheory] 
@@ -118,12 +119,12 @@ namespace BL.Tests
             uint userID,
             Lift lift,
             [Frozen] Mock<ICheckPermissionService> checkPermissionServiceMock,
-            [Frozen] Mock<ILiftsRepository> liftsRepositoryMock,
+            [Frozen] Mock<ILiftsRepository> liftsRepositoryStub,
             LiftsService sut)
         {
             // arrange
             {
-                liftsRepositoryMock.Setup(m => m.AddLiftAutoIncrementAsync(lift.LiftName, lift.IsOpen, lift.SeatsAmount, lift.LiftingTime)).ReturnsAsync(lift.LiftID);
+                liftsRepositoryStub.Setup(m => m.AddLiftAutoIncrementAsync(lift.LiftName, lift.IsOpen, lift.SeatsAmount, lift.LiftingTime)).ReturnsAsync(lift.LiftID);
             }
 
             // act
@@ -131,7 +132,7 @@ namespace BL.Tests
 
             //assert
             checkPermissionServiceMock.Verify(m => m.CheckPermissionsAsync(userID, It.IsAny<string>()), Times.Once);
-            liftsRepositoryMock.Verify(m => m.AddLiftAutoIncrementAsync(lift.LiftName, lift.IsOpen, lift.SeatsAmount, lift.LiftingTime), Times.Once);
+            liftsRepositoryStub.Verify(m => m.AddLiftAutoIncrementAsync(lift.LiftName, lift.IsOpen, lift.SeatsAmount, lift.LiftingTime), Times.Once);
             Assert.Equal(lift.LiftID, liftIDFromService);
         }
     }

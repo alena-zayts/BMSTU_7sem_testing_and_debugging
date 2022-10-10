@@ -1,128 +1,139 @@
-<assemblies timestamp="10/10/2022 14:18:30">
-  <assembly name="C:\Users\alena\Desktop\7_sem\testing_and_debugging\SkiResort\BL.Tests\bin\Debug\net6.0\BL.Tests.dll" run-date="2022-10-10" run-time="14:18:30" total="39" passed="39" failed="0" skipped="0" time="1.715" errors="0">
+<assemblies timestamp="10/10/2022 16:09:18">
+  <assembly name="C:\Users\alena\Desktop\7_sem\testing_and_debugging\SkiResort\BL.Tests\bin\Debug\net6.0\BL.Tests.dll" run-date="2022-10-10" run-time="16:09:18" total="42" passed="42" failed="0" skipped="0" time="1.559" errors="0">
     <errors />
-    <collection total="17" passed="17" failed="0" skipped="0" name="Test collection for BL.Tests.CheckPermissionsServiceTests" time="0.082">
-      <test name="BL.Tests.CheckPermissionsServiceTests.UnauthorizedHasNoAccessToAdminSkiPatrolFunctions(functionName: &quot;MarkMessageReadByUserAsync&quot;)" type="BL.Tests.CheckPermissionsServiceTests" method="UnauthorizedHasNoAccessToAdminSkiPatrolFunctions" time="0.0325018" result="Pass">
+    <collection total="17" passed="17" failed="0" skipped="0" name="Test collection for BL.Tests.CheckPermissionsServiceTests" time="0.055">
+      <test name="BL.Tests.CheckPermissionsServiceTests.UnauthorizedHasNoAccessToAdminSkiPatrolFunctions(functionName: &quot;MarkMessageReadByUserAsync&quot;)" type="BL.Tests.CheckPermissionsServiceTests" method="UnauthorizedHasNoAccessToAdminSkiPatrolFunctions" time="0.0252430" result="Pass">
         <traits />
       </test>
-      <test name="BL.Tests.CheckPermissionsServiceTests.UnauthorizedHasNoAccessToAdminSkiPatrolFunctions(functionName: &quot;GetLiftsSlopesInfoAsync&quot;)" type="BL.Tests.CheckPermissionsServiceTests" method="UnauthorizedHasNoAccessToAdminSkiPatrolFunctions" time="0.0013751" result="Pass">
+      <test name="BL.Tests.CheckPermissionsServiceTests.UnauthorizedHasNoAccessToAdminSkiPatrolFunctions(functionName: &quot;GetLiftsSlopesInfoAsync&quot;)" type="BL.Tests.CheckPermissionsServiceTests" method="UnauthorizedHasNoAccessToAdminSkiPatrolFunctions" time="0.0013247" result="Pass">
         <traits />
       </test>
-      <test name="BL.Tests.CheckPermissionsServiceTests.UnauthorizedHasNoAccessToAdminSkiPatrolFunctions(functionName: &quot;GetMessagesAsync&quot;)" type="BL.Tests.CheckPermissionsServiceTests" method="UnauthorizedHasNoAccessToAdminSkiPatrolFunctions" time="0.0014101" result="Pass">
+      <test name="BL.Tests.CheckPermissionsServiceTests.UnauthorizedHasNoAccessToAdminSkiPatrolFunctions(functionName: &quot;GetMessagesAsync&quot;)" type="BL.Tests.CheckPermissionsServiceTests" method="UnauthorizedHasNoAccessToAdminSkiPatrolFunctions" time="0.0011402" result="Pass">
         <traits />
       </test>
-      <test name="BL.Tests.CheckPermissionsServiceTests.UnauthorizedHasNoAccessToAuthorizedFunctions(functionName: &quot;SendMessageAsync&quot;)" type="BL.Tests.CheckPermissionsServiceTests" method="UnauthorizedHasNoAccessToAuthorizedFunctions" time="0.0113858" result="Pass">
+      <test name="BL.Tests.CheckPermissionsServiceTests.UnauthorizedHasNoAccessToAuthorizedFunctions(functionName: &quot;SendMessageAsync&quot;)" type="BL.Tests.CheckPermissionsServiceTests" method="UnauthorizedHasNoAccessToAuthorizedFunctions" time="0.0029691" result="Pass">
         <traits />
       </test>
-      <test name="BL.Tests.CheckPermissionsServiceTests.UnauthorizedHasNoAccessToAuthorizedFunctions(functionName: &quot;LogOutAsync&quot;)" type="BL.Tests.CheckPermissionsServiceTests" method="UnauthorizedHasNoAccessToAuthorizedFunctions" time="0.0014514" result="Pass">
+      <test name="BL.Tests.CheckPermissionsServiceTests.UnauthorizedHasNoAccessToAuthorizedFunctions(functionName: &quot;LogOutAsync&quot;)" type="BL.Tests.CheckPermissionsServiceTests" method="UnauthorizedHasNoAccessToAuthorizedFunctions" time="0.0012216" result="Pass">
         <traits />
       </test>
-      <test name="BL.Tests.CheckPermissionsServiceTests.SkiPatrolHasAccessToAdminSkiPatrolFunctions(functionName: &quot;GetLiftsSlopesInfoAsync&quot;)" type="BL.Tests.CheckPermissionsServiceTests" method="SkiPatrolHasAccessToAdminSkiPatrolFunctions" time="0.0055465" result="Pass">
+      <test name="BL.Tests.CheckPermissionsServiceTests.SkiPatrolHasAccessToAdminSkiPatrolFunctions(functionName: &quot;GetLiftsSlopesInfoAsync&quot;)" type="BL.Tests.CheckPermissionsServiceTests" method="SkiPatrolHasAccessToAdminSkiPatrolFunctions" time="0.0044789" result="Pass">
         <traits />
       </test>
-      <test name="BL.Tests.CheckPermissionsServiceTests.SkiPatrolHasAccessToAdminSkiPatrolFunctions(functionName: &quot;MarkMessageReadByUserAsync&quot;)" type="BL.Tests.CheckPermissionsServiceTests" method="SkiPatrolHasAccessToAdminSkiPatrolFunctions" time="0.0011568" result="Pass">
+      <test name="BL.Tests.CheckPermissionsServiceTests.SkiPatrolHasAccessToAdminSkiPatrolFunctions(functionName: &quot;MarkMessageReadByUserAsync&quot;)" type="BL.Tests.CheckPermissionsServiceTests" method="SkiPatrolHasAccessToAdminSkiPatrolFunctions" time="0.0010880" result="Pass">
         <traits />
       </test>
-      <test name="BL.Tests.CheckPermissionsServiceTests.SkiPatrolHasAccessToAdminSkiPatrolFunctions(functionName: &quot;GetMessagesAsync&quot;)" type="BL.Tests.CheckPermissionsServiceTests" method="SkiPatrolHasAccessToAdminSkiPatrolFunctions" time="0.0018681" result="Pass">
+      <test name="BL.Tests.CheckPermissionsServiceTests.SkiPatrolHasAccessToAdminSkiPatrolFunctions(functionName: &quot;GetMessagesAsync&quot;)" type="BL.Tests.CheckPermissionsServiceTests" method="SkiPatrolHasAccessToAdminSkiPatrolFunctions" time="0.0010189" result="Pass">
         <traits />
       </test>
-      <test name="BL.Tests.CheckPermissionsServiceTests.AuthorizedHasNoAccessToAdminFunctions" type="BL.Tests.CheckPermissionsServiceTests" method="AuthorizedHasNoAccessToAdminFunctions" time="0.0029983" result="Pass">
+      <test name="BL.Tests.CheckPermissionsServiceTests.AuthorizedHasNoAccessToAdminFunctions" type="BL.Tests.CheckPermissionsServiceTests" method="AuthorizedHasNoAccessToAdminFunctions" time="0.0029308" result="Pass">
         <traits />
       </test>
-      <test name="BL.Tests.CheckPermissionsServiceTests.AuthorizedHasNoAccessToAdminSkiPatrolFunctions(functionName: &quot;GetMessagesAsync&quot;)" type="BL.Tests.CheckPermissionsServiceTests" method="AuthorizedHasNoAccessToAdminSkiPatrolFunctions" time="0.0079608" result="Pass">
+      <test name="BL.Tests.CheckPermissionsServiceTests.AuthorizedHasNoAccessToAdminSkiPatrolFunctions(functionName: &quot;GetMessagesAsync&quot;)" type="BL.Tests.CheckPermissionsServiceTests" method="AuthorizedHasNoAccessToAdminSkiPatrolFunctions" time="0.0026819" result="Pass">
         <traits />
       </test>
-      <test name="BL.Tests.CheckPermissionsServiceTests.AuthorizedHasNoAccessToAdminSkiPatrolFunctions(functionName: &quot;MarkMessageReadByUserAsync&quot;)" type="BL.Tests.CheckPermissionsServiceTests" method="AuthorizedHasNoAccessToAdminSkiPatrolFunctions" time="0.0013117" result="Pass">
+      <test name="BL.Tests.CheckPermissionsServiceTests.AuthorizedHasNoAccessToAdminSkiPatrolFunctions(functionName: &quot;MarkMessageReadByUserAsync&quot;)" type="BL.Tests.CheckPermissionsServiceTests" method="AuthorizedHasNoAccessToAdminSkiPatrolFunctions" time="0.0012514" result="Pass">
         <traits />
       </test>
-      <test name="BL.Tests.CheckPermissionsServiceTests.AuthorizedHasNoAccessToAdminSkiPatrolFunctions(functionName: &quot;GetLiftsSlopesInfoAsync&quot;)" type="BL.Tests.CheckPermissionsServiceTests" method="AuthorizedHasNoAccessToAdminSkiPatrolFunctions" time="0.0016518" result="Pass">
+      <test name="BL.Tests.CheckPermissionsServiceTests.AuthorizedHasNoAccessToAdminSkiPatrolFunctions(functionName: &quot;GetLiftsSlopesInfoAsync&quot;)" type="BL.Tests.CheckPermissionsServiceTests" method="AuthorizedHasNoAccessToAdminSkiPatrolFunctions" time="0.0009239" result="Pass">
         <traits />
       </test>
-      <test name="BL.Tests.CheckPermissionsServiceTests.AuthorizedHasAccessToAuthorizedFunctions(functionName: &quot;SendMessageAsync&quot;)" type="BL.Tests.CheckPermissionsServiceTests" method="AuthorizedHasAccessToAuthorizedFunctions" time="0.0021221" result="Pass">
+      <test name="BL.Tests.CheckPermissionsServiceTests.AuthorizedHasAccessToAuthorizedFunctions(functionName: &quot;SendMessageAsync&quot;)" type="BL.Tests.CheckPermissionsServiceTests" method="AuthorizedHasAccessToAuthorizedFunctions" time="0.0019522" result="Pass">
         <traits />
       </test>
-      <test name="BL.Tests.CheckPermissionsServiceTests.AuthorizedHasAccessToAuthorizedFunctions(functionName: &quot;LogOutAsync&quot;)" type="BL.Tests.CheckPermissionsServiceTests" method="AuthorizedHasAccessToAuthorizedFunctions" time="0.0010849" result="Pass">
+      <test name="BL.Tests.CheckPermissionsServiceTests.AuthorizedHasAccessToAuthorizedFunctions(functionName: &quot;LogOutAsync&quot;)" type="BL.Tests.CheckPermissionsServiceTests" method="AuthorizedHasAccessToAuthorizedFunctions" time="0.0008522" result="Pass">
         <traits />
       </test>
-      <test name="BL.Tests.CheckPermissionsServiceTests.UnauthorizedHasNoAccessToAdminFunctions" type="BL.Tests.CheckPermissionsServiceTests" method="UnauthorizedHasNoAccessToAdminFunctions" time="0.0042282" result="Pass">
+      <test name="BL.Tests.CheckPermissionsServiceTests.UnauthorizedHasNoAccessToAdminFunctions" type="BL.Tests.CheckPermissionsServiceTests" method="UnauthorizedHasNoAccessToAdminFunctions" time="0.0020349" result="Pass">
         <traits />
       </test>
-      <test name="BL.Tests.CheckPermissionsServiceTests.SkiPatrolHasNoAccessToAdminFunctions" type="BL.Tests.CheckPermissionsServiceTests" method="SkiPatrolHasNoAccessToAdminFunctions" time="0.0024697" result="Pass">
+      <test name="BL.Tests.CheckPermissionsServiceTests.SkiPatrolHasNoAccessToAdminFunctions" type="BL.Tests.CheckPermissionsServiceTests" method="SkiPatrolHasNoAccessToAdminFunctions" time="0.0021424" result="Pass">
         <traits />
       </test>
-      <test name="BL.Tests.CheckPermissionsServiceTests.AdminHasAccessToAllFunctions" type="BL.Tests.CheckPermissionsServiceTests" method="AdminHasAccessToAllFunctions" time="0.0018018" result="Pass">
-        <traits />
-      </test>
-    </collection>
-    <collection total="5" passed="5" failed="0" skipped="0" name="Test collection for BL.Tests.LiftsServiceTest" time="0.093">
-      <test name="BL.Tests.LiftsServiceTest.TestGetLiftsInfoAsync(userID: 58, initialLifts: [Lift { LiftID = 101, LiftName = liftName3fafada1-5b3d-4a4b-aeed-1b9a57d953d9, IsOpen = True, SeatsAmount = 137, LiftingTime = 15, QueueTime = 235, ConnectedSlopes =  }, Lift { LiftID = 120, LiftName = liftName064ab034-4293-4799-acd9-556d72943287, IsOpen = False, SeatsAmount = 114, LiftingTime = 188, QueueTime = 3, ConnectedSlopes =  }, Lift { LiftID = 22, LiftName = ..." type="BL.Tests.LiftsServiceTest" method="TestGetLiftsInfoAsync" time="0.0573005" result="Pass">
-        <traits />
-      </test>
-      <test name="BL.Tests.LiftsServiceTest.TestAdminAddAutoIncrementLiftAsync(userID: 40, lift: Lift { LiftID = 211, LiftName = liftName23b92e25-4f1c-4c62-aaff-058c5e4f9c1d, IsOpen = True, SeatsAmount = 218, LiftingTime = 133, QueueTime = 14, ConnectedSlopes =  }, checkPermissionServiceMock: Mock&lt;ICheckPermissionService:5&gt;, liftsRepositoryMock: Mock&lt;ILiftsRepository:5&gt;, sut: LiftsService { })" type="BL.Tests.LiftsServiceTest" method="TestAdminAddAutoIncrementLiftAsync" time="0.0075461" result="Pass">
-        <traits />
-      </test>
-      <test name="BL.Tests.LiftsServiceTest.TestGetLiftInfoAsync(userID: 56, lift: Lift { LiftID = 39, LiftName = liftName4cd6b2ec-7939-4e80-9b8f-87f0a3cbfaec, IsOpen = True, SeatsAmount = 15, LiftingTime = 102, QueueTime = 106, ConnectedSlopes =  }, checkPermissionServiceMock: Mock&lt;ICheckPermissionService:1&gt;, liftsRepositoryMock: Mock&lt;ILiftsRepository:1&gt;, liftsSlopesRepositoryMock: Mock&lt;ILiftsSlopesRepository:1&gt;, sut: LiftsService { })" type="BL.Tests.LiftsServiceTest" method="TestGetLiftInfoAsync" time="0.0076775" result="Pass">
-        <traits />
-      </test>
-      <test name="BL.Tests.LiftsServiceTest.TestAdminDeleteLiftAsync(userID: 134, lift: Lift { LiftID = 205, LiftName = liftNamefa34bd24-c279-482f-b560-b070d4c0d4ef, IsOpen = True, SeatsAmount = 20, LiftingTime = 68, QueueTime = 136, ConnectedSlopes =  }, checkPermissionServiceMock: Mock&lt;ICheckPermissionService:4&gt;, liftsRepositoryMock: Mock&lt;ILiftsRepository:4&gt;, liftsSlopesRepositoryMock: Mock&lt;ILiftsSlopesRepository:4&gt;, sut: LiftsService { })" type="BL.Tests.LiftsServiceTest" method="TestAdminDeleteLiftAsync" time="0.0135526" result="Pass">
-        <traits />
-      </test>
-      <test name="BL.Tests.LiftsServiceTest.TestUpdateLiftInfoAsync(userID: 8, lift: Lift { LiftID = 225, LiftName = liftName7c6f2883-6f3a-4184-af2f-b8d8ae6295ef, IsOpen = True, SeatsAmount = 214, LiftingTime = 187, QueueTime = 126, ConnectedSlopes =  }, checkPermissionServiceMock: Mock&lt;ICheckPermissionService:3&gt;, liftsRepositoryMock: Mock&lt;ILiftsRepository:3&gt;, sut: LiftsService { })" type="BL.Tests.LiftsServiceTest" method="TestUpdateLiftInfoAsync" time="0.0067326" result="Pass">
+      <test name="BL.Tests.CheckPermissionsServiceTests.AdminHasAccessToAllFunctions" type="BL.Tests.CheckPermissionsServiceTests" method="AdminHasAccessToAllFunctions" time="0.0015573" result="Pass">
         <traits />
       </test>
     </collection>
-    <collection total="6" passed="6" failed="0" skipped="0" name="Test collection for BL.Tests.SlopesServiceTest" time="0.079">
-      <test name="BL.Tests.SlopesServiceTest.TestAdminAddAutoIncrementSlopeAsync(userID: 148, slope: Slope { SlopeID = 62, SlopeName = slopeName61134f69-66d0-4fee-a5b4-97f1a576a603, IsOpen = True, DifficultyLevel = 125, ConnectedLifts =  }, checkPermissionServiceMock: Mock&lt;ICheckPermissionService:10&gt;, slopesRepositoryMock: Mock&lt;ISlopesRepository:5&gt;, sut: SlopesService { })" type="BL.Tests.SlopesServiceTest" method="TestAdminAddAutoIncrementSlopeAsync" time="0.0344092" result="Pass">
+    <collection total="5" passed="5" failed="0" skipped="0" name="Test collection for BL.Tests.LiftsServiceTest" time="0.076">
+      <test name="BL.Tests.LiftsServiceTest.TestAdminDeleteLiftAsync(userID: 131, lift: Lift { LiftID = 222, LiftName = liftNameb093ec96-d070-4093-b80b-95f05bd7fa6c, IsOpen = True, SeatsAmount = 217, LiftingTime = 58, QueueTime = 98, ConnectedSlopes =  }, checkPermissionServiceMock: Mock&lt;ICheckPermissionService:4&gt;, liftsRepositoryStub: Mock&lt;ILiftsRepository:4&gt;, liftsSlopesRepositoryStub: Mock&lt;ILiftsSlopesRepository:4&gt;, sut: LiftsService { })" type="BL.Tests.LiftsServiceTest" method="TestAdminDeleteLiftAsync" time="0.0441336" result="Pass">
         <traits />
       </test>
-      <test name="BL.Tests.SlopesServiceTest.TestAdminDeleteSlopeAsync(userID: 195, slope: Slope { SlopeID = 95, SlopeName = slopeNameff0fa970-e2cc-410c-a1a4-fe06006d814d, IsOpen = True, DifficultyLevel = 218, ConnectedLifts =  }, checkPermissionServiceMock: Mock&lt;ICheckPermissionService:9&gt;, slopesRepositoryMock: Mock&lt;ISlopesRepository:4&gt;, liftsSlopesRepositoryMock: Mock&lt;ILiftsSlopesRepository:9&gt;, sut: SlopesService { })" type="BL.Tests.SlopesServiceTest" method="TestAdminDeleteSlopeAsync" time="0.0074124" result="Pass">
+      <test name="BL.Tests.LiftsServiceTest.TestGetLiftInfoAsync(userID: 171, lift: Lift { LiftID = 117, LiftName = liftNameece2c934-0fe0-46fb-8809-5083501fc045, IsOpen = True, SeatsAmount = 168, LiftingTime = 5, QueueTime = 204, ConnectedSlopes =  }, checkPermissionServiceMock: Mock&lt;ICheckPermissionService:1&gt;, liftsRepositoryStub: Mock&lt;ILiftsRepository:1&gt;, liftsSlopesRepositoryStub: Mock&lt;ILiftsSlopesRepository:1&gt;, sut: LiftsService { })" type="BL.Tests.LiftsServiceTest" method="TestGetLiftInfoAsync" time="0.0067061" result="Pass">
         <traits />
       </test>
-      <test name="BL.Tests.SlopesServiceTest.TestAdminAddSlopeAsync(userID: 182, slope: Slope { SlopeID = 218, SlopeName = slopeName9c91ec2f-27f9-4734-9eeb-fc3718c36674, IsOpen = True, DifficultyLevel = 155, ConnectedLifts =  }, checkPermissionServiceMock: Mock&lt;ICheckPermissionService:11&gt;, slopesRepositoryMock: Mock&lt;ISlopesRepository:6&gt;, sut: SlopesService { })" type="BL.Tests.SlopesServiceTest" method="TestAdminAddSlopeAsync" time="0.0051748" result="Pass">
+      <test name="BL.Tests.LiftsServiceTest.TestUpdateLiftInfoAsync(userID: 144, lift: Lift { LiftID = 127, LiftName = liftName24817d2f-1807-4a47-a66d-97e0650c2d97, IsOpen = True, SeatsAmount = 116, LiftingTime = 200, QueueTime = 196, ConnectedSlopes =  }, checkPermissionServiceMock: Mock&lt;ICheckPermissionService:3&gt;, liftsRepositoryStub: Mock&lt;ILiftsRepository:3&gt;, sut: LiftsService { })" type="BL.Tests.LiftsServiceTest" method="TestUpdateLiftInfoAsync" time="0.0061619" result="Pass">
         <traits />
       </test>
-      <test name="BL.Tests.SlopesServiceTest.TestUpdateSlopeInfoAsync(userID: 90, slope: Slope { SlopeID = 230, SlopeName = slopeName62884fce-0e0a-4ed2-8692-de14201019eb, IsOpen = True, DifficultyLevel = 47, ConnectedLifts =  }, checkPermissionServiceMock: Mock&lt;ICheckPermissionService:8&gt;, slopesRepositoryMock: Mock&lt;ISlopesRepository:3&gt;, sut: SlopesService { })" type="BL.Tests.SlopesServiceTest" method="TestUpdateSlopeInfoAsync" time="0.0061564" result="Pass">
+      <test name="BL.Tests.LiftsServiceTest.TestAdminAddAutoIncrementLiftAsync(userID: 77, lift: Lift { LiftID = 148, LiftName = liftName3925ffe1-83b1-423d-8603-183019254921, IsOpen = True, SeatsAmount = 11, LiftingTime = 1, QueueTime = 12, ConnectedSlopes =  }, checkPermissionServiceMock: Mock&lt;ICheckPermissionService:5&gt;, liftsRepositoryStub: Mock&lt;ILiftsRepository:5&gt;, sut: LiftsService { })" type="BL.Tests.LiftsServiceTest" method="TestAdminAddAutoIncrementLiftAsync" time="0.0101899" result="Pass">
         <traits />
       </test>
-      <test name="BL.Tests.SlopesServiceTest.TestGetSlopeInfoAsync(userID: 184, slope: Slope { SlopeID = 180, SlopeName = slopeName0e3f7e94-d424-4c4d-b6aa-d6832db00431, IsOpen = True, DifficultyLevel = 85, ConnectedLifts =  }, checkPermissionServiceMock: Mock&lt;ICheckPermissionService:6&gt;, slopesRepositoryMock: Mock&lt;ISlopesRepository:1&gt;, liftsSlopesRepositoryMock: Mock&lt;ILiftsSlopesRepository:6&gt;, sut: SlopesService { })" type="BL.Tests.SlopesServiceTest" method="TestGetSlopeInfoAsync" time="0.0087759" result="Pass">
-        <traits />
-      </test>
-      <test name="BL.Tests.SlopesServiceTest.TestGetSlopesInfoAsync(userID: 68, initialSlopes: [Slope { SlopeID = 217, SlopeName = slopeName6bca617b-6dce-4d8b-ad51-06b32588f462, IsOpen = True, DifficultyLevel = 244, ConnectedLifts =  }, Slope { SlopeID = 175, SlopeName = slopeNameb3c8896d-78fa-4cc1-aec1-99beff9fe4fe, IsOpen = False, DifficultyLevel = 203, ConnectedLifts =  }, Slope { SlopeID = 152, SlopeName = slopeNameff907f0f-4ca2-4079-9016-d20399d03a39, I..." type="BL.Tests.SlopesServiceTest" method="TestGetSlopesInfoAsync" time="0.0168736" result="Pass">
+      <test name="BL.Tests.LiftsServiceTest.TestGetLiftsInfoAsync(userID: 173, initialLifts: [Lift { LiftID = 43, LiftName = liftNamee143f998-9da6-4729-81ce-a28a72669241, IsOpen = True, SeatsAmount = 139, LiftingTime = 201, QueueTime = 172, ConnectedSlopes =  }, Lift { LiftID = 115, LiftName = liftName067b1556-6ba3-44ee-8c8b-9a38fe5c1e1c, IsOpen = False, SeatsAmount = 58, LiftingTime = 165, QueueTime = 154, ConnectedSlopes =  }, Lift { LiftID = 95, LiftName ..." type="BL.Tests.LiftsServiceTest" method="TestGetLiftsInfoAsync" time="0.0085989" result="Pass">
         <traits />
       </test>
     </collection>
-    <collection total="11" passed="11" failed="0" skipped="0" name="Test collection for BL.Tests.UsersServiceTests" time="0.097">
-      <test name="BL.Tests.UsersServiceTests.TestAdminGetUsers" type="BL.Tests.UsersServiceTests" method="TestAdminGetUsers" time="0.0386408" result="Pass">
+    <collection total="3" passed="3" failed="0" skipped="0" name="Test collection for BL.Tests.LiftsSlopesServiceTests" time="0.035">
+      <test name="BL.Tests.LiftsSlopesServiceTests.TestAdminAddAutoIncrementLiftSlopeAsync(lift: Lift { LiftID = 129, LiftName = liftName28d4e25f-7ec9-4dbe-b36e-ce027c331eb8, IsOpen = True, SeatsAmount = 255, LiftingTime = 65, QueueTime = 41, ConnectedSlopes =  }, slope: Slope { SlopeID = 133, SlopeName = slopeName6601b42c-142a-4906-b348-2c3c544f17f2, IsOpen = False, DifficultyLevel = 94, ConnectedLifts =  }, slopesRepositoryStub: Mock&lt;ISlopesRepository:3&gt;, ..." type="BL.Tests.LiftsSlopesServiceTests" method="TestAdminAddAutoIncrementLiftSlopeAsync" time="0.0257745" result="Pass">
         <traits />
       </test>
-      <test name="BL.Tests.UsersServiceTests.TestRegisterUserWithNoEmail" type="BL.Tests.UsersServiceTests" method="TestRegisterUserWithNoEmail" time="0.0026709" result="Pass">
+      <test name="BL.Tests.LiftsSlopesServiceTests.TestAdminDeleteLiftSlopeAsync(lift: Lift { LiftID = 35, LiftName = liftNamed949b53a-d4db-4c76-a186-55d78efef5ba, IsOpen = True, SeatsAmount = 144, LiftingTime = 221, QueueTime = 81, ConnectedSlopes =  }, slope: Slope { SlopeID = 225, SlopeName = slopeName2976a013-82bb-4647-a91c-f5bf3c414696, IsOpen = False, DifficultyLevel = 123, ConnectedLifts =  }, slopesRepositoryStub: Mock&lt;ISlopesRepository:2&gt;, liftsRepo..." type="BL.Tests.LiftsSlopesServiceTests" method="TestAdminDeleteLiftSlopeAsync" time="0.0052690" result="Pass">
         <traits />
       </test>
-      <test name="BL.Tests.UsersServiceTests.TestRegisterUserWithNoPassword" type="BL.Tests.UsersServiceTests" method="TestRegisterUserWithNoPassword" time="0.0015253" result="Pass">
+      <test name="BL.Tests.LiftsSlopesServiceTests.TestGetLiftsSlopesInfoAsync(liftsSlopes: [LiftSlope { RecordID = 163, LiftID = 93, SlopeID = 120 }, LiftSlope { RecordID = 216, LiftID = 14, SlopeID = 101 }, LiftSlope { RecordID = 230, LiftID = 89, SlopeID = 208 }], slopesRepositoryStub: Mock&lt;ISlopesRepository:1&gt;, liftsRepositoryStub: Mock&lt;ILiftsRepository:6&gt;, liftsSlopesRepositoryStub: Mock&lt;ILiftsSlopesRepository:6&gt;)" type="BL.Tests.LiftsSlopesServiceTests" method="TestGetLiftsSlopesInfoAsync" time="0.0038081" result="Pass">
         <traits />
       </test>
-      <test name="BL.Tests.UsersServiceTests.TestRegisterUserWithRepeatedEmail" type="BL.Tests.UsersServiceTests" method="TestRegisterUserWithRepeatedEmail" time="0.0036964" result="Pass">
+    </collection>
+    <collection total="6" passed="6" failed="0" skipped="0" name="Test collection for BL.Tests.SlopesServiceTest" time="0.063">
+      <test name="BL.Tests.SlopesServiceTest.TestAdminAddSlopeAsync(userID: 103, slope: Slope { SlopeID = 45, SlopeName = slopeName89929e33-f508-4140-82a1-283acde4cc40, IsOpen = True, DifficultyLevel = 124, ConnectedLifts =  }, checkPermissionServiceMock: Mock&lt;ICheckPermissionService:11&gt;, slopesRepositoryStub: Mock&lt;ISlopesRepository:9&gt;, sut: SlopesService { })" type="BL.Tests.SlopesServiceTest" method="TestAdminAddSlopeAsync" time="0.0253362" result="Pass">
         <traits />
       </test>
-      <test name="BL.Tests.UsersServiceTests.TestAdminUpdateUser" type="BL.Tests.UsersServiceTests" method="TestAdminUpdateUser" time="0.0086925" result="Pass">
+      <test name="BL.Tests.SlopesServiceTest.TestGetSlopesInfoAsync(userID: 212, initialSlopes: [Slope { SlopeID = 199, SlopeName = slopeName564e2df4-9fc3-42c0-9b3b-7d5844cedea7, IsOpen = True, DifficultyLevel = 234, ConnectedLifts =  }, Slope { SlopeID = 143, SlopeName = slopeNamed985b806-9d6c-4b44-92b5-d8ca9348dbf0, IsOpen = False, DifficultyLevel = 202, ConnectedLifts =  }, Slope { SlopeID = 21, SlopeName = slopeNamee7dbf5e7-13c0-42ab-8f29-b388ee68555d, I..." type="BL.Tests.SlopesServiceTest" method="TestGetSlopesInfoAsync" time="0.0149081" result="Pass">
         <traits />
       </test>
-      <test name="BL.Tests.UsersServiceTests.TestRegisterOk" type="BL.Tests.UsersServiceTests" method="TestRegisterOk" time="0.0141464" result="Pass">
+      <test name="BL.Tests.SlopesServiceTest.TestUpdateSlopeInfoAsync(userID: 60, slope: Slope { SlopeID = 55, SlopeName = slopeNamed60da889-e78c-432e-9094-97fb95e4f66b, IsOpen = True, DifficultyLevel = 188, ConnectedLifts =  }, checkPermissionServiceMock: Mock&lt;ICheckPermissionService:8&gt;, slopesRepositoryStub: Mock&lt;ISlopesRepository:6&gt;, sut: SlopesService { })" type="BL.Tests.SlopesServiceTest" method="TestUpdateSlopeInfoAsync" time="0.0063621" result="Pass">
         <traits />
       </test>
-      <test name="BL.Tests.UsersServiceTests.TestLogInOk" type="BL.Tests.UsersServiceTests" method="TestLogInOk" time="0.0030054" result="Pass">
+      <test name="BL.Tests.SlopesServiceTest.TestAdminDeleteSlopeAsync(userID: 144, slope: Slope { SlopeID = 172, SlopeName = slopeName6f0b6c99-24dd-414e-8fbf-c9e2ef2c0d8b, IsOpen = True, DifficultyLevel = 23, ConnectedLifts =  }, checkPermissionServiceMock: Mock&lt;ICheckPermissionService:9&gt;, slopesRepositoryStub: Mock&lt;ISlopesRepository:7&gt;, liftsSlopesRepositoryStub: Mock&lt;ILiftsSlopesRepository:12&gt;, sut: SlopesService { })" type="BL.Tests.SlopesServiceTest" method="TestAdminDeleteSlopeAsync" time="0.0047631" result="Pass">
         <traits />
       </test>
-      <test name="BL.Tests.UsersServiceTests.TestLogInWithWrongPassword" type="BL.Tests.UsersServiceTests" method="TestLogInWithWrongPassword" time="0.0069762" result="Pass">
+      <test name="BL.Tests.SlopesServiceTest.TestAdminAddAutoIncrementSlopeAsync(userID: 146, slope: Slope { SlopeID = 154, SlopeName = slopeNamedc3671ca-5b87-4bd4-bcf6-27cf8ec00dd4, IsOpen = True, DifficultyLevel = 230, ConnectedLifts =  }, checkPermissionServiceMock: Mock&lt;ICheckPermissionService:10&gt;, slopesRepositoryStub: Mock&lt;ISlopesRepository:8&gt;, sut: SlopesService { })" type="BL.Tests.SlopesServiceTest" method="TestAdminAddAutoIncrementSlopeAsync" time="0.0067917" result="Pass">
         <traits />
       </test>
-      <test name="BL.Tests.UsersServiceTests.TestAdminAddAutoIncrementUser" type="BL.Tests.UsersServiceTests" method="TestAdminAddAutoIncrementUser" time="0.0098391" result="Pass">
+      <test name="BL.Tests.SlopesServiceTest.TestGetSlopeInfoAsync(userID: 3, slope: Slope { SlopeID = 170, SlopeName = slopeName4ddbd9a4-8044-4cdb-ac60-dbf244b89a17, IsOpen = True, DifficultyLevel = 63, ConnectedLifts =  }, checkPermissionServiceMock: Mock&lt;ICheckPermissionService:6&gt;, slopesRepositoryStub: Mock&lt;ISlopesRepository:4&gt;, liftsSlopesRepositoryStub: Mock&lt;ILiftsSlopesRepository:9&gt;, sut: SlopesService { })" type="BL.Tests.SlopesServiceTest" method="TestGetSlopeInfoAsync" time="0.0053102" result="Pass">
         <traits />
       </test>
-      <test name="BL.Tests.UsersServiceTests.TestAdminGetUserByIDAsync" type="BL.Tests.UsersServiceTests" method="TestAdminGetUserByIDAsync" time="0.0039557" result="Pass">
+    </collection>
+    <collection total="11" passed="11" failed="0" skipped="0" name="Test collection for BL.Tests.UsersServiceTests" time="0.068">
+      <test name="BL.Tests.UsersServiceTests.TestAdminGetUsers" type="BL.Tests.UsersServiceTests" method="TestAdminGetUsers" time="0.0295349" result="Pass">
         <traits />
       </test>
-      <test name="BL.Tests.UsersServiceTests.TestAdminDeleteUser" type="BL.Tests.UsersServiceTests" method="TestAdminDeleteUser" time="0.0034770" result="Pass">
+      <test name="BL.Tests.UsersServiceTests.TestRegisterUserWithNoEmail" type="BL.Tests.UsersServiceTests" method="TestRegisterUserWithNoEmail" time="0.0026887" result="Pass">
+        <traits />
+      </test>
+      <test name="BL.Tests.UsersServiceTests.TestRegisterUserWithNoPassword" type="BL.Tests.UsersServiceTests" method="TestRegisterUserWithNoPassword" time="0.0013833" result="Pass">
+        <traits />
+      </test>
+      <test name="BL.Tests.UsersServiceTests.TestRegisterUserWithRepeatedEmail" type="BL.Tests.UsersServiceTests" method="TestRegisterUserWithRepeatedEmail" time="0.0030964" result="Pass">
+        <traits />
+      </test>
+      <test name="BL.Tests.UsersServiceTests.TestAdminUpdateUser" type="BL.Tests.UsersServiceTests" method="TestAdminUpdateUser" time="0.0059809" result="Pass">
+        <traits />
+      </test>
+      <test name="BL.Tests.UsersServiceTests.TestRegisterOk" type="BL.Tests.UsersServiceTests" method="TestRegisterOk" time="0.0077525" result="Pass">
+        <traits />
+      </test>
+      <test name="BL.Tests.UsersServiceTests.TestLogInOk" type="BL.Tests.UsersServiceTests" method="TestLogInOk" time="0.0025991" result="Pass">
+        <traits />
+      </test>
+      <test name="BL.Tests.UsersServiceTests.TestLogInWithWrongPassword" type="BL.Tests.UsersServiceTests" method="TestLogInWithWrongPassword" time="0.0021016" result="Pass">
+        <traits />
+      </test>
+      <test name="BL.Tests.UsersServiceTests.TestAdminAddAutoIncrementUser" type="BL.Tests.UsersServiceTests" method="TestAdminAddAutoIncrementUser" time="0.0059641" result="Pass">
+        <traits />
+      </test>
+      <test name="BL.Tests.UsersServiceTests.TestAdminGetUserByIDAsync" type="BL.Tests.UsersServiceTests" method="TestAdminGetUserByIDAsync" time="0.0039262" result="Pass">
+        <traits />
+      </test>
+      <test name="BL.Tests.UsersServiceTests.TestAdminDeleteUser" type="BL.Tests.UsersServiceTests" method="TestAdminDeleteUser" time="0.0030219" result="Pass">
         <traits />
       </test>
     </collection>
