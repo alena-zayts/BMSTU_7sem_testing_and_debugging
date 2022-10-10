@@ -5,6 +5,7 @@ using BL.Models;
 using BL.IRepositories;
 using System.Collections.Generic;
 using AutoFixture.Xunit2;
+using Allure.Xunit.Attributes;
 
 // лондонский вариант -- изоляция кода от зависимостей
 // используется mock для: ICheckPermissionsService, ISlopesRepository, ILiftsSlopesRepository
@@ -12,11 +13,13 @@ using AutoFixture.Xunit2;
 
 namespace BL.Tests
 {
+    [AllureSuite("Suite for SlopesService class")]
     public class SlopesServiceTest
     {
         // with fixture
         // тест вызывается с параметрами. какими -- автоматически сгенерированными
-        [Theory, AutoMoqData] 
+        [AllureXunitTheory]
+        [AutoMoqData] 
         public async void TestGetSlopeInfoAsync(
             uint userID, 
             Slope slope, 
@@ -38,8 +41,8 @@ namespace BL.Tests
             liftsSlopesRepositoryMock.Verify(m => m.GetLiftsBySlopeIdAsync(slope.SlopeID), Times.Once);
             Assert.Equal(slope, slopeFromService);
         }
-
-        [Theory, AutoMoqData] // тест вызывается с параметрами. какими -- автоматически сгенерированными
+        [AllureXunitTheory]
+        [AutoMoqData] // тест вызывается с параметрами. какими -- автоматически сгенерированными
         public async void TestGetSlopesInfoAsync(
             uint userID,
             [Frozen] List<Slope> initialSlopes,

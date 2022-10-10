@@ -8,6 +8,9 @@ using System.Collections.Generic;
 using AutoFixture.Xunit2;
 using AutoFixture.AutoMoq;
 using BL.Exceptions.PermissionExceptions;
+using System.Runtime.InteropServices;
+using System;
+
 
 // лондонский вариант -- изоляция кода от зависимостей
 // используется mock для: IUsersRepository
@@ -46,6 +49,7 @@ namespace BL.Tests
         [Fact]
         public async void UnauthorizedHasNoAccessToAdminFunctions()
         {
+            //Console.WriteLine(System.Runtime.InteropServices.Des);
             // arrange
             string functionName = "smthWithAdminProperty";
             User user = UsersObjectMother.UnauthorizedUser();
