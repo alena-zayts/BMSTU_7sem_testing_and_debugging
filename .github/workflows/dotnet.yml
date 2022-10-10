@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 jobs:
-  buildOnWindows:
+  build:
     name: Build on Windows
     #runs-on: ubuntu-latest
     runs-on: windows-latest
@@ -28,12 +28,15 @@ jobs:
       run: dotnet build --no-restore
       working-directory: SkiResort
       
+      
+      
+  unitTesting:
     - name: Run BL Unit Tests
-      run: dotnet test BL.Tests --no-build --verbosity detailed #normal #detailed
+      run: dotnet test BL.Tests --no-build --verbosity normal #normal #detailed
       working-directory: SkiResort
       
     - name: Run BL Unit Tests 2
-      run: dotnet test BL.Tests --no-build --logger:trx --verbosity detailed #normal #detailed
+      run: dotnet test BL.Tests --no-build --logger:trx --verbosity normal #normal #detailed
       working-directory: SkiResort
       
     - name: Generate BL Unit Tests report
