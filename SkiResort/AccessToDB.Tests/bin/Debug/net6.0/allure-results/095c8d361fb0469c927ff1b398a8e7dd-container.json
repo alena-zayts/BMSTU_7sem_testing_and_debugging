@@ -1,0 +1,12 @@
+{
+  "uuid": "899423b8-c833-4e21-960b-4a586efd76f2-AccessToDB.Tests.LiftsRepositoryTests",
+  "name": "AccessToDB.Tests.LiftsRepositoryTests",
+  "children": [
+    "e02cd8fc-263e-4569-b8fb-389ad37708b6-AccessToDB.Tests.LiftsRepositoryTests.TestUpdateLiftByIDAsyncOk(lift: Lift { LiftID = 230, LiftName = liftNamea30541e1-17bf-4db7-aaa9-2060a34eb258, IsOpen = True, SeatsAmount = 148, LiftingTime = 204, QueueTime = 29, ConnectedSlopes =  })"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1665501946890,
+  "stop": 1665501947544
+}

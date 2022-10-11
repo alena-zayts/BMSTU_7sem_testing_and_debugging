@@ -9,24 +9,30 @@ print('start!')
 
 
 ---------------------------------------------------------------------------------------------init tables
+
+local function first_init()
+	box.schema.user.create('ski_admin', {if_not_exists = true}, {password = 'Tty454r293300'})
+	box.schema.user.passwd('ski_admin', 'Tty454r293300')
+	box.schema.user.grant('ski_admin', 'read,write,execute,create,alter,drop', 'universe')
+end
+
+local function not_first_init()
+	box.space.turnstiles:drop()
+	box.space.lifts:drop()
+	box.space.slopes:drop()
+	box.space.lifts_slopes:drop()
+	box.space.users:drop()
+end
+
 local function init()
 	print('in init!')
 	
 	box.schema.upgrade()
 
-	--box.schema.user.create('ski_admin', {if_not_exists = true}, {password = 'Tty454r293300'})
-	--box.schema.user.passwd('ski_admin', 'Tty454r293300')
-	--box.schema.user.grant('ski_admin', 'read,write,execute,create,alter,drop', 'universe')
 
+	pcall(first_init)
+	pcall(not_first_init)
 
-	box.space.users:drop()
-	box.space.turnstiles:drop()
-	box.space.lifts:drop()
-	box.space.slopes:drop()
-	box.space.lifts_slopes:drop()
-
-	
-	
 
 	--- users
 	users = box.schema.space.create('users', {field_count=5, engine=chosen_engine})
@@ -222,5 +228,5 @@ box.cfg {
 
 init()
 --load__data()
-
+print('end of app.init')
 

@@ -1,0 +1,46 @@
+{
+  "uuid": "42d89dd8-f452-436e-851c-8917feb9fc48-AccessToDB.Tests.SlopesRepositoryTests.TestAddSlopeAsyncFailsWhenSlopeIdRepeats(slope: Slope { SlopeID = 142, SlopeName = slopeNamea786a735-7767-4524-afe7-80104f2e60f1, IsOpen = True, DifficultyLevel = 165, ConnectedLifts =  })",
+  "historyId": "AccessToDB.Tests.SlopesRepositoryTests.TestAddSlopeAsyncFailsWhenSlopeIdRepeats(slope: Slope { SlopeID = 142, SlopeName = slopeNamea786a735-7767-4524-afe7-80104f2e60f1, IsOpen = True, DifficultyLevel = 165, ConnectedLifts =  })",
+  "fullName": "AccessToDB.Tests.SlopesRepositoryTests.TestAddSlopeAsyncFailsWhenSlopeIdRepeats(slope: Slope { SlopeID = 142, SlopeName = slopeNamea786a735-7767-4524-afe7-80104f2e60f1, IsOpen = True, DifficultyLevel = 165, ConnectedLifts =  })",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "AccessToDB.Tests.SlopesRepositoryTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "AccessToDB.Tests.SlopesRepositoryTests.TestAddSlopeAsyncFailsWhenSlopeIdRepeats(slope: Slope { SlopeID = 142, SlopeName = slopeNamea786a735-7767-4524-afe7-80104f2e60f1, IsOpen = True, DifficultyLevel = 165, ConnectedLifts =  })"
+    },
+    {
+      "name": "package",
+      "value": "AccessToDB.Tests.SlopesRepositoryTests"
+    },
+    {
+      "name": "suite",
+      "value": "SlopesRepositorySuite"
+    }
+  ],
+  "links": [],
+  "name": "AccessToDB.Tests.SlopesRepositoryTests.TestAddSlopeAsyncFailsWhenSlopeIdRepeats(slope: Slope { SlopeID = 142, SlopeName = slopeNamea786a735-7767-4524-afe7-80104f2e60f1, IsOpen = True, DifficultyLevel = 165, ConnectedLifts =  })",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1665504095665,
+  "stop": 1665504096282
+}

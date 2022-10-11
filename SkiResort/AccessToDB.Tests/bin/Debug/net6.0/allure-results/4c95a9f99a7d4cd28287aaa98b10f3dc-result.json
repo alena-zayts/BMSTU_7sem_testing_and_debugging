@@ -1,0 +1,47 @@
+{
+  "uuid": "33993693-5fda-4451-bfbc-ea379857dd2a-AccessToDB.Tests.SlopesRepositoryTests.TestAddSlopeAsyncFailsWhenSlopeIdRepeats(slope: Slope { SlopeID = 222, SlopeName = slopeName5e01b285-3949-47fd-aab0-12acdc1480ee, IsOpen = True, DifficultyLevel = 77, ConnectedLifts =  })",
+  "historyId": "AccessToDB.Tests.SlopesRepositoryTests.TestAddSlopeAsyncFailsWhenSlopeIdRepeats(slope: Slope { SlopeID = 222, SlopeName = slopeName5e01b285-3949-47fd-aab0-12acdc1480ee, IsOpen = True, DifficultyLevel = 77, ConnectedLifts =  })",
+  "fullName": "AccessToDB.Tests.SlopesRepositoryTests.TestAddSlopeAsyncFailsWhenSlopeIdRepeats(slope: Slope { SlopeID = 222, SlopeName = slopeName5e01b285-3949-47fd-aab0-12acdc1480ee, IsOpen = True, DifficultyLevel = 77, ConnectedLifts =  })",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "AccessToDB.Tests.SlopesRepositoryTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "AccessToDB.Tests.SlopesRepositoryTests.TestAddSlopeAsyncFailsWhenSlopeIdRepeats(slope: Slope { SlopeID = 222, SlopeName = slopeName5e01b285-3949-47fd-aab0-12acdc1480ee, IsOpen = True, DifficultyLevel = 77, ConnectedLifts =  })"
+    },
+    {
+      "name": "package",
+      "value": "AccessToDB.Tests.SlopesRepositoryTests"
+    },
+    {
+      "name": "suite",
+      "value": "SlopesRepositorySuite"
+    }
+  ],
+  "links": [],
+  "name": "AccessToDB.Tests.SlopesRepositoryTests.TestAddSlopeAsyncFailsWhenSlopeIdRepeats(slope: Slope { SlopeID = 222, SlopeName = slopeName5e01b285-3949-47fd-aab0-12acdc1480ee, IsOpen = True, DifficultyLevel = 77, ConnectedLifts =  })",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Tarantool returns an error for request with id: 1, code: 0x0000802D  and message: User 'ski_admin' is not found. ",
+    "trace": "   at ProGaudi.Tarantool.Client.LogicalConnection.SendRequestImpl[TRequest](TRequest request, Nullable`1 timeout)\r\n   at ProGaudi.Tarantool.Client.LogicalConnection.SendRequestWithEmptyResponse[TRequest](TRequest request, Nullable`1 timeout)\r\n   at ProGaudi.Tarantool.Client.LogicalConnection.LoginIfNotGuest(GreetingsResponse greetings)\r\n   at ProGaudi.Tarantool.Client.LogicalConnection.Connect()\r\n   at ProGaudi.Tarantool.Client.LogicalConnectionManager.Connect()\r\n   at ProGaudi.Tarantool.Client.Box.Connect()\r\n   at ProGaudi.Tarantool.Client.Box.Connect(String replicationSource)\r\n   at AccessToDB.TarantoolContext.Initialize(String connection_string) in C:\\Users\\alena\\Desktop\\7_sem\\testing_and_debugging\\SkiResort\\AccessToDB\\TarantoolContext.cs:line 52\r\n   at AccessToDB.TarantoolContext..ctor(String connection_string) in C:\\Users\\alena\\Desktop\\7_sem\\testing_and_debugging\\SkiResort\\AccessToDB\\TarantoolContext.cs:line 32\r\n   at AccessToDB.Tests.SlopesRepositoryTests..ctor() in C:\\Users\\alena\\Desktop\\7_sem\\testing_and_debugging\\SkiResort\\AccessToDB.Tests\\SlopesRepositoryTests.cs:line 28\r\n   at System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean wrapExceptions)"
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1665502662816,
+  "stop": 1665502662915
+}

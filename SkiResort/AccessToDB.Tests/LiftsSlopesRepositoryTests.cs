@@ -140,7 +140,7 @@ namespace AccessToDB.Tests
             await sut.AddLiftSlopeAsync(liftSlope.RecordID, liftSlope.LiftID, liftSlope.SlopeID);
 
             // act & assert
-            await Assert.ThrowsAsync<LiftSlopeSlopeNotFoundException>(async () => await sut.GetSlopesByLiftIdAsync(liftSlope.LiftID));
+            await Assert.ThrowsAsync<Exception>(async () => await sut.GetSlopesByLiftIdAsync(liftSlope.LiftID));
         }
 
         [AllureXunitTheory]

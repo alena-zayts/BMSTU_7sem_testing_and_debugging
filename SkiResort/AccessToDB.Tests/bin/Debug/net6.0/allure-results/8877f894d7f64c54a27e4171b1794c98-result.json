@@ -1,0 +1,47 @@
+{
+  "uuid": "1d92175f-3f63-4b84-b917-4a3807010c72-AccessToDB.Tests.UsersRepositoryTests.TestDeleteUserByIDAsyncFailsWhenIDNotExists(userID: 239)",
+  "historyId": "AccessToDB.Tests.UsersRepositoryTests.TestDeleteUserByIDAsyncFailsWhenIDNotExists(userID: 239)",
+  "fullName": "AccessToDB.Tests.UsersRepositoryTests.TestDeleteUserByIDAsyncFailsWhenIDNotExists(userID: 239)",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "AccessToDB.Tests.UsersRepositoryTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "AccessToDB.Tests.UsersRepositoryTests.TestDeleteUserByIDAsyncFailsWhenIDNotExists(userID: 239)"
+    },
+    {
+      "name": "package",
+      "value": "AccessToDB.Tests.UsersRepositoryTests"
+    },
+    {
+      "name": "suite",
+      "value": "UsersRepositorySuite"
+    }
+  ],
+  "links": [],
+  "name": "AccessToDB.Tests.UsersRepositoryTests.TestDeleteUserByIDAsyncFailsWhenIDNotExists(userID: 239)",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Tarantool returns an error for request with id: 1, code: 0x0000802D  and message: User 'ski_admin' is not found. ",
+    "trace": "   at ProGaudi.Tarantool.Client.LogicalConnection.SendRequestImpl[TRequest](TRequest request, Nullable`1 timeout)\r\n   at ProGaudi.Tarantool.Client.LogicalConnection.SendRequestWithEmptyResponse[TRequest](TRequest request, Nullable`1 timeout)\r\n   at ProGaudi.Tarantool.Client.LogicalConnection.LoginIfNotGuest(GreetingsResponse greetings)\r\n   at ProGaudi.Tarantool.Client.LogicalConnection.Connect()\r\n   at ProGaudi.Tarantool.Client.LogicalConnectionManager.Connect()\r\n   at ProGaudi.Tarantool.Client.Box.Connect()\r\n   at ProGaudi.Tarantool.Client.Box.Connect(String replicationSource)\r\n   at AccessToDB.TarantoolContext.Initialize(String connection_string) in C:\\Users\\alena\\Desktop\\7_sem\\testing_and_debugging\\SkiResort\\AccessToDB\\TarantoolContext.cs:line 52\r\n   at AccessToDB.TarantoolContext..ctor(String connection_string) in C:\\Users\\alena\\Desktop\\7_sem\\testing_and_debugging\\SkiResort\\AccessToDB\\TarantoolContext.cs:line 32\r\n   at AccessToDB.Tests.UsersRepositoryTests..ctor() in C:\\Users\\alena\\Desktop\\7_sem\\testing_and_debugging\\SkiResort\\AccessToDB.Tests\\UsersRepositoryTests.cs:line 28\r\n   at System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean wrapExceptions)"
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1665502663128,
+  "stop": 1665502663135
+}

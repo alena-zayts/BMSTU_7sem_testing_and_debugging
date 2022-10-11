@@ -1,0 +1,47 @@
+{
+  "uuid": "2b969419-be4d-403d-8ed0-4eae407bd30c-AccessToDB.Tests.LiftsSlopesRepositoryTests.TestDeleteLiftSlopesByIDsAsyncOk(liftSlope: LiftSlope { RecordID = 233, LiftID = 212, SlopeID = 114 })",
+  "historyId": "AccessToDB.Tests.LiftsSlopesRepositoryTests.TestDeleteLiftSlopesByIDsAsyncOk(liftSlope: LiftSlope { RecordID = 233, LiftID = 212, SlopeID = 114 })",
+  "fullName": "AccessToDB.Tests.LiftsSlopesRepositoryTests.TestDeleteLiftSlopesByIDsAsyncOk(liftSlope: LiftSlope { RecordID = 233, LiftID = 212, SlopeID = 114 })",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "AccessToDB.Tests.LiftsSlopesRepositoryTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "AccessToDB.Tests.LiftsSlopesRepositoryTests.TestDeleteLiftSlopesByIDsAsyncOk(liftSlope: LiftSlope { RecordID = 233, LiftID = 212, SlopeID = 114 })"
+    },
+    {
+      "name": "package",
+      "value": "AccessToDB.Tests.LiftsSlopesRepositoryTests"
+    },
+    {
+      "name": "suite",
+      "value": "LiftsSlopesRepositorySuite"
+    }
+  ],
+  "links": [],
+  "name": "AccessToDB.Tests.LiftsSlopesRepositoryTests.TestDeleteLiftSlopesByIDsAsyncOk(liftSlope: LiftSlope { RecordID = 233, LiftID = 212, SlopeID = 114 })",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Operations that change non-concurrent collections must have exclusive access. A concurrent update was performed on this collection and corrupted its state. The collection's state is no longer correct.",
+    "trace": "   at System.Collections.Generic.Dictionary`2.FindValue(TKey key)\r\n   at System.Collections.Generic.Dictionary`2.TryGetValue(TKey key, TValue& value)\r\n   at ProGaudi.MsgPack.Light.MsgPackContext.GetObjectActivator(Type type)\r\n   at ProGaudi.MsgPack.Light.MsgPackContext.<>c__DisplayClass24_0.<TryGenerateConverterFromGenericConverter>b__0(Type x)\r\n   at ProGaudi.MsgPack.Light.MsgPackContext.TryGenerateConverterFromGenericConverter(Type type)\r\n   at ProGaudi.MsgPack.Light.MsgPackContext.GetConverter[T]()\r\n   at ProGaudi.MsgPack.Light.MsgPackSerializer.GetConverter[T](MsgPackContext context)\r\n   at ProGaudi.MsgPack.Light.MsgPackSerializer.Deserialize[T](MemoryStream stream, MsgPackContext context)\r\n   at ProGaudi.Tarantool.Client.LogicalConnection.SendRequest[TRequest,TResponse](TRequest request, Nullable`1 timeout)\r\n   at ProGaudi.Tarantool.Client.LogicalConnectionManager.SendRequest[TRequest,TResponse](TRequest request, Nullable`1 timeout)\r\n   at ProGaudi.Tarantool.Client.Schema.Select[T](UInt32 spaceId, Iterator iterator, UInt32 id)\r\n   at ProGaudi.Tarantool.Client.Schema.Reload()\r\n   at ProGaudi.Tarantool.Client.Box.Connect()\r\n   at ProGaudi.Tarantool.Client.Box.Connect(String replicationSource)\r\n   at AccessToDB.TarantoolContext.Initialize(String connection_string) in C:\\Users\\alena\\Desktop\\7_sem\\testing_and_debugging\\SkiResort\\AccessToDB\\TarantoolContext.cs:line 52\r\n   at AccessToDB.TarantoolContext..ctor(String connection_string) in C:\\Users\\alena\\Desktop\\7_sem\\testing_and_debugging\\SkiResort\\AccessToDB\\TarantoolContext.cs:line 32\r\n   at AccessToDB.Tests.LiftsSlopesRepositoryTests..ctor() in C:\\Users\\alena\\Desktop\\7_sem\\testing_and_debugging\\SkiResort\\AccessToDB.Tests\\LiftsSlopesRepositoryTests.cs:line 34\r\n   at System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean wrapExceptions)"
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1665504845982,
+  "stop": 1665504846021
+}

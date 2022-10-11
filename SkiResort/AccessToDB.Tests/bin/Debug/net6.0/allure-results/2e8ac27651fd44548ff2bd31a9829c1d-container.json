@@ -1,0 +1,12 @@
+{
+  "uuid": "2942d0db-39ea-4c49-be00-0f669fd7a45a-AccessToDB.Tests.LiftsSlopesRepositoryTests",
+  "name": "AccessToDB.Tests.LiftsSlopesRepositoryTests",
+  "children": [
+    "90df3086-bbdd-4422-b834-ba8e83bd2776-AccessToDB.Tests.LiftsSlopesRepositoryTests.TestGetLiftSlopesAsyncEmpty"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1665504848710,
+  "stop": 1665504848756
+}

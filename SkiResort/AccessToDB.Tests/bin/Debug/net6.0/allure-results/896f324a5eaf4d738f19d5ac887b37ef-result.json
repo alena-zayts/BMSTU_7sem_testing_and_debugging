@@ -1,0 +1,47 @@
+{
+  "uuid": "a080bcaf-1467-4cf9-a738-d52c4ff886cf-AccessToDB.Tests.LiftsRepositoryTests.TestUpdateLiftByIDAsyncOk(lift: Lift { LiftID = 222, LiftName = liftName80a1e859-f4f1-434b-affc-15ae21348cc0, IsOpen = True, SeatsAmount = 178, LiftingTime = 126, QueueTime = 28, ConnectedSlopes =  })",
+  "historyId": "AccessToDB.Tests.LiftsRepositoryTests.TestUpdateLiftByIDAsyncOk(lift: Lift { LiftID = 222, LiftName = liftName80a1e859-f4f1-434b-affc-15ae21348cc0, IsOpen = True, SeatsAmount = 178, LiftingTime = 126, QueueTime = 28, ConnectedSlopes =  })",
+  "fullName": "AccessToDB.Tests.LiftsRepositoryTests.TestUpdateLiftByIDAsyncOk(lift: Lift { LiftID = 222, LiftName = liftName80a1e859-f4f1-434b-affc-15ae21348cc0, IsOpen = True, SeatsAmount = 178, LiftingTime = 126, QueueTime = 28, ConnectedSlopes =  })",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "AccessToDB.Tests.LiftsRepositoryTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "AccessToDB.Tests.LiftsRepositoryTests.TestUpdateLiftByIDAsyncOk(lift: Lift { LiftID = 222, LiftName = liftName80a1e859-f4f1-434b-affc-15ae21348cc0, IsOpen = True, SeatsAmount = 178, LiftingTime = 126, QueueTime = 28, ConnectedSlopes =  })"
+    },
+    {
+      "name": "package",
+      "value": "AccessToDB.Tests.LiftsRepositoryTests"
+    },
+    {
+      "name": "suite",
+      "value": "LiftsRepositorySuite"
+    }
+  ],
+  "links": [],
+  "name": "AccessToDB.Tests.LiftsRepositoryTests.TestUpdateLiftByIDAsyncOk(lift: Lift { LiftID = 222, LiftName = liftName80a1e859-f4f1-434b-affc-15ae21348cc0, IsOpen = True, SeatsAmount = 178, LiftingTime = 126, QueueTime = 28, ConnectedSlopes =  })",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Tarantool returns an error for request with id: 1, code: 0x0000802D  and message: User 'ski_admin' is not found. ",
+    "trace": "   at ProGaudi.Tarantool.Client.LogicalConnection.SendRequestImpl[TRequest](TRequest request, Nullable`1 timeout)\r\n   at ProGaudi.Tarantool.Client.LogicalConnection.SendRequestWithEmptyResponse[TRequest](TRequest request, Nullable`1 timeout)\r\n   at ProGaudi.Tarantool.Client.LogicalConnection.LoginIfNotGuest(GreetingsResponse greetings)\r\n   at ProGaudi.Tarantool.Client.LogicalConnection.Connect()\r\n   at ProGaudi.Tarantool.Client.LogicalConnectionManager.Connect()\r\n   at ProGaudi.Tarantool.Client.Box.Connect()\r\n   at ProGaudi.Tarantool.Client.Box.Connect(String replicationSource)\r\n   at AccessToDB.TarantoolContext.Initialize(String connection_string) in C:\\Users\\alena\\Desktop\\7_sem\\testing_and_debugging\\SkiResort\\AccessToDB\\TarantoolContext.cs:line 52\r\n   at AccessToDB.TarantoolContext..ctor(String connection_string) in C:\\Users\\alena\\Desktop\\7_sem\\testing_and_debugging\\SkiResort\\AccessToDB\\TarantoolContext.cs:line 32\r\n   at AccessToDB.Tests.LiftsRepositoryTests..ctor() in C:\\Users\\alena\\Desktop\\7_sem\\testing_and_debugging\\SkiResort\\AccessToDB.Tests\\LiftsRepositoryTests.cs:line 28\r\n   at System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean wrapExceptions)"
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1665502663199,
+  "stop": 1665502663206
+}

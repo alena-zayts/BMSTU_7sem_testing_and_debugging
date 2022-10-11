@@ -8,5 +8,5 @@ services:
     ports:
       - 3301:3301
     volumes:
-      - /mnt/c/BMSTU_7sem_web/src/tarantool/app:/usr/local/share/tarantool
-      - /mnt/c/BMSTU_7sem_web/src/tarantool/data:/var/lib/tarantool
+      - /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/tarantool/app:/usr/local/share/tarantool
+      - /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/tarantool/data:/var/lib/tarantool
