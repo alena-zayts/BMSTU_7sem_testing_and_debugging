@@ -35,7 +35,7 @@ jobs:
       working-directory: SkiResort
       
     - name: run tarantool
-      run: docker compose up
+      run: docker compose up &
       working-directory: SkiResort/tarantool
       
       
