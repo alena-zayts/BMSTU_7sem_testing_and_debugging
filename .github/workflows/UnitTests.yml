@@ -31,12 +31,12 @@ jobs:
     - uses: actions/checkout@v3
      
     - name: tmp2
-      run: pwd 
+      run: pwd # home\runner\work\BMSTU_7sem_testing_and_debugging\BMSTU_7sem_testing_and_debugging\SkiResort
       working-directory: SkiResort
       
-    -name: runtarantool
-      run: tarantool \home\runner\work\BMSTU_7sem_testing_and_debugging\BMSTU_7sem_testing_and_debugging\SkiResort\tarantool\app.init.lua
-      working-directory: SkiResort
+    -name: run tarantool
+      run: docker compose up
+      working-directory: SkiResort\tarantool
       
       
     - name: Setup .NET
