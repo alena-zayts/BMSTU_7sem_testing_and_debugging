@@ -27,14 +27,14 @@ namespace AccessToDB.RepositoriesTarantool
         private ILiftsRepository _liftsRepository;
         private IBox _box;
 
-        public TarantoolLiftsSlopesRepository(TarantoolContext context)
+        public TarantoolLiftsSlopesRepository(TarantoolContext context, ILiftsRepository liftsRepository, ISlopesRepository slopesRepository)
         {
             _space = context.liftsSlopesSpace;
             _indexPrimary = context.liftsSlopesIndexPrimary;
             _indexLiftID = context.liftsSlopesIndexLiftID;
             _indexSlopeID = context.liftsSlopesIndexSlopeID;
-            _liftsRepository = new TarantoolLiftsRepository(context);
-            _slopesRepository = new TarantoolSlopesRepository(context);
+            _liftsRepository = liftsRepository;
+            _slopesRepository = slopesRepository;
             _box = context.box;
         }
 

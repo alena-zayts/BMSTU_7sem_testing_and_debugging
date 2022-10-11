@@ -35,7 +35,7 @@ namespace AccessToDB.Tests.Helpers
         }
         public ILiftsSlopesRepository CreateLiftsSlopesRepository()
         {
-            return new TarantoolLiftsSlopesRepository(_tarantool_context);
+            return new TarantoolLiftsSlopesRepository(_tarantool_context, CreateLiftsRepository(), CreateSlopesRepository());
         }
     }
 }
