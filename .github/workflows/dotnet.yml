@@ -69,7 +69,7 @@ jobs:
       
     - name: Run AccessToDB Unit Tests
       #run: dotnet test AccessToDB.Tests --no-build --verbosity normal 
-      run: cd && docker-compose -f D:\a\BMSTU_7sem_testing_and_debugging\BMSTU_7sem_testing_and_debugging\SkiResort\tarantool\docker-compose.yml up -d && dotnet test AccessToDB.Tests --no-build --verbosity normal 
+      run: cd && docker-compose -f /home/runner/work/BMSTU_7sem_testing_and_debugging/BMSTU_7sem_testing_and_debugging/SkiResort/tarantool/docker-compose.yml up -d && dotnet test AccessToDB.Tests --no-build --verbosity normal 
       working-directory: SkiResort
       
     - name: Generate AccessToDB Unit Tests report
