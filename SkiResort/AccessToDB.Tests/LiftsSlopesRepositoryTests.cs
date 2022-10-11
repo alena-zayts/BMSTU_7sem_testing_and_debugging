@@ -10,6 +10,7 @@ using AccessToDB.Tests.ArrangeHelpers;
 using Moq;
 using AutoFixture.Xunit2;
 using AccessToDB.Tests.FakeRepositories;
+using System.Collections.Generic;
 
 // лондонский подход -- репозитории ILiftsRepository и ISlopesRepository -- Fake-и
 //https://xunit.net/docs/shared-context
@@ -24,13 +25,15 @@ namespace AccessToDB.Tests
     {
         private ILiftsSlopesRepository sut { get { return _liftsSlopesRepository; } }
         private ILiftsSlopesRepository _liftsSlopesRepository;
+        private ILiftsRepository _liftsRepository;
+        private ISlopesRepository _slopesRepository;
         private TarantoolContext _tarantoolContext;
 
         public LiftsSlopesRepositoryTests()
         {
             _tarantoolContext = new TarantoolContext("ski_admin:Tty454r293300@localhost:3301");
-            var _liftsRepository = new FakeLiftsRepository();
-            var _slopesRepository = new FakeSlopesRepository();
+            _liftsRepository = new FakeLiftsRepository();
+            _slopesRepository = new FakeSlopesRepository();
             _liftsSlopesRepository = new TarantoolLiftsSlopesRepository(_tarantoolContext, _liftsRepository, _slopesRepository);
             CleanLiftsSlopesTable().GetAwaiter().GetResult();
         }
@@ -129,71 +132,52 @@ namespace AccessToDB.Tests
             await Assert.ThrowsAsync<LiftSlopeDeleteException>(async () => await sut.DeleteLiftSlopesByIDAsync(liftSlopeID));
         }
 
-        //[AllureXunitTheory]
-        //[AutoMoqData]
-        //public async void TestGetLiftSlopeByNameAsyncFailsWhenNameNotExists(string liftSlopeName)
-        //{
-        //    // arrange
+        [AllureXunitTheory]
+        [AutoMoqData]
+        public async void TestGetSlopesByLiftIdAsyncFailsWhenSlopeNotExists(LiftSlope liftSlope)
+        {
+            // arrange
+            await sut.AddLiftSlopeAsync(liftSlope.RecordID, liftSlope.LiftID, liftSlope.SlopeID);
 
-        //    // act & assert
-        //    await Assert.ThrowsAsync<LiftSlopeNotFoundException>(async () => await sut.GetLiftSlopeByNameAsync(liftSlopeName));
-        //}
+            // act & assert
+            await Assert.ThrowsAsync<LiftSlopeSlopeNotFoundException>(async () => await sut.GetSlopesByLiftIdAsync(liftSlope.LiftID));
+        }
 
-        //public async Task<List<Slope>> GetSlopesByLiftIdAsync(uint LiftID)
-        //{
-        //    List<Slope> result = new();
-        //    List<uint> slope_ids = await GetSlopeIdsByLiftId(LiftID);
+        [AllureXunitTheory]
+        [AutoMoqData]
+        public async void TestGetLiftsBySlopeIdAsyncOk(Slope slope1, Slope slope2, Lift lift1, Lift lift2)
+        {
+            // arrange
+            uint liftID1 = await _liftsRepository.AddLiftAutoIncrementAsync(lift1.LiftName, lift1.IsOpen, lift1.SeatsAmount, lift1.LiftingTime);
+            uint liftID2 = await _liftsRepository.AddLiftAutoIncrementAsync(lift2.LiftName, lift2.IsOpen, lift2.SeatsAmount, lift2.LiftingTime);
+            uint slopeID1 = await _slopesRepository.AddSlopeAutoIncrementAsync(slope1.SlopeName, slope1.IsOpen, slope1.DifficultyLevel);
+            uint slopeID2 = await _slopesRepository.AddSlopeAutoIncrementAsync(slope2.SlopeName, slope2.IsOpen, slope2.DifficultyLevel);
+            await sut.AddLiftSlopeAutoIncrementAsync(liftID1, slopeID1);
+            await sut.AddLiftSlopeAutoIncrementAsync(liftID2, slopeID1);
+            await sut.AddLiftSlopeAutoIncrementAsync(liftID1, slopeID2);
 
-        //    foreach (var SlopeID in slope_ids)
-        //    {
-        //        try
-        //        {
-        //            var slope = await _slopesRepository.GetSlopeByIdAsync(SlopeID);
-        //            result.Add(slope);
+            // act
+            List<Lift> lifts = await sut.GetLiftsBySlopeIdAsync(slopeID1);
 
-        //        }
-        //        catch (SlopeNotFoundException)
-        //        {
-        //            throw new LiftSlopeSlopeNotFoundException();
-        //        }
-        //    }
-        //    return result;
-        //}
+            // assert
+            Assert.Equal(2, lifts.Count);
+            Assert.Equal(liftID1, lifts[0].LiftID);
+            Assert.Equal(liftID2, lifts[1].LiftID);
+        }
 
-        //public async Task<List<Lift>> GetLiftsBySlopeIdAsync(uint SlopeID)
-        //{
-        //    List<Lift> result = new List<Lift>();
-        //    List<uint> lift_ids = await GetLiftIdsBySlopeId(SlopeID);
+        [AllureXunitTheory]
+        [AutoMoqData]
+        public async void TestDeleteLiftSlopesByIDsAsyncOk(LiftSlope liftSlope)
+        {
+            // arrange
+            await sut.AddLiftSlopeAutoIncrementAsync(liftSlope.LiftID, liftSlope.SlopeID);
 
-        //    foreach (var LiftID in lift_ids)
-        //    {
-        //        try
-        //        {
-        //            var lift = await _liftsRepository.GetLiftByIdAsync(LiftID);
-        //            result.Add(lift);
+            // act
+            await sut.DeleteLiftSlopesByIDsAsync(liftSlope.LiftID, liftSlope.SlopeID);
 
-        //        }
-        //        catch (LiftNotFoundException)
-        //        {
-        //            throw new LiftSlopeLiftNotFoundException();
-        //        }
-        //    }
-        //    return result;
-        //}
-
-        //public async Task DeleteLiftSlopesByIDsAsync(uint liftID, uint slopeID)
-        //{
-        //    List<LiftSlope> liftSlopes = await GetLiftsSlopesAsync();
-        //    foreach (LiftSlope liftSlope in liftSlopes)
-        //    {
-        //        if (liftSlope.LiftID == liftID && liftSlope.SlopeID == slopeID)
-        //        {
-        //            await DeleteLiftSlopesByIDAsync(liftSlope.RecordID);
-        //            return;
-        //        }
-        //    }
-        //    throw new LiftSlopeNotFoundException();
-        //}
+            // assert
+            Assert.Empty(await sut.GetLiftsSlopesAsync());
+        }
     }
 }
 

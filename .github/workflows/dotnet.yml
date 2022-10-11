@@ -61,8 +61,7 @@ jobs:
       run: npm install -g allure-commandline --save-dev && allure generate BL.Tests\bin\Debug\net6.0\allure-results --clean -o BL.Tests\bin\Debug\net6.0\allure-report # && allure open BL.Tests\bin\Debug\net6.0\allure-report
       working-directory: SkiResort
       
-          
-     - name: tmp
+    - name: tmp
       run: cd 
       working-directory: SkiResort
       
