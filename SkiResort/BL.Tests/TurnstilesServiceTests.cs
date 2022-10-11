@@ -8,9 +8,10 @@ using AutoFixture.Xunit2;
 using Allure.Xunit.Attributes;
 
 // лондонский вариант -- изоляция кода от зависимостей
-// используется mock для: ICheckPermissionsService, (вызовы и взаимодействия, которые исполняются SUT к зависимым объектам)
-// используется stub для: ITurnstilesRepository (вызовы и взаимодействия,  которые исполняются SUT к зависимым объектам, чтобы запросить и получить  данные)
-// используется fixture: AutoMoqData (по сути Dummy)
+//*fixture с помощью AutoMoqData (собственный атрибут AutoMoqDataAttribute, лежит в папке ArrangeHelpers) (по сути Dummy)--для генерации объектов для тестов
+//* mock для: ICheckPermissionsService(вызовы и взаимодействия, которые исполняются SUT к зависимым объектам)
+//* stub для: ITurnstilesRepository(вызовы и взаимодействия, которые исполняются SUT к зависимым объектам, чтобы запросить и получить  данные)
+
 
 namespace BL.Tests
 {

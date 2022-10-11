@@ -9,10 +9,12 @@ using Allure.Xunit.Attributes;
 using BL.Tests.ArrangeHelpers;
 
 // классический подход -- изоляция тестов
-// код не изолируется от зависимостей внутри unit-а (то есть В отличие от других тестов, НЕ использутеся mock: ICheckPermissionService)
-// код изолируется от shared-зависимостей. Для этого используются stub-ы: ILiftsRepository, ISlopesRepository, ILiftsSlopesRepository, IUsersRepository (вызовы и взаимодействия,  которые исполняются SUT к зависимым объектам, чтобы запросить и получить  данные)
-// используется Fabric (Object Mother) для генерации объектов для тестов
-// используется fixture: AutoMoqData (по сути Dummy)
+//*Fabric(Object Mother)(лежит в папке ArrangeHelpers)-- для генерации объектов для тестов
+//* fixture с помощью AutoMoqData (собственный атрибут AutoMoqDataAttribute, лежит в папке ArrangeHelpers) (по сути Dummy)--для генерации объектов для тестов
+//* код не изолируется от зависимостей внутри unit-а (то есть В отличие от других тестов, НЕ использутеся mock: ICheckPermissionService)
+//*код изолируется от shared-зависимостей. Для этого используются stub-ы: ILiftsRepository, ISlopesRepository, ILiftsSlopesRepository, IUsersRepository(вызовы и взаимодействия, которые исполняются SUT к зависимым объектам, чтобы запросить и получить  данные)
+
+
 
 namespace BL.Tests
 {

@@ -14,9 +14,10 @@ using Allure.Xunit.Attributes;
 using BL.Tests.ArrangeHelpers;
 
 // лондонский вариант -- изоляция кода от зависимостей
-// используется stub для: IUsersRepository (вызовы и взаимодействия,  которые исполняются SUT к зависимым объектам, чтобы запросить и получить данные)
-// не используется AutoMoqData, вместо него прямое создание Mock и InlineData
-// Используется Fabric (Object Mother) для генерации объектов для тестов
+//*паттерн Fabric(Object Mother)(лежит в папке ArrangeHelpers) и атрибут InlineData -- для генерации объектов для тестов
+//* stub для IUsersRepository (вызовы и взаимодействия, которые исполняются SUT к зависимым объектам, чтобы запросить и получить данные)
+//*при этом не используется атрибут AutoMoqData, вместо него прямое создание Mock
+
 
 namespace BL.Tests
 {
