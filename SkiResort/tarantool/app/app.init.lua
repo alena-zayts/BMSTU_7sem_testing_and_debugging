@@ -1,5 +1,8 @@
 #!/usr/bin/env tarantool
 
+--docker-compose -f /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/tarantool/docker-compose.yml up -d
+--docker-compose -f /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/tarantool/docker-compose.yml down
+
 io_module = require("io")
 io_module.stdout:setvbuf("no")
 math_module = require("math")
