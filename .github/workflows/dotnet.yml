@@ -33,6 +33,11 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     
+    - name: tmp
+      run: echo %cd%
+      working-directory: SkiResort
+      
+      
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
@@ -60,10 +65,7 @@ jobs:
     - name: Generate BL Unit Tests report
       run: npm install -g allure-commandline --save-dev && allure generate BL.Tests\bin\Debug\net6.0\allure-results --clean -o BL.Tests\bin\Debug\net6.0\allure-report # && allure open BL.Tests\bin\Debug\net6.0\allure-report
       working-directory: SkiResort
-      
-    - name: tmp
-      run: cd 
-      working-directory: SkiResort
+     
       
     - name: Run AccessToDB Unit Tests
       #run: dotnet test AccessToDB.Tests --no-build --verbosity normal 
