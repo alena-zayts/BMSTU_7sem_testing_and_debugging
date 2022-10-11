@@ -34,7 +34,7 @@ jobs:
       run: pwd 
       working-directory: SkiResort
       
-    -name: run tarantool
+    -name: runtarantool
       run: tarantool /home/runner/work/BMSTU_7sem_testing_and_debugging/BMSTU_7sem_testing_and_debugging/SkiResort/tarantool/app.init.lua
       working-directory: SkiResort
       
