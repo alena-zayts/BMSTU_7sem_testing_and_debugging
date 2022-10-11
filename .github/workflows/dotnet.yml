@@ -61,7 +61,7 @@ jobs:
       working-directory: SkiResort
       
     - name: Run AccessToDB Unit Tests
-      run: docker-compose -f docker-compose.yml up -d && dotnet test AccessToDB.Tests --no-build --verbosity normal && docker-compose -f docker-compose.yml down
+      run: dotnet test AccessToDB.Tests --no-build --verbosity normal 
       working-directory: SkiResort
       
     - name: Generate AccessToDB Unit Tests report
