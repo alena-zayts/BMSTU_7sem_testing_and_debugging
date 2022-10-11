@@ -66,10 +66,16 @@ jobs:
       run: npm install -g allure-commandline --save-dev && allure generate BL.Tests\bin\Debug\net6.0\allure-results --clean -o BL.Tests\bin\Debug\net6.0\allure-report # && allure open BL.Tests\bin\Debug\net6.0\allure-report
       working-directory: SkiResort
      
+    - name: Start Docker
+      run: docker-compose -f /home/runner/work/BMSTU_7sem_testing_and_debugging/BMSTU_7sem_testing_and_debugging/SkiResort/tarantool/docker-compose.yml up -d
+      working-directory: SkiResort
       
     - name: Run AccessToDB Unit Tests
-      #run: dotnet test AccessToDB.Tests --no-build --verbosity normal 
-      run: cd && docker-compose -f /home/runner/work/BMSTU_7sem_testing_and_debugging/BMSTU_7sem_testing_and_debugging/SkiResort/tarantool/docker-compose.yml up -d && dotnet test AccessToDB.Tests --no-build --verbosity normal 
+      run: dotnet test AccessToDB.Tests --no-build --verbosity normal 
+      working-directory: SkiResort
+      
+    - name: Stop Docker
+      run: docker-compose -f /home/runner/work/BMSTU_7sem_testing_and_debugging/BMSTU_7sem_testing_and_debugging/SkiResort/tarantool/docker-compose.yml down
       working-directory: SkiResort
       
     - name: Generate AccessToDB Unit Tests report

@@ -135,8 +135,32 @@ namespace AccessToDB.Tests
             await Assert.ThrowsAsync<UserNotFoundException>(async () => await sut.GetUserByEmailAsync(email));
         }
 
-        //Task<bool> CheckUserIdExistsAsync(uint userID);
-        //Task<bool> CheckUserEmailExistsAsync(string userEmail);
+        [AllureXunitTheory]
+        [AutoMoqData]
+        public async void TestCheckUserIdExistsAsyncTrue(User user)
+        {
+            // arrange
+            await sut.AddUserAsync(user.UserID, user.CardID, user.UserEmail, user.Password, user.Permissions);
+
+            // act 
+            bool answer = await sut.CheckUserIdExistsAsync(user.UserID);
+
+            //assert
+            Assert.True(answer);
+        }
+
+        [AllureXunitTheory]
+        [AutoMoqData]
+        public async void TestCheckUserEmailExistsAsyncFalse(string userEmail)
+        {
+            // arrange
+
+            // act
+            bool answer = await sut.CheckUserEmailExistsAsync(userEmail);
+
+            //assert
+            Assert.False(answer);
+        }
     }
 }
 
