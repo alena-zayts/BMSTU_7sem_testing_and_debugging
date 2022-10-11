@@ -1,0 +1,46 @@
+{
+  "uuid": "6f8d0cc8-0796-4481-9fe4-00afb2d53ae4-AccessToDB.Tests.SlopesRepositoryTests.TestDeleteSlopeByIDAsyncFailsWhenIDNotExists(slopeID: 75)",
+  "historyId": "AccessToDB.Tests.SlopesRepositoryTests.TestDeleteSlopeByIDAsyncFailsWhenIDNotExists(slopeID: 75)",
+  "fullName": "AccessToDB.Tests.SlopesRepositoryTests.TestDeleteSlopeByIDAsyncFailsWhenIDNotExists(slopeID: 75)",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "AccessToDB.Tests.SlopesRepositoryTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "AccessToDB.Tests.SlopesRepositoryTests.TestDeleteSlopeByIDAsyncFailsWhenIDNotExists(slopeID: 75)"
+    },
+    {
+      "name": "package",
+      "value": "AccessToDB.Tests.SlopesRepositoryTests"
+    },
+    {
+      "name": "suite",
+      "value": "SlopesRepositorySuite"
+    }
+  ],
+  "links": [],
+  "name": "AccessToDB.Tests.SlopesRepositoryTests.TestDeleteSlopeByIDAsyncFailsWhenIDNotExists(slopeID: 75)",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1665469147065,
+  "stop": 1665469147683
+}

@@ -1,0 +1,12 @@
+{
+  "uuid": "c9fb32c2-cff1-49a5-ac0b-02aa820c9805-AccessToDB.Tests.SlopesRepositoryTests",
+  "name": "AccessToDB.Tests.SlopesRepositoryTests",
+  "children": [
+    "9ed85bfe-8f98-473a-8d47-6535330fee8e-AccessToDB.Tests.SlopesRepositoryTests.TestGetSlopeByIdAsyncOk(slope: Slope { SlopeID = 65, SlopeName = slopeName15282802-8a88-4432-a993-5ee4f28d308e, IsOpen = True, DifficultyLevel = 180, ConnectedLifts =  })"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1665469193882,
+  "stop": 1665469193886
+}

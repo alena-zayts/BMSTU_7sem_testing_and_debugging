@@ -1,0 +1,47 @@
+{
+  "uuid": "742e9987-36fb-43e0-946e-d074f785fb37-AccessToDB.Tests.SlopesRepositoryTests.TestDeleteSlopeByIDAsyncFailsWhenIDNotExists(slopeID: 137)",
+  "historyId": "AccessToDB.Tests.SlopesRepositoryTests.TestDeleteSlopeByIDAsyncFailsWhenIDNotExists(slopeID: 137)",
+  "fullName": "AccessToDB.Tests.SlopesRepositoryTests.TestDeleteSlopeByIDAsyncFailsWhenIDNotExists(slopeID: 137)",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "AccessToDB.Tests.SlopesRepositoryTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "AccessToDB.Tests.SlopesRepositoryTests.TestDeleteSlopeByIDAsyncFailsWhenIDNotExists(slopeID: 137)"
+    },
+    {
+      "name": "package",
+      "value": "AccessToDB.Tests.SlopesRepositoryTests"
+    },
+    {
+      "name": "suite",
+      "value": "SlopesRepositorySuite"
+    }
+  ],
+  "links": [],
+  "name": "AccessToDB.Tests.SlopesRepositoryTests.TestDeleteSlopeByIDAsyncFailsWhenIDNotExists(slopeID: 137)",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Assert.Throws() Failure\r\nExpected: typeof(AccessToDB.Exceptions.SlopeExceptions.SlopeNotFoundException)\r\nActual:   typeof(AccessToDB.Exceptions.SlopeExceptions.SlopeDeleteException): Exception of type 'AccessToDB.Exceptions.SlopeExceptions.SlopeDeleteException' was thrown.\nException of type 'AccessToDB.Exceptions.SlopeExceptions.SlopeDeleteException' was thrown.",
+    "trace": "   at AccessToDB.RepositoriesTarantool.TarantoolSlopesRepository.DeleteSlopeByIDAsync(UInt32 slopeID) in C:\\Users\\alena\\Desktop\\7_sem\\testing_and_debugging\\SkiResort\\AccessToDB\\TarantoolRepositories\\TarantoolSlopesRepository.cs:line 122\r\n   at AccessToDB.Tests.SlopesRepositoryTests.<>c__DisplayClass13_0.<<TestDeleteSlopeByIDAsyncFailsWhenIDNotExists>b__0>d.MoveNext() in C:\\Users\\alena\\Desktop\\7_sem\\testing_and_debugging\\SkiResort\\AccessToDB.Tests\\SlopesRepositoryTests.cs:line 142\r\n--- End of stack trace from previous location ---\r\n   at Xunit.Assert.RecordExceptionAsync(Func`1 testCode) in /_/src/xunit.assert/Asserts/Record.cs:line 104\n   at AccessToDB.RepositoriesTarantool.TarantoolSlopesRepository.DeleteSlopeByIDAsync(UInt32 slopeID) in C:\\Users\\alena\\Desktop\\7_sem\\testing_and_debugging\\SkiResort\\AccessToDB\\TarantoolRepositories\\TarantoolSlopesRepository.cs:line 122\r\n   at AccessToDB.Tests.SlopesRepositoryTests.<>c__DisplayClass13_0.<<TestDeleteSlopeByIDAsyncFailsWhenIDNotExists>b__0>d.MoveNext() in C:\\Users\\alena\\Desktop\\7_sem\\testing_and_debugging\\SkiResort\\AccessToDB.Tests\\SlopesRepositoryTests.cs:line 142\r\n--- End of stack trace from previous location ---\r\n   at Xunit.Assert.RecordExceptionAsync(Func`1 testCode) in /_/src/xunit.assert/Asserts/Record.cs:line 104"
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1665468378206,
+  "stop": 1665468378907
+}

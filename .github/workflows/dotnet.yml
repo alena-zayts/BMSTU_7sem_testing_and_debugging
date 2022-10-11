@@ -7,23 +7,23 @@ on:
     branches: [ main ]
 
 jobs:
-  container-test-job:
-    runs-on: ubuntu-latest
-    container:
-      image: tarantool/tarantool:2.8
-      #env:
-        #NODE_ENV: development
-      ports:
-        - 3301
-      volumes:
-      - /app:/usr/local/share/tarantool
-      #- /mnt/c/BMSTU_7sem_web/src/tarantool/app:/usr/local/share/tarantool
-      #- /mnt/c/BMSTU_7sem_web/src/tarantool/data:/var/lib/tarantool
-      #options: --cpus 1
-    steps:
-      - name: Run Tarantoool
-        run: tarantool /usr/local/share/tarantool/app.init.lua
-        working-directory: SkiResort/tarantool
+  # container-test-job:
+    # runs-on: ubuntu-latest
+    # container:
+      # image: tarantool/tarantool:2.8
+      # #env:
+        # #NODE_ENV: development
+      # ports:
+        # - 3301
+      # volumes:
+      # - /app:/usr/local/share/tarantool
+      # #- /mnt/c/BMSTU_7sem_web/src/tarantool/app:/usr/local/share/tarantool
+      # #- /mnt/c/BMSTU_7sem_web/src/tarantool/data:/var/lib/tarantool
+      # #options: --cpus 1
+    # steps:
+      # - name: Run Tarantoool
+        # run: tarantool /usr/local/share/tarantool/app.init.lua
+        # working-directory: SkiResort/tarantool
         
   build:
     name: Build
@@ -62,7 +62,8 @@ jobs:
       working-directory: SkiResort
       
     - name: Run AccessToDB Unit Tests
-      run: dotnet test AccessToDB.Tests --no-build --verbosity normal 
+      #run: dotnet test AccessToDB.Tests --no-build --verbosity normal 
+      run: docker-compose -f /tarantool/docker-compose.yml up -d && dotnet test AccessToDB.Tests --no-build --verbosity normal 
       working-directory: SkiResort
       
     - name: Generate AccessToDB Unit Tests report

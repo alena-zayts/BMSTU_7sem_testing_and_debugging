@@ -1,0 +1,46 @@
+{
+  "uuid": "9c784cc7-c340-4ed7-a10e-c81593527557-AccessToDB.Tests.SlopesRepositoryTests.TestAddSlopeAsyncFailsWhenSlopeIdRepeats(slope: Slope { SlopeID = 177, SlopeName = slopeName16cd4809-ab4a-4229-b299-97bbd5e6f221, IsOpen = True, DifficultyLevel = 60, ConnectedLifts =  })",
+  "historyId": "AccessToDB.Tests.SlopesRepositoryTests.TestAddSlopeAsyncFailsWhenSlopeIdRepeats(slope: Slope { SlopeID = 177, SlopeName = slopeName16cd4809-ab4a-4229-b299-97bbd5e6f221, IsOpen = True, DifficultyLevel = 60, ConnectedLifts =  })",
+  "fullName": "AccessToDB.Tests.SlopesRepositoryTests.TestAddSlopeAsyncFailsWhenSlopeIdRepeats(slope: Slope { SlopeID = 177, SlopeName = slopeName16cd4809-ab4a-4229-b299-97bbd5e6f221, IsOpen = True, DifficultyLevel = 60, ConnectedLifts =  })",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "AccessToDB.Tests.SlopesRepositoryTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "AccessToDB.Tests.SlopesRepositoryTests.TestAddSlopeAsyncFailsWhenSlopeIdRepeats(slope: Slope { SlopeID = 177, SlopeName = slopeName16cd4809-ab4a-4229-b299-97bbd5e6f221, IsOpen = True, DifficultyLevel = 60, ConnectedLifts =  })"
+    },
+    {
+      "name": "package",
+      "value": "AccessToDB.Tests.SlopesRepositoryTests"
+    },
+    {
+      "name": "suite",
+      "value": "SlopesRepositorySuite"
+    }
+  ],
+  "links": [],
+  "name": "AccessToDB.Tests.SlopesRepositoryTests.TestAddSlopeAsyncFailsWhenSlopeIdRepeats(slope: Slope { SlopeID = 177, SlopeName = slopeName16cd4809-ab4a-4229-b299-97bbd5e6f221, IsOpen = True, DifficultyLevel = 60, ConnectedLifts =  })",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1665469149005,
+  "stop": 1665469149668
+}

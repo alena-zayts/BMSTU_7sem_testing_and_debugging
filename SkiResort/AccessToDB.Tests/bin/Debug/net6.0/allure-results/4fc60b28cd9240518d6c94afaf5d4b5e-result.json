@@ -1,0 +1,46 @@
+{
+  "uuid": "30cd5db0-664f-4bbe-916d-d3fdfc760001-AccessToDB.Tests.SlopesRepositoryTests.TestGetSlopeByNameAsyncFailsWhenNameNotExists(slopeName: \"slopeNamefc15a747-bfe8-4e04-bc0e-aff8a43e3335\")",
+  "historyId": "AccessToDB.Tests.SlopesRepositoryTests.TestGetSlopeByNameAsyncFailsWhenNameNotExists(slopeName: \"slopeNamefc15a747-bfe8-4e04-bc0e-aff8a43e3335\")",
+  "fullName": "AccessToDB.Tests.SlopesRepositoryTests.TestGetSlopeByNameAsyncFailsWhenNameNotExists(slopeName: \"slopeNamefc15a747-bfe8-4e04-bc0e-aff8a43e3335\")",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "AccessToDB.Tests.SlopesRepositoryTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "AccessToDB.Tests.SlopesRepositoryTests.TestGetSlopeByNameAsyncFailsWhenNameNotExists(slopeName: \"slopeNamefc15a747-bfe8-4e04-bc0e-aff8a43e3335\")"
+    },
+    {
+      "name": "package",
+      "value": "AccessToDB.Tests.SlopesRepositoryTests"
+    },
+    {
+      "name": "suite",
+      "value": "SlopesRepositorySuite"
+    }
+  ],
+  "links": [],
+  "name": "AccessToDB.Tests.SlopesRepositoryTests.TestGetSlopeByNameAsyncFailsWhenNameNotExists(slopeName: \"slopeNamefc15a747-bfe8-4e04-bc0e-aff8a43e3335\")",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1665468713451,
+  "stop": 1665468714073
+}

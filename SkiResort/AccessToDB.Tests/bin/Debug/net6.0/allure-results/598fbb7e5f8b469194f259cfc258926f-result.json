@@ -1,0 +1,46 @@
+{
+  "uuid": "9f358f13-1d03-4c3b-895e-fee1af72f4de-AccessToDB.Tests.SlopesRepositoryTests.TestGetSlopesAsyncEmpty",
+  "historyId": "AccessToDB.Tests.SlopesRepositoryTests.TestGetSlopesAsyncEmpty",
+  "fullName": "AccessToDB.Tests.SlopesRepositoryTests.TestGetSlopesAsyncEmpty",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "AccessToDB.Tests.SlopesRepositoryTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "AccessToDB.Tests.SlopesRepositoryTests.TestGetSlopesAsyncEmpty"
+    },
+    {
+      "name": "package",
+      "value": "AccessToDB.Tests.SlopesRepositoryTests"
+    },
+    {
+      "name": "suite",
+      "value": "SlopesRepositorySuite"
+    }
+  ],
+  "links": [],
+  "name": "AccessToDB.Tests.SlopesRepositoryTests.TestGetSlopesAsyncEmpty",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1665469150336,
+  "stop": 1665469150953
+}

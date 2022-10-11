@@ -1,0 +1,12 @@
+{
+  "uuid": "98cbaaae-3640-439c-80e0-817c90c1aec4-AccessToDB.Tests.LiftsRepositoryTests",
+  "name": "AccessToDB.Tests.LiftsRepositoryTests",
+  "children": [
+    "f7eec37e-f5c1-4dcb-91b4-e1aaa5fadcc3-AccessToDB.Tests.LiftsRepositoryTests.TestGetLiftByNameAsyncFailsWhenNameNotExists(liftName: \"liftName58bb84cb-f3e2-48a9-a10e-0fdee533068f\")"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1665469192720,
+  "stop": 1665469193340
+}

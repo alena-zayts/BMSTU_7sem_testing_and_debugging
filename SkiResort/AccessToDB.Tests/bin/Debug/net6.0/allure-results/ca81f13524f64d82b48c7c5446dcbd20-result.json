@@ -1,0 +1,46 @@
+{
+  "uuid": "99d84a88-db71-4fc7-8eb2-8ee820d74464-AccessToDB.Tests.SlopesRepositoryTests.TestAddSlopeAsyncFailsWhenSlopeIdRepeats(slope: Slope { SlopeID = 165, SlopeName = slopeNamee8c713fe-d78b-4466-a336-4ed3dba07586, IsOpen = True, DifficultyLevel = 13, ConnectedLifts =  })",
+  "historyId": "AccessToDB.Tests.SlopesRepositoryTests.TestAddSlopeAsyncFailsWhenSlopeIdRepeats(slope: Slope { SlopeID = 165, SlopeName = slopeNamee8c713fe-d78b-4466-a336-4ed3dba07586, IsOpen = True, DifficultyLevel = 13, ConnectedLifts =  })",
+  "fullName": "AccessToDB.Tests.SlopesRepositoryTests.TestAddSlopeAsyncFailsWhenSlopeIdRepeats(slope: Slope { SlopeID = 165, SlopeName = slopeNamee8c713fe-d78b-4466-a336-4ed3dba07586, IsOpen = True, DifficultyLevel = 13, ConnectedLifts =  })",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "AccessToDB.Tests.SlopesRepositoryTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "AccessToDB.Tests.SlopesRepositoryTests.TestAddSlopeAsyncFailsWhenSlopeIdRepeats(slope: Slope { SlopeID = 165, SlopeName = slopeNamee8c713fe-d78b-4466-a336-4ed3dba07586, IsOpen = True, DifficultyLevel = 13, ConnectedLifts =  })"
+    },
+    {
+      "name": "package",
+      "value": "AccessToDB.Tests.SlopesRepositoryTests"
+    },
+    {
+      "name": "suite",
+      "value": "SlopesRepositorySuite"
+    }
+  ],
+  "links": [],
+  "name": "AccessToDB.Tests.SlopesRepositoryTests.TestAddSlopeAsyncFailsWhenSlopeIdRepeats(slope: Slope { SlopeID = 165, SlopeName = slopeNamee8c713fe-d78b-4466-a336-4ed3dba07586, IsOpen = True, DifficultyLevel = 13, ConnectedLifts =  })",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1665467732221,
+  "stop": 1665467732871
+}

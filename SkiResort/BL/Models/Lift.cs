@@ -43,7 +43,7 @@ namespace BL.Models
             this.QueueTime = newQueueTime;
         }
 
-        public bool EqualWithoutConnectedSlopes(Lift otherLift)
+        public bool EqualWithoutConnectedSlopesAndQueueTime(Lift otherLift)
         {
             return LiftID == otherLift.LiftID &&
                 this.LiftName == otherLift.LiftName &&

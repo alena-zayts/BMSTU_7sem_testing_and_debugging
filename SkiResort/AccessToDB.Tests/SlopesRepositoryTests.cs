@@ -1,22 +1,14 @@
 using System.Threading.Tasks;
 using Xunit;
-using Xunit.Abstractions;
-
-using ProGaudi.Tarantool.Client;
-
 using BL.Models;
 using BL.IRepositories;
-
-
 using AccessToDB.RepositoriesTarantool;
 using AccessToDB.Exceptions.SlopeExceptions;
 using System;
 using Allure.Xunit.Attributes;
 using AccessToDB.Tests.ArrangeHelpers;
-using Moq;
-using AutoFixture.Xunit2;
 
-
+// классический подход
 //https://xunit.net/docs/shared-context
 //Constructor and Dispose
 // When to use: when you want a clean test context for every test
@@ -139,7 +131,7 @@ namespace AccessToDB.Tests
             // arrange
 
             // act & assert
-            await Assert.ThrowsAsync<SlopeNotFoundException>(async () => await sut.DeleteSlopeByIDAsync(slopeID));
+            await Assert.ThrowsAsync<SlopeDeleteException>(async () => await sut.DeleteSlopeByIDAsync(slopeID));
         }
     }
 }

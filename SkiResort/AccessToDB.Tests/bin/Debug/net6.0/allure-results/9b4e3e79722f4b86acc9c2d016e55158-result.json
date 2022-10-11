@@ -1,0 +1,47 @@
+{
+  "uuid": "e2725392-1633-4828-a2ff-ffd4bafb3e30-AccessToDB.Tests.LiftsRepositoryTests.TestUpdateLiftByIDAsyncOk(lift: Lift { LiftID = 236, LiftName = liftName3583fa60-612a-4acb-aa3e-cc5fde5a21a2, IsOpen = True, SeatsAmount = 171, LiftingTime = 218, QueueTime = 17, ConnectedSlopes =  })",
+  "historyId": "AccessToDB.Tests.LiftsRepositoryTests.TestUpdateLiftByIDAsyncOk(lift: Lift { LiftID = 236, LiftName = liftName3583fa60-612a-4acb-aa3e-cc5fde5a21a2, IsOpen = True, SeatsAmount = 171, LiftingTime = 218, QueueTime = 17, ConnectedSlopes =  })",
+  "fullName": "AccessToDB.Tests.LiftsRepositoryTests.TestUpdateLiftByIDAsyncOk(lift: Lift { LiftID = 236, LiftName = liftName3583fa60-612a-4acb-aa3e-cc5fde5a21a2, IsOpen = True, SeatsAmount = 171, LiftingTime = 218, QueueTime = 17, ConnectedSlopes =  })",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "AccessToDB.Tests.LiftsRepositoryTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "AccessToDB.Tests.LiftsRepositoryTests.TestUpdateLiftByIDAsyncOk(lift: Lift { LiftID = 236, LiftName = liftName3583fa60-612a-4acb-aa3e-cc5fde5a21a2, IsOpen = True, SeatsAmount = 171, LiftingTime = 218, QueueTime = 17, ConnectedSlopes =  })"
+    },
+    {
+      "name": "package",
+      "value": "AccessToDB.Tests.LiftsRepositoryTests"
+    },
+    {
+      "name": "suite",
+      "value": "LiftsRepositorySuite"
+    }
+  ],
+  "links": [],
+  "name": "AccessToDB.Tests.LiftsRepositoryTests.TestUpdateLiftByIDAsyncOk(lift: Lift { LiftID = 236, LiftName = liftName3583fa60-612a-4acb-aa3e-cc5fde5a21a2, IsOpen = True, SeatsAmount = 171, LiftingTime = 218, QueueTime = 17, ConnectedSlopes =  })",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Assert.Equal() Failure\r\nExpected: Lift { LiftID = 236, LiftName = liftName3583fa60-612a-4acb-aa3e-cc5fde5a21a2smth, IsOpen = False, SeatsAmount = 171, LiftingTime = 218, QueueTime = 17, ConnectedSlopes =  }\r\nActual:   Lift { LiftID = 236, LiftName = liftName3583fa60-612a-4acb-aa3e-cc5fde5a21a2smth, IsOpen = False, SeatsAmount = 171, LiftingTime = 218, QueueTime = 0, ConnectedSlopes =  }",
+    "trace": "   at Xunit.Assert.Equal[T](T expected, T actual, IEqualityComparer`1 comparer) in /_/src/xunit.assert/Asserts/EqualityAsserts.cs:line 96\r\n   at Xunit.Assert.Equal[T](T expected, T actual) in /_/src/xunit.assert/Asserts/EqualityAsserts.cs:line 63\r\n   at AccessToDB.Tests.LiftsRepositoryTests.TestUpdateLiftByIDAsyncOk(Lift lift) in C:\\Users\\alena\\Desktop\\7_sem\\testing_and_debugging\\SkiResort\\AccessToDB.Tests\\LiftsRepositoryTests.cs:line 132\r\n   at System.Threading.Tasks.Task.<>c.<ThrowAsync>b__128_0(Object state)\r\n   at Xunit.Sdk.AsyncTestSyncContext.<>c__DisplayClass7_0.<Post>b__0() in /_/src/xunit.execution/Sdk/AsyncTestSyncContext.cs:line 58"
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1665468658321,
+  "stop": 1665468658974
+}

@@ -127,3 +127,4 @@ C:\Users\alena\Desktop\7_sem\testing_and_debugging\SkiResort\AccessToDB.Tests\bi
 C:\Users\alena\Desktop\7_sem\testing_and_debugging\SkiResort\AccessToDB.Tests\bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.Extension.Xunit.Xml.TestAdapter.dll
 C:\Users\alena\Desktop\7_sem\testing_and_debugging\SkiResort\AccessToDB.Tests\bin\Debug\net6.0\Spekt.TestLogger.dll
 C:\Users\alena\Desktop\7_sem\testing_and_debugging\SkiResort\AccessToDB.Tests\bin\Debug\net6.0\allureConfig.json
+C:\Users\alena\Desktop\7_sem\testing_and_debugging\SkiResort\AccessToDB.Tests\bin\Debug\net6.0\xunit.runner.json

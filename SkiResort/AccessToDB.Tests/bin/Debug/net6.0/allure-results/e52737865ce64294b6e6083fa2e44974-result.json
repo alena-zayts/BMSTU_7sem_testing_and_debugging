@@ -1,0 +1,46 @@
+{
+  "uuid": "2da0beba-7605-44c1-8d44-212209721c2d-AccessToDB.Tests.LiftsRepositoryTests.TestAddLiftAsyncFailsWhenLiftIdRepeats(lift: Lift { LiftID = 212, LiftName = liftName14d3072b-f527-4d1e-ab3b-364eeabd25f1, IsOpen = True, SeatsAmount = 24, LiftingTime = 87, QueueTime = 42, ConnectedSlopes =  })",
+  "historyId": "AccessToDB.Tests.LiftsRepositoryTests.TestAddLiftAsyncFailsWhenLiftIdRepeats(lift: Lift { LiftID = 212, LiftName = liftName14d3072b-f527-4d1e-ab3b-364eeabd25f1, IsOpen = True, SeatsAmount = 24, LiftingTime = 87, QueueTime = 42, ConnectedSlopes =  })",
+  "fullName": "AccessToDB.Tests.LiftsRepositoryTests.TestAddLiftAsyncFailsWhenLiftIdRepeats(lift: Lift { LiftID = 212, LiftName = liftName14d3072b-f527-4d1e-ab3b-364eeabd25f1, IsOpen = True, SeatsAmount = 24, LiftingTime = 87, QueueTime = 42, ConnectedSlopes =  })",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "AccessToDB.Tests.LiftsRepositoryTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "AccessToDB.Tests.LiftsRepositoryTests.TestAddLiftAsyncFailsWhenLiftIdRepeats(lift: Lift { LiftID = 212, LiftName = liftName14d3072b-f527-4d1e-ab3b-364eeabd25f1, IsOpen = True, SeatsAmount = 24, LiftingTime = 87, QueueTime = 42, ConnectedSlopes =  })"
+    },
+    {
+      "name": "package",
+      "value": "AccessToDB.Tests.LiftsRepositoryTests"
+    },
+    {
+      "name": "suite",
+      "value": "LiftsRepositorySuite"
+    }
+  ],
+  "links": [],
+  "name": "AccessToDB.Tests.LiftsRepositoryTests.TestAddLiftAsyncFailsWhenLiftIdRepeats(lift: Lift { LiftID = 212, LiftName = liftName14d3072b-f527-4d1e-ab3b-364eeabd25f1, IsOpen = True, SeatsAmount = 24, LiftingTime = 87, QueueTime = 42, ConnectedSlopes =  })",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1665469142460,
+  "stop": 1665469143190
+}
