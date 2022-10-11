@@ -55,7 +55,7 @@ jobs:
       working-directory: SkiResort
       
     - name: Generate BL Unit Tests report
-      run: npm install -g allure-commandline --save-dev && allure generate BL.Tests\bin\Debug\net6.0\allure-results --clean -o BL.Tests\bin\Debug\net6.0\allure-report # && allure open BL.Tests\bin\Debug\net6.0\allure-report
+      run: npm install -g allure-commandline --save-dev && allure generate BL.Tests/bin/Debug/net6.0/allure-results --clean -o BL.Tests/bin/Debug/net6.0/allure-report # && allure open BL.Tests\bin\Debug\net6.0\allure-report
       working-directory: SkiResort
      
     # - name: Start Docker
@@ -79,7 +79,7 @@ jobs:
       working-directory: SkiResort/tarantool
       
     - name: Generate AccessToDB Unit Tests report
-      run: npm install -g allure-commandline --save-dev && allure generate AccessToDB.Tests\bin\Debug\net6.0\allure-results --clean -o AccessToDB.Tests\bin\Debug\net6.0\allure-report # && allure open BL.Tests\bin\Debug\net6.0\allure-report
+      run: npm install -g allure-commandline --save-dev && allure generate AccessToDB.Tests/bin/Debug/net6.0/allure-results --clean -o AccessToDB.Tests/bin/Debug/net6.0/allure-report && allure open BL.Tests/bin/Debug/net6.0/allure-report &
       working-directory: SkiResort
 
 # uses позволяет переиспользовать другие экшены  
