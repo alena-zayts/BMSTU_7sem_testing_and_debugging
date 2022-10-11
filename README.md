@@ -3,7 +3,20 @@
 
 # Лабораторная 1
 
-Во всех тестах явно прописана структура Arrange-Act-Assert (для себя и для наглядности). По заданию нужно было попробовать много чего, поэтому далее пропишу, что где используется.
+
+6. Должен быть настроен локальный запуск тестов в среде разработки (опционально, если выполнен пункт 7)
+7. Должен быть настроен запуск тестов из командной строки на основании локальной копии репозитория (обязательно)
+8. Должен быть представлен автоматически сгенерированный отчет по результатам выполнения тестов (рекомендуется использовать allure генерация отчета также должна быть учтена в пункта 7 и 6
+
+
+
+
+
+
+Во всех тестах явно прописана структура Arrange-Act-Assert (для себя и для наглядности). 
+
+
+По заданию нужно было попробовать много чего, поэтому далее пропишу, что где используется.
 
 
 ## 1. Unit-Tests for BuisinessLogic (BL.Tests)
@@ -48,7 +61,6 @@ LiftsSlopesServiceTests выполнен в классическом стиле 
 
 LiftsSlopesRepositoryTests выполнен в Лондонский стиле -- изоляция от кода репозиториев ILiftsRepository и ISlopesRepository путем создания их Fake-ов, все остальные -- в классическом.
 
-Во всех тестовых классах применяется Fixture и TearDown.
+Во всех тестовых классах применяется Fixture и TearDown: [Share setup and cleanup code: Constructor and Dispose](//https://xunit.net/docs/shared-context). When to use: when you want a clean test context for every test (sharing the setup and cleanup code, without sharing the object instance).
 
-[Share setup and cleanup code: Constructor and Dispose](//https://xunit.net/docs/shared-context) 
-When to use: when you want a clean test context for every test (sharing the setup and cleanup code, without sharing the object instance).
+Также используется упомянутый выше AutoMoqData.
