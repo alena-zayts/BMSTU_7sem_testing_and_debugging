@@ -34,7 +34,7 @@ jobs:
       run: pwd # home\runner\work\BMSTU_7sem_testing_and_debugging\BMSTU_7sem_testing_and_debugging\SkiResort
       working-directory: SkiResort
       
-    -name: run tarantool
+    - name: run tarantool
       run: docker compose up
       working-directory: SkiResort\tarantool
       
