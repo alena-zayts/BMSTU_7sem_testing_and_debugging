@@ -16,8 +16,9 @@ jobs:
       ports:
         - 3301
       volumes:
-      - /mnt/c/BMSTU_7sem_web/src/tarantool/app:/usr/local/share/tarantool
-      - /mnt/c/BMSTU_7sem_web/src/tarantool/data:/var/lib/tarantool
+      - /app:/usr/local/share/tarantool
+      #- /mnt/c/BMSTU_7sem_web/src/tarantool/app:/usr/local/share/tarantool
+      #- /mnt/c/BMSTU_7sem_web/src/tarantool/data:/var/lib/tarantool
       #options: --cpus 1
     steps:
       - name: Run Tarantoool
