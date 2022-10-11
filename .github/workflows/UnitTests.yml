@@ -36,7 +36,7 @@ jobs:
       
     - name: run tarantool
       run: docker compose up
-      working-directory: SkiResort\tarantool
+      working-directory: SkiResort/tarantool
       
       
     - name: Setup .NET
