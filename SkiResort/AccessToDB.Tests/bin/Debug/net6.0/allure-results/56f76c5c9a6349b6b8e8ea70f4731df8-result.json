@@ -1,0 +1,46 @@
+{
+  "uuid": "fa785a76-a2a8-499c-8501-254f0b1fcaf1-AccessToDB.Tests.UsersRepositoryTests.TestCheckUserIdExistsAsyncTrue(user: User { UserID = 252, CardID = 207, UserEmail = UserEmaileb64e90b-2d73-4598-aa80-87ab2fb3b632, Password = passwordead3ca44-978a-4126-aa6a-46c36042e559, Permissions = UNAUTHORIZED })",
+  "historyId": "AccessToDB.Tests.UsersRepositoryTests.TestCheckUserIdExistsAsyncTrue(user: User { UserID = 252, CardID = 207, UserEmail = UserEmaileb64e90b-2d73-4598-aa80-87ab2fb3b632, Password = passwordead3ca44-978a-4126-aa6a-46c36042e559, Permissions = UNAUTHORIZED })",
+  "fullName": "AccessToDB.Tests.UsersRepositoryTests.TestCheckUserIdExistsAsyncTrue(user: User { UserID = 252, CardID = 207, UserEmail = UserEmaileb64e90b-2d73-4598-aa80-87ab2fb3b632, Password = passwordead3ca44-978a-4126-aa6a-46c36042e559, Permissions = UNAUTHORIZED })",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "AccessToDB.Tests.UsersRepositoryTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "AccessToDB.Tests.UsersRepositoryTests.TestCheckUserIdExistsAsyncTrue(user: User { UserID = 252, CardID = 207, UserEmail = UserEmaileb64e90b-2d73-4598-aa80-87ab2fb3b632, Password = passwordead3ca44-978a-4126-aa6a-46c36042e559, Permissions = UNAUTHORIZED })"
+    },
+    {
+      "name": "package",
+      "value": "AccessToDB.Tests.UsersRepositoryTests"
+    },
+    {
+      "name": "suite",
+      "value": "UsersRepositorySuite"
+    }
+  ],
+  "links": [],
+  "name": "AccessToDB.Tests.UsersRepositoryTests.TestCheckUserIdExistsAsyncTrue(user: User { UserID = 252, CardID = 207, UserEmail = UserEmaileb64e90b-2d73-4598-aa80-87ab2fb3b632, Password = passwordead3ca44-978a-4126-aa6a-46c36042e559, Permissions = UNAUTHORIZED })",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1665861016600,
+  "stop": 1665861017198
+}

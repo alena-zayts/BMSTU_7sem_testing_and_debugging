@@ -1,0 +1,46 @@
+{
+  "uuid": "82563e37-674d-48e6-b3de-312779865897-AccessToDB.Tests.SlopesRepositoryTests.TestAddSlopeAutoIncrementAsyncOk",
+  "historyId": "AccessToDB.Tests.SlopesRepositoryTests.TestAddSlopeAutoIncrementAsyncOk",
+  "fullName": "AccessToDB.Tests.SlopesRepositoryTests.TestAddSlopeAutoIncrementAsyncOk",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "AccessToDB.Tests.SlopesRepositoryTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "AccessToDB.Tests.SlopesRepositoryTests.TestAddSlopeAutoIncrementAsyncOk"
+    },
+    {
+      "name": "package",
+      "value": "AccessToDB.Tests.SlopesRepositoryTests"
+    },
+    {
+      "name": "suite",
+      "value": "SlopesRepositorySuite"
+    }
+  ],
+  "links": [],
+  "name": "AccessToDB.Tests.SlopesRepositoryTests.TestAddSlopeAutoIncrementAsyncOk",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1665861026144,
+  "stop": 1665861026753
+}

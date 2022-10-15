@@ -1,0 +1,46 @@
+{
+  "uuid": "5d67c17f-46bd-44b8-b1c4-84b1b68fda8f-BL.Tests.TurnstilesServiceTest.TestAdminUpdateTurnstileAsync(userID: 58, turnstile: Turnstile { TurnstileID = 45, LiftID = 99, IsOpen = True }, checkPermissionServiceMock: Mock<ICheckPermissionService:14>, turnstilesRepositoryStub: Mock<ITurnstilesRepository:8>, sut: TurnstilesService { })",
+  "historyId": "BL.Tests.TurnstilesServiceTest.TestAdminUpdateTurnstileAsync(userID: 58, turnstile: Turnstile { TurnstileID = 45, LiftID = 99, IsOpen = True }, checkPermissionServiceMock: Mock<ICheckPermissionService:14>, turnstilesRepositoryStub: Mock<ITurnstilesRepository:8>, sut: TurnstilesService { })",
+  "fullName": "BL.Tests.TurnstilesServiceTest.TestAdminUpdateTurnstileAsync(userID: 58, turnstile: Turnstile { TurnstileID = 45, LiftID = 99, IsOpen = True }, checkPermissionServiceMock: Mock<ICheckPermissionService:14>, turnstilesRepositoryStub: Mock<ITurnstilesRepository:8>, sut: TurnstilesService { })",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "BL.Tests.TurnstilesServiceTest"
+    },
+    {
+      "name": "testMethod",
+      "value": "BL.Tests.TurnstilesServiceTest.TestAdminUpdateTurnstileAsync(userID: 58, turnstile: Turnstile { TurnstileID = 45, LiftID = 99, IsOpen = True }, checkPermissionServiceMock: Mock<ICheckPermissionService:14>, turnstilesRepositoryStub: Mock<ITurnstilesRepository:8>, sut: TurnstilesService { })"
+    },
+    {
+      "name": "package",
+      "value": "BL.Tests.TurnstilesServiceTest"
+    },
+    {
+      "name": "suite",
+      "value": "TurnstilesServiceSuite"
+    }
+  ],
+  "links": [],
+  "name": "BL.Tests.TurnstilesServiceTest.TestAdminUpdateTurnstileAsync(userID: 58, turnstile: Turnstile { TurnstileID = 45, LiftID = 99, IsOpen = True }, checkPermissionServiceMock: Mock<ICheckPermissionService:14>, turnstilesRepositoryStub: Mock<ITurnstilesRepository:8>, sut: TurnstilesService { })",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1665861006488,
+  "stop": 1665861006494
+}

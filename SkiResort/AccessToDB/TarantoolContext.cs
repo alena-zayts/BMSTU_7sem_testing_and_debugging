@@ -48,8 +48,20 @@ namespace AccessToDB
         ISpace, IIndex, IIndex)> 
             Initialize(string connection_string)
         {
+            Box box = null;
+            while (box == null)
+            {
+                try
+                {
+                    box = await Box.Connect(connection_string);
+                }
+                catch
+                {
 
-            var box = await Box.Connect(connection_string);
+                }
+            }
+
+
             var schema = box.GetSchema();
 
             var liftsSpace = await schema.GetSpace("lifts");
@@ -89,6 +101,7 @@ namespace AccessToDB
         public void Dispose()
         {
             box.Dispose();
+            //System.Threading.Thread.Sleep(1000);
         }
     }
 }

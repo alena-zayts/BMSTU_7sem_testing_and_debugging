@@ -1,0 +1,12 @@
+{
+  "uuid": "9a71c3df-ee5d-4d16-8868-8e52c6131823-AccessToDB.Tests.LiftsSlopesRepositoryTests",
+  "name": "AccessToDB.Tests.LiftsSlopesRepositoryTests",
+  "children": [
+    "42d2b82f-09eb-46fc-a41a-107266a54065-AccessToDB.Tests.LiftsSlopesRepositoryTests.TestDeleteLiftSlopeByIDAsyncFailsWhenIDNotExists(liftSlopeID: 119)"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1665861025014,
+  "stop": 1665861025576
+}

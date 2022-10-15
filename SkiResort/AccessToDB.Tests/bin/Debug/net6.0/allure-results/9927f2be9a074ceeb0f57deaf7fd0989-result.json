@@ -1,0 +1,46 @@
+{
+  "uuid": "24256ba9-96ff-448c-a256-b4d2ccac9671-AccessToDB.Tests.LiftsSlopesRepositoryTests.TestAddLiftSlopeAsyncFailsWhenLiftSlopeIdRepeats(liftSlope: LiftSlope { RecordID = 121, LiftID = 198, SlopeID = 40 })",
+  "historyId": "AccessToDB.Tests.LiftsSlopesRepositoryTests.TestAddLiftSlopeAsyncFailsWhenLiftSlopeIdRepeats(liftSlope: LiftSlope { RecordID = 121, LiftID = 198, SlopeID = 40 })",
+  "fullName": "AccessToDB.Tests.LiftsSlopesRepositoryTests.TestAddLiftSlopeAsyncFailsWhenLiftSlopeIdRepeats(liftSlope: LiftSlope { RecordID = 121, LiftID = 198, SlopeID = 40 })",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "AccessToDB.Tests.LiftsSlopesRepositoryTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "AccessToDB.Tests.LiftsSlopesRepositoryTests.TestAddLiftSlopeAsyncFailsWhenLiftSlopeIdRepeats(liftSlope: LiftSlope { RecordID = 121, LiftID = 198, SlopeID = 40 })"
+    },
+    {
+      "name": "package",
+      "value": "AccessToDB.Tests.LiftsSlopesRepositoryTests"
+    },
+    {
+      "name": "suite",
+      "value": "LiftsSlopesRepositorySuite"
+    }
+  ],
+  "links": [],
+  "name": "AccessToDB.Tests.LiftsSlopesRepositoryTests.TestAddLiftSlopeAsyncFailsWhenLiftSlopeIdRepeats(liftSlope: LiftSlope { RecordID = 121, LiftID = 198, SlopeID = 40 })",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1665861020221,
+  "stop": 1665861020847
+}

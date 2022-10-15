@@ -1,0 +1,46 @@
+{
+  "uuid": "87f5ecd4-b317-4879-b4ec-78cd6e7ad960-AccessToDB.Tests.SlopesRepositoryTests.TestAddSlopeAsyncFailsWhenSlopeIdRepeats(slope: Slope { SlopeID = 232, SlopeName = slopeName3aed927e-42a6-4a75-9220-6e593ab53a17, IsOpen = True, DifficultyLevel = 166, ConnectedLifts =  })",
+  "historyId": "AccessToDB.Tests.SlopesRepositoryTests.TestAddSlopeAsyncFailsWhenSlopeIdRepeats(slope: Slope { SlopeID = 232, SlopeName = slopeName3aed927e-42a6-4a75-9220-6e593ab53a17, IsOpen = True, DifficultyLevel = 166, ConnectedLifts =  })",
+  "fullName": "AccessToDB.Tests.SlopesRepositoryTests.TestAddSlopeAsyncFailsWhenSlopeIdRepeats(slope: Slope { SlopeID = 232, SlopeName = slopeName3aed927e-42a6-4a75-9220-6e593ab53a17, IsOpen = True, DifficultyLevel = 166, ConnectedLifts =  })",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "AccessToDB.Tests.SlopesRepositoryTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "AccessToDB.Tests.SlopesRepositoryTests.TestAddSlopeAsyncFailsWhenSlopeIdRepeats(slope: Slope { SlopeID = 232, SlopeName = slopeName3aed927e-42a6-4a75-9220-6e593ab53a17, IsOpen = True, DifficultyLevel = 166, ConnectedLifts =  })"
+    },
+    {
+      "name": "package",
+      "value": "AccessToDB.Tests.SlopesRepositoryTests"
+    },
+    {
+      "name": "suite",
+      "value": "SlopesRepositorySuite"
+    }
+  ],
+  "links": [],
+  "name": "AccessToDB.Tests.SlopesRepositoryTests.TestAddSlopeAsyncFailsWhenSlopeIdRepeats(slope: Slope { SlopeID = 232, SlopeName = slopeName3aed927e-42a6-4a75-9220-6e593ab53a17, IsOpen = True, DifficultyLevel = 166, ConnectedLifts =  })",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1665861029108,
+  "stop": 1665861029715
+}

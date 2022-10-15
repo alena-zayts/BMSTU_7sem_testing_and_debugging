@@ -1,0 +1,46 @@
+{
+  "uuid": "5a633228-a0be-44f4-b0c7-b9436fc45fee-AccessToDB.Tests.LiftsSlopesRepositoryTests.TestGetLiftsBySlopeIdAsyncOk(slope1: Slope { SlopeID = 203, SlopeName = slopeName84b327ff-3001-4e99-bd88-ea9b20d69070, IsOpen = True, DifficultyLevel = 12, ConnectedLifts =  }, slope2: Slope { SlopeID = 54, SlopeName = slopeNamecda3e0bb-3550-4528-abcd-16c6c031e468, IsOpen = False, DifficultyLevel = 91, ConnectedLifts =  }, lift1: Lift { LiftID = 86, LiftName = liftNamed5febfb3-434c-47c1-9fc2-a6ec8de288c6, IsOpen = True, SeatsAmount = 52, LiftingTime = 102, QueueTime = 172, ConnectedSlopes =  }, lift2: Lift { LiftID = 186, LiftName = liftNameb702ce23-aa50-4a66-bd84-a46c0af06de0, IsOpen = False, SeatsAmount = 56, LiftingTime = 98, QueueTime = 116, ConnectedSlopes =  })",
+  "historyId": "AccessToDB.Tests.LiftsSlopesRepositoryTests.TestGetLiftsBySlopeIdAsyncOk(slope1: Slope { SlopeID = 203, SlopeName = slopeName84b327ff-3001-4e99-bd88-ea9b20d69070, IsOpen = True, DifficultyLevel = 12, ConnectedLifts =  }, slope2: Slope { SlopeID = 54, SlopeName = slopeNamecda3e0bb-3550-4528-abcd-16c6c031e468, IsOpen = False, DifficultyLevel = 91, ConnectedLifts =  }, lift1: Lift { LiftID = 86, LiftName = liftNamed5febfb3-434c-47c1-9fc2-a6ec8de288c6, IsOpen = True, SeatsAmount = 52, LiftingTime = 102, QueueTime = 172, ConnectedSlopes =  }, lift2: Lift { LiftID = 186, LiftName = liftNameb702ce23-aa50-4a66-bd84-a46c0af06de0, IsOpen = False, SeatsAmount = 56, LiftingTime = 98, QueueTime = 116, ConnectedSlopes =  })",
+  "fullName": "AccessToDB.Tests.LiftsSlopesRepositoryTests.TestGetLiftsBySlopeIdAsyncOk(slope1: Slope { SlopeID = 203, SlopeName = slopeName84b327ff-3001-4e99-bd88-ea9b20d69070, IsOpen = True, DifficultyLevel = 12, ConnectedLifts =  }, slope2: Slope { SlopeID = 54, SlopeName = slopeNamecda3e0bb-3550-4528-abcd-16c6c031e468, IsOpen = False, DifficultyLevel = 91, ConnectedLifts =  }, lift1: Lift { LiftID = 86, LiftName = liftNamed5febfb3-434c-47c1-9fc2-a6ec8de288c6, IsOpen = True, SeatsAmount = 52, LiftingTime = 102, QueueTime = 172, ConnectedSlopes =  }, lift2: Lift { LiftID = 186, LiftName = liftNameb702ce23-aa50-4a66-bd84-a46c0af06de0, IsOpen = False, SeatsAmount = 56, LiftingTime = 98, QueueTime = 116, ConnectedSlopes =  })",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "AccessToDB.Tests.LiftsSlopesRepositoryTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "AccessToDB.Tests.LiftsSlopesRepositoryTests.TestGetLiftsBySlopeIdAsyncOk(slope1: Slope { SlopeID = 203, SlopeName = slopeName84b327ff-3001-4e99-bd88-ea9b20d69070, IsOpen = True, DifficultyLevel = 12, ConnectedLifts =  }, slope2: Slope { SlopeID = 54, SlopeName = slopeNamecda3e0bb-3550-4528-abcd-16c6c031e468, IsOpen = False, DifficultyLevel = 91, ConnectedLifts =  }, lift1: Lift { LiftID = 86, LiftName = liftNamed5febfb3-434c-47c1-9fc2-a6ec8de288c6, IsOpen = True, SeatsAmount = 52, LiftingTime = 102, QueueTime = 172, ConnectedSlopes =  }, lift2: Lift { LiftID = 186, LiftName = liftNameb702ce23-aa50-4a66-bd84-a46c0af06de0, IsOpen = False, SeatsAmount = 56, LiftingTime = 98, QueueTime = 116, ConnectedSlopes =  })"
+    },
+    {
+      "name": "package",
+      "value": "AccessToDB.Tests.LiftsSlopesRepositoryTests"
+    },
+    {
+      "name": "suite",
+      "value": "LiftsSlopesRepositorySuite"
+    }
+  ],
+  "links": [],
+  "name": "AccessToDB.Tests.LiftsSlopesRepositoryTests.TestGetLiftsBySlopeIdAsyncOk(slope1: Slope { SlopeID = 203, SlopeName = slopeName84b327ff-3001-4e99-bd88-ea9b20d69070, IsOpen = True, DifficultyLevel = 12, ConnectedLifts =  }, slope2: Slope { SlopeID = 54, SlopeName = slopeNamecda3e0bb-3550-4528-abcd-16c6c031e468, IsOpen = False, DifficultyLevel = 91, ConnectedLifts =  }, lift1: Lift { LiftID = 86, LiftName = liftNamed5febfb3-434c-47c1-9fc2-a6ec8de288c6, IsOpen = True, SeatsAmount = 52, LiftingTime = 102, QueueTime = 172, ConnectedSlopes =  }, lift2: Lift { LiftID = 186, LiftName = liftNameb702ce23-aa50-4a66-bd84-a46c0af06de0, IsOpen = False, SeatsAmount = 56, LiftingTime = 98, QueueTime = 116, ConnectedSlopes =  })",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1665861020850,
+  "stop": 1665861021504
+}

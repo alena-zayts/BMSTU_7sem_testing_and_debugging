@@ -1,0 +1,46 @@
+{
+  "uuid": "cc14b503-dd2e-4ffd-81ee-f30d1bad30e5-AccessToDB.Tests.TurnstilesRepositoryTests.TestGetTurnstilesAsyncEmpty",
+  "historyId": "AccessToDB.Tests.TurnstilesRepositoryTests.TestGetTurnstilesAsyncEmpty",
+  "fullName": "AccessToDB.Tests.TurnstilesRepositoryTests.TestGetTurnstilesAsyncEmpty",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "AccessToDB.Tests.TurnstilesRepositoryTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "AccessToDB.Tests.TurnstilesRepositoryTests.TestGetTurnstilesAsyncEmpty"
+    },
+    {
+      "name": "package",
+      "value": "AccessToDB.Tests.TurnstilesRepositoryTests"
+    },
+    {
+      "name": "suite",
+      "value": "TurnstilesRepositorySuite"
+    }
+  ],
+  "links": [],
+  "name": "AccessToDB.Tests.TurnstilesRepositoryTests.TestGetTurnstilesAsyncEmpty",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1665861030331,
+  "stop": 1665861030891
+}

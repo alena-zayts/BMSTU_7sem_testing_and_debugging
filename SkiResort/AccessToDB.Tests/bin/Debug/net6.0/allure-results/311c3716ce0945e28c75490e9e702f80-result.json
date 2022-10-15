@@ -1,0 +1,46 @@
+{
+  "uuid": "fbdf4896-b072-4adc-9ba0-d7b885bc4ca2-AccessToDB.Tests.LiftsRepositoryTests.TestGetLiftByIdAsyncOk(lift: Lift { LiftID = 1, LiftName = liftNameb36c6251-0118-4c5b-ad35-f22d84986076, IsOpen = True, SeatsAmount = 125, LiftingTime = 155, QueueTime = 115, ConnectedSlopes =  })",
+  "historyId": "AccessToDB.Tests.LiftsRepositoryTests.TestGetLiftByIdAsyncOk(lift: Lift { LiftID = 1, LiftName = liftNameb36c6251-0118-4c5b-ad35-f22d84986076, IsOpen = True, SeatsAmount = 125, LiftingTime = 155, QueueTime = 115, ConnectedSlopes =  })",
+  "fullName": "AccessToDB.Tests.LiftsRepositoryTests.TestGetLiftByIdAsyncOk(lift: Lift { LiftID = 1, LiftName = liftNameb36c6251-0118-4c5b-ad35-f22d84986076, IsOpen = True, SeatsAmount = 125, LiftingTime = 155, QueueTime = 115, ConnectedSlopes =  })",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "AccessToDB.Tests.LiftsRepositoryTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "AccessToDB.Tests.LiftsRepositoryTests.TestGetLiftByIdAsyncOk(lift: Lift { LiftID = 1, LiftName = liftNameb36c6251-0118-4c5b-ad35-f22d84986076, IsOpen = True, SeatsAmount = 125, LiftingTime = 155, QueueTime = 115, ConnectedSlopes =  })"
+    },
+    {
+      "name": "package",
+      "value": "AccessToDB.Tests.LiftsRepositoryTests"
+    },
+    {
+      "name": "suite",
+      "value": "LiftsRepositorySuite"
+    }
+  ],
+  "links": [],
+  "name": "AccessToDB.Tests.LiftsRepositoryTests.TestGetLiftByIdAsyncOk(lift: Lift { LiftID = 1, LiftName = liftNameb36c6251-0118-4c5b-ad35-f22d84986076, IsOpen = True, SeatsAmount = 125, LiftingTime = 155, QueueTime = 115, ConnectedSlopes =  })",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1665861036975,
+  "stop": 1665861037569
+}

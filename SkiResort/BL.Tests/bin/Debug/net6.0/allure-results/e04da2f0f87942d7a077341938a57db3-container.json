@@ -1,0 +1,12 @@
+{
+  "uuid": "06b48606-2c65-44a7-8026-9c76d59542e0-BL.Tests.LiftsSlopesServiceTests",
+  "name": "BL.Tests.LiftsSlopesServiceTests",
+  "children": [
+    "725c4d48-4139-4d41-bc30-ac0c6174792c-BL.Tests.LiftsSlopesServiceTests.TestGetLiftsSlopesInfoAsync(liftsSlopes: [LiftSlope { RecordID = 235, LiftID = 105, SlopeID = 127 }, LiftSlope { RecordID = 253, LiftID = 126, SlopeID = 213 }, LiftSlope { RecordID = 1, LiftID = 26, SlopeID = 38 }], slopesRepositoryStub: Mock<ISlopesRepository:1>, liftsRepositoryStub: Mock<ILiftsRepository:6>, liftsSlopesRepositoryStub: Mock<ILiftsSlopesRepository:6>)"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1665861006515,
+  "stop": 1665861006522
+}

@@ -1,0 +1,46 @@
+{
+  "uuid": "1cb71a81-beae-49dd-98cb-ae9f3d263104-BL.Tests.UsersServiceTests.TestAdminAddAutoIncrementUser",
+  "historyId": "BL.Tests.UsersServiceTests.TestAdminAddAutoIncrementUser",
+  "fullName": "BL.Tests.UsersServiceTests.TestAdminAddAutoIncrementUser",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "BL.Tests.UsersServiceTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "BL.Tests.UsersServiceTests.TestAdminAddAutoIncrementUser"
+    },
+    {
+      "name": "package",
+      "value": "BL.Tests.UsersServiceTests"
+    },
+    {
+      "name": "suite",
+      "value": "UsersServiceSuite"
+    }
+  ],
+  "links": [],
+  "name": "BL.Tests.UsersServiceTests.TestAdminAddAutoIncrementUser",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1665861006572,
+  "stop": 1665861006580
+}
