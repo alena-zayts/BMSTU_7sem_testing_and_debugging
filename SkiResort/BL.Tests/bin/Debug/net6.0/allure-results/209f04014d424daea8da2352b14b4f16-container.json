@@ -1,0 +1,12 @@
+{
+  "uuid": "1406fa6f-329c-4737-aba0-cd35f86225cb-BL.Tests.SlopesServiceTest",
+  "name": "BL.Tests.SlopesServiceTest",
+  "children": [
+    "05215daf-b35b-4ca1-bbd9-f5a0094b4f3a-BL.Tests.SlopesServiceTest.TestGetSlopesInfoAsync(userID: 249, initialSlopes: [Slope { SlopeID = 239, SlopeName = slopeName38940ac5-5434-4692-a993-c5d86bb35e10, IsOpen = True, DifficultyLevel = 135, ConnectedLifts =  }, Slope { SlopeID = 64, SlopeName = slopeName35abf423-7137-46b6-86b7-6b5f9e4a5679, IsOpen = False, DifficultyLevel = 132, ConnectedLifts =  }, Slope { SlopeID = 123, SlopeName = slopeName49323d38-66a8-4733-841d-eeb34377726a, IsOpen = True, DifficultyLevel = 196, ConnectedLifts =  }], checkPermissionServiceMock: Mock<ICheckPermissionService:7>, slopesRepositoryStub: Mock<ISlopesRepository:5>, liftsSlopesRepositoryStub: Mock<ILiftsSlopesRepository:10>, sut: SlopesService { })"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1665856538404,
+  "stop": 1665856538485
+}

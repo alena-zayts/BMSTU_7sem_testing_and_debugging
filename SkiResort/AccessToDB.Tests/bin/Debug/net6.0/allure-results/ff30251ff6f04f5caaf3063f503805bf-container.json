@@ -1,0 +1,12 @@
+{
+  "uuid": "1c58a035-0228-4ae2-ad35-b01e413d8398-AccessToDB.Tests.UsersRepositoryTests",
+  "name": "AccessToDB.Tests.UsersRepositoryTests",
+  "children": [
+    "27690d84-c2f3-4232-8651-8b725d831343-AccessToDB.Tests.UsersRepositoryTests.TestCheckUserEmailExistsAsyncFalse(userEmail: \"userEmail4aed91ec-63e3-42f2-9080-79949b346a43\")"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1665856545280,
+  "stop": 1665856545842
+}

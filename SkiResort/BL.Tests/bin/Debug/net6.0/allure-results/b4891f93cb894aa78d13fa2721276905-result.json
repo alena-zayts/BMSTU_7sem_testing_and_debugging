@@ -1,0 +1,46 @@
+{
+  "uuid": "05215daf-b35b-4ca1-bbd9-f5a0094b4f3a-BL.Tests.SlopesServiceTest.TestGetSlopesInfoAsync(userID: 249, initialSlopes: [Slope { SlopeID = 239, SlopeName = slopeName38940ac5-5434-4692-a993-c5d86bb35e10, IsOpen = True, DifficultyLevel = 135, ConnectedLifts =  }, Slope { SlopeID = 64, SlopeName = slopeName35abf423-7137-46b6-86b7-6b5f9e4a5679, IsOpen = False, DifficultyLevel = 132, ConnectedLifts =  }, Slope { SlopeID = 123, SlopeName = slopeName49323d38-66a8-4733-841d-eeb34377726a, IsOpen = True, DifficultyLevel = 196, ConnectedLifts =  }], checkPermissionServiceMock: Mock<ICheckPermissionService:7>, slopesRepositoryStub: Mock<ISlopesRepository:5>, liftsSlopesRepositoryStub: Mock<ILiftsSlopesRepository:10>, sut: SlopesService { })",
+  "historyId": "BL.Tests.SlopesServiceTest.TestGetSlopesInfoAsync(userID: 249, initialSlopes: [Slope { SlopeID = 239, SlopeName = slopeName38940ac5-5434-4692-a993-c5d86bb35e10, IsOpen = True, DifficultyLevel = 135, ConnectedLifts =  }, Slope { SlopeID = 64, SlopeName = slopeName35abf423-7137-46b6-86b7-6b5f9e4a5679, IsOpen = False, DifficultyLevel = 132, ConnectedLifts =  }, Slope { SlopeID = 123, SlopeName = slopeName49323d38-66a8-4733-841d-eeb34377726a, IsOpen = True, DifficultyLevel = 196, ConnectedLifts =  }], checkPermissionServiceMock: Mock<ICheckPermissionService:7>, slopesRepositoryStub: Mock<ISlopesRepository:5>, liftsSlopesRepositoryStub: Mock<ILiftsSlopesRepository:10>, sut: SlopesService { })",
+  "fullName": "BL.Tests.SlopesServiceTest.TestGetSlopesInfoAsync(userID: 249, initialSlopes: [Slope { SlopeID = 239, SlopeName = slopeName38940ac5-5434-4692-a993-c5d86bb35e10, IsOpen = True, DifficultyLevel = 135, ConnectedLifts =  }, Slope { SlopeID = 64, SlopeName = slopeName35abf423-7137-46b6-86b7-6b5f9e4a5679, IsOpen = False, DifficultyLevel = 132, ConnectedLifts =  }, Slope { SlopeID = 123, SlopeName = slopeName49323d38-66a8-4733-841d-eeb34377726a, IsOpen = True, DifficultyLevel = 196, ConnectedLifts =  }], checkPermissionServiceMock: Mock<ICheckPermissionService:7>, slopesRepositoryStub: Mock<ISlopesRepository:5>, liftsSlopesRepositoryStub: Mock<ILiftsSlopesRepository:10>, sut: SlopesService { })",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "BL.Tests.SlopesServiceTest"
+    },
+    {
+      "name": "testMethod",
+      "value": "BL.Tests.SlopesServiceTest.TestGetSlopesInfoAsync(userID: 249, initialSlopes: [Slope { SlopeID = 239, SlopeName = slopeName38940ac5-5434-4692-a993-c5d86bb35e10, IsOpen = True, DifficultyLevel = 135, ConnectedLifts =  }, Slope { SlopeID = 64, SlopeName = slopeName35abf423-7137-46b6-86b7-6b5f9e4a5679, IsOpen = False, DifficultyLevel = 132, ConnectedLifts =  }, Slope { SlopeID = 123, SlopeName = slopeName49323d38-66a8-4733-841d-eeb34377726a, IsOpen = True, DifficultyLevel = 196, ConnectedLifts =  }], checkPermissionServiceMock: Mock<ICheckPermissionService:7>, slopesRepositoryStub: Mock<ISlopesRepository:5>, liftsSlopesRepositoryStub: Mock<ILiftsSlopesRepository:10>, sut: SlopesService { })"
+    },
+    {
+      "name": "package",
+      "value": "BL.Tests.SlopesServiceTest"
+    },
+    {
+      "name": "suite",
+      "value": "SlopesServiceSuite"
+    }
+  ],
+  "links": [],
+  "name": "BL.Tests.SlopesServiceTest.TestGetSlopesInfoAsync(userID: 249, initialSlopes: [Slope { SlopeID = 239, SlopeName = slopeName38940ac5-5434-4692-a993-c5d86bb35e10, IsOpen = True, DifficultyLevel = 135, ConnectedLifts =  }, Slope { SlopeID = 64, SlopeName = slopeName35abf423-7137-46b6-86b7-6b5f9e4a5679, IsOpen = False, DifficultyLevel = 132, ConnectedLifts =  }, Slope { SlopeID = 123, SlopeName = slopeName49323d38-66a8-4733-841d-eeb34377726a, IsOpen = True, DifficultyLevel = 196, ConnectedLifts =  }], checkPermissionServiceMock: Mock<ICheckPermissionService:7>, slopesRepositoryStub: Mock<ISlopesRepository:5>, liftsSlopesRepositoryStub: Mock<ILiftsSlopesRepository:10>, sut: SlopesService { })",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1665856538411,
+  "stop": 1665856538482
+}

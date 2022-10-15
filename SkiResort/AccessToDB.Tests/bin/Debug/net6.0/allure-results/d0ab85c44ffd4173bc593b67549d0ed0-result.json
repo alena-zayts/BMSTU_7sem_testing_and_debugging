@@ -1,0 +1,46 @@
+{
+  "uuid": "8ddf3bee-c57e-4cdf-8ae3-8060feecd377-AccessToDB.Tests.UsersRepositoryTests.TestAddUserAsyncFailsWhenUserIdRepeats(user: User { UserID = 228, CardID = 37, UserEmail = UserEmail7d259878-fe75-4362-8697-1abf726386f9, Password = passwordc165c0d0-fda0-47d9-b767-6fbef0862d69, Permissions = UNAUTHORIZED })",
+  "historyId": "AccessToDB.Tests.UsersRepositoryTests.TestAddUserAsyncFailsWhenUserIdRepeats(user: User { UserID = 228, CardID = 37, UserEmail = UserEmail7d259878-fe75-4362-8697-1abf726386f9, Password = passwordc165c0d0-fda0-47d9-b767-6fbef0862d69, Permissions = UNAUTHORIZED })",
+  "fullName": "AccessToDB.Tests.UsersRepositoryTests.TestAddUserAsyncFailsWhenUserIdRepeats(user: User { UserID = 228, CardID = 37, UserEmail = UserEmail7d259878-fe75-4362-8697-1abf726386f9, Password = passwordc165c0d0-fda0-47d9-b767-6fbef0862d69, Permissions = UNAUTHORIZED })",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "AccessToDB.Tests.UsersRepositoryTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "AccessToDB.Tests.UsersRepositoryTests.TestAddUserAsyncFailsWhenUserIdRepeats(user: User { UserID = 228, CardID = 37, UserEmail = UserEmail7d259878-fe75-4362-8697-1abf726386f9, Password = passwordc165c0d0-fda0-47d9-b767-6fbef0862d69, Permissions = UNAUTHORIZED })"
+    },
+    {
+      "name": "package",
+      "value": "AccessToDB.Tests.UsersRepositoryTests"
+    },
+    {
+      "name": "suite",
+      "value": "UsersRepositorySuite"
+    }
+  ],
+  "links": [],
+  "name": "AccessToDB.Tests.UsersRepositoryTests.TestAddUserAsyncFailsWhenUserIdRepeats(user: User { UserID = 228, CardID = 37, UserEmail = UserEmail7d259878-fe75-4362-8697-1abf726386f9, Password = passwordc165c0d0-fda0-47d9-b767-6fbef0862d69, Permissions = UNAUTHORIZED })",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1665856544665,
+  "stop": 1665856545277
+}

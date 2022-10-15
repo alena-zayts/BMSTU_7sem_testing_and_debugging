@@ -1,0 +1,15 @@
+C:\Users\alena\Desktop\7_sem\testing_and_debugging\SkiResort\AccessToDB\bin\Debug\net6.0\AccessToDB.deps.json
+C:\Users\alena\Desktop\7_sem\testing_and_debugging\SkiResort\AccessToDB\bin\Debug\net6.0\AccessToDB.dll
+C:\Users\alena\Desktop\7_sem\testing_and_debugging\SkiResort\AccessToDB\bin\Debug\net6.0\AccessToDB.pdb
+C:\Users\alena\Desktop\7_sem\testing_and_debugging\SkiResort\AccessToDB\bin\Debug\net6.0\BL.dll
+C:\Users\alena\Desktop\7_sem\testing_and_debugging\SkiResort\AccessToDB\bin\Debug\net6.0\BL.pdb
+C:\Users\alena\Desktop\7_sem\testing_and_debugging\SkiResort\AccessToDB\obj\Debug\net6.0\AccessToDB.csproj.AssemblyReference.cache
+C:\Users\alena\Desktop\7_sem\testing_and_debugging\SkiResort\AccessToDB\obj\Debug\net6.0\AccessToDB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alena\Desktop\7_sem\testing_and_debugging\SkiResort\AccessToDB\obj\Debug\net6.0\AccessToDB.AssemblyInfoInputs.cache
+C:\Users\alena\Desktop\7_sem\testing_and_debugging\SkiResort\AccessToDB\obj\Debug\net6.0\AccessToDB.AssemblyInfo.cs
+C:\Users\alena\Desktop\7_sem\testing_and_debugging\SkiResort\AccessToDB\obj\Debug\net6.0\AccessToDB.csproj.CoreCompileInputs.cache
+C:\Users\alena\Desktop\7_sem\testing_and_debugging\SkiResort\AccessToDB\obj\Debug\net6.0\AccessToDB.csproj.CopyComplete
+C:\Users\alena\Desktop\7_sem\testing_and_debugging\SkiResort\AccessToDB\obj\Debug\net6.0\AccessToDB.dll
+C:\Users\alena\Desktop\7_sem\testing_and_debugging\SkiResort\AccessToDB\obj\Debug\net6.0\refint\AccessToDB.dll
+C:\Users\alena\Desktop\7_sem\testing_and_debugging\SkiResort\AccessToDB\obj\Debug\net6.0\AccessToDB.pdb
+C:\Users\alena\Desktop\7_sem\testing_and_debugging\SkiResort\AccessToDB\obj\Debug\net6.0\ref\AccessToDB.dll
