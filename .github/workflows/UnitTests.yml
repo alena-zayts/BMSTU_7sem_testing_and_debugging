@@ -40,7 +40,7 @@ jobs:
       run: dotnet test BL.Tests --no-build --verbosity normal #normal #detailed
       working-directory: SkiResort
      
-    - name: Start Docker
+    - name: Start Tarantool In Docker
       run: docker-compose -f /home/runner/work/BMSTU_7sem_testing_and_debugging/BMSTU_7sem_testing_and_debugging/SkiResort/tarantool/docker-compose-git.yml up -d
       working-directory: SkiResort
       
@@ -48,16 +48,16 @@ jobs:
       # run: docker-compose -f /home/runner/work/BMSTU_7sem_testing_and_debugging/BMSTU_7sem_testing_and_debugging/SkiResort/tarantool/docker-compose-git.yml up -d && dotnet test AccessToDB.Tests --no-build --verbosity normal 
       # working-directory: SkiResort
       
-    - name: Start Tarantool In Docker
-      run: docker compose up & # & в конце для выполнения в фоновом режиме
-      working-directory: SkiResort/tarantool
+    # - name: Start Tarantool In Docker
+      # run: docker compose up & # & в конце для выполнения в фоновом режиме
+      # working-directory: SkiResort/tarantool
       
     - name: Run AccessToDB Unit Tests
       run: dotnet test AccessToDB.Tests --no-build --verbosity normal 
       working-directory: SkiResort
       
     - name: Stop Tarantool In Docker
-      run: docker compose down
+      run: docker compose -f /home/runner/work/BMSTU_7sem_testing_and_debugging/BMSTU_7sem_testing_and_debugging/SkiResort/tarantool/docker-compose-git.yml down
       working-directory: SkiResort/tarantool
       
     - name: Generate Unit Tests report
@@ -65,7 +65,7 @@ jobs:
       working-directory: SkiResort
       
     - name: Generate Unit Tests report
-      run: npm install -g allure-commandline --save-dev && allure generate BL.Tests/bin/Debug/net6.0/allure-results AccessToDB.Tests/bin/Debug/net6.0/allure-results --clean -o allure-report-for-unit-tests && allure open allure-report-for-unit-tests
+      run: npm install -g allure-commandline --save-dev && allure generate BL.Tests/bin/Debug/net6.0/allure-results AccessToDB.Tests/bin/Debug/net6.0/allure-results --clean -o allure-report-for-unit-tests # && allure open allure-report-for-unit-tests
       working-directory: SkiResort
 
 
