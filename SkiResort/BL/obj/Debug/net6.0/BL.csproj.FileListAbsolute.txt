@@ -1,3 +1,18 @@
+C:/Users/alena/Desktop/7_sem/testing_and_debugging/TestResults/BL.deps.json
+C:/Users/alena/Desktop/7_sem/testing_and_debugging/TestResults/BL.dll
+C:/Users/alena/Desktop/7_sem/testing_and_debugging/TestResults/BL.pdb
+/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/BL/bin/Debug/net6.0/BL.deps.json
+/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/BL/bin/Debug/net6.0/BL.dll
+/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/BL/bin/Debug/net6.0/BL.pdb
+/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/BL/obj/Debug/net6.0/BL.csproj.AssemblyReference.cache
+/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/BL/obj/Debug/net6.0/BL.GeneratedMSBuildEditorConfig.editorconfig
+/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/BL/obj/Debug/net6.0/BL.AssemblyInfoInputs.cache
+/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/BL/obj/Debug/net6.0/BL.AssemblyInfo.cs
+/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/BL/obj/Debug/net6.0/BL.csproj.CoreCompileInputs.cache
+/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/BL/obj/Debug/net6.0/BL.dll
+/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/BL/obj/Debug/net6.0/refint/BL.dll
+/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/BL/obj/Debug/net6.0/BL.pdb
+/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/BL/obj/Debug/net6.0/ref/BL.dll
 C:\Users\alena\Desktop\7_sem\testing_and_debugging\SkiResort\BL\bin\Debug\net6.0\BL.deps.json
 C:\Users\alena\Desktop\7_sem\testing_and_debugging\SkiResort\BL\bin\Debug\net6.0\BL.dll
 C:\Users\alena\Desktop\7_sem\testing_and_debugging\SkiResort\BL\bin\Debug\net6.0\BL.pdb
@@ -10,6 +25,3 @@ C:\Users\alena\Desktop\7_sem\testing_and_debugging\SkiResort\BL\obj\Debug\net6.0
 C:\Users\alena\Desktop\7_sem\testing_and_debugging\SkiResort\BL\obj\Debug\net6.0\refint\BL.dll
 C:\Users\alena\Desktop\7_sem\testing_and_debugging\SkiResort\BL\obj\Debug\net6.0\BL.pdb
 C:\Users\alena\Desktop\7_sem\testing_and_debugging\SkiResort\BL\obj\Debug\net6.0\ref\BL.dll
-C:\Users\alena\Desktop\7_sem\testing_and_debugging\TestResults\BL.deps.json
-C:\Users\alena\Desktop\7_sem\testing_and_debugging\TestResults\BL.dll
-C:\Users\alena\Desktop\7_sem\testing_and_debugging\TestResults\BL.pdb

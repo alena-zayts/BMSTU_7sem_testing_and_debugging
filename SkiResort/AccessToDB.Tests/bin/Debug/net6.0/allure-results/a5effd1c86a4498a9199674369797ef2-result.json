@@ -1,0 +1,46 @@
+{
+  "uuid": "78dfd2ff-a4d7-4c8d-a0ba-70e1dc63814b-AccessToDB.Tests.UsersRepositoryTests.TestGetUserByEmailAsyncFailsWhenEmailNotExists(email: \"email2852f2a3-8a81-4e78-b4ee-f4b73ed589f7\")",
+  "historyId": "AccessToDB.Tests.UsersRepositoryTests.TestGetUserByEmailAsyncFailsWhenEmailNotExists(email: \"email2852f2a3-8a81-4e78-b4ee-f4b73ed589f7\")",
+  "fullName": "AccessToDB.Tests.UsersRepositoryTests.TestGetUserByEmailAsyncFailsWhenEmailNotExists(email: \"email2852f2a3-8a81-4e78-b4ee-f4b73ed589f7\")",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "AccessToDB.Tests.UsersRepositoryTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "AccessToDB.Tests.UsersRepositoryTests.TestGetUserByEmailAsyncFailsWhenEmailNotExists(email: \"email2852f2a3-8a81-4e78-b4ee-f4b73ed589f7\")"
+    },
+    {
+      "name": "package",
+      "value": "AccessToDB.Tests.UsersRepositoryTests"
+    },
+    {
+      "name": "suite",
+      "value": "UsersRepositorySuite"
+    }
+  ],
+  "links": [],
+  "name": "AccessToDB.Tests.UsersRepositoryTests.TestGetUserByEmailAsyncFailsWhenEmailNotExists(email: \"email2852f2a3-8a81-4e78-b4ee-f4b73ed589f7\")",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1665866123899,
+  "stop": 1665866124258
+}

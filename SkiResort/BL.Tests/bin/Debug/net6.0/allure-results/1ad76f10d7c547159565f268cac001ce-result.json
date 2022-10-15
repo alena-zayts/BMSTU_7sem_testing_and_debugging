@@ -1,0 +1,46 @@
+{
+  "uuid": "2d239798-3cc6-45c9-ac52-bd173a3ce95a-BL.Tests.TurnstilesServiceTest.TestAdminGetTurnstilesAsync(userID: 219, initialTurnstiles: [Turnstile { TurnstileID = 135, LiftID = 235, IsOpen = True }, Turnstile { TurnstileID = 54, LiftID = 160, IsOpen = False }, Turnstile { TurnstileID = 65, LiftID = 76, IsOpen = True }], checkPermissionServiceMock: Mock<ICheckPermissionService:13>, turnstilesRepositoryStub: Mock<ITurnstilesRepository:7>, sut: TurnstilesService { })",
+  "historyId": "BL.Tests.TurnstilesServiceTest.TestAdminGetTurnstilesAsync(userID: 219, initialTurnstiles: [Turnstile { TurnstileID = 135, LiftID = 235, IsOpen = True }, Turnstile { TurnstileID = 54, LiftID = 160, IsOpen = False }, Turnstile { TurnstileID = 65, LiftID = 76, IsOpen = True }], checkPermissionServiceMock: Mock<ICheckPermissionService:13>, turnstilesRepositoryStub: Mock<ITurnstilesRepository:7>, sut: TurnstilesService { })",
+  "fullName": "BL.Tests.TurnstilesServiceTest.TestAdminGetTurnstilesAsync(userID: 219, initialTurnstiles: [Turnstile { TurnstileID = 135, LiftID = 235, IsOpen = True }, Turnstile { TurnstileID = 54, LiftID = 160, IsOpen = False }, Turnstile { TurnstileID = 65, LiftID = 76, IsOpen = True }], checkPermissionServiceMock: Mock<ICheckPermissionService:13>, turnstilesRepositoryStub: Mock<ITurnstilesRepository:7>, sut: TurnstilesService { })",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "BL.Tests.TurnstilesServiceTest"
+    },
+    {
+      "name": "testMethod",
+      "value": "BL.Tests.TurnstilesServiceTest.TestAdminGetTurnstilesAsync(userID: 219, initialTurnstiles: [Turnstile { TurnstileID = 135, LiftID = 235, IsOpen = True }, Turnstile { TurnstileID = 54, LiftID = 160, IsOpen = False }, Turnstile { TurnstileID = 65, LiftID = 76, IsOpen = True }], checkPermissionServiceMock: Mock<ICheckPermissionService:13>, turnstilesRepositoryStub: Mock<ITurnstilesRepository:7>, sut: TurnstilesService { })"
+    },
+    {
+      "name": "package",
+      "value": "BL.Tests.TurnstilesServiceTest"
+    },
+    {
+      "name": "suite",
+      "value": "TurnstilesServiceSuite"
+    }
+  ],
+  "links": [],
+  "name": "BL.Tests.TurnstilesServiceTest.TestAdminGetTurnstilesAsync(userID: 219, initialTurnstiles: [Turnstile { TurnstileID = 135, LiftID = 235, IsOpen = True }, Turnstile { TurnstileID = 54, LiftID = 160, IsOpen = False }, Turnstile { TurnstileID = 65, LiftID = 76, IsOpen = True }], checkPermissionServiceMock: Mock<ICheckPermissionService:13>, turnstilesRepositoryStub: Mock<ITurnstilesRepository:7>, sut: TurnstilesService { })",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1665866097814,
+  "stop": 1665866097818
+}

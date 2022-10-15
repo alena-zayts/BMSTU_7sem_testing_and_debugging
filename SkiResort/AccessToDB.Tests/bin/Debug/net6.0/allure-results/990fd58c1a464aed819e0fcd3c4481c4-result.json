@@ -1,0 +1,46 @@
+{
+  "uuid": "56330ef2-d973-4b12-a692-818d83fcce1a-AccessToDB.Tests.TurnstilesRepositoryTests.TestDeleteTurnstileByIDAsyncFailsWhenIDNotExists(turnstileID: 158)",
+  "historyId": "AccessToDB.Tests.TurnstilesRepositoryTests.TestDeleteTurnstileByIDAsyncFailsWhenIDNotExists(turnstileID: 158)",
+  "fullName": "AccessToDB.Tests.TurnstilesRepositoryTests.TestDeleteTurnstileByIDAsyncFailsWhenIDNotExists(turnstileID: 158)",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "AccessToDB.Tests.TurnstilesRepositoryTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "AccessToDB.Tests.TurnstilesRepositoryTests.TestDeleteTurnstileByIDAsyncFailsWhenIDNotExists(turnstileID: 158)"
+    },
+    {
+      "name": "package",
+      "value": "AccessToDB.Tests.TurnstilesRepositoryTests"
+    },
+    {
+      "name": "suite",
+      "value": "TurnstilesRepositorySuite"
+    }
+  ],
+  "links": [],
+  "name": "AccessToDB.Tests.TurnstilesRepositoryTests.TestDeleteTurnstileByIDAsyncFailsWhenIDNotExists(turnstileID: 158)",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1665866118031,
+  "stop": 1665866118392
+}

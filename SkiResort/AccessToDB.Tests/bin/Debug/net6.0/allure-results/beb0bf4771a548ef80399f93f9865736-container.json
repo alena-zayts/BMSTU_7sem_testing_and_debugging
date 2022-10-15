@@ -1,0 +1,12 @@
+{
+  "uuid": "fbb0c076-e220-4857-b497-4527927afdd1-AccessToDB.Tests.TurnstilesRepositoryTests",
+  "name": "AccessToDB.Tests.TurnstilesRepositoryTests",
+  "children": [
+    "119b5d98-d642-4a39-bbd1-09c17a40ab12-AccessToDB.Tests.TurnstilesRepositoryTests.TestGetTurnstileByIdAsyncOk(turnstile: Turnstile { TurnstileID = 235, LiftID = 36, IsOpen = True })"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1665866118798,
+  "stop": 1665866119184
+}

@@ -1,0 +1,46 @@
+{
+  "uuid": "1c5c3665-40e1-4feb-a69a-be934b819d9c-BL.Tests.LiftsSlopesServiceTests.TestGetLiftsSlopesInfoAsync(liftsSlopes: [LiftSlope { RecordID = 220, LiftID = 194, SlopeID = 221 }, LiftSlope { RecordID = 78, LiftID = 237, SlopeID = 154 }, LiftSlope { RecordID = 59, LiftID = 246, SlopeID = 53 }], slopesRepositoryStub: Mock<ISlopesRepository:1>, liftsRepositoryStub: Mock<ILiftsRepository:6>, liftsSlopesRepositoryStub: Mock<ILiftsSlopesRepository:6>)",
+  "historyId": "BL.Tests.LiftsSlopesServiceTests.TestGetLiftsSlopesInfoAsync(liftsSlopes: [LiftSlope { RecordID = 220, LiftID = 194, SlopeID = 221 }, LiftSlope { RecordID = 78, LiftID = 237, SlopeID = 154 }, LiftSlope { RecordID = 59, LiftID = 246, SlopeID = 53 }], slopesRepositoryStub: Mock<ISlopesRepository:1>, liftsRepositoryStub: Mock<ILiftsRepository:6>, liftsSlopesRepositoryStub: Mock<ILiftsSlopesRepository:6>)",
+  "fullName": "BL.Tests.LiftsSlopesServiceTests.TestGetLiftsSlopesInfoAsync(liftsSlopes: [LiftSlope { RecordID = 220, LiftID = 194, SlopeID = 221 }, LiftSlope { RecordID = 78, LiftID = 237, SlopeID = 154 }, LiftSlope { RecordID = 59, LiftID = 246, SlopeID = 53 }], slopesRepositoryStub: Mock<ISlopesRepository:1>, liftsRepositoryStub: Mock<ILiftsRepository:6>, liftsSlopesRepositoryStub: Mock<ILiftsSlopesRepository:6>)",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "BL.Tests.LiftsSlopesServiceTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "BL.Tests.LiftsSlopesServiceTests.TestGetLiftsSlopesInfoAsync(liftsSlopes: [LiftSlope { RecordID = 220, LiftID = 194, SlopeID = 221 }, LiftSlope { RecordID = 78, LiftID = 237, SlopeID = 154 }, LiftSlope { RecordID = 59, LiftID = 246, SlopeID = 53 }], slopesRepositoryStub: Mock<ISlopesRepository:1>, liftsRepositoryStub: Mock<ILiftsRepository:6>, liftsSlopesRepositoryStub: Mock<ILiftsSlopesRepository:6>)"
+    },
+    {
+      "name": "package",
+      "value": "BL.Tests.LiftsSlopesServiceTests"
+    },
+    {
+      "name": "suite",
+      "value": "LiftsSlopesServiceSuite"
+    }
+  ],
+  "links": [],
+  "name": "BL.Tests.LiftsSlopesServiceTests.TestGetLiftsSlopesInfoAsync(liftsSlopes: [LiftSlope { RecordID = 220, LiftID = 194, SlopeID = 221 }, LiftSlope { RecordID = 78, LiftID = 237, SlopeID = 154 }, LiftSlope { RecordID = 59, LiftID = 246, SlopeID = 53 }], slopesRepositoryStub: Mock<ISlopesRepository:1>, liftsRepositoryStub: Mock<ILiftsRepository:6>, liftsSlopesRepositoryStub: Mock<ILiftsSlopesRepository:6>)",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1665866097678,
+  "stop": 1665866097748
+}

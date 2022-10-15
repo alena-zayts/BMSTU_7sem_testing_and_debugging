@@ -1,0 +1,12 @@
+{
+  "uuid": "b7e888ee-5dba-4d33-84c3-6b6bcf1a1a66-AccessToDB.Tests.UsersRepositoryTests",
+  "name": "AccessToDB.Tests.UsersRepositoryTests",
+  "children": [
+    "70bbf8c7-bf2f-4209-b5c7-c3f0766fbd72-AccessToDB.Tests.UsersRepositoryTests.TestAddUserAsyncFailsWhenUserIdRepeats(user: User { UserID = 49, CardID = 36, UserEmail = UserEmailba21dafc-0f77-40a2-b269-d1f446c9e1c8, Password = password2a014ca3-acc5-46ab-ad2f-a6cf8a282c07, Permissions = UNAUTHORIZED })"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1665866124271,
+  "stop": 1665866124669
+}
