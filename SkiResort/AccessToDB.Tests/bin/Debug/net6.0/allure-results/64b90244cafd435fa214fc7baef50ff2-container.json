@@ -1,0 +1,12 @@
+{
+  "uuid": "7c7250a6-35f6-403a-8298-f92f4a52d01a-AccessToDB.Tests.LiftsSlopesRepositoryTests",
+  "name": "AccessToDB.Tests.LiftsSlopesRepositoryTests",
+  "children": [
+    "f263e566-aa3d-441f-a8cb-bb5cf98340a2-AccessToDB.Tests.LiftsSlopesRepositoryTests.TestGetLiftsBySlopeIdAsyncOk(slope1: Slope { SlopeID = 87, SlopeName = slopeName35b3292c-17ea-49fd-a836-9c9b9c2c43a2, IsOpen = True, DifficultyLevel = 194, ConnectedLifts =  }, slope2: Slope { SlopeID = 220, SlopeName = slopeName5e7c13af-7315-485b-9a5d-28a1a5048d36, IsOpen = False, DifficultyLevel = 247, ConnectedLifts =  }, lift1: Lift { LiftID = 123, LiftName = liftName9d0dd070-9717-4808-ace4-6c4cf9f5d245, IsOpen = True, SeatsAmount = 163, LiftingTime = 115, QueueTime = 15, ConnectedSlopes =  }, lift2: Lift { LiftID = 91, LiftName = liftNamee7650655-5780-459b-8dc6-fdd2b4fdd86b, IsOpen = False, SeatsAmount = 12, LiftingTime = 158, QueueTime = 54, ConnectedSlopes =  })"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1665926233958,
+  "stop": 1665926234620
+}

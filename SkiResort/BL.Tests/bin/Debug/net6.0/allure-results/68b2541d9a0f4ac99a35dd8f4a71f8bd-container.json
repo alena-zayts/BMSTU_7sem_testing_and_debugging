@@ -1,0 +1,12 @@
+{
+  "uuid": "0005a590-2eda-49e7-9d6d-31a432a234a7-BL.Tests.CheckPermissionsServiceTests",
+  "name": "BL.Tests.CheckPermissionsServiceTests",
+  "children": [
+    "1a70d627-fbc9-47d7-a996-202da5e9af6e-BL.Tests.CheckPermissionsServiceTests.SkiPatrolHasAccessToAdminSkiPatrolFunctions(functionName: \"MarkMessageReadByUserAsync\")"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1665926213908,
+  "stop": 1665926213913
+}

@@ -1,4 +1,4 @@
-#echo %cd%
+#echo ${PWD}
 #echo %~dp0
 #cmd /k cmd /c run_unit_tests.bat
 
@@ -42,11 +42,11 @@ echo "[101;93m Docker stopped [0m"
 
 # Report
 echo "[101;93m Generating report [0m"
-allure generate %cd%\SkiResort\BL.Tests\bin\Debug\net6.0\allure-results %cd%\SkiResort\AccessToDB.Tests\bin\Debug\net6.0\allure-results --clean -o %cd%\allure-report-for-unit-tests
+allure generate ${PWD}/SkiResort/BL.Tests/bin/Debug/net6.0/allure-results ${PWD}/SkiResort/AccessToDB.Tests/bin/Debug/net6.0/allure-results --clean -o ${PWD}/allure-report-for-unit-tests
 
 
 echo "[101;93m Showing report [0m"
-allure open %cd%\allure-report-for-unit-tests
+allure open ${PWD}/allure-report-for-unit-tests
 sleep 3
 
 
