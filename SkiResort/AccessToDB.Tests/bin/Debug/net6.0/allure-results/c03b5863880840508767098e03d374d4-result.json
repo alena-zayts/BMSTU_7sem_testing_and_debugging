@@ -1,0 +1,46 @@
+{
+  "uuid": "ae80c314-a908-41c2-b69e-dac6cf5d4aa3-AccessToDB.Tests.LiftsRepositoryTests.TestGetLiftsAsyncEmpty",
+  "historyId": "AccessToDB.Tests.LiftsRepositoryTests.TestGetLiftsAsyncEmpty",
+  "fullName": "AccessToDB.Tests.LiftsRepositoryTests.TestGetLiftsAsyncEmpty",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "AccessToDB.Tests.LiftsRepositoryTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "AccessToDB.Tests.LiftsRepositoryTests.TestGetLiftsAsyncEmpty"
+    },
+    {
+      "name": "package",
+      "value": "AccessToDB.Tests.LiftsRepositoryTests"
+    },
+    {
+      "name": "suite",
+      "value": "LiftsRepositorySuite"
+    }
+  ],
+  "links": [],
+  "name": "AccessToDB.Tests.LiftsRepositoryTests.TestGetLiftsAsyncEmpty",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1666361730730,
+  "stop": 1666361731090
+}

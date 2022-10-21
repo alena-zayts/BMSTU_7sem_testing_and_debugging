@@ -48,18 +48,19 @@ namespace AccessToDB
         ISpace, IIndex, IIndex)> 
             Initialize(string connection_string)
         {
-            Box box = null;
-            while (box == null)
-            {
-                try
-                {
-                    box = await Box.Connect(connection_string);
-                }
-                catch
-                {
+            Box box = await Box.Connect(connection_string);
+            //Box box = null;
+            //while (box == null)
+            //{
+            //    try
+            //    {
+            //        box = await Box.Connect(connection_string);
+            //    }
+            //    catch
+            //    {
 
-                }
-            }
+            //    }
+            //}
 
 
             var schema = box.GetSchema();
