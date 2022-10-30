@@ -1,0 +1,12 @@
+{
+  "uuid": "af8b6e8b-8f2c-4628-9903-4283d0b1e81a-IntegrationTests.TestActionsWithLiftsSlopes",
+  "name": "IntegrationTests.TestActionsWithLiftsSlopes",
+  "children": [
+    "9fcf69a4-7cc9-4564-a327-6cdbf6787092-IntegrationTests.TestActionsWithLiftsSlopes.TestGetLiftsSlopesInfoAsync(liftsSlopes: [LiftSlope { RecordID = 125, LiftID = 64, SlopeID = 208 }, LiftSlope { RecordID = 183, LiftID = 50, SlopeID = 120 }, LiftSlope { RecordID = 231, LiftID = 154, SlopeID = 249 }])"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1667160228464,
+  "stop": 1667160229105
+}

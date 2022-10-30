@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="c6018dab-eb04-4594-bbe2-5b8344b9df88" name="@DESKTOP-TJ9D65N 2022-10-30 22:10:19" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2022-10-30T22:10:19.0241176+03:00" queuing="2022-10-30T22:10:19.0241177+03:00" start="2022-10-30T22:10:15.2638311+03:00" finish="2022-10-30T22:10:23.5912740+03:00" />
+  <TestSettings name="default" id="1545c290-d850-4362-92c1-89e516a6b1ca">
+    <Deployment runDeploymentRoot="_DESKTOP-TJ9D65N_2022-10-30_22_10_19" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="c0b32a5c-d099-4e78-8a4d-032810df7635" testId="1da5f54a-109d-3e90-9b69-7a06a6b220e1" testName="IntegrationTests.TestActionsWithLiftsSlopes.TestGetLiftsSlopesInfoAsync(liftsSlopes: [LiftSlope { RecordID = 68, LiftID = 166, SlopeID = 58 }, LiftSlope { RecordID = 116, LiftID = 222, SlopeID = 252 }, LiftSlope { RecordID = 103, LiftID = 232, SlopeID = 4 }])" computerName="DESKTOP-TJ9D65N" duration="00:00:00.6447183" startTime="2022-10-30T22:10:19.3831534+03:00" endTime="2022-10-30T22:10:19.3831540+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c0b32a5c-d099-4e78-8a4d-032810df7635" />
+    <UnitTestResult executionId="122a5c1e-c98a-4064-87b7-e39b8a3e6230" testId="b3d52c82-47a3-0023-3b82-796efce20101" testName="IntegrationTests.TestActionsWithLiftsSlopes.TestAdminDeleteLiftSlopeAsync(lift: Lift { LiftID = 117, LiftName = liftName7dae0cab-a255-4012-809a-1d32cd42d9c3, IsOpen = True, SeatsAmount = 227, LiftingTime = 236, QueueTime = 181, ConnectedSlopes =  }, slope: Slope { SlopeID = 165, SlopeName = slopeNamef0d2f753-9e56-4efb-8133-8945616d42ca, IsOpen = False, DifficultyLevel = 122, ConnectedLifts =  })" computerName="DESKTOP-TJ9D65N" duration="00:00:00.7436083" startTime="2022-10-30T22:10:17.9964768+03:00" endTime="2022-10-30T22:10:17.9965098+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="122a5c1e-c98a-4064-87b7-e39b8a3e6230" />
+    <UnitTestResult executionId="d9713680-aa96-4ff1-be00-a5233674b148" testId="a5ba4a25-e87f-e131-4390-5ef28f3a617a" testName="IntegrationTests.TestActionsWithLiftsSlopes.TestAdminAddAutoIncrementLiftSlopeAsync(lift: Lift { LiftID = 205, LiftName = liftNameed1c7bd1-63f6-4a9a-b993-984065e6e164, IsOpen = True, SeatsAmount = 16, LiftingTime = 180, QueueTime = 75, ConnectedSlopes =  }, slope: Slope { SlopeID = 36, SlopeName = slopeName4afccfdb-c8fa-49e1-ba77-7e87e8912ab4, IsOpen = False, DifficultyLevel = 82, ConnectedLifts =  })" computerName="DESKTOP-TJ9D65N" duration="00:00:00.6689734" startTime="2022-10-30T22:10:18.7062616+03:00" endTime="2022-10-30T22:10:18.7062618+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d9713680-aa96-4ff1-be00-a5233674b148" />
+    <UnitTestResult executionId="bc1de879-9af3-4615-828e-8b7efd567bd8" testId="9b948f8a-c6ad-f219-a8c8-364a5e3276fc" testName="IntegrationTests.TestActionsWithSlopes.TestUpdateSlopeInfoAsync(slope: Slope { SlopeID = 233, SlopeName = slopeNamea7d50d33-e931-4f14-a540-3b4311bca2ba, IsOpen = True, DifficultyLevel = 178, ConnectedLifts =  })" computerName="DESKTOP-TJ9D65N" duration="00:00:00.6582035" startTime="2022-10-30T22:10:20.0952912+03:00" endTime="2022-10-30T22:10:20.0952920+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bc1de879-9af3-4615-828e-8b7efd567bd8" />
+    <UnitTestResult executionId="a7c8bfbc-5e4b-408e-bed0-f439267b193e" testId="eb0a216e-0a69-ff94-2cce-6d2eae464998" testName="IntegrationTests.TestActionsWithSlopes.TestGetSlopeInfoAsync(slope: Slope { SlopeID = 49, SlopeName = slopeName0cc9176f-d670-4afa-bd26-ee4f79a27157, IsOpen = True, DifficultyLevel = 113, ConnectedLifts =  })" computerName="DESKTOP-TJ9D65N" duration="00:00:00.6448717" startTime="2022-10-30T22:10:20.7807967+03:00" endTime="2022-10-30T22:10:20.7807973+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a7c8bfbc-5e4b-408e-bed0-f439267b193e" />
+    <UnitTestResult executionId="af0cde38-5753-4a48-ad22-0d616db10179" testId="40173d1a-886a-0ad5-4cc3-db7c7459a465" testName="IntegrationTests.TestActionsWithSlopes.TestAdminAddSlopeAsync(slope: Slope { SlopeID = 207, SlopeName = slopeName48ce40a4-c9e7-454a-9e32-07bca5005eb2, IsOpen = True, DifficultyLevel = 132, ConnectedLifts =  })" computerName="DESKTOP-TJ9D65N" duration="00:00:00.6222895" startTime="2022-10-30T22:10:21.4304666+03:00" endTime="2022-10-30T22:10:21.4304668+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="af0cde38-5753-4a48-ad22-0d616db10179" />
+    <UnitTestResult executionId="6f8f724b-5447-4e39-8d1c-8b525eb737c0" testId="4f3da29b-0c2b-082a-2fa8-fc61f16c7976" testName="IntegrationTests.TestActionsWithSlopes.TestGetSlopesInfoAsync(initialSlopes: [Slope { SlopeID = 146, SlopeName = slopeNamecc331923-f4d1-4ce1-9c43-624845e61c9e, IsOpen = True, DifficultyLevel = 175, ConnectedLifts =  }, Slope { SlopeID = 180, SlopeName = slopeName8ec63f1d-0f38-4b1c-a1bb-c797aea8119f, IsOpen = False, DifficultyLevel = 27, ConnectedLifts =  }, Slope { SlopeID = 106, SlopeName = slopeName10a489e8-315b-4285-890b-97e03fc1d2ff, IsOpen = True, DifficultyLevel = 121, ConnectedLifts =  }])" computerName="DESKTOP-TJ9D65N" duration="00:00:00.6794753" startTime="2022-10-30T22:10:22.7943124+03:00" endTime="2022-10-30T22:10:22.7943130+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6f8f724b-5447-4e39-8d1c-8b525eb737c0" />
+    <UnitTestResult executionId="2e069128-e19f-498b-acf0-2021eb8d691f" testId="f986f4ac-bacf-3262-9846-a7dab407072c" testName="IntegrationTests.TestActionsWithSlopes.TestAdminAddAutoIncrementSlopeAsync(slope: Slope { SlopeID = 16, SlopeName = slopeName89508c58-1154-4d6a-bc70-3f20dd903419, IsOpen = True, DifficultyLevel = 225, ConnectedLifts =  })" computerName="DESKTOP-TJ9D65N" duration="00:00:00.5895512" startTime="2022-10-30T22:10:22.1101650+03:00" endTime="2022-10-30T22:10:22.1101653+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2e069128-e19f-498b-acf0-2021eb8d691f">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.True() Failure
+Expected: True
+Actual:   False</Message>
+          <StackTrace>   at IntegrationTests.TestActionsWithSlopes.TestAdminAddAutoIncrementSlopeAsync(Slope slope) in /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/TestActionsWithSlopes.cs:line 144
+   at System.Threading.Tasks.Task.&lt;&gt;c.&lt;ThrowAsync&gt;b__128_0(Object state)</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="44893d86-2278-4c4c-9b1c-4e8f07af302e" testId="fddec9d1-1044-cb15-9a95-881da644bcc2" testName="IntegrationTests.TestActionsWithSlopes.TestAdminDeleteSlopeAsync(slope: Slope { SlopeID = 146, SlopeName = slopeName31c84ee9-f933-4e1a-ac98-e338501a7d7b, IsOpen = True, DifficultyLevel = 44, ConnectedLifts =  })" computerName="DESKTOP-TJ9D65N" duration="00:00:00.6355975" startTime="2022-10-30T22:10:23.4707865+03:00" endTime="2022-10-30T22:10:23.4707869+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="44893d86-2278-4c4c-9b1c-4e8f07af302e" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="IntegrationTests.TestActionsWithSlopes.TestAdminDeleteSlopeAsync(slope: Slope { SlopeID = 146, SlopeName = slopeName31c84ee9-f933-4e1a-ac98-e338501a7d7b, IsOpen = True, DifficultyLevel = 44, ConnectedLifts =  })" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/integrationtests/bin/debug/net6.0/integrationtests.dll" id="fddec9d1-1044-cb15-9a95-881da644bcc2">
+      <Execution id="44893d86-2278-4c4c-9b1c-4e8f07af302e" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/bin/Debug/net6.0/IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="IntegrationTests.TestActionsWithSlopes" name="TestAdminDeleteSlopeAsync" />
+    </UnitTest>
+    <UnitTest name="IntegrationTests.TestActionsWithSlopes.TestUpdateSlopeInfoAsync(slope: Slope { SlopeID = 233, SlopeName = slopeNamea7d50d33-e931-4f14-a540-3b4311bca2ba, IsOpen = True, DifficultyLevel = 178, ConnectedLifts =  })" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/integrationtests/bin/debug/net6.0/integrationtests.dll" id="9b948f8a-c6ad-f219-a8c8-364a5e3276fc">
+      <Execution id="bc1de879-9af3-4615-828e-8b7efd567bd8" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/bin/Debug/net6.0/IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="IntegrationTests.TestActionsWithSlopes" name="TestUpdateSlopeInfoAsync" />
+    </UnitTest>
+    <UnitTest name="IntegrationTests.TestActionsWithSlopes.TestAdminAddAutoIncrementSlopeAsync(slope: Slope { SlopeID = 16, SlopeName = slopeName89508c58-1154-4d6a-bc70-3f20dd903419, IsOpen = True, DifficultyLevel = 225, ConnectedLifts =  })" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/integrationtests/bin/debug/net6.0/integrationtests.dll" id="f986f4ac-bacf-3262-9846-a7dab407072c">
+      <Execution id="2e069128-e19f-498b-acf0-2021eb8d691f" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/bin/Debug/net6.0/IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="IntegrationTests.TestActionsWithSlopes" name="TestAdminAddAutoIncrementSlopeAsync" />
+    </UnitTest>
+    <UnitTest name="IntegrationTests.TestActionsWithSlopes.TestAdminAddSlopeAsync(slope: Slope { SlopeID = 207, SlopeName = slopeName48ce40a4-c9e7-454a-9e32-07bca5005eb2, IsOpen = True, DifficultyLevel = 132, ConnectedLifts =  })" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/integrationtests/bin/debug/net6.0/integrationtests.dll" id="40173d1a-886a-0ad5-4cc3-db7c7459a465">
+      <Execution id="af0cde38-5753-4a48-ad22-0d616db10179" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/bin/Debug/net6.0/IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="IntegrationTests.TestActionsWithSlopes" name="TestAdminAddSlopeAsync" />
+    </UnitTest>
+    <UnitTest name="IntegrationTests.TestActionsWithSlopes.TestGetSlopesInfoAsync(initialSlopes: [Slope { SlopeID = 146, SlopeName = slopeNamecc331923-f4d1-4ce1-9c43-624845e61c9e, IsOpen = True, DifficultyLevel = 175, ConnectedLifts =  }, Slope { SlopeID = 180, SlopeName = slopeName8ec63f1d-0f38-4b1c-a1bb-c797aea8119f, IsOpen = False, DifficultyLevel = 27, ConnectedLifts =  }, Slope { SlopeID = 106, SlopeName = slopeName10a489e8-315b-4285-890b-97e03fc1d2ff, Is..." storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/integrationtests/bin/debug/net6.0/integrationtests.dll" id="4f3da29b-0c2b-082a-2fa8-fc61f16c7976">
+      <Execution id="6f8f724b-5447-4e39-8d1c-8b525eb737c0" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/bin/Debug/net6.0/IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="IntegrationTests.TestActionsWithSlopes" name="TestGetSlopesInfoAsync" />
+    </UnitTest>
+    <UnitTest name="IntegrationTests.TestActionsWithLiftsSlopes.TestAdminAddAutoIncrementLiftSlopeAsync(lift: Lift { LiftID = 205, LiftName = liftNameed1c7bd1-63f6-4a9a-b993-984065e6e164, IsOpen = True, SeatsAmount = 16, LiftingTime = 180, QueueTime = 75, ConnectedSlopes =  }, slope: Slope { SlopeID = 36, SlopeName = slopeName4afccfdb-c8fa-49e1-ba77-7e87e8912ab4, IsOpen = False, DifficultyLevel = 82, ConnectedLifts =  })" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/integrationtests/bin/debug/net6.0/integrationtests.dll" id="a5ba4a25-e87f-e131-4390-5ef28f3a617a">
+      <Execution id="d9713680-aa96-4ff1-be00-a5233674b148" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/bin/Debug/net6.0/IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="IntegrationTests.TestActionsWithLiftsSlopes" name="TestAdminAddAutoIncrementLiftSlopeAsync" />
+    </UnitTest>
+    <UnitTest name="IntegrationTests.TestActionsWithLiftsSlopes.TestGetLiftsSlopesInfoAsync(liftsSlopes: [LiftSlope { RecordID = 68, LiftID = 166, SlopeID = 58 }, LiftSlope { RecordID = 116, LiftID = 222, SlopeID = 252 }, LiftSlope { RecordID = 103, LiftID = 232, SlopeID = 4 }])" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/integrationtests/bin/debug/net6.0/integrationtests.dll" id="1da5f54a-109d-3e90-9b69-7a06a6b220e1">
+      <Execution id="c0b32a5c-d099-4e78-8a4d-032810df7635" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/bin/Debug/net6.0/IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="IntegrationTests.TestActionsWithLiftsSlopes" name="TestGetLiftsSlopesInfoAsync" />
+    </UnitTest>
+    <UnitTest name="IntegrationTests.TestActionsWithSlopes.TestGetSlopeInfoAsync(slope: Slope { SlopeID = 49, SlopeName = slopeName0cc9176f-d670-4afa-bd26-ee4f79a27157, IsOpen = True, DifficultyLevel = 113, ConnectedLifts =  })" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/integrationtests/bin/debug/net6.0/integrationtests.dll" id="eb0a216e-0a69-ff94-2cce-6d2eae464998">
+      <Execution id="a7c8bfbc-5e4b-408e-bed0-f439267b193e" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/bin/Debug/net6.0/IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="IntegrationTests.TestActionsWithSlopes" name="TestGetSlopeInfoAsync" />
+    </UnitTest>
+    <UnitTest name="IntegrationTests.TestActionsWithLiftsSlopes.TestAdminDeleteLiftSlopeAsync(lift: Lift { LiftID = 117, LiftName = liftName7dae0cab-a255-4012-809a-1d32cd42d9c3, IsOpen = True, SeatsAmount = 227, LiftingTime = 236, QueueTime = 181, ConnectedSlopes =  }, slope: Slope { SlopeID = 165, SlopeName = slopeNamef0d2f753-9e56-4efb-8133-8945616d42ca, IsOpen = False, DifficultyLevel = 122, ConnectedLifts =  })" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/integrationtests/bin/debug/net6.0/integrationtests.dll" id="b3d52c82-47a3-0023-3b82-796efce20101">
+      <Execution id="122a5c1e-c98a-4064-87b7-e39b8a3e6230" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/bin/Debug/net6.0/IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="IntegrationTests.TestActionsWithLiftsSlopes" name="TestAdminDeleteLiftSlopeAsync" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="1da5f54a-109d-3e90-9b69-7a06a6b220e1" executionId="c0b32a5c-d099-4e78-8a4d-032810df7635" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b3d52c82-47a3-0023-3b82-796efce20101" executionId="122a5c1e-c98a-4064-87b7-e39b8a3e6230" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a5ba4a25-e87f-e131-4390-5ef28f3a617a" executionId="d9713680-aa96-4ff1-be00-a5233674b148" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9b948f8a-c6ad-f219-a8c8-364a5e3276fc" executionId="bc1de879-9af3-4615-828e-8b7efd567bd8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="eb0a216e-0a69-ff94-2cce-6d2eae464998" executionId="a7c8bfbc-5e4b-408e-bed0-f439267b193e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="40173d1a-886a-0ad5-4cc3-db7c7459a465" executionId="af0cde38-5753-4a48-ad22-0d616db10179" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4f3da29b-0c2b-082a-2fa8-fc61f16c7976" executionId="6f8f724b-5447-4e39-8d1c-8b525eb737c0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f986f4ac-bacf-3262-9846-a7dab407072c" executionId="2e069128-e19f-498b-acf0-2021eb8d691f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fddec9d1-1044-cb15-9a95-881da644bcc2" executionId="44893d86-2278-4c4c-9b1c-4e8f07af302e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="9" executed="9" passed="8" failed="1" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.4.3+1b45f5407b (64-bit .NET 6.0.10)
+[xUnit.net 00:00:00.97]   Discovering: IntegrationTests
+[xUnit.net 00:00:01.07]   Discovered:  IntegrationTests
+[xUnit.net 00:00:01.08]   Starting:    IntegrationTests
+[xUnit.net 00:00:06.02]       Assert.True() Failure
+[xUnit.net 00:00:06.02]       Expected: True
+[xUnit.net 00:00:06.02]       Actual:   False
+[xUnit.net 00:00:06.02]       Stack Trace:
+[xUnit.net 00:00:06.02]         /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/TestActionsWithSlopes.cs(144,0): at IntegrationTests.TestActionsWithSlopes.TestAdminAddAutoIncrementSlopeAsync(Slope slope)
+[xUnit.net 00:00:06.02]            at System.Threading.Tasks.Task.&lt;&gt;c.&lt;ThrowAsync&gt;b__128_0(Object state)
+[xUnit.net 00:00:07.41]   Finished:    IntegrationTests
+</StdOut>
+    </Output>
+    <RunInfos>
+      <RunInfo computerName="DESKTOP-TJ9D65N" outcome="Error" timestamp="2022-10-30T22:10:22.0983999+03:00">
+        <Text>[xUnit.net 00:00:06.01]     IntegrationTests.TestActionsWithSlopes.TestAdminAddAutoIncrementSlopeAsync(slope: Slope { SlopeID = 16, SlopeName = slopeName89508c58-1154-4d6a-bc70-3f20dd903419, IsOpen = True, DifficultyLevel = 225, ConnectedLifts =  }) [FAIL]</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+</TestRun>

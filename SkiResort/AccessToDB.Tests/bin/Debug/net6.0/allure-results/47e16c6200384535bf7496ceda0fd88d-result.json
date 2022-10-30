@@ -1,0 +1,46 @@
+{
+  "uuid": "2bea7b00-8985-480f-97f8-bd8eb9a451cc-AccessToDB.Tests.SlopesRepositoryTests.TestUpdateSlopeByIDAsyncOk(slope: Slope { SlopeID = 215, SlopeName = slopeName85e54b76-47de-4355-9337-192dbcda9346, IsOpen = True, DifficultyLevel = 225, ConnectedLifts =  })",
+  "historyId": "AccessToDB.Tests.SlopesRepositoryTests.TestUpdateSlopeByIDAsyncOk(slope: Slope { SlopeID = 215, SlopeName = slopeName85e54b76-47de-4355-9337-192dbcda9346, IsOpen = True, DifficultyLevel = 225, ConnectedLifts =  })",
+  "fullName": "AccessToDB.Tests.SlopesRepositoryTests.TestUpdateSlopeByIDAsyncOk(slope: Slope { SlopeID = 215, SlopeName = slopeName85e54b76-47de-4355-9337-192dbcda9346, IsOpen = True, DifficultyLevel = 225, ConnectedLifts =  })",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "AccessToDB.Tests.SlopesRepositoryTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "AccessToDB.Tests.SlopesRepositoryTests.TestUpdateSlopeByIDAsyncOk(slope: Slope { SlopeID = 215, SlopeName = slopeName85e54b76-47de-4355-9337-192dbcda9346, IsOpen = True, DifficultyLevel = 225, ConnectedLifts =  })"
+    },
+    {
+      "name": "package",
+      "value": "AccessToDB.Tests.SlopesRepositoryTests"
+    },
+    {
+      "name": "suite",
+      "value": "SlopesRepositorySuite"
+    }
+  ],
+  "links": [],
+  "name": "AccessToDB.Tests.SlopesRepositoryTests.TestUpdateSlopeByIDAsyncOk(slope: Slope { SlopeID = 215, SlopeName = slopeName85e54b76-47de-4355-9337-192dbcda9346, IsOpen = True, DifficultyLevel = 225, ConnectedLifts =  })",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1666367021126,
+  "stop": 1666367021520
+}

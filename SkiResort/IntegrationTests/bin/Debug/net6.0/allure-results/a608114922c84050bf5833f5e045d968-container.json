@@ -1,0 +1,12 @@
+{
+  "uuid": "af75ad5f-b0fc-4a78-888d-5d4d72018a2c-IntegrationTests.TestActionsWithSlopes",
+  "name": "IntegrationTests.TestActionsWithSlopes",
+  "children": [
+    "706f9519-da71-45d9-88a9-117d8c783829-IntegrationTests.TestActionsWithSlopes.TestGetSlopeInfoAsync(slope: Slope { SlopeID = 176, SlopeName = slopeName95f15b86-0502-4d85-a99a-8d9476886228, IsOpen = True, DifficultyLevel = 204, ConnectedLifts =  })"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1667160229797,
+  "stop": 1667160230424
+}

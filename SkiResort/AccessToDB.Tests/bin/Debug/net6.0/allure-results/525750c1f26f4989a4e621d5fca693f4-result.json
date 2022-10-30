@@ -1,0 +1,46 @@
+{
+  "uuid": "cbb94cfc-76c8-4e41-ae5c-d73cdc3f4387-AccessToDB.Tests.LiftsRepositoryTests.TestGetLiftByNameAsyncFailsWhenNameNotExists(liftName: \"liftName3e51f6e5-8615-4169-9a62-a305a5f5e2d7\")",
+  "historyId": "AccessToDB.Tests.LiftsRepositoryTests.TestGetLiftByNameAsyncFailsWhenNameNotExists(liftName: \"liftName3e51f6e5-8615-4169-9a62-a305a5f5e2d7\")",
+  "fullName": "AccessToDB.Tests.LiftsRepositoryTests.TestGetLiftByNameAsyncFailsWhenNameNotExists(liftName: \"liftName3e51f6e5-8615-4169-9a62-a305a5f5e2d7\")",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "AccessToDB.Tests.LiftsRepositoryTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "AccessToDB.Tests.LiftsRepositoryTests.TestGetLiftByNameAsyncFailsWhenNameNotExists(liftName: \"liftName3e51f6e5-8615-4169-9a62-a305a5f5e2d7\")"
+    },
+    {
+      "name": "package",
+      "value": "AccessToDB.Tests.LiftsRepositoryTests"
+    },
+    {
+      "name": "suite",
+      "value": "LiftsRepositorySuite"
+    }
+  ],
+  "links": [],
+  "name": "AccessToDB.Tests.LiftsRepositoryTests.TestGetLiftByNameAsyncFailsWhenNameNotExists(liftName: \"liftName3e51f6e5-8615-4169-9a62-a305a5f5e2d7\")",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1666367029056,
+  "stop": 1666367029457
+}

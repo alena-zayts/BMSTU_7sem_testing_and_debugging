@@ -1,0 +1,12 @@
+{
+  "uuid": "a0f23dc0-86c5-4ddb-ac55-d2cf29950045-IntegrationTests.TestActionsWithLiftsLifts",
+  "name": "IntegrationTests.TestActionsWithLiftsLifts",
+  "children": [
+    "6b74ac96-0dce-4f3d-88fb-acf1a0a9d7a9-IntegrationTests.TestActionsWithLiftsLifts.TestAdminDeleteLiftAsync(lift: Lift { LiftID = 180, LiftName = liftNamebb6851a4-853c-4c71-95bf-bd60f507eeef, IsOpen = True, SeatsAmount = 154, LiftingTime = 103, QueueTime = 149, ConnectedSlopes =  })"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1667160238282,
+  "stop": 1667160238930
+}

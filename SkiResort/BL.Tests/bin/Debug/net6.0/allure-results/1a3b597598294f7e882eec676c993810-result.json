@@ -1,0 +1,46 @@
+{
+  "uuid": "a022b1f2-5673-45bc-aee6-d2bdffcf634b-BL.Tests.LiftsSlopesServiceTests.TestAdminAddAutoIncrementLiftSlopeAsync(lift: Lift { LiftID = 95, LiftName = liftNamed7b55eed-339a-4f8c-8e66-ba5fdd75df42, IsOpen = True, SeatsAmount = 117, LiftingTime = 34, QueueTime = 246, ConnectedSlopes =  }, slope: Slope { SlopeID = 131, SlopeName = slopeName578de2de-4f33-45c9-b669-64ce7d998bae, IsOpen = False, DifficultyLevel = 239, ConnectedLifts =  }, slopesRepositoryStub: Mock<ISlopesRepository:3>, liftsRepositoryStub: Mock<ILiftsRepository:8>, liftsSlopesRepositoryStub: Mock<ILiftsSlopesRepository:8>)",
+  "historyId": "BL.Tests.LiftsSlopesServiceTests.TestAdminAddAutoIncrementLiftSlopeAsync(lift: Lift { LiftID = 95, LiftName = liftNamed7b55eed-339a-4f8c-8e66-ba5fdd75df42, IsOpen = True, SeatsAmount = 117, LiftingTime = 34, QueueTime = 246, ConnectedSlopes =  }, slope: Slope { SlopeID = 131, SlopeName = slopeName578de2de-4f33-45c9-b669-64ce7d998bae, IsOpen = False, DifficultyLevel = 239, ConnectedLifts =  }, slopesRepositoryStub: Mock<ISlopesRepository:3>, liftsRepositoryStub: Mock<ILiftsRepository:8>, liftsSlopesRepositoryStub: Mock<ILiftsSlopesRepository:8>)",
+  "fullName": "BL.Tests.LiftsSlopesServiceTests.TestAdminAddAutoIncrementLiftSlopeAsync(lift: Lift { LiftID = 95, LiftName = liftNamed7b55eed-339a-4f8c-8e66-ba5fdd75df42, IsOpen = True, SeatsAmount = 117, LiftingTime = 34, QueueTime = 246, ConnectedSlopes =  }, slope: Slope { SlopeID = 131, SlopeName = slopeName578de2de-4f33-45c9-b669-64ce7d998bae, IsOpen = False, DifficultyLevel = 239, ConnectedLifts =  }, slopesRepositoryStub: Mock<ISlopesRepository:3>, liftsRepositoryStub: Mock<ILiftsRepository:8>, liftsSlopesRepositoryStub: Mock<ILiftsSlopesRepository:8>)",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "BL.Tests.LiftsSlopesServiceTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "BL.Tests.LiftsSlopesServiceTests.TestAdminAddAutoIncrementLiftSlopeAsync(lift: Lift { LiftID = 95, LiftName = liftNamed7b55eed-339a-4f8c-8e66-ba5fdd75df42, IsOpen = True, SeatsAmount = 117, LiftingTime = 34, QueueTime = 246, ConnectedSlopes =  }, slope: Slope { SlopeID = 131, SlopeName = slopeName578de2de-4f33-45c9-b669-64ce7d998bae, IsOpen = False, DifficultyLevel = 239, ConnectedLifts =  }, slopesRepositoryStub: Mock<ISlopesRepository:3>, liftsRepositoryStub: Mock<ILiftsRepository:8>, liftsSlopesRepositoryStub: Mock<ILiftsSlopesRepository:8>)"
+    },
+    {
+      "name": "package",
+      "value": "BL.Tests.LiftsSlopesServiceTests"
+    },
+    {
+      "name": "suite",
+      "value": "LiftsSlopesServiceSuite"
+    }
+  ],
+  "links": [],
+  "name": "BL.Tests.LiftsSlopesServiceTests.TestAdminAddAutoIncrementLiftSlopeAsync(lift: Lift { LiftID = 95, LiftName = liftNamed7b55eed-339a-4f8c-8e66-ba5fdd75df42, IsOpen = True, SeatsAmount = 117, LiftingTime = 34, QueueTime = 246, ConnectedSlopes =  }, slope: Slope { SlopeID = 131, SlopeName = slopeName578de2de-4f33-45c9-b669-64ce7d998bae, IsOpen = False, DifficultyLevel = 239, ConnectedLifts =  }, slopesRepositoryStub: Mock<ISlopesRepository:3>, liftsRepositoryStub: Mock<ILiftsRepository:8>, liftsSlopesRepositoryStub: Mock<ILiftsSlopesRepository:8>)",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1666366997948,
+  "stop": 1666366997959
+}

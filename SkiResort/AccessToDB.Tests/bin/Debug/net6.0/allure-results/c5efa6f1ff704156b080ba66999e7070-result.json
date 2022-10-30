@@ -1,0 +1,46 @@
+{
+  "uuid": "8277ff34-b0b1-4219-a61c-764ee2cf6643-AccessToDB.Tests.LiftsSlopesRepositoryTests.TestGetLiftSlopesAsyncEmpty",
+  "historyId": "AccessToDB.Tests.LiftsSlopesRepositoryTests.TestGetLiftSlopesAsyncEmpty",
+  "fullName": "AccessToDB.Tests.LiftsSlopesRepositoryTests.TestGetLiftSlopesAsyncEmpty",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "AccessToDB.Tests.LiftsSlopesRepositoryTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "AccessToDB.Tests.LiftsSlopesRepositoryTests.TestGetLiftSlopesAsyncEmpty"
+    },
+    {
+      "name": "package",
+      "value": "AccessToDB.Tests.LiftsSlopesRepositoryTests"
+    },
+    {
+      "name": "suite",
+      "value": "LiftsSlopesRepositorySuite"
+    }
+  ],
+  "links": [],
+  "name": "AccessToDB.Tests.LiftsSlopesRepositoryTests.TestGetLiftSlopesAsyncEmpty",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1666367019509,
+  "stop": 1666367019880
+}

@@ -1,0 +1,46 @@
+{
+  "uuid": "9265823b-0994-475a-963a-86b673019ccb-IntegrationTests.TestActionsWithLiftsLifts.TestAdminAddAutoIncrementLiftAsync(lift: Lift { LiftID = 22, LiftName = liftName6981e311-c66f-4f72-86aa-2802afbf68e7, IsOpen = True, SeatsAmount = 219, LiftingTime = 224, QueueTime = 37, ConnectedSlopes =  })",
+  "historyId": "IntegrationTests.TestActionsWithLiftsLifts.TestAdminAddAutoIncrementLiftAsync(lift: Lift { LiftID = 22, LiftName = liftName6981e311-c66f-4f72-86aa-2802afbf68e7, IsOpen = True, SeatsAmount = 219, LiftingTime = 224, QueueTime = 37, ConnectedSlopes =  })",
+  "fullName": "IntegrationTests.TestActionsWithLiftsLifts.TestAdminAddAutoIncrementLiftAsync(lift: Lift { LiftID = 22, LiftName = liftName6981e311-c66f-4f72-86aa-2802afbf68e7, IsOpen = True, SeatsAmount = 219, LiftingTime = 224, QueueTime = 37, ConnectedSlopes =  })",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "IntegrationTests.TestActionsWithLiftsLifts"
+    },
+    {
+      "name": "testMethod",
+      "value": "IntegrationTests.TestActionsWithLiftsLifts.TestAdminAddAutoIncrementLiftAsync(lift: Lift { LiftID = 22, LiftName = liftName6981e311-c66f-4f72-86aa-2802afbf68e7, IsOpen = True, SeatsAmount = 219, LiftingTime = 224, QueueTime = 37, ConnectedSlopes =  })"
+    },
+    {
+      "name": "package",
+      "value": "IntegrationTests.TestActionsWithLiftsLifts"
+    },
+    {
+      "name": "suite",
+      "value": "SuiteForTestingActionsWithLifts"
+    }
+  ],
+  "links": [],
+  "name": "IntegrationTests.TestActionsWithLiftsLifts.TestAdminAddAutoIncrementLiftAsync(lift: Lift { LiftID = 22, LiftName = liftName6981e311-c66f-4f72-86aa-2802afbf68e7, IsOpen = True, SeatsAmount = 219, LiftingTime = 224, QueueTime = 37, ConnectedSlopes =  })",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1667160238936,
+  "stop": 1667160239555
+}

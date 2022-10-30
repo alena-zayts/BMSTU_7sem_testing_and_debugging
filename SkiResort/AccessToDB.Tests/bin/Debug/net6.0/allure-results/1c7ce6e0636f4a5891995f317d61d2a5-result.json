@@ -1,0 +1,46 @@
+{
+  "uuid": "db677107-ec1f-481c-b05a-ad8ff41aa553-AccessToDB.Tests.LiftsSlopesRepositoryTests.TestDeleteLiftSlopesByIDsAsyncOk(liftSlope: LiftSlope { RecordID = 48, LiftID = 169, SlopeID = 64 })",
+  "historyId": "AccessToDB.Tests.LiftsSlopesRepositoryTests.TestDeleteLiftSlopesByIDsAsyncOk(liftSlope: LiftSlope { RecordID = 48, LiftID = 169, SlopeID = 64 })",
+  "fullName": "AccessToDB.Tests.LiftsSlopesRepositoryTests.TestDeleteLiftSlopesByIDsAsyncOk(liftSlope: LiftSlope { RecordID = 48, LiftID = 169, SlopeID = 64 })",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "AccessToDB.Tests.LiftsSlopesRepositoryTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "AccessToDB.Tests.LiftsSlopesRepositoryTests.TestDeleteLiftSlopesByIDsAsyncOk(liftSlope: LiftSlope { RecordID = 48, LiftID = 169, SlopeID = 64 })"
+    },
+    {
+      "name": "package",
+      "value": "AccessToDB.Tests.LiftsSlopesRepositoryTests"
+    },
+    {
+      "name": "suite",
+      "value": "LiftsSlopesRepositorySuite"
+    }
+  ],
+  "links": [],
+  "name": "AccessToDB.Tests.LiftsSlopesRepositoryTests.TestDeleteLiftSlopesByIDsAsyncOk(liftSlope: LiftSlope { RecordID = 48, LiftID = 169, SlopeID = 64 })",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1666367020306,
+  "stop": 1666367020714
+}

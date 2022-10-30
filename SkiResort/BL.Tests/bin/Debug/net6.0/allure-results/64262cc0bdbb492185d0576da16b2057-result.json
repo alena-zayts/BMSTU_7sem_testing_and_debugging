@@ -1,0 +1,46 @@
+{
+  "uuid": "3b506d36-3c67-4daf-9721-b56730a2bb09-BL.Tests.LiftsServiceTest.TestGetLiftInfoAsync(userID: 69, lift: Lift { LiftID = 61, LiftName = liftName01ee2aa4-2d04-463c-a310-1a9490c5d474, IsOpen = True, SeatsAmount = 78, LiftingTime = 83, QueueTime = 23, ConnectedSlopes =  }, checkPermissionServiceMock: Mock<ICheckPermissionService:1>, liftsRepositoryStub: Mock<ILiftsRepository:1>, liftsSlopesRepositoryStub: Mock<ILiftsSlopesRepository:1>, sut: LiftsService { })",
+  "historyId": "BL.Tests.LiftsServiceTest.TestGetLiftInfoAsync(userID: 69, lift: Lift { LiftID = 61, LiftName = liftName01ee2aa4-2d04-463c-a310-1a9490c5d474, IsOpen = True, SeatsAmount = 78, LiftingTime = 83, QueueTime = 23, ConnectedSlopes =  }, checkPermissionServiceMock: Mock<ICheckPermissionService:1>, liftsRepositoryStub: Mock<ILiftsRepository:1>, liftsSlopesRepositoryStub: Mock<ILiftsSlopesRepository:1>, sut: LiftsService { })",
+  "fullName": "BL.Tests.LiftsServiceTest.TestGetLiftInfoAsync(userID: 69, lift: Lift { LiftID = 61, LiftName = liftName01ee2aa4-2d04-463c-a310-1a9490c5d474, IsOpen = True, SeatsAmount = 78, LiftingTime = 83, QueueTime = 23, ConnectedSlopes =  }, checkPermissionServiceMock: Mock<ICheckPermissionService:1>, liftsRepositoryStub: Mock<ILiftsRepository:1>, liftsSlopesRepositoryStub: Mock<ILiftsSlopesRepository:1>, sut: LiftsService { })",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "BL.Tests.LiftsServiceTest"
+    },
+    {
+      "name": "testMethod",
+      "value": "BL.Tests.LiftsServiceTest.TestGetLiftInfoAsync(userID: 69, lift: Lift { LiftID = 61, LiftName = liftName01ee2aa4-2d04-463c-a310-1a9490c5d474, IsOpen = True, SeatsAmount = 78, LiftingTime = 83, QueueTime = 23, ConnectedSlopes =  }, checkPermissionServiceMock: Mock<ICheckPermissionService:1>, liftsRepositoryStub: Mock<ILiftsRepository:1>, liftsSlopesRepositoryStub: Mock<ILiftsSlopesRepository:1>, sut: LiftsService { })"
+    },
+    {
+      "name": "package",
+      "value": "BL.Tests.LiftsServiceTest"
+    },
+    {
+      "name": "suite",
+      "value": "LiftsServiceSuite"
+    }
+  ],
+  "links": [],
+  "name": "BL.Tests.LiftsServiceTest.TestGetLiftInfoAsync(userID: 69, lift: Lift { LiftID = 61, LiftName = liftName01ee2aa4-2d04-463c-a310-1a9490c5d474, IsOpen = True, SeatsAmount = 78, LiftingTime = 83, QueueTime = 23, ConnectedSlopes =  }, checkPermissionServiceMock: Mock<ICheckPermissionService:1>, liftsRepositoryStub: Mock<ILiftsRepository:1>, liftsSlopesRepositoryStub: Mock<ILiftsSlopesRepository:1>, sut: LiftsService { })",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1666366997981,
+  "stop": 1666366997991
+}

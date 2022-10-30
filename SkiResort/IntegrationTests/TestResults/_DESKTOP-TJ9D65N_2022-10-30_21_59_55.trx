@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="3340563d-5371-4361-a3a1-866ad01f9d82" name="@DESKTOP-TJ9D65N 2022-10-30 21:59:55" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2022-10-30T21:59:55.1067460+03:00" queuing="2022-10-30T21:59:55.1067461+03:00" start="2022-10-30T21:59:51.1010811+03:00" finish="2022-10-30T21:59:55.8038166+03:00" />
+  <TestSettings name="default" id="1ebb7ab9-eb1a-4496-b0b5-f57e37de2e8c">
+    <Deployment runDeploymentRoot="_DESKTOP-TJ9D65N_2022-10-30_21_59_55" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="f03c8bfd-9e24-4bed-8808-a8093efc8de1" testId="1da5f54a-109d-3e90-9b69-7a06a6b220e1" testName="IntegrationTests.TestActionsWithLiftsSlopes.TestGetLiftsSlopesInfoAsync(liftsSlopes: [LiftSlope { RecordID = 167, LiftID = 116, SlopeID = 122 }, LiftSlope { RecordID = 160, LiftID = 58, SlopeID = 254 }, LiftSlope { RecordID = 138, LiftID = 183, SlopeID = 191 }])" computerName="DESKTOP-TJ9D65N" duration="00:00:00.6478310" startTime="2022-10-30T21:59:55.6135881+03:00" endTime="2022-10-30T21:59:55.6135886+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f03c8bfd-9e24-4bed-8808-a8093efc8de1" />
+    <UnitTestResult executionId="e299c950-85f2-4da8-8338-55e33bf9f6b3" testId="e8ff873a-7105-4e37-6fad-a9c9bb07e2c0" testName="IntegrationTests.TestActionsWithLiftsSlopes.TestAdminDeleteLiftSlopeAsync(lift: Lift { LiftID = 174, LiftName = liftName1105e1f2-af2c-4596-9a44-c551de25d271, IsOpen = True, SeatsAmount = 233, LiftingTime = 74, QueueTime = 138, ConnectedSlopes =  }, slope: Slope { SlopeID = 35, SlopeName = slopeName2fbcd154-5e41-47b8-af4f-20edea4bb140, IsOpen = False, DifficultyLevel = 44, ConnectedLifts =  })" computerName="DESKTOP-TJ9D65N" duration="00:00:00.7133664" startTime="2022-10-30T21:59:54.2805934+03:00" endTime="2022-10-30T21:59:54.2805935+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e299c950-85f2-4da8-8338-55e33bf9f6b3">
+      <Output>
+        <ErrorInfo>
+          <Message>AccessToDB.Exceptions.UserExceptions.UserAddException : Exception of type 'AccessToDB.Exceptions.UserExceptions.UserAddException' was thrown.</Message>
+          <StackTrace>   at AccessToDB.RepositoriesTarantool.TarantoolUsersRepository.AddUserAsync(UInt32 userID, UInt32 cardID, String UserEmail, String password, PermissionsEnum permissions) in /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB/TarantoolRepositories/TarantoolUsersRepository.cs:line 74
+   at IntegrationTests.TestActionsWithLiftsSlopes.TestAdminDeleteLiftSlopeAsync(Lift lift, Slope slope) in /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/TestActionsWithLiftsSlopes.cs:line 85
+   at System.Threading.Tasks.Task.&lt;&gt;c.&lt;ThrowAsync&gt;b__128_0(Object state)</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="496b3916-fa35-4faf-96e6-94f869e24550" testId="fcb6a79d-c069-1d4b-2b0e-0fd5e83f054b" testName="IntegrationTests.TestActionsWithSlopes.TestGetSlopeInfoAsync(slope: Slope { SlopeID = 27, SlopeName = slopeName3939da8b-8ff7-4f1d-b9ff-5753d4afcf9f, IsOpen = True, DifficultyLevel = 55, ConnectedLifts =  })" computerName="DESKTOP-TJ9D65N" duration="00:00:00.5973772" startTime="2022-10-30T21:59:54.1866387+03:00" endTime="2022-10-30T21:59:54.1866635+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="496b3916-fa35-4faf-96e6-94f869e24550">
+      <Output>
+        <ErrorInfo>
+          <Message>AccessToDB.Exceptions.SlopeExceptions.SlopeDeleteException : Exception of type 'AccessToDB.Exceptions.SlopeExceptions.SlopeDeleteException' was thrown.</Message>
+          <StackTrace>   at AccessToDB.RepositoriesTarantool.TarantoolSlopesRepository.DeleteSlopeByIDAsync(UInt32 slopeID) in /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB/TarantoolRepositories/TarantoolSlopesRepository.cs:line 122
+   at IntegrationTests.ArrangeHelpers.DBTablesCleaner.cleanSlopesTable() in /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/ArrangeHelpers/DBTablesCleaner.cs:line 74
+   at IntegrationTests.ArrangeHelpers.DBTablesCleaner.clean() in /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/ArrangeHelpers/DBTablesCleaner.cs:line 34
+   at IntegrationTests.TestActionsWithSlopes.Dispose() in /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/TestActionsWithSlopes.cs:line 46
+   at ReflectionAbstractionExtensions.DisposeTestClass(ITest test, Object testClass, IMessageBus messageBus, ExecutionTimer timer, CancellationTokenSource cancellationTokenSource) in C:\Dev\xunit\xunit\src\xunit.execution\Extensions\ReflectionAbstractionExtensions.cs:line 79</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a422492d-337a-4438-939d-d0d0113e0852" testId="a3899003-4203-4acb-1ad0-d543832cd418" testName="IntegrationTests.TestActionsWithLiftsSlopes.TestAdminAddAutoIncrementLiftSlopeAsync(lift: Lift { LiftID = 190, LiftName = liftName90c5df62-4528-4bb6-9cbe-31079a4aa09a, IsOpen = True, SeatsAmount = 133, LiftingTime = 31, QueueTime = 202, ConnectedSlopes =  }, slope: Slope { SlopeID = 209, SlopeName = slopeName50006785-3ee6-4113-b82b-46d0aff595c8, IsOpen = False, DifficultyLevel = 156, ConnectedLifts =  })" computerName="DESKTOP-TJ9D65N" duration="00:00:00.6664086" startTime="2022-10-30T21:59:54.9552872+03:00" endTime="2022-10-30T21:59:54.9552874+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a422492d-337a-4438-939d-d0d0113e0852" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="IntegrationTests.TestActionsWithLiftsSlopes.TestAdminAddAutoIncrementLiftSlopeAsync(lift: Lift { LiftID = 190, LiftName = liftName90c5df62-4528-4bb6-9cbe-31079a4aa09a, IsOpen = True, SeatsAmount = 133, LiftingTime = 31, QueueTime = 202, ConnectedSlopes =  }, slope: Slope { SlopeID = 209, SlopeName = slopeName50006785-3ee6-4113-b82b-46d0aff595c8, IsOpen = False, DifficultyLevel = 156, ConnectedLifts =  })" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/integrationtests/bin/debug/net6.0/integrationtests.dll" id="a3899003-4203-4acb-1ad0-d543832cd418">
+      <Execution id="a422492d-337a-4438-939d-d0d0113e0852" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/bin/Debug/net6.0/IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="IntegrationTests.TestActionsWithLiftsSlopes" name="TestAdminAddAutoIncrementLiftSlopeAsync" />
+    </UnitTest>
+    <UnitTest name="IntegrationTests.TestActionsWithLiftsSlopes.TestAdminDeleteLiftSlopeAsync(lift: Lift { LiftID = 174, LiftName = liftName1105e1f2-af2c-4596-9a44-c551de25d271, IsOpen = True, SeatsAmount = 233, LiftingTime = 74, QueueTime = 138, ConnectedSlopes =  }, slope: Slope { SlopeID = 35, SlopeName = slopeName2fbcd154-5e41-47b8-af4f-20edea4bb140, IsOpen = False, DifficultyLevel = 44, ConnectedLifts =  })" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/integrationtests/bin/debug/net6.0/integrationtests.dll" id="e8ff873a-7105-4e37-6fad-a9c9bb07e2c0">
+      <Execution id="e299c950-85f2-4da8-8338-55e33bf9f6b3" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/bin/Debug/net6.0/IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="IntegrationTests.TestActionsWithLiftsSlopes" name="TestAdminDeleteLiftSlopeAsync" />
+    </UnitTest>
+    <UnitTest name="IntegrationTests.TestActionsWithSlopes.TestGetSlopeInfoAsync(slope: Slope { SlopeID = 27, SlopeName = slopeName3939da8b-8ff7-4f1d-b9ff-5753d4afcf9f, IsOpen = True, DifficultyLevel = 55, ConnectedLifts =  })" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/integrationtests/bin/debug/net6.0/integrationtests.dll" id="fcb6a79d-c069-1d4b-2b0e-0fd5e83f054b">
+      <Execution id="496b3916-fa35-4faf-96e6-94f869e24550" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/bin/Debug/net6.0/IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="IntegrationTests.TestActionsWithSlopes" name="TestGetSlopeInfoAsync" />
+    </UnitTest>
+    <UnitTest name="IntegrationTests.TestActionsWithLiftsSlopes.TestGetLiftsSlopesInfoAsync(liftsSlopes: [LiftSlope { RecordID = 167, LiftID = 116, SlopeID = 122 }, LiftSlope { RecordID = 160, LiftID = 58, SlopeID = 254 }, LiftSlope { RecordID = 138, LiftID = 183, SlopeID = 191 }])" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/integrationtests/bin/debug/net6.0/integrationtests.dll" id="1da5f54a-109d-3e90-9b69-7a06a6b220e1">
+      <Execution id="f03c8bfd-9e24-4bed-8808-a8093efc8de1" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/bin/Debug/net6.0/IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="IntegrationTests.TestActionsWithLiftsSlopes" name="TestGetLiftsSlopesInfoAsync" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="1da5f54a-109d-3e90-9b69-7a06a6b220e1" executionId="f03c8bfd-9e24-4bed-8808-a8093efc8de1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e8ff873a-7105-4e37-6fad-a9c9bb07e2c0" executionId="e299c950-85f2-4da8-8338-55e33bf9f6b3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fcb6a79d-c069-1d4b-2b0e-0fd5e83f054b" executionId="496b3916-fa35-4faf-96e6-94f869e24550" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a3899003-4203-4acb-1ad0-d543832cd418" executionId="a422492d-337a-4438-939d-d0d0113e0852" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="4" executed="4" passed="2" failed="2" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.4.3+1b45f5407b (64-bit .NET 6.0.10)
+[xUnit.net 00:00:01.36]   Discovering: IntegrationTests
+[xUnit.net 00:00:01.46]   Discovered:  IntegrationTests
+[xUnit.net 00:00:01.46]   Starting:    IntegrationTests
+[xUnit.net 00:00:02.19]       AccessToDB.Exceptions.SlopeExceptions.SlopeDeleteException : Exception of type 'AccessToDB.Exceptions.SlopeExceptions.SlopeDeleteException' was thrown.
+[xUnit.net 00:00:02.19]       Stack Trace:
+[xUnit.net 00:00:02.19]         /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB/TarantoolRepositories/TarantoolSlopesRepository.cs(122,0): at AccessToDB.RepositoriesTarantool.TarantoolSlopesRepository.DeleteSlopeByIDAsync(UInt32 slopeID)
+[xUnit.net 00:00:02.19]         /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/ArrangeHelpers/DBTablesCleaner.cs(74,0): at IntegrationTests.ArrangeHelpers.DBTablesCleaner.cleanSlopesTable()
+[xUnit.net 00:00:02.19]         /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/ArrangeHelpers/DBTablesCleaner.cs(34,0): at IntegrationTests.ArrangeHelpers.DBTablesCleaner.clean()
+[xUnit.net 00:00:02.19]         /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/TestActionsWithSlopes.cs(46,0): at IntegrationTests.TestActionsWithSlopes.Dispose()
+[xUnit.net 00:00:02.19]         C:\Dev\xunit\xunit\src\xunit.execution\Extensions\ReflectionAbstractionExtensions.cs(79,0): at ReflectionAbstractionExtensions.DisposeTestClass(ITest test, Object testClass, IMessageBus messageBus, ExecutionTimer timer, CancellationTokenSource cancellationTokenSource)
+[xUnit.net 00:00:02.28]       AccessToDB.Exceptions.UserExceptions.UserAddException : Exception of type 'AccessToDB.Exceptions.UserExceptions.UserAddException' was thrown.
+[xUnit.net 00:00:02.29]       Stack Trace:
+[xUnit.net 00:00:02.29]         /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB/TarantoolRepositories/TarantoolUsersRepository.cs(74,0): at AccessToDB.RepositoriesTarantool.TarantoolUsersRepository.AddUserAsync(UInt32 userID, UInt32 cardID, String UserEmail, String password, PermissionsEnum permissions)
+[xUnit.net 00:00:02.29]         /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/TestActionsWithLiftsSlopes.cs(85,0): at IntegrationTests.TestActionsWithLiftsSlopes.TestAdminDeleteLiftSlopeAsync(Lift lift, Slope slope)
+[xUnit.net 00:00:02.29]            at System.Threading.Tasks.Task.&lt;&gt;c.&lt;ThrowAsync&gt;b__128_0(Object state)
+[xUnit.net 00:00:03.66]   Finished:    IntegrationTests
+</StdOut>
+    </Output>
+    <RunInfos>
+      <RunInfo computerName="DESKTOP-TJ9D65N" outcome="Error" timestamp="2022-10-30T21:59:54.1807568+03:00">
+        <Text>[xUnit.net 00:00:02.19]     IntegrationTests.TestActionsWithSlopes.TestGetSlopeInfoAsync(slope: Slope { SlopeID = 27, SlopeName = slopeName3939da8b-8ff7-4f1d-b9ff-5753d4afcf9f, IsOpen = True, DifficultyLevel = 55, ConnectedLifts =  }) [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-TJ9D65N" outcome="Error" timestamp="2022-10-30T21:59:54.2747428+03:00">
+        <Text>[xUnit.net 00:00:02.28]     IntegrationTests.TestActionsWithLiftsSlopes.TestAdminDeleteLiftSlopeAsync(lift: Lift { LiftID = 174, LiftName = liftName1105e1f2-af2c-4596-9a44-c551de25d271, IsOpen = True, SeatsAmount = 233, LiftingTime = 74, QueueTime = 138, ConnectedSlopes =  }, slope: Slope { SlopeID = 35, SlopeName = slopeName2fbcd154-5e41-47b8-af4f-20edea4bb140, IsOpen = False, DifficultyLevel = 44, ConnectedLifts =  }) [FAIL]</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+</TestRun>

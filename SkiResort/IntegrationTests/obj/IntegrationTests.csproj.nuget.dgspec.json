@@ -1,0 +1,234 @@
+{
+  "format": 1,
+  "restore": {
+    "/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/IntegrationTests.csproj": {}
+  },
+  "projects": {
+    "/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB/AccessToDB.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB/AccessToDB.csproj",
+        "projectName": "AccessToDB",
+        "projectPath": "/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB/AccessToDB.csproj",
+        "packagesPath": "/home/alena/.nuget/packages/",
+        "outputPath": "/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/alena/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/BL/BL.csproj": {
+                "projectPath": "/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/BL/BL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.Extensions.Configuration.EnvironmentVariables": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "progaudi.tarantool": {
+              "target": "Package",
+              "version": "[0.15.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/alena/.dotnet/sdk/6.0.402/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/BL/BL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/BL/BL.csproj",
+        "projectName": "BL",
+        "projectPath": "/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/BL/BL.csproj",
+        "packagesPath": "/home/alena/.nuget/packages/",
+        "outputPath": "/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/BL/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/alena/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/alena/.dotnet/sdk/6.0.402/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/IntegrationTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/IntegrationTests.csproj",
+        "projectName": "IntegrationTests",
+        "projectPath": "/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/IntegrationTests.csproj",
+        "packagesPath": "/home/alena/.nuget/packages/",
+        "outputPath": "/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/alena/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB/AccessToDB.csproj": {
+                "projectPath": "/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB/AccessToDB.csproj"
+              },
+              "/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/BL/BL.csproj": {
+                "projectPath": "/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/BL/BL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Allure.XUnit": {
+              "target": "Package",
+              "version": "[2.1.3, )"
+            },
+            "AutoFixture.AutoMoq": {
+              "target": "Package",
+              "version": "[4.17.0, )"
+            },
+            "AutoFixture.Xunit2": {
+              "target": "Package",
+              "version": "[4.17.0, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.11.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.18.2, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/home/alena/.dotnet/sdk/6.0.402/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

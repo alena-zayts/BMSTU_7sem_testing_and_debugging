@@ -1,0 +1,46 @@
+{
+  "uuid": "0d804f7b-74a5-4db4-9aae-aef8d3bc6628-AccessToDB.Tests.TurnstilesRepositoryTests.TestUpdateTurnstileByIDAsyncOk(turnstile: Turnstile { TurnstileID = 148, LiftID = 143, IsOpen = True })",
+  "historyId": "AccessToDB.Tests.TurnstilesRepositoryTests.TestUpdateTurnstileByIDAsyncOk(turnstile: Turnstile { TurnstileID = 148, LiftID = 143, IsOpen = True })",
+  "fullName": "AccessToDB.Tests.TurnstilesRepositoryTests.TestUpdateTurnstileByIDAsyncOk(turnstile: Turnstile { TurnstileID = 148, LiftID = 143, IsOpen = True })",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "AccessToDB.Tests.TurnstilesRepositoryTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "AccessToDB.Tests.TurnstilesRepositoryTests.TestUpdateTurnstileByIDAsyncOk(turnstile: Turnstile { TurnstileID = 148, LiftID = 143, IsOpen = True })"
+    },
+    {
+      "name": "package",
+      "value": "AccessToDB.Tests.TurnstilesRepositoryTests"
+    },
+    {
+      "name": "suite",
+      "value": "TurnstilesRepositorySuite"
+    }
+  ],
+  "links": [],
+  "name": "AccessToDB.Tests.TurnstilesRepositoryTests.TestUpdateTurnstileByIDAsyncOk(turnstile: Turnstile { TurnstileID = 148, LiftID = 143, IsOpen = True })",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1666367025625,
+  "stop": 1666367026026
+}

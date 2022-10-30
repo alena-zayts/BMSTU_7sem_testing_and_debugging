@@ -1,0 +1,46 @@
+{
+  "uuid": "a48a0244-b6b1-4533-bc67-8080d1367538-AccessToDB.Tests.LiftsRepositoryTests.TestGetLiftByIdAsyncOk(lift: Lift { LiftID = 203, LiftName = liftName4eb90e19-a80c-4181-a8dc-454d0e999634, IsOpen = True, SeatsAmount = 205, LiftingTime = 55, QueueTime = 164, ConnectedSlopes =  })",
+  "historyId": "AccessToDB.Tests.LiftsRepositoryTests.TestGetLiftByIdAsyncOk(lift: Lift { LiftID = 203, LiftName = liftName4eb90e19-a80c-4181-a8dc-454d0e999634, IsOpen = True, SeatsAmount = 205, LiftingTime = 55, QueueTime = 164, ConnectedSlopes =  })",
+  "fullName": "AccessToDB.Tests.LiftsRepositoryTests.TestGetLiftByIdAsyncOk(lift: Lift { LiftID = 203, LiftName = liftName4eb90e19-a80c-4181-a8dc-454d0e999634, IsOpen = True, SeatsAmount = 205, LiftingTime = 55, QueueTime = 164, ConnectedSlopes =  })",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "AccessToDB.Tests.LiftsRepositoryTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "AccessToDB.Tests.LiftsRepositoryTests.TestGetLiftByIdAsyncOk(lift: Lift { LiftID = 203, LiftName = liftName4eb90e19-a80c-4181-a8dc-454d0e999634, IsOpen = True, SeatsAmount = 205, LiftingTime = 55, QueueTime = 164, ConnectedSlopes =  })"
+    },
+    {
+      "name": "package",
+      "value": "AccessToDB.Tests.LiftsRepositoryTests"
+    },
+    {
+      "name": "suite",
+      "value": "LiftsRepositorySuite"
+    }
+  ],
+  "links": [],
+  "name": "AccessToDB.Tests.LiftsRepositoryTests.TestGetLiftByIdAsyncOk(lift: Lift { LiftID = 203, LiftName = liftName4eb90e19-a80c-4181-a8dc-454d0e999634, IsOpen = True, SeatsAmount = 205, LiftingTime = 55, QueueTime = 164, ConnectedSlopes =  })",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1666367027861,
+  "stop": 1666367028251
+}
