@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="f61b7a27-c74d-46ec-9219-d48721d7abf8" name="@DESKTOP-TJ9D65N 2022-10-31 14:38:27" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2022-10-31T14:38:27.1199251+03:00" queuing="2022-10-31T14:38:27.1199252+03:00" start="2022-10-31T14:38:23.3689166+03:00" finish="2022-10-31T14:38:45.0875987+03:00" />
+  <TestSettings name="default" id="33e599f3-c5bb-41cf-a10c-04c759cc47bc">
+    <Deployment runDeploymentRoot="_DESKTOP-TJ9D65N_2022-10-31_14_38_27" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="55545fdd-d650-4659-8a6b-9e4f1cb69241" testId="198a1ae3-83ab-ea18-2e21-87927dc980e2" testName="IntegrationTests.TestActionsWithUsers.TestRegisterUserWithNoPassword" computerName="DESKTOP-TJ9D65N" duration="00:00:00.5722777" startTime="2022-10-31T14:38:34.9137518+03:00" endTime="2022-10-31T14:38:34.9137521+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="55545fdd-d650-4659-8a6b-9e4f1cb69241" />
+    <UnitTestResult executionId="0689e64d-1beb-4be9-8fcb-50dd01b70c55" testId="48375cbc-003d-d0fc-ff6a-cfef4b266dfb" testName="IntegrationTests.TestActionsWithUsers.TestRegisterUserWithNoEmail" computerName="DESKTOP-TJ9D65N" duration="00:00:00.5643599" startTime="2022-10-31T14:38:34.3111486+03:00" endTime="2022-10-31T14:38:34.3111490+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0689e64d-1beb-4be9-8fcb-50dd01b70c55" />
+    <UnitTestResult executionId="874b5c12-ce35-46a1-a6b1-023a74cbbaeb" testId="63be1f92-7da8-a66e-02df-a6e75143687a" testName="IntegrationTests.TestActionsWithLiftsSlopes.TestGetLiftsSlopesInfoAsync(liftsSlopes: [LiftSlope { RecordID = 44, LiftID = 36, SlopeID = 83 }, LiftSlope { RecordID = 213, LiftID = 131, SlopeID = 47 }, LiftSlope { RecordID = 193, LiftID = 109, SlopeID = 248 }])" computerName="DESKTOP-TJ9D65N" duration="00:00:00.6467662" startTime="2022-10-31T14:38:39.5126890+03:00" endTime="2022-10-31T14:38:39.5126893+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="874b5c12-ce35-46a1-a6b1-023a74cbbaeb" />
+    <UnitTestResult executionId="4901b4b6-a93d-46c7-9c23-20948597663f" testId="401abfac-f0db-be76-1418-0d55b1d83b03" testName="IntegrationTests.TestActionsWithSlopes.TestAdminAddSlopeAsync(slope: Slope { SlopeID = 247, SlopeName = slopeName1cfa4fb5-fcc2-4cf6-b794-43d080303dd3, IsOpen = True, DifficultyLevel = 170, ConnectedLifts =  })" computerName="DESKTOP-TJ9D65N" duration="00:00:00.6376010" startTime="2022-10-31T14:38:44.9959834+03:00" endTime="2022-10-31T14:38:44.9959834+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4901b4b6-a93d-46c7-9c23-20948597663f" />
+    <UnitTestResult executionId="604f37de-cbb5-41ef-b1d1-ace9b2452b6f" testId="640a72f6-5583-6636-1a54-8396abe99588" testName="IntegrationTests.TestActionsWithUsers.TestAdminDeleteUser" computerName="DESKTOP-TJ9D65N" duration="00:00:00.5606210" startTime="2022-10-31T14:38:33.1262752+03:00" endTime="2022-10-31T14:38:33.1262755+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="604f37de-cbb5-41ef-b1d1-ace9b2452b6f">
+      <Output>
+        <ErrorInfo>
+          <Message>AccessToDB.Exceptions.UserExceptions.UserAddException : Exception of type 'AccessToDB.Exceptions.UserExceptions.UserAddException' was thrown.</Message>
+          <StackTrace>   at AccessToDB.RepositoriesTarantool.TarantoolUsersRepository.AddUserAsync(UInt32 userID, UInt32 cardID, String UserEmail, String password, PermissionsEnum permissions) in /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB/TarantoolRepositories/TarantoolUsersRepository.cs:line 74
+   at IntegrationTests.TestActionsWithUsers.TestAdminDeleteUser() in /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/TestActionsWithUsers.cs:line 186
+   at System.Threading.Tasks.Task.&lt;&gt;c.&lt;ThrowAsync&gt;b__128_0(Object state)</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="0682b38b-7496-4f5f-b0b5-0b013e76a747" testId="cb8eae24-e7ef-ed7e-d8e9-347d61b13b3a" testName="IntegrationTests.TestActionsWithUsers.TestRegisterUserWithRepeatedEmail" computerName="DESKTOP-TJ9D65N" duration="00:00:00.5663856" startTime="2022-10-31T14:38:31.3260002+03:00" endTime="2022-10-31T14:38:31.3260004+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0682b38b-7496-4f5f-b0b5-0b013e76a747">
+      <Output>
+        <ErrorInfo>
+          <Message>AccessToDB.Exceptions.UserExceptions.UserAddException : Exception of type 'AccessToDB.Exceptions.UserExceptions.UserAddException' was thrown.</Message>
+          <StackTrace>   at AccessToDB.RepositoriesTarantool.TarantoolUsersRepository.AddUserAsync(UInt32 userID, UInt32 cardID, String UserEmail, String password, PermissionsEnum permissions) in /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB/TarantoolRepositories/TarantoolUsersRepository.cs:line 74
+   at IntegrationTests.TestActionsWithUsers.TestRegisterUserWithRepeatedEmail() in /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/TestActionsWithUsers.cs:line 91
+   at System.Threading.Tasks.Task.&lt;&gt;c.&lt;ThrowAsync&gt;b__128_0(Object state)</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="43bdff1f-16f4-45a0-99a5-be72932e9b29" testId="593087f0-c7ab-1991-c3ee-af523cc03ada" testName="IntegrationTests.TestActionsWithUsers.TestAdminGetUserByIDAsync" computerName="DESKTOP-TJ9D65N" duration="00:00:00.5625724" startTime="2022-10-31T14:38:35.5161458+03:00" endTime="2022-10-31T14:38:35.5161461+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="43bdff1f-16f4-45a0-99a5-be72932e9b29">
+      <Output>
+        <ErrorInfo>
+          <Message>AccessToDB.Exceptions.UserExceptions.UserAddException : Exception of type 'AccessToDB.Exceptions.UserExceptions.UserAddException' was thrown.</Message>
+          <StackTrace>   at AccessToDB.RepositoriesTarantool.TarantoolUsersRepository.AddUserAsync(UInt32 userID, UInt32 cardID, String UserEmail, String password, PermissionsEnum permissions) in /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB/TarantoolRepositories/TarantoolUsersRepository.cs:line 74
+   at IntegrationTests.TestActionsWithUsers.TestAdminGetUserByIDAsync() in /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/TestActionsWithUsers.cs:line 202
+   at System.Threading.Tasks.Task.&lt;&gt;c.&lt;ThrowAsync&gt;b__128_0(Object state)</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ae8cd583-2f56-4940-b20c-91d8d66287e5" testId="959b9601-58ed-532f-bc17-401446048ed4" testName="IntegrationTests.TestActionsWithLiftsSlopes.TestAdminAddAutoIncrementLiftSlopeAsync(lift: Lift { LiftID = 116, LiftName = liftName4761a910-73ca-4cb0-a1c2-bb996083efd5, IsOpen = True, SeatsAmount = 167, LiftingTime = 129, QueueTime = 145, ConnectedSlopes =  }, slope: Slope { SlopeID = 9, SlopeName = slopeName1c07ff5f-c139-4a44-a790-d9dcf4090a35, IsOpen = False, DifficultyLevel = 240, ConnectedLifts =  })" computerName="DESKTOP-TJ9D65N" duration="00:00:00.6792682" startTime="2022-10-31T14:38:40.9706865+03:00" endTime="2022-10-31T14:38:40.9706867+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ae8cd583-2f56-4940-b20c-91d8d66287e5" />
+    <UnitTestResult executionId="9b940be6-7123-4392-bd78-55ae912c34d3" testId="8e53914d-6f3b-184a-7ee0-34063351b803" testName="IntegrationTests.TestActionsWithSlopes.TestAdminAddAutoIncrementSlopeAsync(slope: Slope { SlopeID = 138, SlopeName = slopeName2428eaa4-b78b-4ae5-b47c-4f619d94b275, IsOpen = True, DifficultyLevel = 171, ConnectedLifts =  })" computerName="DESKTOP-TJ9D65N" duration="00:00:00.6246377" startTime="2022-10-31T14:38:43.6691054+03:00" endTime="2022-10-31T14:38:43.6691055+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9b940be6-7123-4392-bd78-55ae912c34d3" />
+    <UnitTestResult executionId="ad99402f-1079-4202-80b3-dd644d14b1e7" testId="469b101f-8633-a685-8d5b-bdbf8dc340c5" testName="IntegrationTests.TestActionsWithSlopes.TestGetSlopesInfoAsync(initialSlopes: [Slope { SlopeID = 210, SlopeName = slopeName94b69c2b-84f3-4dea-aea4-13d413d80641, IsOpen = True, DifficultyLevel = 53, ConnectedLifts =  }, Slope { SlopeID = 59, SlopeName = slopeName792e3cb4-2e8c-4631-8881-90334dd1ae99, IsOpen = False, DifficultyLevel = 65, ConnectedLifts =  }, Slope { SlopeID = 102, SlopeName = slopeName195d1ebd-ba9e-40d5-8f49-a626b94e5b12, IsOpen = True, DifficultyLevel = 167, ConnectedLifts =  }])" computerName="DESKTOP-TJ9D65N" duration="00:00:00.6766948" startTime="2022-10-31T14:38:43.0298342+03:00" endTime="2022-10-31T14:38:43.0298343+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ad99402f-1079-4202-80b3-dd644d14b1e7" />
+    <UnitTestResult executionId="31c990b6-ff99-4e26-b9f6-bdf404217d5f" testId="07a46212-0f71-2348-23a3-e069446b5a42" testName="IntegrationTests.TestActionsWithLiftsSlopes.TestAdminDeleteLiftSlopeAsync(lift: Lift { LiftID = 253, LiftName = liftName1c0904b0-f854-4db9-93cb-91015e67c664, IsOpen = True, SeatsAmount = 239, LiftingTime = 157, QueueTime = 16, ConnectedSlopes =  }, slope: Slope { SlopeID = 185, SlopeName = slopeName552c47a9-d212-4592-a911-b1978f057b1b, IsOpen = False, DifficultyLevel = 105, ConnectedLifts =  })" computerName="DESKTOP-TJ9D65N" duration="00:00:00.7076909" startTime="2022-10-31T14:38:40.2555527+03:00" endTime="2022-10-31T14:38:40.2555531+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="31c990b6-ff99-4e26-b9f6-bdf404217d5f" />
+    <UnitTestResult executionId="edd79bbb-b6d1-4fb8-be60-7adb417e0988" testId="45fe0df1-c885-2f7e-8187-832190c2786d" testName="IntegrationTests.TestActionsWithUsers.TestLogInOk" computerName="DESKTOP-TJ9D65N" duration="00:00:00.5662111" startTime="2022-10-31T14:38:30.7189394+03:00" endTime="2022-10-31T14:38:30.7189396+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="edd79bbb-b6d1-4fb8-be60-7adb417e0988">
+      <Output>
+        <ErrorInfo>
+          <Message>AccessToDB.Exceptions.UserExceptions.UserAddException : Exception of type 'AccessToDB.Exceptions.UserExceptions.UserAddException' was thrown.</Message>
+          <StackTrace>   at AccessToDB.RepositoriesTarantool.TarantoolUsersRepository.AddUserAsync(UInt32 userID, UInt32 cardID, String UserEmail, String password, PermissionsEnum permissions) in /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB/TarantoolRepositories/TarantoolUsersRepository.cs:line 74
+   at IntegrationTests.TestActionsWithUsers.TestLogInOk() in /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/TestActionsWithUsers.cs:line 104
+   at System.Threading.Tasks.Task.&lt;&gt;c.&lt;ThrowAsync&gt;b__128_0(Object state)</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a71f4a15-3d91-4481-9ed9-aada4cf9f20a" testId="33b8db97-6668-e1ff-f572-710c90519ce1" testName="IntegrationTests.TestActionsWithSlopes.TestGetSlopeInfoAsync(slope: Slope { SlopeID = 150, SlopeName = slopeName94851648-37c5-4f07-8159-7e1215937e64, IsOpen = True, DifficultyLevel = 184, ConnectedLifts =  })" computerName="DESKTOP-TJ9D65N" duration="00:00:00.6100182" startTime="2022-10-31T14:38:41.6000714+03:00" endTime="2022-10-31T14:38:41.6000718+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a71f4a15-3d91-4481-9ed9-aada4cf9f20a" />
+    <UnitTestResult executionId="355197b3-3562-47f5-aafe-36880f51f945" testId="479b875f-d623-ae0a-ff97-dc49a4f2a217" testName="IntegrationTests.TestActionsWithUsers.TestLogInWithWrongPassword" computerName="DESKTOP-TJ9D65N" duration="00:00:00.5719139" startTime="2022-10-31T14:38:31.9286176+03:00" endTime="2022-10-31T14:38:31.9286179+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="355197b3-3562-47f5-aafe-36880f51f945">
+      <Output>
+        <ErrorInfo>
+          <Message>AccessToDB.Exceptions.UserExceptions.UserAddException : Exception of type 'AccessToDB.Exceptions.UserExceptions.UserAddException' was thrown.</Message>
+          <StackTrace>   at AccessToDB.RepositoriesTarantool.TarantoolUsersRepository.AddUserAsync(UInt32 userID, UInt32 cardID, String UserEmail, String password, PermissionsEnum permissions) in /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB/TarantoolRepositories/TarantoolUsersRepository.cs:line 74
+   at IntegrationTests.TestActionsWithUsers.TestLogInWithWrongPassword() in /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/TestActionsWithUsers.cs:line 123
+   at System.Threading.Tasks.Task.&lt;&gt;c.&lt;ThrowAsync&gt;b__128_0(Object state)</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="101adfea-d07d-4f68-bd2a-b74c3c47696f" testId="680762ae-8205-c926-da20-4f5bceab9810" testName="IntegrationTests.TestActionsWithSlopes.TestAdminDeleteSlopeAsync(slope: Slope { SlopeID = 148, SlopeName = slopeName8bf75b6e-f76f-4be4-bbf1-eb5e704bbeef, IsOpen = True, DifficultyLevel = 132, ConnectedLifts =  })" computerName="DESKTOP-TJ9D65N" duration="00:00:00.6321214" startTime="2022-10-31T14:38:44.3178476+03:00" endTime="2022-10-31T14:38:44.3178481+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="101adfea-d07d-4f68-bd2a-b74c3c47696f" />
+    <UnitTestResult executionId="7b160b0f-a58e-4a4d-92a1-c5b7789ce134" testId="d78ba6d0-dfa8-fa6f-4cc8-23966ee34980" testName="IntegrationTests.TestActionsWithUsers.TestRegisterOk" computerName="DESKTOP-TJ9D65N" duration="00:00:00.5654315" startTime="2022-10-31T14:38:32.5473180+03:00" endTime="2022-10-31T14:38:32.5473180+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7b160b0f-a58e-4a4d-92a1-c5b7789ce134">
+      <Output>
+        <ErrorInfo>
+          <Message>BL.Exceptions.UserExceptions.UserRegistrationException : Could't register new user because such email already exists</Message>
+          <StackTrace>   at BL.Services.UsersService.RegisterAsync(UInt32 cardID, String email, String password) in /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/BL/Services/UsersService.cs:line 35
+   at IntegrationTests.TestActionsWithUsers.TestRegisterOk() in /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/TestActionsWithUsers.cs:line 57
+   at System.Threading.Tasks.Task.&lt;&gt;c.&lt;ThrowAsync&gt;b__128_0(Object state)</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d222685a-cb40-4131-9a65-2651f5bfaa00" testId="b3896394-3b15-0fe2-bf0d-7974ef55f567" testName="IntegrationTests.TestActionsWithTurnstiles.TestAdminGetTurnstileAsync(turnstile: Turnstile { TurnstileID = 205, LiftID = 18, IsOpen = True })" computerName="DESKTOP-TJ9D65N" duration="00:00:00.6174560" startTime="2022-10-31T14:38:36.1691178+03:00" endTime="2022-10-31T14:38:36.1691181+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d222685a-cb40-4131-9a65-2651f5bfaa00" />
+    <UnitTestResult executionId="ea9d58a5-c0c7-4781-81ef-21fec80d061f" testId="26a3ed7b-f58f-b931-d8c6-d1d1687098ba" testName="IntegrationTests.TestActionsWithUsers.TestAdminAddAutoIncrementUser" computerName="DESKTOP-TJ9D65N" duration="00:00:00.6181969" startTime="2022-10-31T14:38:30.1289693+03:00" endTime="2022-10-31T14:38:30.1289695+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ea9d58a5-c0c7-4781-81ef-21fec80d061f">
+      <Output>
+        <ErrorInfo>
+          <Message>AccessToDB.Exceptions.UserExceptions.UserAddAutoIncrementException : Exception of type 'AccessToDB.Exceptions.UserExceptions.UserAddAutoIncrementException' was thrown.</Message>
+          <StackTrace>   at AccessToDB.RepositoriesTarantool.TarantoolUsersRepository.AddUserAutoIncrementAsync(UInt32 cardID, String UserEmail, String password, PermissionsEnum permissions) in /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB/TarantoolRepositories/TarantoolUsersRepository.cs:line 88
+   at BL.Services.UsersService.AdminAddAutoIncrementUserAsync(UInt32 requesterUserID, UInt32 cardID, String userEmail, String password, PermissionsEnum permissions) in /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/BL/Services/UsersService.cs:line 64
+   at IntegrationTests.TestActionsWithUsers.TestAdminAddAutoIncrementUser() in /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/TestActionsWithUsers.cs:line 155
+   at System.Threading.Tasks.Task.&lt;&gt;c.&lt;ThrowAsync&gt;b__128_0(Object state)</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="0998e588-845a-477b-9bdf-828171e13c5b" testId="8a671bbd-a679-9554-80f7-33c777475820" testName="IntegrationTests.TestActionsWithTurnstiles.TestAdminGetTurnstilesAsync(initialTurnstiles: [Turnstile { TurnstileID = 163, LiftID = 233, IsOpen = True }, Turnstile { TurnstileID = 51, LiftID = 234, IsOpen = False }, Turnstile { TurnstileID = 68, LiftID = 42, IsOpen = True }])" computerName="DESKTOP-TJ9D65N" duration="00:00:00.6578474" startTime="2022-10-31T14:38:38.1715299+03:00" endTime="2022-10-31T14:38:38.1715302+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0998e588-845a-477b-9bdf-828171e13c5b" />
+    <UnitTestResult executionId="df907383-76d7-49ff-8fbc-ad80f4e87dbc" testId="e54a4cee-e2a1-889e-b4cd-647e25b91df6" testName="IntegrationTests.TestActionsWithLiftsLifts.TestGetLiftsInfoAsync(initialLifts: [Lift { LiftID = 180, LiftName = liftName17f481f6-42f2-4098-b878-00df9b0a9dc2, IsOpen = True, SeatsAmount = 58, LiftingTime = 80, QueueTime = 59, ConnectedSlopes =  }, Lift { LiftID = 231, LiftName = liftName1c63d53e-6e96-468a-98f0-8a0d641827b5, IsOpen = False, SeatsAmount = 212, LiftingTime = 71, QueueTime = 106, ConnectedSlopes =  }, Lift { LiftID = 12, LiftName = liftName28985cd9-f379-454c-a46b-8b317994bf36, IsOpen = True, SeatsAmount = 133, LiftingTime = 194, QueueTime = 134, ConnectedSlopes =  }])" computerName="DESKTOP-TJ9D65N" duration="00:00:00.6675415" startTime="2022-10-31T14:38:26.8240069+03:00" endTime="2022-10-31T14:38:26.8240069+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="df907383-76d7-49ff-8fbc-ad80f4e87dbc" />
+    <UnitTestResult executionId="37dd1a60-3d80-4df6-91c6-f9d5207501b9" testId="abd7b271-a1f8-918e-ea07-c4393b7ee1bd" testName="IntegrationTests.TestActionsWithTurnstiles.TestAdminAddAutoIncrementTurnstileAsync(turnstile: Turnstile { TurnstileID = 11, LiftID = 255, IsOpen = True })" computerName="DESKTOP-TJ9D65N" duration="00:00:00.6351717" startTime="2022-10-31T14:38:36.8458494+03:00" endTime="2022-10-31T14:38:36.8458495+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="37dd1a60-3d80-4df6-91c6-f9d5207501b9" />
+    <UnitTestResult executionId="3f63d0ae-62ad-40d3-b7ad-629f6deb6865" testId="13e4cac2-0cbd-cb72-9b80-dae0c5e5cea3" testName="IntegrationTests.TestActionsWithLiftsLifts.TestUpdateLiftInfoAsync(lift: Lift { LiftID = 201, LiftName = liftNameb58fd981-b779-443a-8896-75619b6be171, IsOpen = True, SeatsAmount = 167, LiftingTime = 83, QueueTime = 67, ConnectedSlopes =  })" computerName="DESKTOP-TJ9D65N" duration="00:00:00.6430232" startTime="2022-10-31T14:38:27.4822000+03:00" endTime="2022-10-31T14:38:27.4822001+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3f63d0ae-62ad-40d3-b7ad-629f6deb6865" />
+    <UnitTestResult executionId="db8b3357-74cc-458b-9d47-b3d389f0c79e" testId="61a0d3cb-1290-855e-f649-c3c1c190f4b1" testName="IntegrationTests.TestActionsWithUsers.TestAdminUpdateUser" computerName="DESKTOP-TJ9D65N" duration="00:00:00.5707404" startTime="2022-10-31T14:38:29.4933562+03:00" endTime="2022-10-31T14:38:29.4933564+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="db8b3357-74cc-458b-9d47-b3d389f0c79e">
+      <Output>
+        <ErrorInfo>
+          <Message>AccessToDB.Exceptions.UserExceptions.UserAddException : Exception of type 'AccessToDB.Exceptions.UserExceptions.UserAddException' was thrown.</Message>
+          <StackTrace>   at AccessToDB.RepositoriesTarantool.TarantoolUsersRepository.AddUserAsync(UInt32 userID, UInt32 cardID, String UserEmail, String password, PermissionsEnum permissions) in /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB/TarantoolRepositories/TarantoolUsersRepository.cs:line 74
+   at IntegrationTests.TestActionsWithUsers.TestAdminUpdateUser() in /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/TestActionsWithUsers.cs:line 171
+   at System.Threading.Tasks.Task.&lt;&gt;c.&lt;ThrowAsync&gt;b__128_0(Object state)</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f9ca75cb-a9c3-445c-be15-0152548430c0" testId="682d3b16-d8d9-d658-4906-fcc748843214" testName="IntegrationTests.TestActionsWithUsers.TestAdminGetUsers" computerName="DESKTOP-TJ9D65N" duration="00:00:00.5587870" startTime="2022-10-31T14:38:33.7168263+03:00" endTime="2022-10-31T14:38:33.7168265+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f9ca75cb-a9c3-445c-be15-0152548430c0">
+      <Output>
+        <ErrorInfo>
+          <Message>AccessToDB.Exceptions.UserExceptions.UserAddException : Exception of type 'AccessToDB.Exceptions.UserExceptions.UserAddException' was thrown.</Message>
+          <StackTrace>   at AccessToDB.RepositoriesTarantool.TarantoolUsersRepository.AddUserAsync(UInt32 userID, UInt32 cardID, String UserEmail, String password, PermissionsEnum permissions) in /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB/TarantoolRepositories/TarantoolUsersRepository.cs:line 74
+   at IntegrationTests.TestActionsWithUsers.TestAdminGetUsers() in /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/TestActionsWithUsers.cs:line 136
+   at System.Threading.Tasks.Task.&lt;&gt;c.&lt;ThrowAsync&gt;b__128_0(Object state)</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="944706e1-469c-4de2-bfc0-819c19d5a583" testId="64e32afe-3e44-3953-e579-8b5121eb6817" testName="IntegrationTests.TestActionsWithLiftsLifts.TestAdminAddAutoIncrementLiftAsync(lift: Lift { LiftID = 26, LiftName = liftNamee942100a-711e-4d78-898d-029eaab6e331, IsOpen = True, SeatsAmount = 21, LiftingTime = 72, QueueTime = 93, ConnectedSlopes =  })" computerName="DESKTOP-TJ9D65N" duration="00:00:00.6862729" startTime="2022-10-31T14:38:26.1135545+03:00" endTime="2022-10-31T14:38:26.1135793+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="944706e1-469c-4de2-bfc0-819c19d5a583" />
+    <UnitTestResult executionId="bebc425a-4d7c-41e8-a22f-c2eb1a59786c" testId="a8b0b87a-0aa0-49f7-e981-72bcab5ebe4a" testName="IntegrationTests.TestActionsWithLiftsLifts.TestGetLiftInfoAsync(lift: Lift { LiftID = 249, LiftName = liftName375f21e7-9313-4730-bfac-0e82be2ca034, IsOpen = True, SeatsAmount = 40, LiftingTime = 15, QueueTime = 244, ConnectedSlopes =  })" computerName="DESKTOP-TJ9D65N" duration="00:00:00.6184557" startTime="2022-10-31T14:38:28.1315859+03:00" endTime="2022-10-31T14:38:28.1315862+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bebc425a-4d7c-41e8-a22f-c2eb1a59786c" />
+    <UnitTestResult executionId="077356e3-4c2d-4343-8670-fbff8bf69305" testId="d64b3a2f-ad63-dcd8-f669-2847ae58a5d4" testName="IntegrationTests.TestActionsWithLiftsLifts.TestAdminDeleteLiftAsync(lift: Lift { LiftID = 31, LiftName = liftName2a97a2ee-92af-486b-855e-bdf73f8e9658, IsOpen = True, SeatsAmount = 134, LiftingTime = 187, QueueTime = 123, ConnectedSlopes =  })" computerName="DESKTOP-TJ9D65N" duration="00:00:00.6460304" startTime="2022-10-31T14:38:28.8113798+03:00" endTime="2022-10-31T14:38:28.8113799+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="077356e3-4c2d-4343-8670-fbff8bf69305" />
+    <UnitTestResult executionId="3e3e4772-dc99-4a50-afed-fba372e65408" testId="b03ad9f8-4d6a-0696-e668-a4fb600fb1e9" testName="IntegrationTests.TestActionsWithSlopes.TestUpdateSlopeInfoAsync(slope: Slope { SlopeID = 89, SlopeName = slopeNamea819aeab-1f7e-4079-bb0b-64bf29c8cfe9, IsOpen = True, DifficultyLevel = 54, ConnectedLifts =  })" computerName="DESKTOP-TJ9D65N" duration="00:00:00.6794268" startTime="2022-10-31T14:38:42.3116156+03:00" endTime="2022-10-31T14:38:42.3116159+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3e3e4772-dc99-4a50-afed-fba372e65408" />
+    <UnitTestResult executionId="a6616f68-3867-4385-8366-ca0d9465514e" testId="87562646-6138-0d15-26ee-63a5cb6adf5c" testName="IntegrationTests.TestActionsWithTurnstiles.TestAdminUpdateTurnstileAsync(turnstile: Turnstile { TurnstileID = 32, LiftID = 44, IsOpen = True })" computerName="DESKTOP-TJ9D65N" duration="00:00:00.6308105" startTime="2022-10-31T14:38:38.8435967+03:00" endTime="2022-10-31T14:38:38.8435969+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a6616f68-3867-4385-8366-ca0d9465514e" />
+    <UnitTestResult executionId="a9a2dd67-6a93-4bdd-9261-6035e233c670" testId="922bd2e7-24ee-9b33-7cff-c132e8f1751f" testName="IntegrationTests.TestActionsWithTurnstiles.TestAdminDeleteTurnstileAsync(turnstile: Turnstile { TurnstileID = 113, LiftID = 9, IsOpen = True })" computerName="DESKTOP-TJ9D65N" duration="00:00:00.6156207" startTime="2022-10-31T14:38:37.4715059+03:00" endTime="2022-10-31T14:38:37.4715061+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a9a2dd67-6a93-4bdd-9261-6035e233c670" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="IntegrationTests.TestActionsWithLiftsLifts.TestUpdateLiftInfoAsync(lift: Lift { LiftID = 201, LiftName = liftNameb58fd981-b779-443a-8896-75619b6be171, IsOpen = True, SeatsAmount = 167, LiftingTime = 83, QueueTime = 67, ConnectedSlopes =  })" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/integrationtests/bin/debug/net6.0/integrationtests.dll" id="13e4cac2-0cbd-cb72-9b80-dae0c5e5cea3">
+      <Execution id="3f63d0ae-62ad-40d3-b7ad-629f6deb6865" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/bin/Debug/net6.0/IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="IntegrationTests.TestActionsWithLiftsLifts" name="TestUpdateLiftInfoAsync" />
+    </UnitTest>
+    <UnitTest name="IntegrationTests.TestActionsWithTurnstiles.TestAdminUpdateTurnstileAsync(turnstile: Turnstile { TurnstileID = 32, LiftID = 44, IsOpen = True })" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/integrationtests/bin/debug/net6.0/integrationtests.dll" id="87562646-6138-0d15-26ee-63a5cb6adf5c">
+      <Execution id="a6616f68-3867-4385-8366-ca0d9465514e" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/bin/Debug/net6.0/IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="IntegrationTests.TestActionsWithTurnstiles" name="TestAdminUpdateTurnstileAsync" />
+    </UnitTest>
+    <UnitTest name="IntegrationTests.TestActionsWithUsers.TestRegisterOk" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/integrationtests/bin/debug/net6.0/integrationtests.dll" id="d78ba6d0-dfa8-fa6f-4cc8-23966ee34980">
+      <Execution id="7b160b0f-a58e-4a4d-92a1-c5b7789ce134" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/bin/Debug/net6.0/IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="IntegrationTests.TestActionsWithUsers" name="TestRegisterOk" />
+    </UnitTest>
+    <UnitTest name="IntegrationTests.TestActionsWithUsers.TestRegisterUserWithNoPassword" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/integrationtests/bin/debug/net6.0/integrationtests.dll" id="198a1ae3-83ab-ea18-2e21-87927dc980e2">
+      <Execution id="55545fdd-d650-4659-8a6b-9e4f1cb69241" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/bin/Debug/net6.0/IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="IntegrationTests.TestActionsWithUsers" name="TestRegisterUserWithNoPassword" />
+    </UnitTest>
+    <UnitTest name="IntegrationTests.TestActionsWithUsers.TestLogInOk" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/integrationtests/bin/debug/net6.0/integrationtests.dll" id="45fe0df1-c885-2f7e-8187-832190c2786d">
+      <Execution id="edd79bbb-b6d1-4fb8-be60-7adb417e0988" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/bin/Debug/net6.0/IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="IntegrationTests.TestActionsWithUsers" name="TestLogInOk" />
+    </UnitTest>
+    <UnitTest name="IntegrationTests.TestActionsWithLiftsLifts.TestAdminDeleteLiftAsync(lift: Lift { LiftID = 31, LiftName = liftName2a97a2ee-92af-486b-855e-bdf73f8e9658, IsOpen = True, SeatsAmount = 134, LiftingTime = 187, QueueTime = 123, ConnectedSlopes =  })" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/integrationtests/bin/debug/net6.0/integrationtests.dll" id="d64b3a2f-ad63-dcd8-f669-2847ae58a5d4">
+      <Execution id="077356e3-4c2d-4343-8670-fbff8bf69305" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/bin/Debug/net6.0/IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="IntegrationTests.TestActionsWithLiftsLifts" name="TestAdminDeleteLiftAsync" />
+    </UnitTest>
+    <UnitTest name="IntegrationTests.TestActionsWithLiftsSlopes.TestAdminDeleteLiftSlopeAsync(lift: Lift { LiftID = 253, LiftName = liftName1c0904b0-f854-4db9-93cb-91015e67c664, IsOpen = True, SeatsAmount = 239, LiftingTime = 157, QueueTime = 16, ConnectedSlopes =  }, slope: Slope { SlopeID = 185, SlopeName = slopeName552c47a9-d212-4592-a911-b1978f057b1b, IsOpen = False, DifficultyLevel = 105, ConnectedLifts =  })" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/integrationtests/bin/debug/net6.0/integrationtests.dll" id="07a46212-0f71-2348-23a3-e069446b5a42">
+      <Execution id="31c990b6-ff99-4e26-b9f6-bdf404217d5f" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/bin/Debug/net6.0/IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="IntegrationTests.TestActionsWithLiftsSlopes" name="TestAdminDeleteLiftSlopeAsync" />
+    </UnitTest>
+    <UnitTest name="IntegrationTests.TestActionsWithTurnstiles.TestAdminGetTurnstileAsync(turnstile: Turnstile { TurnstileID = 205, LiftID = 18, IsOpen = True })" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/integrationtests/bin/debug/net6.0/integrationtests.dll" id="b3896394-3b15-0fe2-bf0d-7974ef55f567">
+      <Execution id="d222685a-cb40-4131-9a65-2651f5bfaa00" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/bin/Debug/net6.0/IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="IntegrationTests.TestActionsWithTurnstiles" name="TestAdminGetTurnstileAsync" />
+    </UnitTest>
+    <UnitTest name="IntegrationTests.TestActionsWithLiftsLifts.TestAdminAddAutoIncrementLiftAsync(lift: Lift { LiftID = 26, LiftName = liftNamee942100a-711e-4d78-898d-029eaab6e331, IsOpen = True, SeatsAmount = 21, LiftingTime = 72, QueueTime = 93, ConnectedSlopes =  })" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/integrationtests/bin/debug/net6.0/integrationtests.dll" id="64e32afe-3e44-3953-e579-8b5121eb6817">
+      <Execution id="944706e1-469c-4de2-bfc0-819c19d5a583" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/bin/Debug/net6.0/IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="IntegrationTests.TestActionsWithLiftsLifts" name="TestAdminAddAutoIncrementLiftAsync" />
+    </UnitTest>
+    <UnitTest name="IntegrationTests.TestActionsWithLiftsSlopes.TestAdminAddAutoIncrementLiftSlopeAsync(lift: Lift { LiftID = 116, LiftName = liftName4761a910-73ca-4cb0-a1c2-bb996083efd5, IsOpen = True, SeatsAmount = 167, LiftingTime = 129, QueueTime = 145, ConnectedSlopes =  }, slope: Slope { SlopeID = 9, SlopeName = slopeName1c07ff5f-c139-4a44-a790-d9dcf4090a35, IsOpen = False, DifficultyLevel = 240, ConnectedLifts =  })" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/integrationtests/bin/debug/net6.0/integrationtests.dll" id="959b9601-58ed-532f-bc17-401446048ed4">
+      <Execution id="ae8cd583-2f56-4940-b20c-91d8d66287e5" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/bin/Debug/net6.0/IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="IntegrationTests.TestActionsWithLiftsSlopes" name="TestAdminAddAutoIncrementLiftSlopeAsync" />
+    </UnitTest>
+    <UnitTest name="IntegrationTests.TestActionsWithLiftsSlopes.TestGetLiftsSlopesInfoAsync(liftsSlopes: [LiftSlope { RecordID = 44, LiftID = 36, SlopeID = 83 }, LiftSlope { RecordID = 213, LiftID = 131, SlopeID = 47 }, LiftSlope { RecordID = 193, LiftID = 109, SlopeID = 248 }])" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/integrationtests/bin/debug/net6.0/integrationtests.dll" id="63be1f92-7da8-a66e-02df-a6e75143687a">
+      <Execution id="874b5c12-ce35-46a1-a6b1-023a74cbbaeb" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/bin/Debug/net6.0/IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="IntegrationTests.TestActionsWithLiftsSlopes" name="TestGetLiftsSlopesInfoAsync" />
+    </UnitTest>
+    <UnitTest name="IntegrationTests.TestActionsWithSlopes.TestUpdateSlopeInfoAsync(slope: Slope { SlopeID = 89, SlopeName = slopeNamea819aeab-1f7e-4079-bb0b-64bf29c8cfe9, IsOpen = True, DifficultyLevel = 54, ConnectedLifts =  })" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/integrationtests/bin/debug/net6.0/integrationtests.dll" id="b03ad9f8-4d6a-0696-e668-a4fb600fb1e9">
+      <Execution id="3e3e4772-dc99-4a50-afed-fba372e65408" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/bin/Debug/net6.0/IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="IntegrationTests.TestActionsWithSlopes" name="TestUpdateSlopeInfoAsync" />
+    </UnitTest>
+    <UnitTest name="IntegrationTests.TestActionsWithLiftsLifts.TestGetLiftInfoAsync(lift: Lift { LiftID = 249, LiftName = liftName375f21e7-9313-4730-bfac-0e82be2ca034, IsOpen = True, SeatsAmount = 40, LiftingTime = 15, QueueTime = 244, ConnectedSlopes =  })" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/integrationtests/bin/debug/net6.0/integrationtests.dll" id="a8b0b87a-0aa0-49f7-e981-72bcab5ebe4a">
+      <Execution id="bebc425a-4d7c-41e8-a22f-c2eb1a59786c" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/bin/Debug/net6.0/IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="IntegrationTests.TestActionsWithLiftsLifts" name="TestGetLiftInfoAsync" />
+    </UnitTest>
+    <UnitTest name="IntegrationTests.TestActionsWithUsers.TestRegisterUserWithRepeatedEmail" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/integrationtests/bin/debug/net6.0/integrationtests.dll" id="cb8eae24-e7ef-ed7e-d8e9-347d61b13b3a">
+      <Execution id="0682b38b-7496-4f5f-b0b5-0b013e76a747" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/bin/Debug/net6.0/IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="IntegrationTests.TestActionsWithUsers" name="TestRegisterUserWithRepeatedEmail" />
+    </UnitTest>
+    <UnitTest name="IntegrationTests.TestActionsWithUsers.TestLogInWithWrongPassword" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/integrationtests/bin/debug/net6.0/integrationtests.dll" id="479b875f-d623-ae0a-ff97-dc49a4f2a217">
+      <Execution id="355197b3-3562-47f5-aafe-36880f51f945" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/bin/Debug/net6.0/IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="IntegrationTests.TestActionsWithUsers" name="TestLogInWithWrongPassword" />
+    </UnitTest>
+    <UnitTest name="IntegrationTests.TestActionsWithSlopes.TestGetSlopeInfoAsync(slope: Slope { SlopeID = 150, SlopeName = slopeName94851648-37c5-4f07-8159-7e1215937e64, IsOpen = True, DifficultyLevel = 184, ConnectedLifts =  })" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/integrationtests/bin/debug/net6.0/integrationtests.dll" id="33b8db97-6668-e1ff-f572-710c90519ce1">
+      <Execution id="a71f4a15-3d91-4481-9ed9-aada4cf9f20a" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/bin/Debug/net6.0/IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="IntegrationTests.TestActionsWithSlopes" name="TestGetSlopeInfoAsync" />
+    </UnitTest>
+    <UnitTest name="IntegrationTests.TestActionsWithUsers.TestAdminDeleteUser" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/integrationtests/bin/debug/net6.0/integrationtests.dll" id="640a72f6-5583-6636-1a54-8396abe99588">
+      <Execution id="604f37de-cbb5-41ef-b1d1-ace9b2452b6f" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/bin/Debug/net6.0/IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="IntegrationTests.TestActionsWithUsers" name="TestAdminDeleteUser" />
+    </UnitTest>
+    <UnitTest name="IntegrationTests.TestActionsWithTurnstiles.TestAdminGetTurnstilesAsync(initialTurnstiles: [Turnstile { TurnstileID = 163, LiftID = 233, IsOpen = True }, Turnstile { TurnstileID = 51, LiftID = 234, IsOpen = False }, Turnstile { TurnstileID = 68, LiftID = 42, IsOpen = True }])" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/integrationtests/bin/debug/net6.0/integrationtests.dll" id="8a671bbd-a679-9554-80f7-33c777475820">
+      <Execution id="0998e588-845a-477b-9bdf-828171e13c5b" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/bin/Debug/net6.0/IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="IntegrationTests.TestActionsWithTurnstiles" name="TestAdminGetTurnstilesAsync" />
+    </UnitTest>
+    <UnitTest name="IntegrationTests.TestActionsWithUsers.TestAdminAddAutoIncrementUser" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/integrationtests/bin/debug/net6.0/integrationtests.dll" id="26a3ed7b-f58f-b931-d8c6-d1d1687098ba">
+      <Execution id="ea9d58a5-c0c7-4781-81ef-21fec80d061f" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/bin/Debug/net6.0/IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="IntegrationTests.TestActionsWithUsers" name="TestAdminAddAutoIncrementUser" />
+    </UnitTest>
+    <UnitTest name="IntegrationTests.TestActionsWithSlopes.TestGetSlopesInfoAsync(initialSlopes: [Slope { SlopeID = 210, SlopeName = slopeName94b69c2b-84f3-4dea-aea4-13d413d80641, IsOpen = True, DifficultyLevel = 53, ConnectedLifts =  }, Slope { SlopeID = 59, SlopeName = slopeName792e3cb4-2e8c-4631-8881-90334dd1ae99, IsOpen = False, DifficultyLevel = 65, ConnectedLifts =  }, Slope { SlopeID = 102, SlopeName = slopeName195d1ebd-ba9e-40d5-8f49-a626b94e5b12, IsOp..." storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/integrationtests/bin/debug/net6.0/integrationtests.dll" id="469b101f-8633-a685-8d5b-bdbf8dc340c5">
+      <Execution id="ad99402f-1079-4202-80b3-dd644d14b1e7" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/bin/Debug/net6.0/IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="IntegrationTests.TestActionsWithSlopes" name="TestGetSlopesInfoAsync" />
+    </UnitTest>
+    <UnitTest name="IntegrationTests.TestActionsWithUsers.TestAdminUpdateUser" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/integrationtests/bin/debug/net6.0/integrationtests.dll" id="61a0d3cb-1290-855e-f649-c3c1c190f4b1">
+      <Execution id="db8b3357-74cc-458b-9d47-b3d389f0c79e" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/bin/Debug/net6.0/IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="IntegrationTests.TestActionsWithUsers" name="TestAdminUpdateUser" />
+    </UnitTest>
+    <UnitTest name="IntegrationTests.TestActionsWithSlopes.TestAdminAddAutoIncrementSlopeAsync(slope: Slope { SlopeID = 138, SlopeName = slopeName2428eaa4-b78b-4ae5-b47c-4f619d94b275, IsOpen = True, DifficultyLevel = 171, ConnectedLifts =  })" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/integrationtests/bin/debug/net6.0/integrationtests.dll" id="8e53914d-6f3b-184a-7ee0-34063351b803">
+      <Execution id="9b940be6-7123-4392-bd78-55ae912c34d3" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/bin/Debug/net6.0/IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="IntegrationTests.TestActionsWithSlopes" name="TestAdminAddAutoIncrementSlopeAsync" />
+    </UnitTest>
+    <UnitTest name="IntegrationTests.TestActionsWithLiftsLifts.TestGetLiftsInfoAsync(initialLifts: [Lift { LiftID = 180, LiftName = liftName17f481f6-42f2-4098-b878-00df9b0a9dc2, IsOpen = True, SeatsAmount = 58, LiftingTime = 80, QueueTime = 59, ConnectedSlopes =  }, Lift { LiftID = 231, LiftName = liftName1c63d53e-6e96-468a-98f0-8a0d641827b5, IsOpen = False, SeatsAmount = 212, LiftingTime = 71, QueueTime = 106, ConnectedSlopes =  }, Lift { LiftID = 12, LiftNam..." storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/integrationtests/bin/debug/net6.0/integrationtests.dll" id="e54a4cee-e2a1-889e-b4cd-647e25b91df6">
+      <Execution id="df907383-76d7-49ff-8fbc-ad80f4e87dbc" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/bin/Debug/net6.0/IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="IntegrationTests.TestActionsWithLiftsLifts" name="TestGetLiftsInfoAsync" />
+    </UnitTest>
+    <UnitTest name="IntegrationTests.TestActionsWithTurnstiles.TestAdminAddAutoIncrementTurnstileAsync(turnstile: Turnstile { TurnstileID = 11, LiftID = 255, IsOpen = True })" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/integrationtests/bin/debug/net6.0/integrationtests.dll" id="abd7b271-a1f8-918e-ea07-c4393b7ee1bd">
+      <Execution id="37dd1a60-3d80-4df6-91c6-f9d5207501b9" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/bin/Debug/net6.0/IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="IntegrationTests.TestActionsWithTurnstiles" name="TestAdminAddAutoIncrementTurnstileAsync" />
+    </UnitTest>
+    <UnitTest name="IntegrationTests.TestActionsWithTurnstiles.TestAdminDeleteTurnstileAsync(turnstile: Turnstile { TurnstileID = 113, LiftID = 9, IsOpen = True })" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/integrationtests/bin/debug/net6.0/integrationtests.dll" id="922bd2e7-24ee-9b33-7cff-c132e8f1751f">
+      <Execution id="a9a2dd67-6a93-4bdd-9261-6035e233c670" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/bin/Debug/net6.0/IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="IntegrationTests.TestActionsWithTurnstiles" name="TestAdminDeleteTurnstileAsync" />
+    </UnitTest>
+    <UnitTest name="IntegrationTests.TestActionsWithUsers.TestAdminGetUserByIDAsync" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/integrationtests/bin/debug/net6.0/integrationtests.dll" id="593087f0-c7ab-1991-c3ee-af523cc03ada">
+      <Execution id="43bdff1f-16f4-45a0-99a5-be72932e9b29" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/bin/Debug/net6.0/IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="IntegrationTests.TestActionsWithUsers" name="TestAdminGetUserByIDAsync" />
+    </UnitTest>
+    <UnitTest name="IntegrationTests.TestActionsWithSlopes.TestAdminDeleteSlopeAsync(slope: Slope { SlopeID = 148, SlopeName = slopeName8bf75b6e-f76f-4be4-bbf1-eb5e704bbeef, IsOpen = True, DifficultyLevel = 132, ConnectedLifts =  })" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/integrationtests/bin/debug/net6.0/integrationtests.dll" id="680762ae-8205-c926-da20-4f5bceab9810">
+      <Execution id="101adfea-d07d-4f68-bd2a-b74c3c47696f" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/bin/Debug/net6.0/IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="IntegrationTests.TestActionsWithSlopes" name="TestAdminDeleteSlopeAsync" />
+    </UnitTest>
+    <UnitTest name="IntegrationTests.TestActionsWithUsers.TestRegisterUserWithNoEmail" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/integrationtests/bin/debug/net6.0/integrationtests.dll" id="48375cbc-003d-d0fc-ff6a-cfef4b266dfb">
+      <Execution id="0689e64d-1beb-4be9-8fcb-50dd01b70c55" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/bin/Debug/net6.0/IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="IntegrationTests.TestActionsWithUsers" name="TestRegisterUserWithNoEmail" />
+    </UnitTest>
+    <UnitTest name="IntegrationTests.TestActionsWithSlopes.TestAdminAddSlopeAsync(slope: Slope { SlopeID = 247, SlopeName = slopeName1cfa4fb5-fcc2-4cf6-b794-43d080303dd3, IsOpen = True, DifficultyLevel = 170, ConnectedLifts =  })" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/integrationtests/bin/debug/net6.0/integrationtests.dll" id="401abfac-f0db-be76-1418-0d55b1d83b03">
+      <Execution id="4901b4b6-a93d-46c7-9c23-20948597663f" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/bin/Debug/net6.0/IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="IntegrationTests.TestActionsWithSlopes" name="TestAdminAddSlopeAsync" />
+    </UnitTest>
+    <UnitTest name="IntegrationTests.TestActionsWithUsers.TestAdminGetUsers" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/integrationtests/bin/debug/net6.0/integrationtests.dll" id="682d3b16-d8d9-d658-4906-fcc748843214">
+      <Execution id="f9ca75cb-a9c3-445c-be15-0152548430c0" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/bin/Debug/net6.0/IntegrationTests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="IntegrationTests.TestActionsWithUsers" name="TestAdminGetUsers" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="198a1ae3-83ab-ea18-2e21-87927dc980e2" executionId="55545fdd-d650-4659-8a6b-9e4f1cb69241" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="48375cbc-003d-d0fc-ff6a-cfef4b266dfb" executionId="0689e64d-1beb-4be9-8fcb-50dd01b70c55" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="63be1f92-7da8-a66e-02df-a6e75143687a" executionId="874b5c12-ce35-46a1-a6b1-023a74cbbaeb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="401abfac-f0db-be76-1418-0d55b1d83b03" executionId="4901b4b6-a93d-46c7-9c23-20948597663f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="640a72f6-5583-6636-1a54-8396abe99588" executionId="604f37de-cbb5-41ef-b1d1-ace9b2452b6f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cb8eae24-e7ef-ed7e-d8e9-347d61b13b3a" executionId="0682b38b-7496-4f5f-b0b5-0b013e76a747" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="593087f0-c7ab-1991-c3ee-af523cc03ada" executionId="43bdff1f-16f4-45a0-99a5-be72932e9b29" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="959b9601-58ed-532f-bc17-401446048ed4" executionId="ae8cd583-2f56-4940-b20c-91d8d66287e5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8e53914d-6f3b-184a-7ee0-34063351b803" executionId="9b940be6-7123-4392-bd78-55ae912c34d3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="469b101f-8633-a685-8d5b-bdbf8dc340c5" executionId="ad99402f-1079-4202-80b3-dd644d14b1e7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="07a46212-0f71-2348-23a3-e069446b5a42" executionId="31c990b6-ff99-4e26-b9f6-bdf404217d5f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="45fe0df1-c885-2f7e-8187-832190c2786d" executionId="edd79bbb-b6d1-4fb8-be60-7adb417e0988" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="33b8db97-6668-e1ff-f572-710c90519ce1" executionId="a71f4a15-3d91-4481-9ed9-aada4cf9f20a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="479b875f-d623-ae0a-ff97-dc49a4f2a217" executionId="355197b3-3562-47f5-aafe-36880f51f945" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="680762ae-8205-c926-da20-4f5bceab9810" executionId="101adfea-d07d-4f68-bd2a-b74c3c47696f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d78ba6d0-dfa8-fa6f-4cc8-23966ee34980" executionId="7b160b0f-a58e-4a4d-92a1-c5b7789ce134" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b3896394-3b15-0fe2-bf0d-7974ef55f567" executionId="d222685a-cb40-4131-9a65-2651f5bfaa00" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="26a3ed7b-f58f-b931-d8c6-d1d1687098ba" executionId="ea9d58a5-c0c7-4781-81ef-21fec80d061f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8a671bbd-a679-9554-80f7-33c777475820" executionId="0998e588-845a-477b-9bdf-828171e13c5b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e54a4cee-e2a1-889e-b4cd-647e25b91df6" executionId="df907383-76d7-49ff-8fbc-ad80f4e87dbc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="abd7b271-a1f8-918e-ea07-c4393b7ee1bd" executionId="37dd1a60-3d80-4df6-91c6-f9d5207501b9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="13e4cac2-0cbd-cb72-9b80-dae0c5e5cea3" executionId="3f63d0ae-62ad-40d3-b7ad-629f6deb6865" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="61a0d3cb-1290-855e-f649-c3c1c190f4b1" executionId="db8b3357-74cc-458b-9d47-b3d389f0c79e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="682d3b16-d8d9-d658-4906-fcc748843214" executionId="f9ca75cb-a9c3-445c-be15-0152548430c0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="64e32afe-3e44-3953-e579-8b5121eb6817" executionId="944706e1-469c-4de2-bfc0-819c19d5a583" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a8b0b87a-0aa0-49f7-e981-72bcab5ebe4a" executionId="bebc425a-4d7c-41e8-a22f-c2eb1a59786c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d64b3a2f-ad63-dcd8-f669-2847ae58a5d4" executionId="077356e3-4c2d-4343-8670-fbff8bf69305" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b03ad9f8-4d6a-0696-e668-a4fb600fb1e9" executionId="3e3e4772-dc99-4a50-afed-fba372e65408" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="87562646-6138-0d15-26ee-63a5cb6adf5c" executionId="a6616f68-3867-4385-8366-ca0d9465514e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="922bd2e7-24ee-9b33-7cff-c132e8f1751f" executionId="a9a2dd67-6a93-4bdd-9261-6035e233c670" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="30" executed="30" passed="21" failed="9" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.4.3+1b45f5407b (64-bit .NET 6.0.10)
+[xUnit.net 00:00:01.06]   Discovering: IntegrationTests
+[xUnit.net 00:00:01.17]   Discovered:  IntegrationTests
+[xUnit.net 00:00:01.17]   Starting:    IntegrationTests
+[xUnit.net 00:00:05.32]       AccessToDB.Exceptions.UserExceptions.UserAddException : Exception of type 'AccessToDB.Exceptions.UserExceptions.UserAddException' was thrown.
+[xUnit.net 00:00:05.32]       Stack Trace:
+[xUnit.net 00:00:05.33]         /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB/TarantoolRepositories/TarantoolUsersRepository.cs(74,0): at AccessToDB.RepositoriesTarantool.TarantoolUsersRepository.AddUserAsync(UInt32 userID, UInt32 cardID, String UserEmail, String password, PermissionsEnum permissions)
+[xUnit.net 00:00:05.33]         /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/TestActionsWithUsers.cs(171,0): at IntegrationTests.TestActionsWithUsers.TestAdminUpdateUser()
+[xUnit.net 00:00:05.34]            at System.Threading.Tasks.Task.&lt;&gt;c.&lt;ThrowAsync&gt;b__128_0(Object state)
+[xUnit.net 00:00:05.97]       AccessToDB.Exceptions.UserExceptions.UserAddAutoIncrementException : Exception of type 'AccessToDB.Exceptions.UserExceptions.UserAddAutoIncrementException' was thrown.
+[xUnit.net 00:00:05.97]       Stack Trace:
+[xUnit.net 00:00:05.97]         /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB/TarantoolRepositories/TarantoolUsersRepository.cs(88,0): at AccessToDB.RepositoriesTarantool.TarantoolUsersRepository.AddUserAutoIncrementAsync(UInt32 cardID, String UserEmail, String password, PermissionsEnum permissions)
+[xUnit.net 00:00:05.97]         /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/BL/Services/UsersService.cs(64,0): at BL.Services.UsersService.AdminAddAutoIncrementUserAsync(UInt32 requesterUserID, UInt32 cardID, String userEmail, String password, PermissionsEnum permissions)
+[xUnit.net 00:00:05.97]         /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/TestActionsWithUsers.cs(155,0): at IntegrationTests.TestActionsWithUsers.TestAdminAddAutoIncrementUser()
+[xUnit.net 00:00:05.97]            at System.Threading.Tasks.Task.&lt;&gt;c.&lt;ThrowAsync&gt;b__128_0(Object state)
+[xUnit.net 00:00:06.56]       AccessToDB.Exceptions.UserExceptions.UserAddException : Exception of type 'AccessToDB.Exceptions.UserExceptions.UserAddException' was thrown.
+[xUnit.net 00:00:06.56]       Stack Trace:
+[xUnit.net 00:00:06.56]         /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB/TarantoolRepositories/TarantoolUsersRepository.cs(74,0): at AccessToDB.RepositoriesTarantool.TarantoolUsersRepository.AddUserAsync(UInt32 userID, UInt32 cardID, String UserEmail, String password, PermissionsEnum permissions)
+[xUnit.net 00:00:06.56]         /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/TestActionsWithUsers.cs(104,0): at IntegrationTests.TestActionsWithUsers.TestLogInOk()
+[xUnit.net 00:00:06.56]            at System.Threading.Tasks.Task.&lt;&gt;c.&lt;ThrowAsync&gt;b__128_0(Object state)
+[xUnit.net 00:00:07.17]       AccessToDB.Exceptions.UserExceptions.UserAddException : Exception of type 'AccessToDB.Exceptions.UserExceptions.UserAddException' was thrown.
+[xUnit.net 00:00:07.17]       Stack Trace:
+[xUnit.net 00:00:07.17]         /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB/TarantoolRepositories/TarantoolUsersRepository.cs(74,0): at AccessToDB.RepositoriesTarantool.TarantoolUsersRepository.AddUserAsync(UInt32 userID, UInt32 cardID, String UserEmail, String password, PermissionsEnum permissions)
+[xUnit.net 00:00:07.17]         /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/TestActionsWithUsers.cs(91,0): at IntegrationTests.TestActionsWithUsers.TestRegisterUserWithRepeatedEmail()
+[xUnit.net 00:00:07.17]            at System.Threading.Tasks.Task.&lt;&gt;c.&lt;ThrowAsync&gt;b__128_0(Object state)
+[xUnit.net 00:00:07.77]       AccessToDB.Exceptions.UserExceptions.UserAddException : Exception of type 'AccessToDB.Exceptions.UserExceptions.UserAddException' was thrown.
+[xUnit.net 00:00:07.77]       Stack Trace:
+[xUnit.net 00:00:07.77]         /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB/TarantoolRepositories/TarantoolUsersRepository.cs(74,0): at AccessToDB.RepositoriesTarantool.TarantoolUsersRepository.AddUserAsync(UInt32 userID, UInt32 cardID, String UserEmail, String password, PermissionsEnum permissions)
+[xUnit.net 00:00:07.77]         /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/TestActionsWithUsers.cs(123,0): at IntegrationTests.TestActionsWithUsers.TestLogInWithWrongPassword()
+[xUnit.net 00:00:07.77]            at System.Threading.Tasks.Task.&lt;&gt;c.&lt;ThrowAsync&gt;b__128_0(Object state)
+[xUnit.net 00:00:08.39]       BL.Exceptions.UserExceptions.UserRegistrationException : Could't register new user because such email already exists
+[xUnit.net 00:00:08.39]       Stack Trace:
+[xUnit.net 00:00:08.39]         /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/BL/Services/UsersService.cs(35,0): at BL.Services.UsersService.RegisterAsync(UInt32 cardID, String email, String password)
+[xUnit.net 00:00:08.39]         /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/TestActionsWithUsers.cs(57,0): at IntegrationTests.TestActionsWithUsers.TestRegisterOk()
+[xUnit.net 00:00:08.39]            at System.Threading.Tasks.Task.&lt;&gt;c.&lt;ThrowAsync&gt;b__128_0(Object state)
+[xUnit.net 00:00:08.97]       AccessToDB.Exceptions.UserExceptions.UserAddException : Exception of type 'AccessToDB.Exceptions.UserExceptions.UserAddException' was thrown.
+[xUnit.net 00:00:08.97]       Stack Trace:
+[xUnit.net 00:00:08.97]         /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB/TarantoolRepositories/TarantoolUsersRepository.cs(74,0): at AccessToDB.RepositoriesTarantool.TarantoolUsersRepository.AddUserAsync(UInt32 userID, UInt32 cardID, String UserEmail, String password, PermissionsEnum permissions)
+[xUnit.net 00:00:08.97]         /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/TestActionsWithUsers.cs(186,0): at IntegrationTests.TestActionsWithUsers.TestAdminDeleteUser()
+[xUnit.net 00:00:08.97]            at System.Threading.Tasks.Task.&lt;&gt;c.&lt;ThrowAsync&gt;b__128_0(Object state)
+[xUnit.net 00:00:09.56]       AccessToDB.Exceptions.UserExceptions.UserAddException : Exception of type 'AccessToDB.Exceptions.UserExceptions.UserAddException' was thrown.
+[xUnit.net 00:00:09.56]       Stack Trace:
+[xUnit.net 00:00:09.56]         /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB/TarantoolRepositories/TarantoolUsersRepository.cs(74,0): at AccessToDB.RepositoriesTarantool.TarantoolUsersRepository.AddUserAsync(UInt32 userID, UInt32 cardID, String UserEmail, String password, PermissionsEnum permissions)
+[xUnit.net 00:00:09.56]         /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/TestActionsWithUsers.cs(136,0): at IntegrationTests.TestActionsWithUsers.TestAdminGetUsers()
+[xUnit.net 00:00:09.56]            at System.Threading.Tasks.Task.&lt;&gt;c.&lt;ThrowAsync&gt;b__128_0(Object state)
+[xUnit.net 00:00:11.36]       AccessToDB.Exceptions.UserExceptions.UserAddException : Exception of type 'AccessToDB.Exceptions.UserExceptions.UserAddException' was thrown.
+[xUnit.net 00:00:11.36]       Stack Trace:
+[xUnit.net 00:00:11.36]         /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB/TarantoolRepositories/TarantoolUsersRepository.cs(74,0): at AccessToDB.RepositoriesTarantool.TarantoolUsersRepository.AddUserAsync(UInt32 userID, UInt32 cardID, String UserEmail, String password, PermissionsEnum permissions)
+[xUnit.net 00:00:11.36]         /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/IntegrationTests/TestActionsWithUsers.cs(202,0): at IntegrationTests.TestActionsWithUsers.TestAdminGetUserByIDAsync()
+[xUnit.net 00:00:11.36]            at System.Threading.Tasks.Task.&lt;&gt;c.&lt;ThrowAsync&gt;b__128_0(Object state)
+[xUnit.net 00:00:20.86]   Finished:    IntegrationTests
+</StdOut>
+    </Output>
+    <RunInfos>
+      <RunInfo computerName="DESKTOP-TJ9D65N" outcome="Error" timestamp="2022-10-31T14:38:29.4758279+03:00">
+        <Text>[xUnit.net 00:00:05.32]     IntegrationTests.TestActionsWithUsers.TestAdminUpdateUser [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-TJ9D65N" outcome="Error" timestamp="2022-10-31T14:38:30.1281767+03:00">
+        <Text>[xUnit.net 00:00:05.97]     IntegrationTests.TestActionsWithUsers.TestAdminAddAutoIncrementUser [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-TJ9D65N" outcome="Error" timestamp="2022-10-31T14:38:30.7183341+03:00">
+        <Text>[xUnit.net 00:00:06.56]     IntegrationTests.TestActionsWithUsers.TestLogInOk [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-TJ9D65N" outcome="Error" timestamp="2022-10-31T14:38:31.3255810+03:00">
+        <Text>[xUnit.net 00:00:07.17]     IntegrationTests.TestActionsWithUsers.TestRegisterUserWithRepeatedEmail [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-TJ9D65N" outcome="Error" timestamp="2022-10-31T14:38:31.9276762+03:00">
+        <Text>[xUnit.net 00:00:07.77]     IntegrationTests.TestActionsWithUsers.TestLogInWithWrongPassword [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-TJ9D65N" outcome="Error" timestamp="2022-10-31T14:38:32.5473511+03:00">
+        <Text>[xUnit.net 00:00:08.39]     IntegrationTests.TestActionsWithUsers.TestRegisterOk [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-TJ9D65N" outcome="Error" timestamp="2022-10-31T14:38:33.1257147+03:00">
+        <Text>[xUnit.net 00:00:08.97]     IntegrationTests.TestActionsWithUsers.TestAdminDeleteUser [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-TJ9D65N" outcome="Error" timestamp="2022-10-31T14:38:33.7166256+03:00">
+        <Text>[xUnit.net 00:00:09.56]     IntegrationTests.TestActionsWithUsers.TestAdminGetUsers [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-TJ9D65N" outcome="Error" timestamp="2022-10-31T14:38:35.5161751+03:00">
+        <Text>[xUnit.net 00:00:11.36]     IntegrationTests.TestActionsWithUsers.TestAdminGetUserByIDAsync [FAIL]</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+</TestRun>

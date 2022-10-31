@@ -1,0 +1,46 @@
+{
+  "uuid": "a8b4c6d8-0f52-4e3d-8d71-f2d25ed40ecb-IntegrationTests.TestActionsWithUsers.TestAdminDeleteUser",
+  "historyId": "IntegrationTests.TestActionsWithUsers.TestAdminDeleteUser",
+  "fullName": "IntegrationTests.TestActionsWithUsers.TestAdminDeleteUser",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "IntegrationTests.TestActionsWithUsers"
+    },
+    {
+      "name": "testMethod",
+      "value": "IntegrationTests.TestActionsWithUsers.TestAdminDeleteUser"
+    },
+    {
+      "name": "package",
+      "value": "IntegrationTests.TestActionsWithUsers"
+    },
+    {
+      "name": "suite",
+      "value": "SuiteForTestingActionsWithSlopes"
+    }
+  ],
+  "links": [],
+  "name": "IntegrationTests.TestActionsWithUsers.TestAdminDeleteUser",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1667216897038,
+  "stop": 1667216897671
+}
