@@ -1,0 +1,18 @@
+version: '3.5'
+
+services:
+
+  bl:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "8080:80"
+
+  bl-tests:
+    entrypoint:
+      - dotnet
+      - test
+      - --logger
+      - trx;LogFileName=/bltest-results.trx
+    volumes: 
+      - ${BUILD_ARTIFACTSTAGINGDIRECTORY:-./tests/}:/tests

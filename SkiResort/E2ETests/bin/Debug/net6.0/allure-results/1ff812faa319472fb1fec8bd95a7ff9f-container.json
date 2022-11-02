@@ -1,0 +1,12 @@
+{
+  "uuid": "922d51d8-928b-47f2-83ad-6ae62b79e598-E2ETests.E2ETest",
+  "name": "E2ETests.E2ETest",
+  "children": [
+    "45800409-c099-4ae3-8c8b-d48b43ff23a4-E2ETests.E2ETest.E2ETestSkiPatrolWorkingWithLifts"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1667385220457,
+  "stop": 1667385221351
+}

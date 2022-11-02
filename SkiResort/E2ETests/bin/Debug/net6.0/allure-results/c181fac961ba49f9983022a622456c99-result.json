@@ -1,0 +1,47 @@
+{
+  "uuid": "358fa0d2-a248-4e4b-8adf-b6e0f64be467-E2ETests.E2ETest.E2ETestSkiPatrolWorkingWithLifts",
+  "historyId": "E2ETests.E2ETest.E2ETestSkiPatrolWorkingWithLifts",
+  "fullName": "E2ETests.E2ETest.E2ETestSkiPatrolWorkingWithLifts",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "E2ETests.E2ETest"
+    },
+    {
+      "name": "testMethod",
+      "value": "E2ETests.E2ETest.E2ETestSkiPatrolWorkingWithLifts"
+    },
+    {
+      "name": "package",
+      "value": "E2ETests.E2ETest"
+    },
+    {
+      "name": "suite",
+      "value": "E2ETestSkiPatrolWorkingWithLifts"
+    }
+  ],
+  "links": [],
+  "name": "E2ETests.E2ETest.E2ETestSkiPatrolWorkingWithLifts",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Connection refused",
+    "trace": "   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)\n   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)\n   at System.Threading.Tasks.ValueTask.ValueTaskSourceAsTask.<>c.<.cctor>b__4_0(Object state)\n--- End of stack trace from previous location ---\n   at System.Threading.Tasks.TaskToApm.End(IAsyncResult asyncResult)\n   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)\n   at ProGaudi.Tarantool.Client.NetworkStreamPhysicalConnection.<>c.<ConnectAsync>b__8_1(IAsyncResult asyncResult)\n   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)\n--- End of stack trace from previous location ---\n   at ProGaudi.Tarantool.Client.NetworkStreamPhysicalConnection.Connect(ClientOptions options)\n   at ProGaudi.Tarantool.Client.LogicalConnection.Connect()\n   at ProGaudi.Tarantool.Client.LogicalConnectionManager.Connect()\n   at ProGaudi.Tarantool.Client.Box.Connect()\n   at ProGaudi.Tarantool.Client.Box.Connect(String replicationSource)\n   at AccessToDB.TarantoolContext.Initialize(String connection_string) in /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB/TarantoolContext.cs:line 51\n   at AccessToDB.TarantoolContext..ctor(String connection_string) in /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB/TarantoolContext.cs:line 32\n   at E2ETests.E2ETest..ctor() in /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/E2ETests/E2ETest.cs:line 36\n   at System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean wrapExceptions)"
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1667384665357,
+  "stop": 1667384665440
+}

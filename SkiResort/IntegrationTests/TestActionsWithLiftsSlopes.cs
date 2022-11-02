@@ -1,16 +1,13 @@
-﻿using Moq;
-using Xunit;
+﻿using Xunit;
 using BL.Services;
 using BL.Models;
 using BL.IRepositories;
 using System.Collections.Generic;
-using AutoFixture.Xunit2;
 using Allure.Xunit.Attributes;
 using IntegrationTests.ArrangeHelpers;
 using System;
 using AccessToDB;
 using AccessToDB.RepositoriesTarantool;
-using AccessToDB.Exceptions;
 
 
 //https://xunit.net/docs/shared-context

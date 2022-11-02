@@ -1,0 +1,47 @@
+{
+  "uuid": "45800409-c099-4ae3-8c8b-d48b43ff23a4-E2ETests.E2ETest.E2ETestSkiPatrolWorkingWithLifts",
+  "historyId": "E2ETests.E2ETest.E2ETestSkiPatrolWorkingWithLifts",
+  "fullName": "E2ETests.E2ETest.E2ETestSkiPatrolWorkingWithLifts",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "E2ETests.E2ETest"
+    },
+    {
+      "name": "testMethod",
+      "value": "E2ETests.E2ETest.E2ETestSkiPatrolWorkingWithLifts"
+    },
+    {
+      "name": "package",
+      "value": "E2ETests.E2ETest"
+    },
+    {
+      "name": "suite",
+      "value": "E2ETestSkiPatrolWorkingWithLifts"
+    }
+  ],
+  "links": [],
+  "name": "E2ETests.E2ETest.E2ETestSkiPatrolWorkingWithLifts",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "Assert.Equal() Failure\nExpected: List<Lift> [Lift { LiftID = 1, LiftName = A1, IsOpen = True, SeatsAmount = 10, LiftingTime = 20, QueueTime = 30, ConnectedSlopes = System.Collections.Generic.List`1[BL.Models.Slope] }, Lift { LiftID = 2, LiftName = A2, IsOpen = False, SeatsAmount = 40, LiftingTime = 50, QueueTime = 60, ConnectedSlopes = System.Collections.Generic.List`1[BL.Models.Slope] }, Lift { LiftID = 3, LiftName = B1, IsOpen = False, SeatsAmount = 40, LiftingTime = 53, QueueTime = 62, ConnectedSlopes = System.Collections.Generic.List`1[BL.Models.Slope] }]\nActual:   List<Lift> [Lift { LiftID = 1, LiftName = A1, IsOpen = True, SeatsAmount = 10, LiftingTime = 20, QueueTime = 30, ConnectedSlopes = System.Collections.Generic.List`1[BL.Models.Slope] }, Lift { LiftID = 2, LiftName = A2, IsOpen = False, SeatsAmount = 40, LiftingTime = 50, QueueTime = 60, ConnectedSlopes = System.Collections.Generic.List`1[BL.Models.Slope] }, Lift { LiftID = 3, LiftName = B1, IsOpen = False, SeatsAmount = 40, LiftingTime = 53, QueueTime = 62, ConnectedSlopes = System.Collections.Generic.List`1[BL.Models.Slope] }]",
+    "trace": "   at Xunit.Assert.Equal[T](T expected, T actual, IEqualityComparer`1 comparer) in C:\\Dev\\xunit\\xunit\\src\\xunit.assert\\Asserts\\EqualityAsserts.cs:line 40\n   at Xunit.Assert.Equal[T](T expected, T actual) in C:\\Dev\\xunit\\xunit\\src\\xunit.assert\\Asserts\\EqualityAsserts.cs:line 24\n   at E2ETests.E2ETest.E2ETestSkiPatrolWorkingWithLifts() in /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/E2ETests/E2ETest.cs:line 105\n   at System.Threading.Tasks.Task.<>c.<ThrowAsync>b__128_0(Object state)\n   at Xunit.Sdk.AsyncTestSyncContext.<>c__DisplayClass7_0.<Post>b__0() in C:\\Dev\\xunit\\xunit\\src\\xunit.execution\\Sdk\\AsyncTestSyncContext.cs:line 58"
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1667385220460,
+  "stop": 1667385221313
+}
