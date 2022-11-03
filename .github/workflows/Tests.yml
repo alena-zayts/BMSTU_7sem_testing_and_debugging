@@ -8,7 +8,7 @@ on:
 
 jobs:
         
-  build:
+  runAll:
     name: Build
     runs-on: ubuntu-latest
     #runs-on: windows-latest
@@ -31,6 +31,10 @@ jobs:
       
     - name: Build
       run: dotnet build --no-restore
+      working-directory: SkiResort
+    
+    - name: Run All Tests
+      run: ./run_all_tests.sh
       working-directory: SkiResort
 
   #unitTesting:

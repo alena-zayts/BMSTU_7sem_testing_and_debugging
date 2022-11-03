@@ -1,0 +1,12 @@
+{
+  "uuid": "182924a0-9889-47d5-a1b3-e4879a3d86a0-IntegrationTests.TestActionsWithUsers",
+  "name": "IntegrationTests.TestActionsWithUsers",
+  "children": [
+    "fab4424d-e396-4e4b-b2f8-a8d0851aeb2f-IntegrationTests.TestActionsWithUsers.TestAdminAddAutoIncrementUser"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1667459097294,
+  "stop": 1667459097970
+}

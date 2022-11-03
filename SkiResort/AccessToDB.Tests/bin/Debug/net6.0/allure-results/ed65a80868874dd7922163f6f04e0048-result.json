@@ -1,0 +1,46 @@
+{
+  "uuid": "1c4ba036-bee1-4ae5-97ed-65d750182947-AccessToDB.Tests.SlopesRepositoryTests.TestAddSlopeAsyncFailsWhenSlopeIdRepeats(slope: Slope { SlopeID = 81, SlopeName = slopeNamec6759d6e-e705-419b-ad9a-e25b492378c2, IsOpen = True, DifficultyLevel = 26, ConnectedLifts =  })",
+  "historyId": "AccessToDB.Tests.SlopesRepositoryTests.TestAddSlopeAsyncFailsWhenSlopeIdRepeats(slope: Slope { SlopeID = 81, SlopeName = slopeNamec6759d6e-e705-419b-ad9a-e25b492378c2, IsOpen = True, DifficultyLevel = 26, ConnectedLifts =  })",
+  "fullName": "AccessToDB.Tests.SlopesRepositoryTests.TestAddSlopeAsyncFailsWhenSlopeIdRepeats(slope: Slope { SlopeID = 81, SlopeName = slopeNamec6759d6e-e705-419b-ad9a-e25b492378c2, IsOpen = True, DifficultyLevel = 26, ConnectedLifts =  })",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "AccessToDB.Tests.SlopesRepositoryTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "AccessToDB.Tests.SlopesRepositoryTests.TestAddSlopeAsyncFailsWhenSlopeIdRepeats(slope: Slope { SlopeID = 81, SlopeName = slopeNamec6759d6e-e705-419b-ad9a-e25b492378c2, IsOpen = True, DifficultyLevel = 26, ConnectedLifts =  })"
+    },
+    {
+      "name": "package",
+      "value": "AccessToDB.Tests.SlopesRepositoryTests"
+    },
+    {
+      "name": "suite",
+      "value": "SlopesRepositorySuite"
+    }
+  ],
+  "links": [],
+  "name": "AccessToDB.Tests.SlopesRepositoryTests.TestAddSlopeAsyncFailsWhenSlopeIdRepeats(slope: Slope { SlopeID = 81, SlopeName = slopeNamec6759d6e-e705-419b-ad9a-e25b492378c2, IsOpen = True, DifficultyLevel = 26, ConnectedLifts =  })",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1667459074941,
+  "stop": 1667459075341
+}

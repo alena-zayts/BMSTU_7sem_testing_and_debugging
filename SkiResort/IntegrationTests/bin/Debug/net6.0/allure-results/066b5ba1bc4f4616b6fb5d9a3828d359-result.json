@@ -1,0 +1,46 @@
+{
+  "uuid": "be7681e0-1396-4219-8616-030a19cc46b7-IntegrationTests.TestActionsWithLiftsLifts.TestGetLiftInfoAsync(lift: Lift { LiftID = 51, LiftName = liftNamea370a575-bd64-4880-94b2-a35fdb5ffeab, IsOpen = True, SeatsAmount = 166, LiftingTime = 173, QueueTime = 125, ConnectedSlopes =  })",
+  "historyId": "IntegrationTests.TestActionsWithLiftsLifts.TestGetLiftInfoAsync(lift: Lift { LiftID = 51, LiftName = liftNamea370a575-bd64-4880-94b2-a35fdb5ffeab, IsOpen = True, SeatsAmount = 166, LiftingTime = 173, QueueTime = 125, ConnectedSlopes =  })",
+  "fullName": "IntegrationTests.TestActionsWithLiftsLifts.TestGetLiftInfoAsync(lift: Lift { LiftID = 51, LiftName = liftNamea370a575-bd64-4880-94b2-a35fdb5ffeab, IsOpen = True, SeatsAmount = 166, LiftingTime = 173, QueueTime = 125, ConnectedSlopes =  })",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "IntegrationTests.TestActionsWithLiftsLifts"
+    },
+    {
+      "name": "testMethod",
+      "value": "IntegrationTests.TestActionsWithLiftsLifts.TestGetLiftInfoAsync(lift: Lift { LiftID = 51, LiftName = liftNamea370a575-bd64-4880-94b2-a35fdb5ffeab, IsOpen = True, SeatsAmount = 166, LiftingTime = 173, QueueTime = 125, ConnectedSlopes =  })"
+    },
+    {
+      "name": "package",
+      "value": "IntegrationTests.TestActionsWithLiftsLifts"
+    },
+    {
+      "name": "suite",
+      "value": "SuiteForTestingActionsWithLifts"
+    }
+  ],
+  "links": [],
+  "name": "IntegrationTests.TestActionsWithLiftsLifts.TestGetLiftInfoAsync(lift: Lift { LiftID = 51, LiftName = liftNamea370a575-bd64-4880-94b2-a35fdb5ffeab, IsOpen = True, SeatsAmount = 166, LiftingTime = 173, QueueTime = 125, ConnectedSlopes =  })",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1667459110675,
+  "stop": 1667459111284
+}

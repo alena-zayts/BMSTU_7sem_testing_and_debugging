@@ -1,0 +1,46 @@
+{
+  "uuid": "20a3d9ca-efa2-4cb8-a34f-39bd9672c469-AccessToDB.Tests.LiftsRepositoryTests.TestUpdateLiftByIDAsyncOk(lift: Lift { LiftID = 160, LiftName = liftName3f3ecba1-e2db-445a-ab10-48e67d27aff8, IsOpen = True, SeatsAmount = 14, LiftingTime = 229, QueueTime = 223, ConnectedSlopes =  })",
+  "historyId": "AccessToDB.Tests.LiftsRepositoryTests.TestUpdateLiftByIDAsyncOk(lift: Lift { LiftID = 160, LiftName = liftName3f3ecba1-e2db-445a-ab10-48e67d27aff8, IsOpen = True, SeatsAmount = 14, LiftingTime = 229, QueueTime = 223, ConnectedSlopes =  })",
+  "fullName": "AccessToDB.Tests.LiftsRepositoryTests.TestUpdateLiftByIDAsyncOk(lift: Lift { LiftID = 160, LiftName = liftName3f3ecba1-e2db-445a-ab10-48e67d27aff8, IsOpen = True, SeatsAmount = 14, LiftingTime = 229, QueueTime = 223, ConnectedSlopes =  })",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "AccessToDB.Tests.LiftsRepositoryTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "AccessToDB.Tests.LiftsRepositoryTests.TestUpdateLiftByIDAsyncOk(lift: Lift { LiftID = 160, LiftName = liftName3f3ecba1-e2db-445a-ab10-48e67d27aff8, IsOpen = True, SeatsAmount = 14, LiftingTime = 229, QueueTime = 223, ConnectedSlopes =  })"
+    },
+    {
+      "name": "package",
+      "value": "AccessToDB.Tests.LiftsRepositoryTests"
+    },
+    {
+      "name": "suite",
+      "value": "LiftsRepositorySuite"
+    }
+  ],
+  "links": [],
+  "name": "AccessToDB.Tests.LiftsRepositoryTests.TestUpdateLiftByIDAsyncOk(lift: Lift { LiftID = 160, LiftName = liftName3f3ecba1-e2db-445a-ab10-48e67d27aff8, IsOpen = True, SeatsAmount = 14, LiftingTime = 229, QueueTime = 223, ConnectedSlopes =  })",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1667459070569,
+  "stop": 1667459070963
+}

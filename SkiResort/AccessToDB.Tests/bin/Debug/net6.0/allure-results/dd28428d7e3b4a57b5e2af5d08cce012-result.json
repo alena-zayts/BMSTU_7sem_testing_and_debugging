@@ -1,0 +1,46 @@
+{
+  "uuid": "43da5278-11b8-48b0-81bc-e9fe3f7a28b2-AccessToDB.Tests.LiftsRepositoryTests.TestAddLiftAutoIncrementAsyncOk",
+  "historyId": "AccessToDB.Tests.LiftsRepositoryTests.TestAddLiftAutoIncrementAsyncOk",
+  "fullName": "AccessToDB.Tests.LiftsRepositoryTests.TestAddLiftAutoIncrementAsyncOk",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "AccessToDB.Tests.LiftsRepositoryTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "AccessToDB.Tests.LiftsRepositoryTests.TestAddLiftAutoIncrementAsyncOk"
+    },
+    {
+      "name": "package",
+      "value": "AccessToDB.Tests.LiftsRepositoryTests"
+    },
+    {
+      "name": "suite",
+      "value": "LiftsRepositorySuite"
+    }
+  ],
+  "links": [],
+  "name": "AccessToDB.Tests.LiftsRepositoryTests.TestAddLiftAutoIncrementAsyncOk",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1667459068176,
+  "stop": 1667459068570
+}

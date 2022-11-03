@@ -1,0 +1,46 @@
+{
+  "uuid": "3ac6a2f2-3223-4fed-ae89-582c4d087191-AccessToDB.Tests.TurnstilesRepositoryTests.TestGetTurnstilesByLiftIdAsyncOk(liftID: 225)",
+  "historyId": "AccessToDB.Tests.TurnstilesRepositoryTests.TestGetTurnstilesByLiftIdAsyncOk(liftID: 225)",
+  "fullName": "AccessToDB.Tests.TurnstilesRepositoryTests.TestGetTurnstilesByLiftIdAsyncOk(liftID: 225)",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "AccessToDB.Tests.TurnstilesRepositoryTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "AccessToDB.Tests.TurnstilesRepositoryTests.TestGetTurnstilesByLiftIdAsyncOk(liftID: 225)"
+    },
+    {
+      "name": "package",
+      "value": "AccessToDB.Tests.TurnstilesRepositoryTests"
+    },
+    {
+      "name": "suite",
+      "value": "TurnstilesRepositorySuite"
+    }
+  ],
+  "links": [],
+  "name": "AccessToDB.Tests.TurnstilesRepositoryTests.TestGetTurnstilesByLiftIdAsyncOk(liftID: 225)",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1667459066471,
+  "stop": 1667459066957
+}

@@ -12,7 +12,6 @@ echo "[101;93m Messages from me will be coloured like this [0m"
 
 
 echo "[101;93m Raising docker (it's used to run Tarantool, and Tarantool is used in AccessToDB) [0m"
-echo "PATH_TO_PROJECT=${PWD}" > .docker-env
 docker-compose --env-file .docker-env -f ${PWD}/SkiResort/tarantool/docker-compose-console.yml up -d
 echo "[101;93m Docker started [0m"
 
@@ -24,7 +23,6 @@ echo "[101;93m E2E Tests finished [0m"
 
 
 echo "[101;93m Stopping docker [0m"
-echo "PATH_TO_PROJECT=${PWD}" > .docker-env
 docker-compose --env-file .docker-env -f ${PWD}/SkiResort/tarantool/docker-compose-console.yml down
 echo "[101;93m Docker stopped [0m"
 
