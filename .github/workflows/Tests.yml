@@ -34,8 +34,8 @@ jobs:
       working-directory: SkiResort
     
     - name: Run All Tests
-      run: ./run_all_tests.sh
-      working-directory: .
+      run: ../run_all_tests.sh
+      working-directory: SkiResort
 
   #unitTesting:
     #name: Unit Testing
