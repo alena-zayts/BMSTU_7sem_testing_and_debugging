@@ -1,0 +1,12 @@
+{
+  "uuid": "22a7e9ff-4a40-4a42-b17a-c4a9144ece48-BL.Tests.UsersServiceTests",
+  "name": "BL.Tests.UsersServiceTests",
+  "children": [
+    "8a179901-11a8-413b-9716-e06fdadd2cbc-BL.Tests.UsersServiceTests.TestAdminDeleteUser"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1667460252896,
+  "stop": 1667460252905
+}

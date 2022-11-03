@@ -1,0 +1,46 @@
+{
+  "uuid": "796d4477-7101-49a3-ab4a-fb49537748be-IntegrationTests.TestActionsWithLiftsSlopes.TestGetLiftsSlopesInfoAsync(liftsSlopes: [LiftSlope { RecordID = 75, LiftID = 41, SlopeID = 204 }, LiftSlope { RecordID = 124, LiftID = 63, SlopeID = 74 }, LiftSlope { RecordID = 196, LiftID = 87, SlopeID = 15 }])",
+  "historyId": "IntegrationTests.TestActionsWithLiftsSlopes.TestGetLiftsSlopesInfoAsync(liftsSlopes: [LiftSlope { RecordID = 75, LiftID = 41, SlopeID = 204 }, LiftSlope { RecordID = 124, LiftID = 63, SlopeID = 74 }, LiftSlope { RecordID = 196, LiftID = 87, SlopeID = 15 }])",
+  "fullName": "IntegrationTests.TestActionsWithLiftsSlopes.TestGetLiftsSlopesInfoAsync(liftsSlopes: [LiftSlope { RecordID = 75, LiftID = 41, SlopeID = 204 }, LiftSlope { RecordID = 124, LiftID = 63, SlopeID = 74 }, LiftSlope { RecordID = 196, LiftID = 87, SlopeID = 15 }])",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "IntegrationTests.TestActionsWithLiftsSlopes"
+    },
+    {
+      "name": "testMethod",
+      "value": "IntegrationTests.TestActionsWithLiftsSlopes.TestGetLiftsSlopesInfoAsync(liftsSlopes: [LiftSlope { RecordID = 75, LiftID = 41, SlopeID = 204 }, LiftSlope { RecordID = 124, LiftID = 63, SlopeID = 74 }, LiftSlope { RecordID = 196, LiftID = 87, SlopeID = 15 }])"
+    },
+    {
+      "name": "package",
+      "value": "IntegrationTests.TestActionsWithLiftsSlopes"
+    },
+    {
+      "name": "suite",
+      "value": "SuiteForTestingActionsWithLiftsSlopes"
+    }
+  ],
+  "links": [],
+  "name": "IntegrationTests.TestActionsWithLiftsSlopes.TestGetLiftsSlopesInfoAsync(liftsSlopes: [LiftSlope { RecordID = 75, LiftID = 41, SlopeID = 204 }, LiftSlope { RecordID = 124, LiftID = 63, SlopeID = 74 }, LiftSlope { RecordID = 196, LiftID = 87, SlopeID = 15 }])",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1667460315217,
+  "stop": 1667460315873
+}

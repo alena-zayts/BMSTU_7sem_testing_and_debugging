@@ -34,13 +34,13 @@ jobs:
       working-directory: SkiResort
     
     
-    - name: Run All Tests
-      run: ./run_all_tests.sh
-      working-directory: .
+    # - name: Run All Tests
+      # run: ./run_all_tests.sh
+      # working-directory: .
     
-    -name: Save Path to Project
-      run: echo 'PATH_TO_PROJECT=${PWD}' > .docker-env
-      working-directory: .
+    # -name: Save Path to Project
+      # run: echo 'PATH_TO_PROJECT=${PWD}' > .docker-env
+      # working-directory: .
       
     
       

@@ -1,0 +1,46 @@
+{
+  "uuid": "4a79902f-c24d-42c4-b80c-74574411e26c-IntegrationTests.TestActionsWithSlopes.TestAdminAddAutoIncrementSlopeAsync(slope: Slope { SlopeID = 52, SlopeName = slopeNamea6a3bbbd-f3c5-41a6-9942-75e21c27aae6, IsOpen = True, DifficultyLevel = 165, ConnectedLifts =  })",
+  "historyId": "IntegrationTests.TestActionsWithSlopes.TestAdminAddAutoIncrementSlopeAsync(slope: Slope { SlopeID = 52, SlopeName = slopeNamea6a3bbbd-f3c5-41a6-9942-75e21c27aae6, IsOpen = True, DifficultyLevel = 165, ConnectedLifts =  })",
+  "fullName": "IntegrationTests.TestActionsWithSlopes.TestAdminAddAutoIncrementSlopeAsync(slope: Slope { SlopeID = 52, SlopeName = slopeNamea6a3bbbd-f3c5-41a6-9942-75e21c27aae6, IsOpen = True, DifficultyLevel = 165, ConnectedLifts =  })",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "IntegrationTests.TestActionsWithSlopes"
+    },
+    {
+      "name": "testMethod",
+      "value": "IntegrationTests.TestActionsWithSlopes.TestAdminAddAutoIncrementSlopeAsync(slope: Slope { SlopeID = 52, SlopeName = slopeNamea6a3bbbd-f3c5-41a6-9942-75e21c27aae6, IsOpen = True, DifficultyLevel = 165, ConnectedLifts =  })"
+    },
+    {
+      "name": "package",
+      "value": "IntegrationTests.TestActionsWithSlopes"
+    },
+    {
+      "name": "suite",
+      "value": "SuiteForTestingActionsWithSlopes"
+    }
+  ],
+  "links": [],
+  "name": "IntegrationTests.TestActionsWithSlopes.TestAdminAddAutoIncrementSlopeAsync(slope: Slope { SlopeID = 52, SlopeName = slopeNamea6a3bbbd-f3c5-41a6-9942-75e21c27aae6, IsOpen = True, DifficultyLevel = 165, ConnectedLifts =  })",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1667460314568,
+  "stop": 1667460315200
+}

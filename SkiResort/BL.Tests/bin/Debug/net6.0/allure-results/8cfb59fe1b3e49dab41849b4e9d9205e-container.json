@@ -1,0 +1,12 @@
+{
+  "uuid": "54deaa7d-573a-448b-8d5e-07dd596fd4aa-BL.Tests.LiftsSlopesServiceTests",
+  "name": "BL.Tests.LiftsSlopesServiceTests",
+  "children": [
+    "3acf0c3c-c6cd-4a0c-9b64-1efcf22a4985-BL.Tests.LiftsSlopesServiceTests.TestAdminAddAutoIncrementLiftSlopeAsync(lift: Lift { LiftID = 215, LiftName = liftName50629705-6ec7-422d-809c-0c623f574d46, IsOpen = True, SeatsAmount = 79, LiftingTime = 153, QueueTime = 145, ConnectedSlopes =  }, slope: Slope { SlopeID = 31, SlopeName = slopeName3332d60d-c7de-4381-906b-952a2124c092, IsOpen = False, DifficultyLevel = 243, ConnectedLifts =  }, slopesRepositoryStub: Mock<ISlopesRepository:3>, liftsRepositoryStub: Mock<ILiftsRepository:8>, liftsSlopesRepositoryStub: Mock<ILiftsSlopesRepository:8>)"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1667460252754,
+  "stop": 1667460252772
+}

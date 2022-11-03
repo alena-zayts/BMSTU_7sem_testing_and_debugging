@@ -1,0 +1,46 @@
+{
+  "uuid": "006f618a-e565-4e8c-9d09-8aa4d77fba3f-AccessToDB.Tests.UsersRepositoryTests.TestGetUsersAsyncEmpty",
+  "historyId": "AccessToDB.Tests.UsersRepositoryTests.TestGetUsersAsyncEmpty",
+  "fullName": "AccessToDB.Tests.UsersRepositoryTests.TestGetUsersAsyncEmpty",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "AccessToDB.Tests.UsersRepositoryTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "AccessToDB.Tests.UsersRepositoryTests.TestGetUsersAsyncEmpty"
+    },
+    {
+      "name": "package",
+      "value": "AccessToDB.Tests.UsersRepositoryTests"
+    },
+    {
+      "name": "suite",
+      "value": "UsersRepositorySuite"
+    }
+  ],
+  "links": [],
+  "name": "AccessToDB.Tests.UsersRepositoryTests.TestGetUsersAsyncEmpty",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1667460271490,
+  "stop": 1667460271854
+}

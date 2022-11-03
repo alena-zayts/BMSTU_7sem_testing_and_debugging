@@ -1,0 +1,46 @@
+{
+  "uuid": "cb97096d-69ca-4a1a-84ed-dceb7926e747-AccessToDB.Tests.TurnstilesRepositoryTests.TestAddTurnstileAsyncFailsWhenTurnstileIdRepeats(turnstile: Turnstile { TurnstileID = 198, LiftID = 19, IsOpen = True })",
+  "historyId": "AccessToDB.Tests.TurnstilesRepositoryTests.TestAddTurnstileAsyncFailsWhenTurnstileIdRepeats(turnstile: Turnstile { TurnstileID = 198, LiftID = 19, IsOpen = True })",
+  "fullName": "AccessToDB.Tests.TurnstilesRepositoryTests.TestAddTurnstileAsyncFailsWhenTurnstileIdRepeats(turnstile: Turnstile { TurnstileID = 198, LiftID = 19, IsOpen = True })",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "AccessToDB.Tests.TurnstilesRepositoryTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "AccessToDB.Tests.TurnstilesRepositoryTests.TestAddTurnstileAsyncFailsWhenTurnstileIdRepeats(turnstile: Turnstile { TurnstileID = 198, LiftID = 19, IsOpen = True })"
+    },
+    {
+      "name": "package",
+      "value": "AccessToDB.Tests.TurnstilesRepositoryTests"
+    },
+    {
+      "name": "suite",
+      "value": "TurnstilesRepositorySuite"
+    }
+  ],
+  "links": [],
+  "name": "AccessToDB.Tests.TurnstilesRepositoryTests.TestAddTurnstileAsyncFailsWhenTurnstileIdRepeats(turnstile: Turnstile { TurnstileID = 198, LiftID = 19, IsOpen = True })",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1667460276341,
+  "stop": 1667460276738
+}

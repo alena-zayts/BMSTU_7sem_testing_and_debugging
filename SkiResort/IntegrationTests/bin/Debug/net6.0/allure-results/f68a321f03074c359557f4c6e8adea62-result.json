@@ -1,0 +1,46 @@
+{
+  "uuid": "ef6aa4f5-6f22-455e-9a7d-42b39d2f3dd3-IntegrationTests.TestActionsWithTurnstiles.TestAdminAddAutoIncrementTurnstileAsync(turnstile: Turnstile { TurnstileID = 44, LiftID = 111, IsOpen = True })",
+  "historyId": "IntegrationTests.TestActionsWithTurnstiles.TestAdminAddAutoIncrementTurnstileAsync(turnstile: Turnstile { TurnstileID = 44, LiftID = 111, IsOpen = True })",
+  "fullName": "IntegrationTests.TestActionsWithTurnstiles.TestAdminAddAutoIncrementTurnstileAsync(turnstile: Turnstile { TurnstileID = 44, LiftID = 111, IsOpen = True })",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "IntegrationTests.TestActionsWithTurnstiles"
+    },
+    {
+      "name": "testMethod",
+      "value": "IntegrationTests.TestActionsWithTurnstiles.TestAdminAddAutoIncrementTurnstileAsync(turnstile: Turnstile { TurnstileID = 44, LiftID = 111, IsOpen = True })"
+    },
+    {
+      "name": "package",
+      "value": "IntegrationTests.TestActionsWithTurnstiles"
+    },
+    {
+      "name": "suite",
+      "value": "SuiteForTestingActionsWithTurnstiles"
+    }
+  ],
+  "links": [],
+  "name": "IntegrationTests.TestActionsWithTurnstiles.TestAdminAddAutoIncrementTurnstileAsync(turnstile: Turnstile { TurnstileID = 44, LiftID = 111, IsOpen = True })",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1667460299271,
+  "stop": 1667460299892
+}
