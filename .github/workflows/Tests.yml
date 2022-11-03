@@ -34,15 +34,15 @@ jobs:
       working-directory: SkiResort
     
     
+    - name: Run All Tests
+      run: ./run_all_tests.sh
+      working-directory: .
     
     -name: Save Path to Project
-      run: sudo echo "PATH_TO_PROJECT=${PWD}" > .docker-env
+      run: echo "PATH_TO_PROJECT=${PWD}" > .docker-env
       working-directory: .
       
-     
-    - name: Run All Tests
-      run: sudo ./run_all_tests.sh
-      working-directory: .
+    
       
       
 
