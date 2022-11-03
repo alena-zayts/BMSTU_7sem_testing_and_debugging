@@ -1,0 +1,46 @@
+{
+  "uuid": "7e5c427b-7cf7-49fe-84c2-e3cc37ec32af-BL.Tests.SlopesServiceTest.TestAdminAddSlopeAsync(userID: 40, slope: Slope { SlopeID = 235, SlopeName = slopeName77eb7400-44ef-4303-84d4-3c3ec8058430, IsOpen = True, DifficultyLevel = 159, ConnectedLifts =  }, checkPermissionServiceMock: Mock<ICheckPermissionService:11>, slopesRepositoryStub: Mock<ISlopesRepository:9>, sut: SlopesService { })",
+  "historyId": "BL.Tests.SlopesServiceTest.TestAdminAddSlopeAsync(userID: 40, slope: Slope { SlopeID = 235, SlopeName = slopeName77eb7400-44ef-4303-84d4-3c3ec8058430, IsOpen = True, DifficultyLevel = 159, ConnectedLifts =  }, checkPermissionServiceMock: Mock<ICheckPermissionService:11>, slopesRepositoryStub: Mock<ISlopesRepository:9>, sut: SlopesService { })",
+  "fullName": "BL.Tests.SlopesServiceTest.TestAdminAddSlopeAsync(userID: 40, slope: Slope { SlopeID = 235, SlopeName = slopeName77eb7400-44ef-4303-84d4-3c3ec8058430, IsOpen = True, DifficultyLevel = 159, ConnectedLifts =  }, checkPermissionServiceMock: Mock<ICheckPermissionService:11>, slopesRepositoryStub: Mock<ISlopesRepository:9>, sut: SlopesService { })",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "BL.Tests.SlopesServiceTest"
+    },
+    {
+      "name": "testMethod",
+      "value": "BL.Tests.SlopesServiceTest.TestAdminAddSlopeAsync(userID: 40, slope: Slope { SlopeID = 235, SlopeName = slopeName77eb7400-44ef-4303-84d4-3c3ec8058430, IsOpen = True, DifficultyLevel = 159, ConnectedLifts =  }, checkPermissionServiceMock: Mock<ICheckPermissionService:11>, slopesRepositoryStub: Mock<ISlopesRepository:9>, sut: SlopesService { })"
+    },
+    {
+      "name": "package",
+      "value": "BL.Tests.SlopesServiceTest"
+    },
+    {
+      "name": "suite",
+      "value": "SlopesServiceSuite"
+    }
+  ],
+  "links": [],
+  "name": "BL.Tests.SlopesServiceTest.TestAdminAddSlopeAsync(userID: 40, slope: Slope { SlopeID = 235, SlopeName = slopeName77eb7400-44ef-4303-84d4-3c3ec8058430, IsOpen = True, DifficultyLevel = 159, ConnectedLifts =  }, checkPermissionServiceMock: Mock<ICheckPermissionService:11>, slopesRepositoryStub: Mock<ISlopesRepository:9>, sut: SlopesService { })",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1667457325549,
+  "stop": 1667457325554
+}

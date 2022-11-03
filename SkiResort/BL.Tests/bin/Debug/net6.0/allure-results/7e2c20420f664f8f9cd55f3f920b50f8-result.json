@@ -1,0 +1,46 @@
+{
+  "uuid": "ce5b2790-b052-4c27-a73c-6e0cb26a24a0-BL.Tests.UsersServiceTests.TestAdminDeleteUser",
+  "historyId": "BL.Tests.UsersServiceTests.TestAdminDeleteUser",
+  "fullName": "BL.Tests.UsersServiceTests.TestAdminDeleteUser",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "BL.Tests.UsersServiceTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "BL.Tests.UsersServiceTests.TestAdminDeleteUser"
+    },
+    {
+      "name": "package",
+      "value": "BL.Tests.UsersServiceTests"
+    },
+    {
+      "name": "suite",
+      "value": "UsersServiceSuite"
+    }
+  ],
+  "links": [],
+  "name": "BL.Tests.UsersServiceTests.TestAdminDeleteUser",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1667457325629,
+  "stop": 1667457325631
+}

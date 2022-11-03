@@ -1,0 +1,46 @@
+{
+  "uuid": "aefaa0e4-bce5-4dca-827b-28eb50001766-BL.Tests.CheckPermissionsServiceTests.AdminHasAccessToAllFunctions",
+  "historyId": "BL.Tests.CheckPermissionsServiceTests.AdminHasAccessToAllFunctions",
+  "fullName": "BL.Tests.CheckPermissionsServiceTests.AdminHasAccessToAllFunctions",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "BL.Tests.CheckPermissionsServiceTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "BL.Tests.CheckPermissionsServiceTests.AdminHasAccessToAllFunctions"
+    },
+    {
+      "name": "package",
+      "value": "BL.Tests.CheckPermissionsServiceTests"
+    },
+    {
+      "name": "suite",
+      "value": "CheckPermissionsServiceSuite"
+    }
+  ],
+  "links": [],
+  "name": "BL.Tests.CheckPermissionsServiceTests.AdminHasAccessToAllFunctions",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1667457325667,
+  "stop": 1667457325669
+}

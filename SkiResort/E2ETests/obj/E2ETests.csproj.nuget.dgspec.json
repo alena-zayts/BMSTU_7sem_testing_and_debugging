@@ -1,39 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alena\\Desktop\\7_sem\\testing_and_debugging\\SkiResort\\E2ETests\\E2ETests.csproj": {}
+    "/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/E2ETests/E2ETests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alena\\Desktop\\7_sem\\testing_and_debugging\\SkiResort\\AccessToDB\\AccessToDB.csproj": {
+    "/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB/AccessToDB.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alena\\Desktop\\7_sem\\testing_and_debugging\\SkiResort\\AccessToDB\\AccessToDB.csproj",
+        "projectUniqueName": "/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB/AccessToDB.csproj",
         "projectName": "AccessToDB",
-        "projectPath": "C:\\Users\\alena\\Desktop\\7_sem\\testing_and_debugging\\SkiResort\\AccessToDB\\AccessToDB.csproj",
-        "packagesPath": "C:\\Users\\alena\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alena\\Desktop\\7_sem\\testing_and_debugging\\SkiResort\\AccessToDB\\obj\\",
+        "projectPath": "/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB/AccessToDB.csproj",
+        "packagesPath": "/home/alena/.nuget/packages/",
+        "outputPath": "/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\alena\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/alena/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\alena\\Desktop\\7_sem\\testing_and_debugging\\SkiResort\\BL\\BL.csproj": {
-                "projectPath": "C:\\Users\\alena\\Desktop\\7_sem\\testing_and_debugging\\SkiResort\\BL\\BL.csproj"
+              "/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/BL/BL.csproj": {
+                "projectPath": "/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/BL/BL.csproj"
               }
             }
           }
@@ -71,7 +65,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -80,32 +75,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/alena/.dotnet/sdk/6.0.402/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\alena\\Desktop\\7_sem\\testing_and_debugging\\SkiResort\\BL\\BL.csproj": {
+    "/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/BL/BL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alena\\Desktop\\7_sem\\testing_and_debugging\\SkiResort\\BL\\BL.csproj",
+        "projectUniqueName": "/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/BL/BL.csproj",
         "projectName": "BL",
-        "projectPath": "C:\\Users\\alena\\Desktop\\7_sem\\testing_and_debugging\\SkiResort\\BL\\BL.csproj",
-        "packagesPath": "C:\\Users\\alena\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alena\\Desktop\\7_sem\\testing_and_debugging\\SkiResort\\BL\\obj\\",
+        "projectPath": "/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/BL/BL.csproj",
+        "packagesPath": "/home/alena/.nuget/packages/",
+        "outputPath": "/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/BL/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\alena\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/alena/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -129,7 +118,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -138,43 +128,37 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/alena/.dotnet/sdk/6.0.402/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\alena\\Desktop\\7_sem\\testing_and_debugging\\SkiResort\\E2ETests\\E2ETests.csproj": {
+    "/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/E2ETests/E2ETests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alena\\Desktop\\7_sem\\testing_and_debugging\\SkiResort\\E2ETests\\E2ETests.csproj",
+        "projectUniqueName": "/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/E2ETests/E2ETests.csproj",
         "projectName": "E2ETests",
-        "projectPath": "C:\\Users\\alena\\Desktop\\7_sem\\testing_and_debugging\\SkiResort\\E2ETests\\E2ETests.csproj",
-        "packagesPath": "C:\\Users\\alena\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alena\\Desktop\\7_sem\\testing_and_debugging\\SkiResort\\E2ETests\\obj\\",
+        "projectPath": "/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/E2ETests/E2ETests.csproj",
+        "packagesPath": "/home/alena/.nuget/packages/",
+        "outputPath": "/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/E2ETests/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\alena\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/alena/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\alena\\Desktop\\7_sem\\testing_and_debugging\\SkiResort\\AccessToDB\\AccessToDB.csproj": {
-                "projectPath": "C:\\Users\\alena\\Desktop\\7_sem\\testing_and_debugging\\SkiResort\\AccessToDB\\AccessToDB.csproj"
+              "/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB/AccessToDB.csproj": {
+                "projectPath": "/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB/AccessToDB.csproj"
               },
-              "C:\\Users\\alena\\Desktop\\7_sem\\testing_and_debugging\\SkiResort\\BL\\BL.csproj": {
-                "projectPath": "C:\\Users\\alena\\Desktop\\7_sem\\testing_and_debugging\\SkiResort\\BL\\BL.csproj"
+              "/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/BL/BL.csproj": {
+                "projectPath": "/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/BL/BL.csproj"
               }
             }
           }
@@ -232,7 +216,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -241,7 +226,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/alena/.dotnet/sdk/6.0.402/RuntimeIdentifierGraph.json"
         }
       }
     }

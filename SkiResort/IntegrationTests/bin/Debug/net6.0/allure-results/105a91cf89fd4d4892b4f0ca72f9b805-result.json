@@ -1,0 +1,46 @@
+{
+  "uuid": "e11e3942-4621-4af7-b4ef-2b14a1bc93e3-IntegrationTests.TestActionsWithUsers.TestLogInOk",
+  "historyId": "IntegrationTests.TestActionsWithUsers.TestLogInOk",
+  "fullName": "IntegrationTests.TestActionsWithUsers.TestLogInOk",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "IntegrationTests.TestActionsWithUsers"
+    },
+    {
+      "name": "testMethod",
+      "value": "IntegrationTests.TestActionsWithUsers.TestLogInOk"
+    },
+    {
+      "name": "package",
+      "value": "IntegrationTests.TestActionsWithUsers"
+    },
+    {
+      "name": "suite",
+      "value": "SuiteForTestingActionsWithSlopes"
+    }
+  ],
+  "links": [],
+  "name": "IntegrationTests.TestActionsWithUsers.TestLogInOk",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1667457705734,
+  "stop": 1667457706323
+}

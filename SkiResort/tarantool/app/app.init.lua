@@ -6,12 +6,11 @@
 io_module = require("io")
 io_module.stdout:setvbuf("no")
 math_module = require("math")
+json=require('json')
+msgpack=require('msgpack')
+json_data_dir = "/usr/local/share/tarantool/json_data/"
 
-print('start!')
-
-
-
----------------------------------------------------------------------------------------------init tables
+---------------------------------------------------------------------------------------------create tables
 
 local function first_init()
 	box.schema.user.create('ski_admin', {if_not_exists = true}, {password = 'Tty454r293300'})
@@ -27,15 +26,11 @@ local function not_first_init()
 	box.space.users:drop()
 end
 
-local function init()
-	print('in init!')
-	
+local function create_tables()
 	box.schema.upgrade()
-
 
 	pcall(first_init)
 	pcall(not_first_init)
-
 
 	--- users
 	users = box.schema.space.create('users', {field_count=5, engine=chosen_engine})
@@ -110,11 +105,6 @@ end
 
 
 ------------------------------------------------------------------------------------------------fill tables
-json=require('json')
-msgpack=require('msgpack')
-json_data_dir = "/usr/local/share/tarantool/json_data/"
-
-
 local function load_users_data()
     local cur_space = box.space.users
 	local cur_filename = "users.json"
@@ -192,8 +182,7 @@ local function load_lifts_slopes_data()
 end
 
 
-local function load__data()
-	print('in load__data!')
+local function load_data()
 	load_users_data()
 	load_turnstiles_data()
 	load_lifts_data()
@@ -202,7 +191,6 @@ local function load__data()
 end
 
 ----------------------------------------------------------------------------------------------------functions
-
 function auto_increment_users(card_id, user_email, password, permissions)
 	return box.space.users:auto_increment{card_id, user_email, password, permissions}
 end
@@ -229,7 +217,7 @@ box.cfg {
    listen = 3301,
 }
 
-init()
---load__data()
+create_tables()
+--load_data()
 print('end of app.init')
 

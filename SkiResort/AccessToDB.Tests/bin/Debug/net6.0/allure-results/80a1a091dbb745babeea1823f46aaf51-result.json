@@ -1,0 +1,46 @@
+{
+  "uuid": "7d3a271a-35a9-411d-a018-f06f74d1c7a7-AccessToDB.Tests.LiftsRepositoryTests.TestGetLiftByIdAsyncOk(lift: Lift { LiftID = 193, LiftName = liftName30e9de4a-2e3d-42e6-9636-b638d376f3ca, IsOpen = True, SeatsAmount = 251, LiftingTime = 113, QueueTime = 243, ConnectedSlopes =  })",
+  "historyId": "AccessToDB.Tests.LiftsRepositoryTests.TestGetLiftByIdAsyncOk(lift: Lift { LiftID = 193, LiftName = liftName30e9de4a-2e3d-42e6-9636-b638d376f3ca, IsOpen = True, SeatsAmount = 251, LiftingTime = 113, QueueTime = 243, ConnectedSlopes =  })",
+  "fullName": "AccessToDB.Tests.LiftsRepositoryTests.TestGetLiftByIdAsyncOk(lift: Lift { LiftID = 193, LiftName = liftName30e9de4a-2e3d-42e6-9636-b638d376f3ca, IsOpen = True, SeatsAmount = 251, LiftingTime = 113, QueueTime = 243, ConnectedSlopes =  })",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "AccessToDB.Tests.LiftsRepositoryTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "AccessToDB.Tests.LiftsRepositoryTests.TestGetLiftByIdAsyncOk(lift: Lift { LiftID = 193, LiftName = liftName30e9de4a-2e3d-42e6-9636-b638d376f3ca, IsOpen = True, SeatsAmount = 251, LiftingTime = 113, QueueTime = 243, ConnectedSlopes =  })"
+    },
+    {
+      "name": "package",
+      "value": "AccessToDB.Tests.LiftsRepositoryTests"
+    },
+    {
+      "name": "suite",
+      "value": "LiftsRepositorySuite"
+    }
+  ],
+  "links": [],
+  "name": "AccessToDB.Tests.LiftsRepositoryTests.TestGetLiftByIdAsyncOk(lift: Lift { LiftID = 193, LiftName = liftName30e9de4a-2e3d-42e6-9636-b638d376f3ca, IsOpen = True, SeatsAmount = 251, LiftingTime = 113, QueueTime = 243, ConnectedSlopes =  })",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1667457372793,
+  "stop": 1667457373179
+}

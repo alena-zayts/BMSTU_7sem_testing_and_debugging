@@ -1,0 +1,12 @@
+{
+  "uuid": "f3429dd3-2d23-4726-9060-b9c836c494ff-IntegrationTests.TestActionsWithTurnstiles",
+  "name": "IntegrationTests.TestActionsWithTurnstiles",
+  "children": [
+    "605e80dd-55c5-4660-905f-9329fff5a730-IntegrationTests.TestActionsWithTurnstiles.TestAdminUpdateTurnstileAsync(turnstile: Turnstile { TurnstileID = 119, LiftID = 105, IsOpen = True })"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1667457703830,
+  "stop": 1667457704457
+}

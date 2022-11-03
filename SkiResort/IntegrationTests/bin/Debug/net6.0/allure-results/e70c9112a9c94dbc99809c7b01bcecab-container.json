@@ -1,0 +1,12 @@
+{
+  "uuid": "c4561b9f-1be9-46cb-98cd-75a3f405cf71-IntegrationTests.TestActionsWithLiftsLifts",
+  "name": "IntegrationTests.TestActionsWithLiftsLifts",
+  "children": [
+    "67304d28-adbd-4a4f-9b45-36b4b311e064-IntegrationTests.TestActionsWithLiftsLifts.TestGetLiftsInfoAsync(initialLifts: [Lift { LiftID = 75, LiftName = liftName0e59af09-fa1b-4f85-808f-9ede58a146c4, IsOpen = True, SeatsAmount = 177, LiftingTime = 64, QueueTime = 56, ConnectedSlopes =  }, Lift { LiftID = 70, LiftName = liftName67eedf9a-6d5c-4f4a-ac91-a6e4bb7bca50, IsOpen = False, SeatsAmount = 113, LiftingTime = 233, QueueTime = 29, ConnectedSlopes =  }, Lift { LiftID = 124, LiftName = liftName479814d0-3a95-47df-b25e-19283ca7a765, IsOpen = True, SeatsAmount = 238, LiftingTime = 35, QueueTime = 144, ConnectedSlopes =  }])"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1667457711134,
+  "stop": 1667457711815
+}
