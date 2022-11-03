@@ -33,9 +33,18 @@ jobs:
       run: dotnet build --no-restore
       working-directory: SkiResort
     
+    
+    
+    -name: Save Path to Project
+      run: sudo echo "PATH_TO_PROJECT=${PWD}" > .docker-env
+      working-directory: .
+      
+     
     - name: Run All Tests
-      run: ../run_all_tests.sh
-      working-directory: SkiResort
+      run: sudo ./run_all_tests.sh
+      working-directory: .
+      
+      
 
   #unitTesting:
     #name: Unit Testing
