@@ -1,0 +1,12 @@
+{
+  "uuid": "662e2796-7ae3-40c7-8000-902f6c61ec2b-AccessToDB.Tests.SlopesRepositoryTests",
+  "name": "AccessToDB.Tests.SlopesRepositoryTests",
+  "children": [
+    "b9bccd5b-0923-4b0a-8c27-74a0f126faae-AccessToDB.Tests.SlopesRepositoryTests.TestGetSlopeByNameAsyncFailsWhenNameNotExists(slopeName: \"slopeName61cfbe58-9e73-4841-b512-81be6c9891b3\")"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1667463847003,
+  "stop": 1667463847370
+}

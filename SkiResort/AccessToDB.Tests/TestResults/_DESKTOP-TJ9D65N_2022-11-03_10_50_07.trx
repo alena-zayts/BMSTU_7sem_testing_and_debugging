@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="ab7bcc80-9c25-41b0-bdb3-cce7725e40ce" name="@DESKTOP-TJ9D65N 2022-11-03 10:50:07" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2022-11-03T10:50:07.1975777+03:00" queuing="2022-11-03T10:50:07.1975778+03:00" start="2022-11-03T10:50:03.3059525+03:00" finish="2022-11-03T10:50:20.7476540+03:00" />
+  <TestSettings name="default" id="98c4fad3-d580-4d4a-8eeb-68675d3286eb">
+    <Deployment runDeploymentRoot="_DESKTOP-TJ9D65N_2022-11-03_10_50_07" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="e825af3c-aab5-492b-9b89-5ae5d68dd994" testId="b8aafd73-3a6f-7c7e-2406-56a2d411be81" testName="AccessToDB.Tests.LiftsSlopesRepositoryTests.TestGetLiftSlopeByIdAsyncOk(liftSlope: LiftSlope { RecordID = 214, LiftID = 148, SlopeID = 96 })" computerName="DESKTOP-TJ9D65N" duration="00:00:00.3856557" startTime="2022-11-03T10:50:15.5778549+03:00" endTime="2022-11-03T10:50:15.5778550+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e825af3c-aab5-492b-9b89-5ae5d68dd994" />
+    <UnitTestResult executionId="c6d002c8-2305-47ee-b93d-1157b935b6da" testId="fbfdf4b5-c32f-0787-828e-ff6942393092" testName="AccessToDB.Tests.UsersRepositoryTests.TestCheckUserIdExistsAsyncTrue(user: User { UserID = 33, CardID = 116, UserEmail = UserEmailb6ce32c2-9999-4ade-8af1-698ff505bfdf, Password = password796831d5-d6fc-4941-85e4-7201ba64ec5c, Permissions = UNAUTHORIZED })" computerName="DESKTOP-TJ9D65N" duration="00:00:00.3802896" startTime="2022-11-03T10:50:13.9339512+03:00" endTime="2022-11-03T10:50:13.9339515+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c6d002c8-2305-47ee-b93d-1157b935b6da" />
+    <UnitTestResult executionId="af6d5534-aa21-4861-ae14-8b841a2a3b8f" testId="6d5a2b01-d7d6-9e7a-4ec1-9ca92d273537" testName="AccessToDB.Tests.LiftsSlopesRepositoryTests.TestAddLiftSlopeAsyncFailsWhenLiftSlopeIdRepeats(liftSlope: LiftSlope { RecordID = 80, LiftID = 66, SlopeID = 11 })" computerName="DESKTOP-TJ9D65N" duration="00:00:00.4074111" startTime="2022-11-03T10:50:15.9992834+03:00" endTime="2022-11-03T10:50:15.9992835+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="af6d5534-aa21-4861-ae14-8b841a2a3b8f" />
+    <UnitTestResult executionId="181d3570-bcc2-4de5-8f57-14291f3ef769" testId="a43e2ea5-9953-2c86-40da-1277c0783438" testName="AccessToDB.Tests.UsersRepositoryTests.TestCheckUserEmailExistsAsyncFalse(userEmail: &quot;userEmaild2f98479-0ffe-4279-9a6c-da127c682ef1&quot;)" computerName="DESKTOP-TJ9D65N" duration="00:00:00.3619941" startTime="2022-11-03T10:50:13.5414654+03:00" endTime="2022-11-03T10:50:13.5414655+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="181d3570-bcc2-4de5-8f57-14291f3ef769" />
+    <UnitTestResult executionId="a5872c2e-c35f-4fc4-80a3-0c6a91073673" testId="e3bbeb5c-8c32-e7b6-9ea2-1eea1522fbd1" testName="AccessToDB.Tests.LiftsSlopesRepositoryTests.TestUpdateLiftSlopeByIDAsyncOk(liftSlope: LiftSlope { RecordID = 53, LiftID = 42, SlopeID = 28 })" computerName="DESKTOP-TJ9D65N" duration="00:00:00.3932131" startTime="2022-11-03T10:50:14.7572847+03:00" endTime="2022-11-03T10:50:14.7572848+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a5872c2e-c35f-4fc4-80a3-0c6a91073673" />
+    <UnitTestResult executionId="a52b41f9-1488-451e-8386-0dcccce80f14" testId="b2623160-e519-26bc-1efe-bebaa39b9d37" testName="AccessToDB.Tests.TurnstilesRepositoryTests.TestDeleteTurnstileByIDAsyncFailsWhenIDNotExists(turnstileID: 52)" computerName="DESKTOP-TJ9D65N" duration="00:00:00.3640302" startTime="2022-11-03T10:50:19.8195926+03:00" endTime="2022-11-03T10:50:19.8195928+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a52b41f9-1488-451e-8386-0dcccce80f14" />
+    <UnitTestResult executionId="ce418a2f-d71c-4659-ac07-3d953307f9bc" testId="e75bb6e2-88d9-af2a-a444-c4a9d67f0f0e" testName="AccessToDB.Tests.UsersRepositoryTests.TestAddUserAutoIncrementAsyncOk" computerName="DESKTOP-TJ9D65N" duration="00:00:00.4020213" startTime="2022-11-03T10:50:14.3507255+03:00" endTime="2022-11-03T10:50:14.3507256+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ce418a2f-d71c-4659-ac07-3d953307f9bc" />
+    <UnitTestResult executionId="a9bddf5d-15f9-46a6-bed9-9e0396c6dc9d" testId="9bbefb83-8311-6e03-307f-415e3495e223" testName="AccessToDB.Tests.SlopesRepositoryTests.TestGetSlopesAsyncEmpty" computerName="DESKTOP-TJ9D65N" duration="00:00:00.3637095" startTime="2022-11-03T10:50:08.3404349+03:00" endTime="2022-11-03T10:50:08.3404350+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a9bddf5d-15f9-46a6-bed9-9e0396c6dc9d" />
+    <UnitTestResult executionId="78f2249c-6d33-4e45-9fb1-6d49eb2dfa9e" testId="a036c02e-4ff3-be21-6f82-376999ca46cc" testName="AccessToDB.Tests.TurnstilesRepositoryTests.TestGetTurnstilesByLiftIdAsyncOk(liftID: 15)" computerName="DESKTOP-TJ9D65N" duration="00:00:00.4825305" startTime="2022-11-03T10:50:18.5668396+03:00" endTime="2022-11-03T10:50:18.5668397+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="78f2249c-6d33-4e45-9fb1-6d49eb2dfa9e" />
+    <UnitTestResult executionId="8fce6dfd-8f12-4f89-8294-9665ef643f24" testId="4145f44e-b4b1-a618-09e8-c631496e6f1a" testName="AccessToDB.Tests.LiftsSlopesRepositoryTests.TestGetLiftSlopesAsyncEmpty" computerName="DESKTOP-TJ9D65N" duration="00:00:00.3620628" startTime="2022-11-03T10:50:17.2285147+03:00" endTime="2022-11-03T10:50:17.2285148+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8fce6dfd-8f12-4f89-8294-9665ef643f24" />
+    <UnitTestResult executionId="95cd092f-4a35-4b5f-bd3f-0ff21892d656" testId="5479bcb9-94f6-fe00-721e-0cc3e710f009" testName="AccessToDB.Tests.SlopesRepositoryTests.TestUpdateSlopeByIDAsyncOk(slope: Slope { SlopeID = 17, SlopeName = slopeName25616b5d-9b76-4155-a80d-18a4a11fca6a, IsOpen = True, DifficultyLevel = 129, ConnectedLifts =  })" computerName="DESKTOP-TJ9D65N" duration="00:00:00.4682237" startTime="2022-11-03T10:50:05.9728223+03:00" endTime="2022-11-03T10:50:05.9728481+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="95cd092f-4a35-4b5f-bd3f-0ff21892d656" />
+    <UnitTestResult executionId="650ec938-f5db-40a0-8e64-5c747c3438bd" testId="ec229f70-485a-f91b-53ed-bce655f6cd58" testName="AccessToDB.Tests.LiftsRepositoryTests.TestAddLiftAutoIncrementAsyncOk" computerName="DESKTOP-TJ9D65N" duration="00:00:00.3905552" startTime="2022-11-03T10:50:08.7518726+03:00" endTime="2022-11-03T10:50:08.7518728+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="650ec938-f5db-40a0-8e64-5c747c3438bd" />
+    <UnitTestResult executionId="9788763b-5746-46d2-87d3-48b3c34700fd" testId="3741b26d-6ee0-6246-29e4-92009bff37b0" testName="AccessToDB.Tests.UsersRepositoryTests.TestGetUsersAsyncEmpty" computerName="DESKTOP-TJ9D65N" duration="00:00:00.3618576" startTime="2022-11-03T10:50:11.9293034+03:00" endTime="2022-11-03T10:50:11.9293034+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9788763b-5746-46d2-87d3-48b3c34700fd" />
+    <UnitTestResult executionId="4ea503d9-bca4-4431-b6af-727be9651e63" testId="cd61d574-1033-cf38-0b79-e8f697d601f7" testName="AccessToDB.Tests.UsersRepositoryTests.TestGetUserByIdAsyncOk(user: User { UserID = 157, CardID = 180, UserEmail = UserEmailb618bef1-41c8-44d4-85c2-a1720ae10d97, Password = passworda06e65c4-e252-482b-bba2-710d32756679, Permissions = UNAUTHORIZED })" computerName="DESKTOP-TJ9D65N" duration="00:00:00.3838602" startTime="2022-11-03T10:50:11.5541219+03:00" endTime="2022-11-03T10:50:11.5541220+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4ea503d9-bca4-4431-b6af-727be9651e63" />
+    <UnitTestResult executionId="9f05de04-fdad-405e-92e6-1c068c730511" testId="b48d4630-65b0-a3d5-cff3-818398193edd" testName="AccessToDB.Tests.UsersRepositoryTests.TestAddUserAsyncFailsWhenUserIdRepeats(user: User { UserID = 85, CardID = 245, UserEmail = UserEmailc435d652-4f56-4e05-bc47-2d24e4471cd7, Password = password01e5febf-5097-4302-bcec-febe1b162ae9, Permissions = UNAUTHORIZED })" computerName="DESKTOP-TJ9D65N" duration="00:00:00.3958814" startTime="2022-11-03T10:50:13.1601585+03:00" endTime="2022-11-03T10:50:13.1601587+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9f05de04-fdad-405e-92e6-1c068c730511" />
+    <UnitTestResult executionId="52e51630-f3c8-409d-8db8-dc16ff753727" testId="2bc8ffe7-8936-d863-2a54-5f7f88ed0c8e" testName="AccessToDB.Tests.LiftsSlopesRepositoryTests.TestGetSlopesByLiftIdAsyncFailsWhenSlopeNotExists(liftSlope: LiftSlope { RecordID = 105, LiftID = 234, SlopeID = 227 })" computerName="DESKTOP-TJ9D65N" duration="00:00:00.4201597" startTime="2022-11-03T10:50:16.4339146+03:00" endTime="2022-11-03T10:50:16.4339148+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="52e51630-f3c8-409d-8db8-dc16ff753727" />
+    <UnitTestResult executionId="0a141ad4-52ba-490a-9609-b7256ff7cef6" testId="5c0fc374-2e15-ad15-5cb3-1cf7d80c61ca" testName="AccessToDB.Tests.SlopesRepositoryTests.TestGetSlopeByIdAsyncOk(slope: Slope { SlopeID = 37, SlopeName = slopeName4e163d31-70b8-4ec6-98d8-a18e2c5b14e2, IsOpen = True, DifficultyLevel = 157, ConnectedLifts =  })" computerName="DESKTOP-TJ9D65N" duration="00:00:00.3823562" startTime="2022-11-03T10:50:07.1463156+03:00" endTime="2022-11-03T10:50:07.1463158+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0a141ad4-52ba-490a-9609-b7256ff7cef6" />
+    <UnitTestResult executionId="eea3f2b4-1d24-4a12-89b7-486f93bbddfa" testId="f23b591a-fbe3-e7c3-5257-534a22ae5df2" testName="AccessToDB.Tests.LiftsRepositoryTests.TestAddLiftAsyncFailsWhenLiftIdRepeats(lift: Lift { LiftID = 159, LiftName = liftName23c4ef2f-89fb-4a22-a905-b494682605bc, IsOpen = True, SeatsAmount = 98, LiftingTime = 67, QueueTime = 86, ConnectedSlopes =  })" computerName="DESKTOP-TJ9D65N" duration="00:00:00.4013297" startTime="2022-11-03T10:50:09.1669518+03:00" endTime="2022-11-03T10:50:09.1669522+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="eea3f2b4-1d24-4a12-89b7-486f93bbddfa" />
+    <UnitTestResult executionId="2daaeae4-e555-4b0d-a413-95e512bc84bb" testId="9c271bc0-95a2-a330-7d52-7321c70cc447" testName="AccessToDB.Tests.SlopesRepositoryTests.TestAddSlopeAsyncFailsWhenSlopeIdRepeats(slope: Slope { SlopeID = 116, SlopeName = slopeName32fa3f63-2212-4c2f-90c4-f5b4330418e4, IsOpen = True, DifficultyLevel = 188, ConnectedLifts =  })" computerName="DESKTOP-TJ9D65N" duration="00:00:00.3933073" startTime="2022-11-03T10:50:07.5455977+03:00" endTime="2022-11-03T10:50:07.5455980+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2daaeae4-e555-4b0d-a413-95e512bc84bb" />
+    <UnitTestResult executionId="2689b9b7-ff76-443b-a9d6-01215feb0fc9" testId="62d25e93-d760-9800-4c3f-01e8147ddd33" testName="AccessToDB.Tests.LiftsSlopesRepositoryTests.TestDeleteLiftSlopesByIDsAsyncOk(liftSlope: LiftSlope { RecordID = 218, LiftID = 93, SlopeID = 94 })" computerName="DESKTOP-TJ9D65N" duration="00:00:00.3931532" startTime="2022-11-03T10:50:15.1684547+03:00" endTime="2022-11-03T10:50:15.1684549+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2689b9b7-ff76-443b-a9d6-01215feb0fc9" />
+    <UnitTestResult executionId="c712a473-c78a-47d3-b6c2-685c31533c54" testId="97d4ca6f-3425-96b4-5014-2268ce4392c2" testName="AccessToDB.Tests.LiftsRepositoryTests.TestDeleteLiftByIDAsyncFailsWhenIDNotExists(liftID: 195)" computerName="DESKTOP-TJ9D65N" duration="00:00:00.3644885" startTime="2022-11-03T10:50:10.7365283+03:00" endTime="2022-11-03T10:50:10.7365286+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c712a473-c78a-47d3-b6c2-685c31533c54" />
+    <UnitTestResult executionId="69d8f095-5836-4b10-a1f5-cd1e65ebacfb" testId="7ceabed9-2906-041c-5c00-cd683a75bc8b" testName="AccessToDB.Tests.UsersRepositoryTests.TestDeleteUserByIDAsyncFailsWhenIDNotExists(userID: 234)" computerName="DESKTOP-TJ9D65N" duration="00:00:00.3591313" startTime="2022-11-03T10:50:12.2998513+03:00" endTime="2022-11-03T10:50:12.2998514+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="69d8f095-5836-4b10-a1f5-cd1e65ebacfb" />
+    <UnitTestResult executionId="11f44dd8-2718-4275-886f-1f9b664b7725" testId="e1f625d1-0b78-886e-5be5-83701a766aad" testName="AccessToDB.Tests.LiftsSlopesRepositoryTests.TestGetLiftsBySlopeIdAsyncOk(slope1: Slope { SlopeID = 121, SlopeName = slopeNamedd5a2418-a86e-4c2b-a20b-fc16af7b3830, IsOpen = True, DifficultyLevel = 138, ConnectedLifts =  }, slope2: Slope { SlopeID = 110, SlopeName = slopeNamec491b2a7-29e5-41c6-817a-6d213b99a4f8, IsOpen = False, DifficultyLevel = 23, ConnectedLifts =  }, lift1: Lift { LiftID = 245, LiftName = liftName84c8b480-579b-48e0-a671-8b6a0ea419e9, IsOpen = True, SeatsAmount = 6, LiftingTime = 219, QueueTime = 135, ConnectedSlopes =  }, lift2: Lift { LiftID = 204, LiftName = liftName11cf7829-3943-4018-9618-740062ce4692, IsOpen = False, SeatsAmount = 60, LiftingTime = 122, QueueTime = 47, ConnectedSlopes =  })" computerName="DESKTOP-TJ9D65N" duration="00:00:00.4371662" startTime="2022-11-03T10:50:17.6810362+03:00" endTime="2022-11-03T10:50:17.6810372+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="11f44dd8-2718-4275-886f-1f9b664b7725" />
+    <UnitTestResult executionId="d3f013e6-f213-436c-9599-37563d642e51" testId="339ae73d-dd5a-5a0b-0371-09df44f2deaa" testName="AccessToDB.Tests.LiftsRepositoryTests.TestUpdateLiftByIDAsyncOk(lift: Lift { LiftID = 5, LiftName = liftName7b24e5d5-2743-4a30-badb-900adf6d610f, IsOpen = True, SeatsAmount = 236, LiftingTime = 88, QueueTime = 130, ConnectedSlopes =  })" computerName="DESKTOP-TJ9D65N" duration="00:00:00.3916418" startTime="2022-11-03T10:50:11.1531347+03:00" endTime="2022-11-03T10:50:11.1531348+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d3f013e6-f213-436c-9599-37563d642e51" />
+    <UnitTestResult executionId="13d63bc8-671a-47c9-9fda-0a280800e6fe" testId="15f380f7-bd45-06d2-28dd-5348a9057175" testName="AccessToDB.Tests.LiftsRepositoryTests.TestGetLiftByIdAsyncOk(lift: Lift { LiftID = 45, LiftName = liftName78ae51da-8ad7-4ac4-a236-4bdceb5f1e72, IsOpen = True, SeatsAmount = 23, LiftingTime = 63, QueueTime = 233, ConnectedSlopes =  })" computerName="DESKTOP-TJ9D65N" duration="00:00:00.3936958" startTime="2022-11-03T10:50:09.5826144+03:00" endTime="2022-11-03T10:50:09.5826146+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="13d63bc8-671a-47c9-9fda-0a280800e6fe" />
+    <UnitTestResult executionId="44f1ce4f-98fa-44ed-b4be-32264d37c0a3" testId="3c521313-4ed6-6bce-b4f9-c359411028e7" testName="AccessToDB.Tests.TurnstilesRepositoryTests.TestGetTurnstilesAsyncEmpty" computerName="DESKTOP-TJ9D65N" duration="00:00:00.3617786" startTime="2022-11-03T10:50:20.2064789+03:00" endTime="2022-11-03T10:50:20.2064790+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="44f1ce4f-98fa-44ed-b4be-32264d37c0a3" />
+    <UnitTestResult executionId="254b5f93-68bc-43d5-9eb2-77ed063f55a1" testId="a17f9e3f-8480-0dbd-8d35-fb5c6534d991" testName="AccessToDB.Tests.TurnstilesRepositoryTests.TestGetTurnstileByIdAsyncOk(turnstile: Turnstile { TurnstileID = 162, LiftID = 205, IsOpen = True })" computerName="DESKTOP-TJ9D65N" duration="00:00:00.3853363" startTime="2022-11-03T10:50:19.4404620+03:00" endTime="2022-11-03T10:50:19.4404621+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="254b5f93-68bc-43d5-9eb2-77ed063f55a1" />
+    <UnitTestResult executionId="63cebea9-e939-425c-b45d-a99aef094eae" testId="43ea7df9-e09b-c7e5-2588-80ffcc65ab26" testName="AccessToDB.Tests.LiftsRepositoryTests.TestGetLiftByNameAsyncFailsWhenNameNotExists(liftName: &quot;liftNamea0947793-80d8-4f3d-9efe-80b690a16bc1&quot;)" computerName="DESKTOP-TJ9D65N" duration="00:00:00.3656073" startTime="2022-11-03T10:50:09.9719677+03:00" endTime="2022-11-03T10:50:09.9719679+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="63cebea9-e939-425c-b45d-a99aef094eae" />
+    <UnitTestResult executionId="229690cb-75c0-4225-9b39-d1bb7483ff44" testId="37ea128e-f88a-b1fa-a1c1-719883673141" testName="AccessToDB.Tests.TurnstilesRepositoryTests.TestAddTurnstileAsyncFailsWhenTurnstileIdRepeats(turnstile: Turnstile { TurnstileID = 204, LiftID = 155, IsOpen = True })" computerName="DESKTOP-TJ9D65N" duration="00:00:00.3952118" startTime="2022-11-03T10:50:19.0205634+03:00" endTime="2022-11-03T10:50:19.0205636+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="229690cb-75c0-4225-9b39-d1bb7483ff44" />
+    <UnitTestResult executionId="137ef8ec-44ea-4a35-b85e-b3794fc8d7ed" testId="a282d08c-5890-e033-2ca4-b29953a6dbba" testName="AccessToDB.Tests.SlopesRepositoryTests.TestDeleteSlopeByIDAsyncFailsWhenIDNotExists(slopeID: 79)" computerName="DESKTOP-TJ9D65N" duration="00:00:00.3618425" startTime="2022-11-03T10:50:06.3790462+03:00" endTime="2022-11-03T10:50:06.3790464+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="137ef8ec-44ea-4a35-b85e-b3794fc8d7ed" />
+    <UnitTestResult executionId="b0f4811f-1c10-4b7f-a4e0-8d1ac351870c" testId="30f8e924-9784-0a43-e807-094f70e06567" testName="AccessToDB.Tests.LiftsSlopesRepositoryTests.TestAddLiftSlopeAutoIncrementAsyncOk" computerName="DESKTOP-TJ9D65N" duration="00:00:00.3924370" startTime="2022-11-03T10:50:16.8492962+03:00" endTime="2022-11-03T10:50:16.8492964+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b0f4811f-1c10-4b7f-a4e0-8d1ac351870c" />
+    <UnitTestResult executionId="ac5e1aed-35eb-4c06-94c9-f2d48c25de84" testId="8f7ba917-f771-0dc5-f9b9-465c34344b12" testName="AccessToDB.Tests.SlopesRepositoryTests.TestAddSlopeAutoIncrementAsyncOk" computerName="DESKTOP-TJ9D65N" duration="00:00:00.3928850" startTime="2022-11-03T10:50:07.9622404+03:00" endTime="2022-11-03T10:50:07.9622405+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ac5e1aed-35eb-4c06-94c9-f2d48c25de84" />
+    <UnitTestResult executionId="5e8348f1-0640-4e78-84fc-7a22a9a42ca7" testId="8b651eb7-e444-0e59-853e-c7112fc36035" testName="AccessToDB.Tests.TurnstilesRepositoryTests.TestUpdateTurnstileByIDAsyncOk(turnstile: Turnstile { TurnstileID = 12, LiftID = 142, IsOpen = True })" computerName="DESKTOP-TJ9D65N" duration="00:00:00.0010000" startTime="2022-11-03T10:50:18.6019492+03:00" endTime="2022-11-03T10:50:18.6019494+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5e8348f1-0640-4e78-84fc-7a22a9a42ca7">
+      <Output>
+        <ErrorInfo>
+          <Message>ProGaudi.MsgPack.Light.ConverterNotFoundException : Converter not found for type ProGaudi.Tarantool.Client.Model.Headers.RequestHeader</Message>
+          <StackTrace>   at ProGaudi.MsgPack.Light.MsgPackContext.GetConverter[T]()
+   at ProGaudi.MsgPack.Light.MsgPackSerializer.GetConverter[T](MsgPackContext context)
+   at ProGaudi.MsgPack.Light.MsgPackSerializer.Serialize[T](T data, MemoryStream stream, MsgPackContext context)
+   at ProGaudi.Tarantool.Client.LogicalConnection.CreateAndSerializeHeader[TRequest](TRequest request, RequestId requestId)
+   at ProGaudi.Tarantool.Client.LogicalConnection.SendRequestImpl[TRequest](TRequest request, Nullable`1 timeout)
+   at ProGaudi.Tarantool.Client.LogicalConnection.SendRequest[TRequest,TResponse](TRequest request, Nullable`1 timeout)
+   at ProGaudi.Tarantool.Client.LogicalConnectionManager.SendRequest[TRequest,TResponse](TRequest request, Nullable`1 timeout)
+   at ProGaudi.Tarantool.Client.Schema.Select[T](UInt32 spaceId, Iterator iterator, UInt32 id)
+   at ProGaudi.Tarantool.Client.Schema.Reload()
+   at ProGaudi.Tarantool.Client.Box.Connect()
+   at ProGaudi.Tarantool.Client.Box.Connect(String replicationSource)
+   at AccessToDB.TarantoolContext.Initialize(String connection_string) in /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB/TarantoolContext.cs:line 51
+   at AccessToDB.TarantoolContext..ctor(String connection_string) in /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB/TarantoolContext.cs:line 32
+   at AccessToDB.Tests.TurnstilesRepositoryTests..ctor() in /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB.Tests/TurnstilesRepositoryTests.cs:line 29
+   at System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean wrapExceptions)</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e1dae43a-6c4f-47c6-a990-d4c60281c0ed" testId="f9435956-2e34-e52b-c34e-dce53665cf8e" testName="AccessToDB.Tests.TurnstilesRepositoryTests.TestAddTurnstileAutoIncrementAsyncOk" computerName="DESKTOP-TJ9D65N" duration="00:00:00.3946704" startTime="2022-11-03T10:50:20.6192397+03:00" endTime="2022-11-03T10:50:20.6192399+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e1dae43a-6c4f-47c6-a990-d4c60281c0ed" />
+    <UnitTestResult executionId="43237a96-5ca0-4052-9872-24a678f78123" testId="607e8298-f113-be33-300e-15a343893443" testName="AccessToDB.Tests.LiftsRepositoryTests.TestGetLiftsAsyncEmpty" computerName="DESKTOP-TJ9D65N" duration="00:00:00.3630857" startTime="2022-11-03T10:50:10.3583081+03:00" endTime="2022-11-03T10:50:10.3583081+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="43237a96-5ca0-4052-9872-24a678f78123" />
+    <UnitTestResult executionId="6eadc367-ebc9-4ad2-b885-32361a3fed83" testId="e1649567-ad63-0b86-a442-f896aa9f14ab" testName="AccessToDB.Tests.SlopesRepositoryTests.TestGetSlopeByNameAsyncFailsWhenNameNotExists(slopeName: &quot;slopeName8050370f-0b0c-498b-87ca-c8553145fb7b&quot;)" computerName="DESKTOP-TJ9D65N" duration="00:00:00.3631249" startTime="2022-11-03T10:50:06.7551816+03:00" endTime="2022-11-03T10:50:06.7551818+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6eadc367-ebc9-4ad2-b885-32361a3fed83" />
+    <UnitTestResult executionId="01fb11e1-9613-45ed-bd80-a0877a60432c" testId="0a64f836-ab31-00d4-7506-6311944f2363" testName="AccessToDB.Tests.LiftsSlopesRepositoryTests.TestDeleteLiftSlopeByIDAsyncFailsWhenIDNotExists(liftSlopeID: 134)" computerName="DESKTOP-TJ9D65N" duration="00:00:00.3629138" startTime="2022-11-03T10:50:18.0716943+03:00" endTime="2022-11-03T10:50:18.0716944+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="01fb11e1-9613-45ed-bd80-a0877a60432c" />
+    <UnitTestResult executionId="114e0c30-0634-4c34-9d52-b009afe6373a" testId="976143af-2adb-a476-e6a6-9d997c575f1f" testName="AccessToDB.Tests.UsersRepositoryTests.TestUpdateUserByIDAsyncOk(user: User { UserID = 62, CardID = 44, UserEmail = UserEmail83813fce-e007-4269-bdd8-e0620b5486a0, Password = password7294c3d6-9f6d-4a97-bfec-262187f9dae9, Permissions = UNAUTHORIZED })" computerName="DESKTOP-TJ9D65N" duration="00:00:00.0010000" startTime="2022-11-03T10:50:12.3773649+03:00" endTime="2022-11-03T10:50:12.3773650+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="114e0c30-0634-4c34-9d52-b009afe6373a">
+      <Output>
+        <ErrorInfo>
+          <Message>System.InvalidOperationException : Operations that change non-concurrent collections must have exclusive access. A concurrent update was performed on this collection and corrupted its state. The collection's state is no longer correct.</Message>
+          <StackTrace>   at System.Collections.Generic.Dictionary`2.FindValue(TKey key)
+   at System.Collections.Generic.Dictionary`2.TryGetValue(TKey key, TValue&amp; value)
+   at ProGaudi.MsgPack.Light.MsgPackContext.GetObjectActivator(Type type)
+   at ProGaudi.MsgPack.Light.MsgPackContext.&lt;&gt;c__DisplayClass27_0.&lt;TryGenerateArrayConverter&gt;b__0(Type x)
+   at ProGaudi.MsgPack.Light.MsgPackContext.TryGenerateArrayConverter(Type type)
+   at ProGaudi.MsgPack.Light.MsgPackContext.GetConverter[T]()
+   at ProGaudi.Tarantool.Client.Converters.ResponsePacketConverter`1.Initialize(MsgPackContext context)
+   at ProGaudi.MsgPack.Light.MsgPackContext.CreateAndInializeConverter(Func`1 converterActivator)
+   at ProGaudi.MsgPack.Light.MsgPackContext.TryGenerateConverterFromGenericConverter(Type type)
+   at ProGaudi.MsgPack.Light.MsgPackContext.GetConverter[T]()
+   at ProGaudi.MsgPack.Light.MsgPackSerializer.GetConverter[T](MsgPackContext context)
+   at ProGaudi.MsgPack.Light.MsgPackSerializer.Deserialize[T](MemoryStream stream, MsgPackContext context)
+   at ProGaudi.Tarantool.Client.LogicalConnection.SendRequest[TRequest,TResponse](TRequest request, Nullable`1 timeout)
+   at ProGaudi.Tarantool.Client.LogicalConnectionManager.SendRequest[TRequest,TResponse](TRequest request, Nullable`1 timeout)
+   at ProGaudi.Tarantool.Client.Schema.Select[T](UInt32 spaceId, Iterator iterator, UInt32 id)
+   at ProGaudi.Tarantool.Client.Schema.Reload()
+   at ProGaudi.Tarantool.Client.Box.Connect()
+   at ProGaudi.Tarantool.Client.Box.Connect(String replicationSource)
+   at AccessToDB.TarantoolContext.Initialize(String connection_string) in /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB/TarantoolContext.cs:line 51
+   at AccessToDB.TarantoolContext..ctor(String connection_string) in /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB/TarantoolContext.cs:line 32
+   at AccessToDB.Tests.UsersRepositoryTests..ctor() in /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB.Tests/UsersRepositoryTests.cs:line 28
+   at System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean wrapExceptions)</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="46c0a5ef-cf95-4c85-ac65-8c19907a4e78" testId="65381b8c-d09d-ae0d-5af0-cc95caa88d85" testName="AccessToDB.Tests.UsersRepositoryTests.TestGetUserByEmailAsyncFailsWhenEmailNotExists(email: &quot;email85751cac-399b-433c-8d0c-237c75cb6417&quot;)" computerName="DESKTOP-TJ9D65N" duration="00:00:00.3623542" startTime="2022-11-03T10:50:12.7423517+03:00" endTime="2022-11-03T10:50:12.7423519+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="46c0a5ef-cf95-4c85-ac65-8c19907a4e78" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="AccessToDB.Tests.TurnstilesRepositoryTests.TestAddTurnstileAutoIncrementAsyncOk" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/accesstodb.tests/bin/debug/net6.0/accesstodb.tests.dll" id="f9435956-2e34-e52b-c34e-dce53665cf8e">
+      <Execution id="e1dae43a-6c4f-47c6-a990-d4c60281c0ed" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB.Tests/bin/Debug/net6.0/AccessToDB.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="AccessToDB.Tests.TurnstilesRepositoryTests" name="TestAddTurnstileAutoIncrementAsyncOk" />
+    </UnitTest>
+    <UnitTest name="AccessToDB.Tests.LiftsSlopesRepositoryTests.TestGetSlopesByLiftIdAsyncFailsWhenSlopeNotExists(liftSlope: LiftSlope { RecordID = 105, LiftID = 234, SlopeID = 227 })" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/accesstodb.tests/bin/debug/net6.0/accesstodb.tests.dll" id="2bc8ffe7-8936-d863-2a54-5f7f88ed0c8e">
+      <Execution id="52e51630-f3c8-409d-8db8-dc16ff753727" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB.Tests/bin/Debug/net6.0/AccessToDB.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="AccessToDB.Tests.LiftsSlopesRepositoryTests" name="TestGetSlopesByLiftIdAsyncFailsWhenSlopeNotExists" />
+    </UnitTest>
+    <UnitTest name="AccessToDB.Tests.LiftsRepositoryTests.TestGetLiftsAsyncEmpty" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/accesstodb.tests/bin/debug/net6.0/accesstodb.tests.dll" id="607e8298-f113-be33-300e-15a343893443">
+      <Execution id="43237a96-5ca0-4052-9872-24a678f78123" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB.Tests/bin/Debug/net6.0/AccessToDB.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="AccessToDB.Tests.LiftsRepositoryTests" name="TestGetLiftsAsyncEmpty" />
+    </UnitTest>
+    <UnitTest name="AccessToDB.Tests.LiftsSlopesRepositoryTests.TestGetLiftsBySlopeIdAsyncOk(slope1: Slope { SlopeID = 121, SlopeName = slopeNamedd5a2418-a86e-4c2b-a20b-fc16af7b3830, IsOpen = True, DifficultyLevel = 138, ConnectedLifts =  }, slope2: Slope { SlopeID = 110, SlopeName = slopeNamec491b2a7-29e5-41c6-817a-6d213b99a4f8, IsOpen = False, DifficultyLevel = 23, ConnectedLifts =  }, lift1: Lift { LiftID = 245, LiftName = liftName84c8b480-579b-48e0-a671-8b..." storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/accesstodb.tests/bin/debug/net6.0/accesstodb.tests.dll" id="e1f625d1-0b78-886e-5be5-83701a766aad">
+      <Execution id="11f44dd8-2718-4275-886f-1f9b664b7725" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB.Tests/bin/Debug/net6.0/AccessToDB.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="AccessToDB.Tests.LiftsSlopesRepositoryTests" name="TestGetLiftsBySlopeIdAsyncOk" />
+    </UnitTest>
+    <UnitTest name="AccessToDB.Tests.SlopesRepositoryTests.TestAddSlopeAutoIncrementAsyncOk" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/accesstodb.tests/bin/debug/net6.0/accesstodb.tests.dll" id="8f7ba917-f771-0dc5-f9b9-465c34344b12">
+      <Execution id="ac5e1aed-35eb-4c06-94c9-f2d48c25de84" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB.Tests/bin/Debug/net6.0/AccessToDB.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="AccessToDB.Tests.SlopesRepositoryTests" name="TestAddSlopeAutoIncrementAsyncOk" />
+    </UnitTest>
+    <UnitTest name="AccessToDB.Tests.SlopesRepositoryTests.TestGetSlopeByNameAsyncFailsWhenNameNotExists(slopeName: &quot;slopeName8050370f-0b0c-498b-87ca-c8553145fb7b&quot;)" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/accesstodb.tests/bin/debug/net6.0/accesstodb.tests.dll" id="e1649567-ad63-0b86-a442-f896aa9f14ab">
+      <Execution id="6eadc367-ebc9-4ad2-b885-32361a3fed83" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB.Tests/bin/Debug/net6.0/AccessToDB.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="AccessToDB.Tests.SlopesRepositoryTests" name="TestGetSlopeByNameAsyncFailsWhenNameNotExists" />
+    </UnitTest>
+    <UnitTest name="AccessToDB.Tests.TurnstilesRepositoryTests.TestGetTurnstileByIdAsyncOk(turnstile: Turnstile { TurnstileID = 162, LiftID = 205, IsOpen = True })" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/accesstodb.tests/bin/debug/net6.0/accesstodb.tests.dll" id="a17f9e3f-8480-0dbd-8d35-fb5c6534d991">
+      <Execution id="254b5f93-68bc-43d5-9eb2-77ed063f55a1" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB.Tests/bin/Debug/net6.0/AccessToDB.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="AccessToDB.Tests.TurnstilesRepositoryTests" name="TestGetTurnstileByIdAsyncOk" />
+    </UnitTest>
+    <UnitTest name="AccessToDB.Tests.UsersRepositoryTests.TestCheckUserEmailExistsAsyncFalse(userEmail: &quot;userEmaild2f98479-0ffe-4279-9a6c-da127c682ef1&quot;)" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/accesstodb.tests/bin/debug/net6.0/accesstodb.tests.dll" id="a43e2ea5-9953-2c86-40da-1277c0783438">
+      <Execution id="181d3570-bcc2-4de5-8f57-14291f3ef769" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB.Tests/bin/Debug/net6.0/AccessToDB.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="AccessToDB.Tests.UsersRepositoryTests" name="TestCheckUserEmailExistsAsyncFalse" />
+    </UnitTest>
+    <UnitTest name="AccessToDB.Tests.LiftsSlopesRepositoryTests.TestDeleteLiftSlopesByIDsAsyncOk(liftSlope: LiftSlope { RecordID = 218, LiftID = 93, SlopeID = 94 })" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/accesstodb.tests/bin/debug/net6.0/accesstodb.tests.dll" id="62d25e93-d760-9800-4c3f-01e8147ddd33">
+      <Execution id="2689b9b7-ff76-443b-a9d6-01215feb0fc9" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB.Tests/bin/Debug/net6.0/AccessToDB.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="AccessToDB.Tests.LiftsSlopesRepositoryTests" name="TestDeleteLiftSlopesByIDsAsyncOk" />
+    </UnitTest>
+    <UnitTest name="AccessToDB.Tests.UsersRepositoryTests.TestGetUserByIdAsyncOk(user: User { UserID = 157, CardID = 180, UserEmail = UserEmailb618bef1-41c8-44d4-85c2-a1720ae10d97, Password = passworda06e65c4-e252-482b-bba2-710d32756679, Permissions = UNAUTHORIZED })" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/accesstodb.tests/bin/debug/net6.0/accesstodb.tests.dll" id="cd61d574-1033-cf38-0b79-e8f697d601f7">
+      <Execution id="4ea503d9-bca4-4431-b6af-727be9651e63" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB.Tests/bin/Debug/net6.0/AccessToDB.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="AccessToDB.Tests.UsersRepositoryTests" name="TestGetUserByIdAsyncOk" />
+    </UnitTest>
+    <UnitTest name="AccessToDB.Tests.TurnstilesRepositoryTests.TestDeleteTurnstileByIDAsyncFailsWhenIDNotExists(turnstileID: 52)" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/accesstodb.tests/bin/debug/net6.0/accesstodb.tests.dll" id="b2623160-e519-26bc-1efe-bebaa39b9d37">
+      <Execution id="a52b41f9-1488-451e-8386-0dcccce80f14" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB.Tests/bin/Debug/net6.0/AccessToDB.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="AccessToDB.Tests.TurnstilesRepositoryTests" name="TestDeleteTurnstileByIDAsyncFailsWhenIDNotExists" />
+    </UnitTest>
+    <UnitTest name="AccessToDB.Tests.LiftsSlopesRepositoryTests.TestAddLiftSlopeAsyncFailsWhenLiftSlopeIdRepeats(liftSlope: LiftSlope { RecordID = 80, LiftID = 66, SlopeID = 11 })" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/accesstodb.tests/bin/debug/net6.0/accesstodb.tests.dll" id="6d5a2b01-d7d6-9e7a-4ec1-9ca92d273537">
+      <Execution id="af6d5534-aa21-4861-ae14-8b841a2a3b8f" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB.Tests/bin/Debug/net6.0/AccessToDB.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="AccessToDB.Tests.LiftsSlopesRepositoryTests" name="TestAddLiftSlopeAsyncFailsWhenLiftSlopeIdRepeats" />
+    </UnitTest>
+    <UnitTest name="AccessToDB.Tests.SlopesRepositoryTests.TestDeleteSlopeByIDAsyncFailsWhenIDNotExists(slopeID: 79)" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/accesstodb.tests/bin/debug/net6.0/accesstodb.tests.dll" id="a282d08c-5890-e033-2ca4-b29953a6dbba">
+      <Execution id="137ef8ec-44ea-4a35-b85e-b3794fc8d7ed" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB.Tests/bin/Debug/net6.0/AccessToDB.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="AccessToDB.Tests.SlopesRepositoryTests" name="TestDeleteSlopeByIDAsyncFailsWhenIDNotExists" />
+    </UnitTest>
+    <UnitTest name="AccessToDB.Tests.LiftsSlopesRepositoryTests.TestAddLiftSlopeAutoIncrementAsyncOk" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/accesstodb.tests/bin/debug/net6.0/accesstodb.tests.dll" id="30f8e924-9784-0a43-e807-094f70e06567">
+      <Execution id="b0f4811f-1c10-4b7f-a4e0-8d1ac351870c" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB.Tests/bin/Debug/net6.0/AccessToDB.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="AccessToDB.Tests.LiftsSlopesRepositoryTests" name="TestAddLiftSlopeAutoIncrementAsyncOk" />
+    </UnitTest>
+    <UnitTest name="AccessToDB.Tests.TurnstilesRepositoryTests.TestGetTurnstilesByLiftIdAsyncOk(liftID: 15)" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/accesstodb.tests/bin/debug/net6.0/accesstodb.tests.dll" id="a036c02e-4ff3-be21-6f82-376999ca46cc">
+      <Execution id="78f2249c-6d33-4e45-9fb1-6d49eb2dfa9e" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB.Tests/bin/Debug/net6.0/AccessToDB.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="AccessToDB.Tests.TurnstilesRepositoryTests" name="TestGetTurnstilesByLiftIdAsyncOk" />
+    </UnitTest>
+    <UnitTest name="AccessToDB.Tests.UsersRepositoryTests.TestGetUsersAsyncEmpty" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/accesstodb.tests/bin/debug/net6.0/accesstodb.tests.dll" id="3741b26d-6ee0-6246-29e4-92009bff37b0">
+      <Execution id="9788763b-5746-46d2-87d3-48b3c34700fd" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB.Tests/bin/Debug/net6.0/AccessToDB.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="AccessToDB.Tests.UsersRepositoryTests" name="TestGetUsersAsyncEmpty" />
+    </UnitTest>
+    <UnitTest name="AccessToDB.Tests.SlopesRepositoryTests.TestUpdateSlopeByIDAsyncOk(slope: Slope { SlopeID = 17, SlopeName = slopeName25616b5d-9b76-4155-a80d-18a4a11fca6a, IsOpen = True, DifficultyLevel = 129, ConnectedLifts =  })" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/accesstodb.tests/bin/debug/net6.0/accesstodb.tests.dll" id="5479bcb9-94f6-fe00-721e-0cc3e710f009">
+      <Execution id="95cd092f-4a35-4b5f-bd3f-0ff21892d656" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB.Tests/bin/Debug/net6.0/AccessToDB.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="AccessToDB.Tests.SlopesRepositoryTests" name="TestUpdateSlopeByIDAsyncOk" />
+    </UnitTest>
+    <UnitTest name="AccessToDB.Tests.LiftsSlopesRepositoryTests.TestGetLiftSlopesAsyncEmpty" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/accesstodb.tests/bin/debug/net6.0/accesstodb.tests.dll" id="4145f44e-b4b1-a618-09e8-c631496e6f1a">
+      <Execution id="8fce6dfd-8f12-4f89-8294-9665ef643f24" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB.Tests/bin/Debug/net6.0/AccessToDB.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="AccessToDB.Tests.LiftsSlopesRepositoryTests" name="TestGetLiftSlopesAsyncEmpty" />
+    </UnitTest>
+    <UnitTest name="AccessToDB.Tests.SlopesRepositoryTests.TestAddSlopeAsyncFailsWhenSlopeIdRepeats(slope: Slope { SlopeID = 116, SlopeName = slopeName32fa3f63-2212-4c2f-90c4-f5b4330418e4, IsOpen = True, DifficultyLevel = 188, ConnectedLifts =  })" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/accesstodb.tests/bin/debug/net6.0/accesstodb.tests.dll" id="9c271bc0-95a2-a330-7d52-7321c70cc447">
+      <Execution id="2daaeae4-e555-4b0d-a413-95e512bc84bb" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB.Tests/bin/Debug/net6.0/AccessToDB.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="AccessToDB.Tests.SlopesRepositoryTests" name="TestAddSlopeAsyncFailsWhenSlopeIdRepeats" />
+    </UnitTest>
+    <UnitTest name="AccessToDB.Tests.LiftsSlopesRepositoryTests.TestGetLiftSlopeByIdAsyncOk(liftSlope: LiftSlope { RecordID = 214, LiftID = 148, SlopeID = 96 })" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/accesstodb.tests/bin/debug/net6.0/accesstodb.tests.dll" id="b8aafd73-3a6f-7c7e-2406-56a2d411be81">
+      <Execution id="e825af3c-aab5-492b-9b89-5ae5d68dd994" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB.Tests/bin/Debug/net6.0/AccessToDB.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="AccessToDB.Tests.LiftsSlopesRepositoryTests" name="TestGetLiftSlopeByIdAsyncOk" />
+    </UnitTest>
+    <UnitTest name="AccessToDB.Tests.LiftsRepositoryTests.TestAddLiftAutoIncrementAsyncOk" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/accesstodb.tests/bin/debug/net6.0/accesstodb.tests.dll" id="ec229f70-485a-f91b-53ed-bce655f6cd58">
+      <Execution id="650ec938-f5db-40a0-8e64-5c747c3438bd" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB.Tests/bin/Debug/net6.0/AccessToDB.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="AccessToDB.Tests.LiftsRepositoryTests" name="TestAddLiftAutoIncrementAsyncOk" />
+    </UnitTest>
+    <UnitTest name="AccessToDB.Tests.LiftsRepositoryTests.TestAddLiftAsyncFailsWhenLiftIdRepeats(lift: Lift { LiftID = 159, LiftName = liftName23c4ef2f-89fb-4a22-a905-b494682605bc, IsOpen = True, SeatsAmount = 98, LiftingTime = 67, QueueTime = 86, ConnectedSlopes =  })" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/accesstodb.tests/bin/debug/net6.0/accesstodb.tests.dll" id="f23b591a-fbe3-e7c3-5257-534a22ae5df2">
+      <Execution id="eea3f2b4-1d24-4a12-89b7-486f93bbddfa" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB.Tests/bin/Debug/net6.0/AccessToDB.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="AccessToDB.Tests.LiftsRepositoryTests" name="TestAddLiftAsyncFailsWhenLiftIdRepeats" />
+    </UnitTest>
+    <UnitTest name="AccessToDB.Tests.LiftsRepositoryTests.TestUpdateLiftByIDAsyncOk(lift: Lift { LiftID = 5, LiftName = liftName7b24e5d5-2743-4a30-badb-900adf6d610f, IsOpen = True, SeatsAmount = 236, LiftingTime = 88, QueueTime = 130, ConnectedSlopes =  })" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/accesstodb.tests/bin/debug/net6.0/accesstodb.tests.dll" id="339ae73d-dd5a-5a0b-0371-09df44f2deaa">
+      <Execution id="d3f013e6-f213-436c-9599-37563d642e51" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB.Tests/bin/Debug/net6.0/AccessToDB.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="AccessToDB.Tests.LiftsRepositoryTests" name="TestUpdateLiftByIDAsyncOk" />
+    </UnitTest>
+    <UnitTest name="AccessToDB.Tests.LiftsSlopesRepositoryTests.TestDeleteLiftSlopeByIDAsyncFailsWhenIDNotExists(liftSlopeID: 134)" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/accesstodb.tests/bin/debug/net6.0/accesstodb.tests.dll" id="0a64f836-ab31-00d4-7506-6311944f2363">
+      <Execution id="01fb11e1-9613-45ed-bd80-a0877a60432c" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB.Tests/bin/Debug/net6.0/AccessToDB.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="AccessToDB.Tests.LiftsSlopesRepositoryTests" name="TestDeleteLiftSlopeByIDAsyncFailsWhenIDNotExists" />
+    </UnitTest>
+    <UnitTest name="AccessToDB.Tests.UsersRepositoryTests.TestGetUserByEmailAsyncFailsWhenEmailNotExists(email: &quot;email85751cac-399b-433c-8d0c-237c75cb6417&quot;)" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/accesstodb.tests/bin/debug/net6.0/accesstodb.tests.dll" id="65381b8c-d09d-ae0d-5af0-cc95caa88d85">
+      <Execution id="46c0a5ef-cf95-4c85-ac65-8c19907a4e78" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB.Tests/bin/Debug/net6.0/AccessToDB.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="AccessToDB.Tests.UsersRepositoryTests" name="TestGetUserByEmailAsyncFailsWhenEmailNotExists" />
+    </UnitTest>
+    <UnitTest name="AccessToDB.Tests.LiftsRepositoryTests.TestDeleteLiftByIDAsyncFailsWhenIDNotExists(liftID: 195)" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/accesstodb.tests/bin/debug/net6.0/accesstodb.tests.dll" id="97d4ca6f-3425-96b4-5014-2268ce4392c2">
+      <Execution id="c712a473-c78a-47d3-b6c2-685c31533c54" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB.Tests/bin/Debug/net6.0/AccessToDB.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="AccessToDB.Tests.LiftsRepositoryTests" name="TestDeleteLiftByIDAsyncFailsWhenIDNotExists" />
+    </UnitTest>
+    <UnitTest name="AccessToDB.Tests.SlopesRepositoryTests.TestGetSlopeByIdAsyncOk(slope: Slope { SlopeID = 37, SlopeName = slopeName4e163d31-70b8-4ec6-98d8-a18e2c5b14e2, IsOpen = True, DifficultyLevel = 157, ConnectedLifts =  })" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/accesstodb.tests/bin/debug/net6.0/accesstodb.tests.dll" id="5c0fc374-2e15-ad15-5cb3-1cf7d80c61ca">
+      <Execution id="0a141ad4-52ba-490a-9609-b7256ff7cef6" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB.Tests/bin/Debug/net6.0/AccessToDB.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="AccessToDB.Tests.SlopesRepositoryTests" name="TestGetSlopeByIdAsyncOk" />
+    </UnitTest>
+    <UnitTest name="AccessToDB.Tests.TurnstilesRepositoryTests.TestAddTurnstileAsyncFailsWhenTurnstileIdRepeats(turnstile: Turnstile { TurnstileID = 204, LiftID = 155, IsOpen = True })" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/accesstodb.tests/bin/debug/net6.0/accesstodb.tests.dll" id="37ea128e-f88a-b1fa-a1c1-719883673141">
+      <Execution id="229690cb-75c0-4225-9b39-d1bb7483ff44" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB.Tests/bin/Debug/net6.0/AccessToDB.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="AccessToDB.Tests.TurnstilesRepositoryTests" name="TestAddTurnstileAsyncFailsWhenTurnstileIdRepeats" />
+    </UnitTest>
+    <UnitTest name="AccessToDB.Tests.LiftsRepositoryTests.TestGetLiftByIdAsyncOk(lift: Lift { LiftID = 45, LiftName = liftName78ae51da-8ad7-4ac4-a236-4bdceb5f1e72, IsOpen = True, SeatsAmount = 23, LiftingTime = 63, QueueTime = 233, ConnectedSlopes =  })" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/accesstodb.tests/bin/debug/net6.0/accesstodb.tests.dll" id="15f380f7-bd45-06d2-28dd-5348a9057175">
+      <Execution id="13d63bc8-671a-47c9-9fda-0a280800e6fe" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB.Tests/bin/Debug/net6.0/AccessToDB.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="AccessToDB.Tests.LiftsRepositoryTests" name="TestGetLiftByIdAsyncOk" />
+    </UnitTest>
+    <UnitTest name="AccessToDB.Tests.UsersRepositoryTests.TestDeleteUserByIDAsyncFailsWhenIDNotExists(userID: 234)" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/accesstodb.tests/bin/debug/net6.0/accesstodb.tests.dll" id="7ceabed9-2906-041c-5c00-cd683a75bc8b">
+      <Execution id="69d8f095-5836-4b10-a1f5-cd1e65ebacfb" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB.Tests/bin/Debug/net6.0/AccessToDB.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="AccessToDB.Tests.UsersRepositoryTests" name="TestDeleteUserByIDAsyncFailsWhenIDNotExists" />
+    </UnitTest>
+    <UnitTest name="AccessToDB.Tests.LiftsRepositoryTests.TestGetLiftByNameAsyncFailsWhenNameNotExists(liftName: &quot;liftNamea0947793-80d8-4f3d-9efe-80b690a16bc1&quot;)" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/accesstodb.tests/bin/debug/net6.0/accesstodb.tests.dll" id="43ea7df9-e09b-c7e5-2588-80ffcc65ab26">
+      <Execution id="63cebea9-e939-425c-b45d-a99aef094eae" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB.Tests/bin/Debug/net6.0/AccessToDB.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="AccessToDB.Tests.LiftsRepositoryTests" name="TestGetLiftByNameAsyncFailsWhenNameNotExists" />
+    </UnitTest>
+    <UnitTest name="AccessToDB.Tests.LiftsSlopesRepositoryTests.TestUpdateLiftSlopeByIDAsyncOk(liftSlope: LiftSlope { RecordID = 53, LiftID = 42, SlopeID = 28 })" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/accesstodb.tests/bin/debug/net6.0/accesstodb.tests.dll" id="e3bbeb5c-8c32-e7b6-9ea2-1eea1522fbd1">
+      <Execution id="a5872c2e-c35f-4fc4-80a3-0c6a91073673" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB.Tests/bin/Debug/net6.0/AccessToDB.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="AccessToDB.Tests.LiftsSlopesRepositoryTests" name="TestUpdateLiftSlopeByIDAsyncOk" />
+    </UnitTest>
+    <UnitTest name="AccessToDB.Tests.TurnstilesRepositoryTests.TestUpdateTurnstileByIDAsyncOk(turnstile: Turnstile { TurnstileID = 12, LiftID = 142, IsOpen = True })" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/accesstodb.tests/bin/debug/net6.0/accesstodb.tests.dll" id="8b651eb7-e444-0e59-853e-c7112fc36035">
+      <Execution id="5e8348f1-0640-4e78-84fc-7a22a9a42ca7" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB.Tests/bin/Debug/net6.0/AccessToDB.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="AccessToDB.Tests.TurnstilesRepositoryTests" name="TestUpdateTurnstileByIDAsyncOk" />
+    </UnitTest>
+    <UnitTest name="AccessToDB.Tests.UsersRepositoryTests.TestAddUserAutoIncrementAsyncOk" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/accesstodb.tests/bin/debug/net6.0/accesstodb.tests.dll" id="e75bb6e2-88d9-af2a-a444-c4a9d67f0f0e">
+      <Execution id="ce418a2f-d71c-4659-ac07-3d953307f9bc" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB.Tests/bin/Debug/net6.0/AccessToDB.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="AccessToDB.Tests.UsersRepositoryTests" name="TestAddUserAutoIncrementAsyncOk" />
+    </UnitTest>
+    <UnitTest name="AccessToDB.Tests.UsersRepositoryTests.TestCheckUserIdExistsAsyncTrue(user: User { UserID = 33, CardID = 116, UserEmail = UserEmailb6ce32c2-9999-4ade-8af1-698ff505bfdf, Password = password796831d5-d6fc-4941-85e4-7201ba64ec5c, Permissions = UNAUTHORIZED })" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/accesstodb.tests/bin/debug/net6.0/accesstodb.tests.dll" id="fbfdf4b5-c32f-0787-828e-ff6942393092">
+      <Execution id="c6d002c8-2305-47ee-b93d-1157b935b6da" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB.Tests/bin/Debug/net6.0/AccessToDB.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="AccessToDB.Tests.UsersRepositoryTests" name="TestCheckUserIdExistsAsyncTrue" />
+    </UnitTest>
+    <UnitTest name="AccessToDB.Tests.TurnstilesRepositoryTests.TestGetTurnstilesAsyncEmpty" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/accesstodb.tests/bin/debug/net6.0/accesstodb.tests.dll" id="3c521313-4ed6-6bce-b4f9-c359411028e7">
+      <Execution id="44f1ce4f-98fa-44ed-b4be-32264d37c0a3" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB.Tests/bin/Debug/net6.0/AccessToDB.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="AccessToDB.Tests.TurnstilesRepositoryTests" name="TestGetTurnstilesAsyncEmpty" />
+    </UnitTest>
+    <UnitTest name="AccessToDB.Tests.UsersRepositoryTests.TestAddUserAsyncFailsWhenUserIdRepeats(user: User { UserID = 85, CardID = 245, UserEmail = UserEmailc435d652-4f56-4e05-bc47-2d24e4471cd7, Password = password01e5febf-5097-4302-bcec-febe1b162ae9, Permissions = UNAUTHORIZED })" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/accesstodb.tests/bin/debug/net6.0/accesstodb.tests.dll" id="b48d4630-65b0-a3d5-cff3-818398193edd">
+      <Execution id="9f05de04-fdad-405e-92e6-1c068c730511" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB.Tests/bin/Debug/net6.0/AccessToDB.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="AccessToDB.Tests.UsersRepositoryTests" name="TestAddUserAsyncFailsWhenUserIdRepeats" />
+    </UnitTest>
+    <UnitTest name="AccessToDB.Tests.UsersRepositoryTests.TestUpdateUserByIDAsyncOk(user: User { UserID = 62, CardID = 44, UserEmail = UserEmail83813fce-e007-4269-bdd8-e0620b5486a0, Password = password7294c3d6-9f6d-4a97-bfec-262187f9dae9, Permissions = UNAUTHORIZED })" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/accesstodb.tests/bin/debug/net6.0/accesstodb.tests.dll" id="976143af-2adb-a476-e6a6-9d997c575f1f">
+      <Execution id="114e0c30-0634-4c34-9d52-b009afe6373a" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB.Tests/bin/Debug/net6.0/AccessToDB.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="AccessToDB.Tests.UsersRepositoryTests" name="TestUpdateUserByIDAsyncOk" />
+    </UnitTest>
+    <UnitTest name="AccessToDB.Tests.SlopesRepositoryTests.TestGetSlopesAsyncEmpty" storage="/mnt/c/users/alena/desktop/7_sem/testing_and_debugging/skiresort/accesstodb.tests/bin/debug/net6.0/accesstodb.tests.dll" id="9bbefb83-8311-6e03-307f-415e3495e223">
+      <Execution id="a9bddf5d-15f9-46a6-bed9-9e0396c6dc9d" />
+      <TestMethod codeBase="/mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB.Tests/bin/Debug/net6.0/AccessToDB.Tests.dll" adapterTypeName="executor://xunit/VsTestRunner2/netcoreapp" className="AccessToDB.Tests.SlopesRepositoryTests" name="TestGetSlopesAsyncEmpty" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="b8aafd73-3a6f-7c7e-2406-56a2d411be81" executionId="e825af3c-aab5-492b-9b89-5ae5d68dd994" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fbfdf4b5-c32f-0787-828e-ff6942393092" executionId="c6d002c8-2305-47ee-b93d-1157b935b6da" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6d5a2b01-d7d6-9e7a-4ec1-9ca92d273537" executionId="af6d5534-aa21-4861-ae14-8b841a2a3b8f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a43e2ea5-9953-2c86-40da-1277c0783438" executionId="181d3570-bcc2-4de5-8f57-14291f3ef769" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e3bbeb5c-8c32-e7b6-9ea2-1eea1522fbd1" executionId="a5872c2e-c35f-4fc4-80a3-0c6a91073673" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b2623160-e519-26bc-1efe-bebaa39b9d37" executionId="a52b41f9-1488-451e-8386-0dcccce80f14" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e75bb6e2-88d9-af2a-a444-c4a9d67f0f0e" executionId="ce418a2f-d71c-4659-ac07-3d953307f9bc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9bbefb83-8311-6e03-307f-415e3495e223" executionId="a9bddf5d-15f9-46a6-bed9-9e0396c6dc9d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a036c02e-4ff3-be21-6f82-376999ca46cc" executionId="78f2249c-6d33-4e45-9fb1-6d49eb2dfa9e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4145f44e-b4b1-a618-09e8-c631496e6f1a" executionId="8fce6dfd-8f12-4f89-8294-9665ef643f24" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5479bcb9-94f6-fe00-721e-0cc3e710f009" executionId="95cd092f-4a35-4b5f-bd3f-0ff21892d656" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ec229f70-485a-f91b-53ed-bce655f6cd58" executionId="650ec938-f5db-40a0-8e64-5c747c3438bd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3741b26d-6ee0-6246-29e4-92009bff37b0" executionId="9788763b-5746-46d2-87d3-48b3c34700fd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cd61d574-1033-cf38-0b79-e8f697d601f7" executionId="4ea503d9-bca4-4431-b6af-727be9651e63" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b48d4630-65b0-a3d5-cff3-818398193edd" executionId="9f05de04-fdad-405e-92e6-1c068c730511" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2bc8ffe7-8936-d863-2a54-5f7f88ed0c8e" executionId="52e51630-f3c8-409d-8db8-dc16ff753727" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5c0fc374-2e15-ad15-5cb3-1cf7d80c61ca" executionId="0a141ad4-52ba-490a-9609-b7256ff7cef6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f23b591a-fbe3-e7c3-5257-534a22ae5df2" executionId="eea3f2b4-1d24-4a12-89b7-486f93bbddfa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9c271bc0-95a2-a330-7d52-7321c70cc447" executionId="2daaeae4-e555-4b0d-a413-95e512bc84bb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="62d25e93-d760-9800-4c3f-01e8147ddd33" executionId="2689b9b7-ff76-443b-a9d6-01215feb0fc9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="97d4ca6f-3425-96b4-5014-2268ce4392c2" executionId="c712a473-c78a-47d3-b6c2-685c31533c54" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7ceabed9-2906-041c-5c00-cd683a75bc8b" executionId="69d8f095-5836-4b10-a1f5-cd1e65ebacfb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e1f625d1-0b78-886e-5be5-83701a766aad" executionId="11f44dd8-2718-4275-886f-1f9b664b7725" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="339ae73d-dd5a-5a0b-0371-09df44f2deaa" executionId="d3f013e6-f213-436c-9599-37563d642e51" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="15f380f7-bd45-06d2-28dd-5348a9057175" executionId="13d63bc8-671a-47c9-9fda-0a280800e6fe" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3c521313-4ed6-6bce-b4f9-c359411028e7" executionId="44f1ce4f-98fa-44ed-b4be-32264d37c0a3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a17f9e3f-8480-0dbd-8d35-fb5c6534d991" executionId="254b5f93-68bc-43d5-9eb2-77ed063f55a1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="43ea7df9-e09b-c7e5-2588-80ffcc65ab26" executionId="63cebea9-e939-425c-b45d-a99aef094eae" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="37ea128e-f88a-b1fa-a1c1-719883673141" executionId="229690cb-75c0-4225-9b39-d1bb7483ff44" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a282d08c-5890-e033-2ca4-b29953a6dbba" executionId="137ef8ec-44ea-4a35-b85e-b3794fc8d7ed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="30f8e924-9784-0a43-e807-094f70e06567" executionId="b0f4811f-1c10-4b7f-a4e0-8d1ac351870c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8f7ba917-f771-0dc5-f9b9-465c34344b12" executionId="ac5e1aed-35eb-4c06-94c9-f2d48c25de84" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8b651eb7-e444-0e59-853e-c7112fc36035" executionId="5e8348f1-0640-4e78-84fc-7a22a9a42ca7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f9435956-2e34-e52b-c34e-dce53665cf8e" executionId="e1dae43a-6c4f-47c6-a990-d4c60281c0ed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="607e8298-f113-be33-300e-15a343893443" executionId="43237a96-5ca0-4052-9872-24a678f78123" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e1649567-ad63-0b86-a442-f896aa9f14ab" executionId="6eadc367-ebc9-4ad2-b885-32361a3fed83" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0a64f836-ab31-00d4-7506-6311944f2363" executionId="01fb11e1-9613-45ed-bd80-a0877a60432c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="976143af-2adb-a476-e6a6-9d997c575f1f" executionId="114e0c30-0634-4c34-9d52-b009afe6373a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="65381b8c-d09d-ae0d-5af0-cc95caa88d85" executionId="46c0a5ef-cf95-4c85-ac65-8c19907a4e78" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="39" executed="39" passed="37" failed="2" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>[xUnit.net 00:00:00.00] xUnit.net VSTest Adapter v2.4.5+1caef2f33e (64-bit .NET 6.0.10)
+[xUnit.net 00:00:01.06]   Discovering: AccessToDB.Tests
+[xUnit.net 00:00:01.18]   Discovered:  AccessToDB.Tests
+[xUnit.net 00:00:01.18]   Starting:    AccessToDB.Tests
+[xUnit.net 00:00:08.14]       System.InvalidOperationException : Operations that change non-concurrent collections must have exclusive access. A concurrent update was performed on this collection and corrupted its state. The collection's state is no longer correct.
+[xUnit.net 00:00:08.14]       Stack Trace:
+[xUnit.net 00:00:08.15]            at System.Collections.Generic.Dictionary`2.FindValue(TKey key)
+[xUnit.net 00:00:08.15]            at System.Collections.Generic.Dictionary`2.TryGetValue(TKey key, TValue&amp; value)
+[xUnit.net 00:00:08.15]            at ProGaudi.MsgPack.Light.MsgPackContext.GetObjectActivator(Type type)
+[xUnit.net 00:00:08.15]            at ProGaudi.MsgPack.Light.MsgPackContext.&lt;&gt;c__DisplayClass27_0.&lt;TryGenerateArrayConverter&gt;b__0(Type x)
+[xUnit.net 00:00:08.15]            at ProGaudi.MsgPack.Light.MsgPackContext.TryGenerateArrayConverter(Type type)
+[xUnit.net 00:00:08.15]            at ProGaudi.MsgPack.Light.MsgPackContext.GetConverter[T]()
+[xUnit.net 00:00:08.15]            at ProGaudi.Tarantool.Client.Converters.ResponsePacketConverter`1.Initialize(MsgPackContext context)
+[xUnit.net 00:00:08.15]            at ProGaudi.MsgPack.Light.MsgPackContext.CreateAndInializeConverter(Func`1 converterActivator)
+[xUnit.net 00:00:08.15]            at ProGaudi.MsgPack.Light.MsgPackContext.TryGenerateConverterFromGenericConverter(Type type)
+[xUnit.net 00:00:08.15]            at ProGaudi.MsgPack.Light.MsgPackContext.GetConverter[T]()
+[xUnit.net 00:00:08.15]            at ProGaudi.MsgPack.Light.MsgPackSerializer.GetConverter[T](MsgPackContext context)
+[xUnit.net 00:00:08.15]            at ProGaudi.MsgPack.Light.MsgPackSerializer.Deserialize[T](MemoryStream stream, MsgPackContext context)
+[xUnit.net 00:00:08.15]            at ProGaudi.Tarantool.Client.LogicalConnection.SendRequest[TRequest,TResponse](TRequest request, Nullable`1 timeout)
+[xUnit.net 00:00:08.15]            at ProGaudi.Tarantool.Client.LogicalConnectionManager.SendRequest[TRequest,TResponse](TRequest request, Nullable`1 timeout)
+[xUnit.net 00:00:08.15]            at ProGaudi.Tarantool.Client.Schema.Select[T](UInt32 spaceId, Iterator iterator, UInt32 id)
+[xUnit.net 00:00:08.15]            at ProGaudi.Tarantool.Client.Schema.Reload()
+[xUnit.net 00:00:08.15]            at ProGaudi.Tarantool.Client.Box.Connect()
+[xUnit.net 00:00:08.15]            at ProGaudi.Tarantool.Client.Box.Connect(String replicationSource)
+[xUnit.net 00:00:08.15]         /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB/TarantoolContext.cs(51,0): at AccessToDB.TarantoolContext.Initialize(String connection_string)
+[xUnit.net 00:00:08.15]         /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB/TarantoolContext.cs(32,0): at AccessToDB.TarantoolContext..ctor(String connection_string)
+[xUnit.net 00:00:08.15]         /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB.Tests/UsersRepositoryTests.cs(28,0): at AccessToDB.Tests.UsersRepositoryTests..ctor()
+[xUnit.net 00:00:08.15]            at System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean wrapExceptions)
+[xUnit.net 00:00:14.37]       ProGaudi.MsgPack.Light.ConverterNotFoundException : Converter not found for type ProGaudi.Tarantool.Client.Model.Headers.RequestHeader
+[xUnit.net 00:00:14.37]       Stack Trace:
+[xUnit.net 00:00:14.37]            at ProGaudi.MsgPack.Light.MsgPackContext.GetConverter[T]()
+[xUnit.net 00:00:14.37]            at ProGaudi.MsgPack.Light.MsgPackSerializer.GetConverter[T](MsgPackContext context)
+[xUnit.net 00:00:14.37]            at ProGaudi.MsgPack.Light.MsgPackSerializer.Serialize[T](T data, MemoryStream stream, MsgPackContext context)
+[xUnit.net 00:00:14.37]            at ProGaudi.Tarantool.Client.LogicalConnection.CreateAndSerializeHeader[TRequest](TRequest request, RequestId requestId)
+[xUnit.net 00:00:14.37]            at ProGaudi.Tarantool.Client.LogicalConnection.SendRequestImpl[TRequest](TRequest request, Nullable`1 timeout)
+[xUnit.net 00:00:14.37]            at ProGaudi.Tarantool.Client.LogicalConnection.SendRequest[TRequest,TResponse](TRequest request, Nullable`1 timeout)
+[xUnit.net 00:00:14.37]            at ProGaudi.Tarantool.Client.LogicalConnectionManager.SendRequest[TRequest,TResponse](TRequest request, Nullable`1 timeout)
+[xUnit.net 00:00:14.37]            at ProGaudi.Tarantool.Client.Schema.Select[T](UInt32 spaceId, Iterator iterator, UInt32 id)
+[xUnit.net 00:00:14.37]            at ProGaudi.Tarantool.Client.Schema.Reload()
+[xUnit.net 00:00:14.37]            at ProGaudi.Tarantool.Client.Box.Connect()
+[xUnit.net 00:00:14.37]            at ProGaudi.Tarantool.Client.Box.Connect(String replicationSource)
+[xUnit.net 00:00:14.37]         /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB/TarantoolContext.cs(51,0): at AccessToDB.TarantoolContext.Initialize(String connection_string)
+[xUnit.net 00:00:14.37]         /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB/TarantoolContext.cs(32,0): at AccessToDB.TarantoolContext..ctor(String connection_string)
+[xUnit.net 00:00:14.37]         /mnt/c/Users/alena/Desktop/7_sem/testing_and_debugging/SkiResort/AccessToDB.Tests/TurnstilesRepositoryTests.cs(29,0): at AccessToDB.Tests.TurnstilesRepositoryTests..ctor()
+[xUnit.net 00:00:14.37]            at System.RuntimeType.CreateInstanceDefaultCtor(Boolean publicOnly, Boolean wrapExceptions)
+[xUnit.net 00:00:16.41]   Finished:    AccessToDB.Tests
+</StdOut>
+    </Output>
+    <RunInfos>
+      <RunInfo computerName="DESKTOP-TJ9D65N" outcome="Error" timestamp="2022-11-03T10:50:12.3710259+03:00">
+        <Text>[xUnit.net 00:00:08.14]     AccessToDB.Tests.UsersRepositoryTests.TestUpdateUserByIDAsyncOk(user: User { UserID = 62, CardID = 44, UserEmail = UserEmail83813fce-e007-4269-bdd8-e0620b5486a0, Password = password7294c3d6-9f6d-4a97-bfec-262187f9dae9, Permissions = UNAUTHORIZED }) [FAIL]</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-TJ9D65N" outcome="Error" timestamp="2022-11-03T10:50:18.6013186+03:00">
+        <Text>[xUnit.net 00:00:14.37]     AccessToDB.Tests.TurnstilesRepositoryTests.TestUpdateTurnstileByIDAsyncOk(turnstile: Turnstile { TurnstileID = 12, LiftID = 142, IsOpen = True }) [FAIL]</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+</TestRun>

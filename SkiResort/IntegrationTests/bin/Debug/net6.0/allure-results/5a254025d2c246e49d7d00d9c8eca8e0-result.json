@@ -1,0 +1,46 @@
+{
+  "uuid": "4673127e-defe-42cc-a2e7-2a4aa69575c4-IntegrationTests.TestActionsWithUsers.TestRegisterUserWithNoPassword",
+  "historyId": "IntegrationTests.TestActionsWithUsers.TestRegisterUserWithNoPassword",
+  "fullName": "IntegrationTests.TestActionsWithUsers.TestRegisterUserWithNoPassword",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "IntegrationTests.TestActionsWithUsers"
+    },
+    {
+      "name": "testMethod",
+      "value": "IntegrationTests.TestActionsWithUsers.TestRegisterUserWithNoPassword"
+    },
+    {
+      "name": "package",
+      "value": "IntegrationTests.TestActionsWithUsers"
+    },
+    {
+      "name": "suite",
+      "value": "SuiteForTestingActionsWithSlopes"
+    }
+  ],
+  "links": [],
+  "name": "IntegrationTests.TestActionsWithUsers.TestRegisterUserWithNoPassword",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1667463875132,
+  "stop": 1667463875683
+}

@@ -1,0 +1,12 @@
+{
+  "uuid": "b701ff8f-6c10-461d-8d9e-f7b4e4fe5156-AccessToDB.Tests.UsersRepositoryTests",
+  "name": "AccessToDB.Tests.UsersRepositoryTests",
+  "children": [
+    "bf4d8cb2-1ffa-4efe-9717-75e40bd5d4c2-AccessToDB.Tests.UsersRepositoryTests.TestAddUserAutoIncrementAsyncOk"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1667463841259,
+  "stop": 1667463841670
+}
