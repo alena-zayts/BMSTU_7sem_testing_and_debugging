@@ -51,6 +51,7 @@ echo "[101;93m Docker stopped [0m"
 # Integration Tests
 echo "[101;93m Raising docker (it's used to run Tarantool, and Tarantool is used in AccessToDB) [0m"
 docker-compose --env-file .docker-env -f ${PWD}/SkiResort/tarantool/docker-compose-console.yml up -d
+docker exec skiresort tarantool /usr/local/share/tarantool/app.init.lua
 echo "[101;93m Docker started [0m"
 
 

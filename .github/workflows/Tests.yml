@@ -39,7 +39,7 @@ jobs:
       working-directory: .
     
     -name: Save Path to Project
-      run: echo "PATH_TO_PROJECT=${PWD}" > .docker-env
+      run: echo 'PATH_TO_PROJECT=${PWD}' > .docker-env
       working-directory: .
       
     
