@@ -308,7 +308,7 @@ class Results:
         toRet['uuid'] = self.uuid
         toRet['name'] = self.name
         toRet['environmentDescription'] = self.environmentDescription
-        toRet['git'] = self.git
+        toRet['git'] = None
         toRet['startTime'] = self.startTime
         toRet['completionTime'] = self.completionTime
         toRet['concurrencyLevels'] = self.concurrencyLevels

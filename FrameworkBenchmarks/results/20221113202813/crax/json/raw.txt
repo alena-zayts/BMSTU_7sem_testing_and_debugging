@@ -1,0 +1,53 @@
+---------------------------------------------------------
+ Running Primer json
+ wrk -H 'Host: tfb-server' -H 'Accept: application/json,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 5 -c 8 --timeout 8 -t 8 http://tfb-server:8080/json
+---------------------------------------------------------
+Running 5s test @ http://tfb-server:8080/json
+  8 threads and 8 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   460.09us  208.24us   9.99ms   89.86%
+    Req/Sec     2.20k   587.78     3.54k    72.24%
+  Latency Distribution
+     50%  448.00us
+     75%  557.00us
+     90%  603.00us
+     99%    0.96ms
+  89194 requests in 5.10s, 14.21MB read
+Requests/sec:  17490.62
+Transfer/sec:      2.79MB
+---------------------------------------------------------
+ Running Warmup json
+ wrk -H 'Host: tfb-server' -H 'Accept: application/json,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 15 -c 16 --timeout 8 -t 8 "http://tfb-server:8080/json"
+---------------------------------------------------------
+Running 15s test @ http://tfb-server:8080/json
+  8 threads and 16 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.30ms    1.93ms  30.23ms   91.82%
+    Req/Sec     2.32k     0.89k    4.87k    65.89%
+  Latency Distribution
+     50%  728.00us
+     75%    1.12ms
+     90%    2.55ms
+     99%   10.02ms
+  278093 requests in 15.06s, 44.29MB read
+Requests/sec:  18462.69
+Transfer/sec:      2.94MB
+---------------------------------------------------------
+ Concurrency: 16 for json
+ wrk -H 'Host: tfb-server' -H 'Accept: application/json,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 15 -c 16 --timeout 8 -t 8 "http://tfb-server:8080/json"
+---------------------------------------------------------
+Running 15s test @ http://tfb-server:8080/json
+  8 threads and 16 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.05ms    1.24ms  25.09ms   92.79%
+    Req/Sec     2.37k     1.34k    5.92k    68.50%
+  Latency Distribution
+     50%  640.00us
+     75%    1.25ms
+     90%    1.93ms
+     99%    7.24ms
+  282852 requests in 15.03s, 45.05MB read
+Requests/sec:  18813.50
+Transfer/sec:      3.00MB
+STARTTIME 1668371741
+ENDTIME 1668371756
