@@ -1,0 +1,12 @@
+{
+  "uuid": "b09831e4-ad8c-47cf-99e7-467292915c69-BL.Tests.TurnstilesServiceTest",
+  "name": "BL.Tests.TurnstilesServiceTest",
+  "children": [
+    "dd42af30-0139-4892-bc6e-677b75fd0f83-BL.Tests.TurnstilesServiceTest.TestAdminGetTurnstileAsync(userID: 93, turnstile: Turnstile { TurnstileID = 89, LiftID = 172, IsOpen = True }, checkPermissionServiceMock: Mock<ICheckPermissionService:12>, turnstilesRepositoryStub: Mock<ITurnstilesRepository:6>, sut: TurnstilesService { })"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1667497762079,
+  "stop": 1667497762097
+}

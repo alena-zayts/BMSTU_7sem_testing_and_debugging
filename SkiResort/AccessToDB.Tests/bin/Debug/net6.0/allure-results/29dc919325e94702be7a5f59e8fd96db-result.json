@@ -1,0 +1,46 @@
+{
+  "uuid": "cfa37817-6a6b-4ed8-bd7f-3541fa04ee51-AccessToDB.Tests.UsersRepositoryTests.TestAddUserAsyncFailsWhenUserIdRepeats(user: User { UserID = 130, CardID = 255, UserEmail = UserEmail4a0f30ab-9c3c-445a-b29b-e220ba3e30f3, Password = passwordfeeae489-3dc2-4f0c-b328-beb8761bbbf7, Permissions = UNAUTHORIZED })",
+  "historyId": "AccessToDB.Tests.UsersRepositoryTests.TestAddUserAsyncFailsWhenUserIdRepeats(user: User { UserID = 130, CardID = 255, UserEmail = UserEmail4a0f30ab-9c3c-445a-b29b-e220ba3e30f3, Password = passwordfeeae489-3dc2-4f0c-b328-beb8761bbbf7, Permissions = UNAUTHORIZED })",
+  "fullName": "AccessToDB.Tests.UsersRepositoryTests.TestAddUserAsyncFailsWhenUserIdRepeats(user: User { UserID = 130, CardID = 255, UserEmail = UserEmail4a0f30ab-9c3c-445a-b29b-e220ba3e30f3, Password = passwordfeeae489-3dc2-4f0c-b328-beb8761bbbf7, Permissions = UNAUTHORIZED })",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "AccessToDB.Tests.UsersRepositoryTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "AccessToDB.Tests.UsersRepositoryTests.TestAddUserAsyncFailsWhenUserIdRepeats(user: User { UserID = 130, CardID = 255, UserEmail = UserEmail4a0f30ab-9c3c-445a-b29b-e220ba3e30f3, Password = passwordfeeae489-3dc2-4f0c-b328-beb8761bbbf7, Permissions = UNAUTHORIZED })"
+    },
+    {
+      "name": "package",
+      "value": "AccessToDB.Tests.UsersRepositoryTests"
+    },
+    {
+      "name": "suite",
+      "value": "UsersRepositorySuite"
+    }
+  ],
+  "links": [],
+  "name": "AccessToDB.Tests.UsersRepositoryTests.TestAddUserAsyncFailsWhenUserIdRepeats(user: User { UserID = 130, CardID = 255, UserEmail = UserEmail4a0f30ab-9c3c-445a-b29b-e220ba3e30f3, Password = passwordfeeae489-3dc2-4f0c-b328-beb8761bbbf7, Permissions = UNAUTHORIZED })",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1667497779683,
+  "stop": 1667497780075
+}

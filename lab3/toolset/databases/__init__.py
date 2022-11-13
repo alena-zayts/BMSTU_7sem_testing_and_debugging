@@ -25,6 +25,8 @@ for folder in db_folders:
     # /FrameworkBenchmarks/toolset/databases/mongodb/mongodb.py')
     # /FrameworkBenchmarks/toolset/databases/postgres/postgres.py
     # raise Exception("%s/%s.py" % (mypath + folder, db_name))
+    raise Exception(os.path.exists("%s/%s.py" % (mypath + folder, db_name)))
+
     db = imp.load_source("Database", "%s/%s.py" % (mypath + folder, db_name))
     #db = imp.load_source("Database", f'{mypath}{folder}/{folder}.py')
 

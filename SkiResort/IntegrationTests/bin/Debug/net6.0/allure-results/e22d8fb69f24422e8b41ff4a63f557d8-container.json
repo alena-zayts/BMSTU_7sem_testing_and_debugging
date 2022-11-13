@@ -1,0 +1,12 @@
+{
+  "uuid": "54d4a798-46d8-4fe6-b83c-722599f2f5c9-IntegrationTests.TestActionsWithSlopes",
+  "name": "IntegrationTests.TestActionsWithSlopes",
+  "children": [
+    "211dedfb-8e4e-4c45-b338-7c27c868ee65-IntegrationTests.TestActionsWithSlopes.TestAdminDeleteSlopeAsync(slope: Slope { SlopeID = 107, SlopeName = slopeName147d6200-362f-4f93-9e01-0857b54bed52, IsOpen = True, DifficultyLevel = 62, ConnectedLifts =  })"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1667497824420,
+  "stop": 1667497825057
+}

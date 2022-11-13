@@ -1,0 +1,46 @@
+{
+  "uuid": "f27cab02-cd58-455c-aa08-ae8a374b6c03-IntegrationTests.TestActionsWithLiftsSlopes.TestAdminAddAutoIncrementLiftSlopeAsync(lift: Lift { LiftID = 89, LiftName = liftNameb8c31cb5-bc3b-4351-a694-0554d8345b03, IsOpen = True, SeatsAmount = 190, LiftingTime = 215, QueueTime = 244, ConnectedSlopes =  }, slope: Slope { SlopeID = 197, SlopeName = slopeName5802cdaa-40b3-4144-9e29-820e37dcad00, IsOpen = False, DifficultyLevel = 225, ConnectedLifts =  })",
+  "historyId": "IntegrationTests.TestActionsWithLiftsSlopes.TestAdminAddAutoIncrementLiftSlopeAsync(lift: Lift { LiftID = 89, LiftName = liftNameb8c31cb5-bc3b-4351-a694-0554d8345b03, IsOpen = True, SeatsAmount = 190, LiftingTime = 215, QueueTime = 244, ConnectedSlopes =  }, slope: Slope { SlopeID = 197, SlopeName = slopeName5802cdaa-40b3-4144-9e29-820e37dcad00, IsOpen = False, DifficultyLevel = 225, ConnectedLifts =  })",
+  "fullName": "IntegrationTests.TestActionsWithLiftsSlopes.TestAdminAddAutoIncrementLiftSlopeAsync(lift: Lift { LiftID = 89, LiftName = liftNameb8c31cb5-bc3b-4351-a694-0554d8345b03, IsOpen = True, SeatsAmount = 190, LiftingTime = 215, QueueTime = 244, ConnectedSlopes =  }, slope: Slope { SlopeID = 197, SlopeName = slopeName5802cdaa-40b3-4144-9e29-820e37dcad00, IsOpen = False, DifficultyLevel = 225, ConnectedLifts =  })",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "IntegrationTests.TestActionsWithLiftsSlopes"
+    },
+    {
+      "name": "testMethod",
+      "value": "IntegrationTests.TestActionsWithLiftsSlopes.TestAdminAddAutoIncrementLiftSlopeAsync(lift: Lift { LiftID = 89, LiftName = liftNameb8c31cb5-bc3b-4351-a694-0554d8345b03, IsOpen = True, SeatsAmount = 190, LiftingTime = 215, QueueTime = 244, ConnectedSlopes =  }, slope: Slope { SlopeID = 197, SlopeName = slopeName5802cdaa-40b3-4144-9e29-820e37dcad00, IsOpen = False, DifficultyLevel = 225, ConnectedLifts =  })"
+    },
+    {
+      "name": "package",
+      "value": "IntegrationTests.TestActionsWithLiftsSlopes"
+    },
+    {
+      "name": "suite",
+      "value": "SuiteForTestingActionsWithLiftsSlopes"
+    }
+  ],
+  "links": [],
+  "name": "IntegrationTests.TestActionsWithLiftsSlopes.TestAdminAddAutoIncrementLiftSlopeAsync(lift: Lift { LiftID = 89, LiftName = liftNameb8c31cb5-bc3b-4351-a694-0554d8345b03, IsOpen = True, SeatsAmount = 190, LiftingTime = 215, QueueTime = 244, ConnectedSlopes =  }, slope: Slope { SlopeID = 197, SlopeName = slopeName5802cdaa-40b3-4144-9e29-820e37dcad00, IsOpen = False, DifficultyLevel = 225, ConnectedLifts =  })",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1667497820422,
+  "stop": 1667497821089
+}

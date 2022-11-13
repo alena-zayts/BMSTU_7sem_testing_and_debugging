@@ -1,0 +1,46 @@
+{
+  "uuid": "f7a920c0-4212-4a69-b07e-287c8d57899b-IntegrationTests.TestActionsWithLiftsLifts.TestGetLiftInfoAsync(lift: Lift { LiftID = 222, LiftName = liftNamef523b239-9f6f-445e-91e0-64c45f456b04, IsOpen = True, SeatsAmount = 204, LiftingTime = 95, QueueTime = 82, ConnectedSlopes =  })",
+  "historyId": "IntegrationTests.TestActionsWithLiftsLifts.TestGetLiftInfoAsync(lift: Lift { LiftID = 222, LiftName = liftNamef523b239-9f6f-445e-91e0-64c45f456b04, IsOpen = True, SeatsAmount = 204, LiftingTime = 95, QueueTime = 82, ConnectedSlopes =  })",
+  "fullName": "IntegrationTests.TestActionsWithLiftsLifts.TestGetLiftInfoAsync(lift: Lift { LiftID = 222, LiftName = liftNamef523b239-9f6f-445e-91e0-64c45f456b04, IsOpen = True, SeatsAmount = 204, LiftingTime = 95, QueueTime = 82, ConnectedSlopes =  })",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "IntegrationTests.TestActionsWithLiftsLifts"
+    },
+    {
+      "name": "testMethod",
+      "value": "IntegrationTests.TestActionsWithLiftsLifts.TestGetLiftInfoAsync(lift: Lift { LiftID = 222, LiftName = liftNamef523b239-9f6f-445e-91e0-64c45f456b04, IsOpen = True, SeatsAmount = 204, LiftingTime = 95, QueueTime = 82, ConnectedSlopes =  })"
+    },
+    {
+      "name": "package",
+      "value": "IntegrationTests.TestActionsWithLiftsLifts"
+    },
+    {
+      "name": "suite",
+      "value": "SuiteForTestingActionsWithLifts"
+    }
+  ],
+  "links": [],
+  "name": "IntegrationTests.TestActionsWithLiftsLifts.TestGetLiftInfoAsync(lift: Lift { LiftID = 222, LiftName = liftNamef523b239-9f6f-445e-91e0-64c45f456b04, IsOpen = True, SeatsAmount = 204, LiftingTime = 95, QueueTime = 82, ConnectedSlopes =  })",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1667497809404,
+  "stop": 1667497810016
+}

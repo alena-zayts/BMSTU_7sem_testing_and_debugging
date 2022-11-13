@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: world
+Version: 5.0.1
+Summary: world -- top level domain code mappings
+License: Apache-2.0
+Keywords: domain name system,DNS,country codes,ISO 3166
+Author-email: Barry Warsaw <barry@python.org>
+Requires-Python: >=3.8
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Development Status :: 6 - Mature
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Internet :: Name Service (DNS)
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Dist: atpublic
+Project-URL: Bug Tracker, https://gitlab.com/warsaw/world/issues
+Project-URL: Documentation, https://world.readthedocs.io
+Project-URL: Home Page, https://world.readthedocs.io
+Project-URL: Source, https://gitlab.com/warsaw/world.git
+Description-Content-Type: text/x-rst
+
+===================================================================
+world -- Print mappings between country names and DNS country codes
+===================================================================
+
+This script takes a list of Internet top-level domain names and prints out
+where in the world those domains originate from.  For example::
+
+    $ world tz us
+    tz originates from Tanzania, United Republic of
+    us originates from United States of America (the)
+
+Reverse look ups are also supported::
+
+    $ world -r united
+    Matches for "united":
+      ae: United Arab Emirates (the)
+      gb: United Kingdom of Great Britain and Northern Ireland (the)
+      tz: Tanzania, United Republic of
+      uk: United Kingdom (common practice)
+      um: United States Minor Outlying Islands (the)
+      us: United States of America (the)
+
+Only two-letter country codes are supported, since these are the only ones
+that were freely available from the ISO_ 3166_ standard.  However, as of
+2015-01-09, even these are no longer freely available in a machine readable
+format.
+
+This script also knows about non-geographic, generic, USA-centric, historical,
+common usage, and reserved top-level domains.
+
+
+Project details
+===============
+
+* Project home: https://gitlab.com/warsaw/world
+* Report bugs at: https://gitlab.com/warsaw/world/issues
+* Code hosting: https://gitlab.com/warsaw/world.git
+* Documentation: http://world.readthedocs.io/en/latest/
+
+
+Author
+======
+
+``world`` is Copyright (C) 2013-2022 Barry Warsaw <barry@python.org>
+
+Licensed under the Apache License, Version 2.0 (the "License").  See the
+LICENSE file for details.
+
+
+.. _ISO: http://www.iso.org/iso/home.html
+.. _3166: http://www.iso.org/iso/home/standards/country_codes/
+

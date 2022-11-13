@@ -1,0 +1,12 @@
+{
+  "uuid": "20cab415-af1e-4f53-85e5-249800d2b2ba-IntegrationTests.TestActionsWithTurnstiles",
+  "name": "IntegrationTests.TestActionsWithTurnstiles",
+  "children": [
+    "4bccf1ed-231d-441e-9168-4cf9546c0b32-IntegrationTests.TestActionsWithTurnstiles.TestAdminGetTurnstilesAsync(initialTurnstiles: [Turnstile { TurnstileID = 18, LiftID = 4, IsOpen = True }, Turnstile { TurnstileID = 232, LiftID = 106, IsOpen = False }, Turnstile { TurnstileID = 167, LiftID = 33, IsOpen = True }])"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1667497811919,
+  "stop": 1667497812563
+}

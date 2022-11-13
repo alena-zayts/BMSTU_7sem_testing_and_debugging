@@ -1,0 +1,12 @@
+{
+  "uuid": "567921da-322d-4942-b072-967303e61be9-IntegrationTests.TestActionsWithSlopes",
+  "name": "IntegrationTests.TestActionsWithSlopes",
+  "children": [
+    "59b5256d-88b3-4e01-8947-35d36c804bf3-IntegrationTests.TestActionsWithSlopes.TestGetSlopesInfoAsync(initialSlopes: [Slope { SlopeID = 17, SlopeName = slopeNamec382e3d2-ca58-498a-a894-04919562c62d, IsOpen = True, DifficultyLevel = 208, ConnectedLifts =  }, Slope { SlopeID = 12, SlopeName = slopeName8d711395-0291-4dbe-907c-bfc8ac2385ca, IsOpen = False, DifficultyLevel = 29, ConnectedLifts =  }, Slope { SlopeID = 199, SlopeName = slopeName249b2944-8bd9-42ac-a654-a09178a7ccac, IsOpen = True, DifficultyLevel = 165, ConnectedLifts =  }])"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1667497823083,
+  "stop": 1667497823760
+}

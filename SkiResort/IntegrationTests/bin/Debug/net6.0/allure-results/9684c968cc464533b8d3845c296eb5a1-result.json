@@ -1,0 +1,46 @@
+{
+  "uuid": "ecdb9e76-da04-41b6-b000-9ab6c0900577-IntegrationTests.TestActionsWithLiftsLifts.TestGetLiftsInfoAsync(initialLifts: [Lift { LiftID = 110, LiftName = liftName16dcb748-001a-4090-ad1a-9dab26ba354c, IsOpen = True, SeatsAmount = 252, LiftingTime = 189, QueueTime = 253, ConnectedSlopes =  }, Lift { LiftID = 153, LiftName = liftName175226a0-08dc-4fb8-a7f9-d81a484e7279, IsOpen = False, SeatsAmount = 218, LiftingTime = 224, QueueTime = 207, ConnectedSlopes =  }, Lift { LiftID = 143, LiftName = liftNamef1518cbe-9e3c-421d-a7d6-bfb047491db2, IsOpen = True, SeatsAmount = 239, LiftingTime = 76, QueueTime = 117, ConnectedSlopes =  }])",
+  "historyId": "IntegrationTests.TestActionsWithLiftsLifts.TestGetLiftsInfoAsync(initialLifts: [Lift { LiftID = 110, LiftName = liftName16dcb748-001a-4090-ad1a-9dab26ba354c, IsOpen = True, SeatsAmount = 252, LiftingTime = 189, QueueTime = 253, ConnectedSlopes =  }, Lift { LiftID = 153, LiftName = liftName175226a0-08dc-4fb8-a7f9-d81a484e7279, IsOpen = False, SeatsAmount = 218, LiftingTime = 224, QueueTime = 207, ConnectedSlopes =  }, Lift { LiftID = 143, LiftName = liftNamef1518cbe-9e3c-421d-a7d6-bfb047491db2, IsOpen = True, SeatsAmount = 239, LiftingTime = 76, QueueTime = 117, ConnectedSlopes =  }])",
+  "fullName": "IntegrationTests.TestActionsWithLiftsLifts.TestGetLiftsInfoAsync(initialLifts: [Lift { LiftID = 110, LiftName = liftName16dcb748-001a-4090-ad1a-9dab26ba354c, IsOpen = True, SeatsAmount = 252, LiftingTime = 189, QueueTime = 253, ConnectedSlopes =  }, Lift { LiftID = 153, LiftName = liftName175226a0-08dc-4fb8-a7f9-d81a484e7279, IsOpen = False, SeatsAmount = 218, LiftingTime = 224, QueueTime = 207, ConnectedSlopes =  }, Lift { LiftID = 143, LiftName = liftNamef1518cbe-9e3c-421d-a7d6-bfb047491db2, IsOpen = True, SeatsAmount = 239, LiftingTime = 76, QueueTime = 117, ConnectedSlopes =  }])",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "IntegrationTests.TestActionsWithLiftsLifts"
+    },
+    {
+      "name": "testMethod",
+      "value": "IntegrationTests.TestActionsWithLiftsLifts.TestGetLiftsInfoAsync(initialLifts: [Lift { LiftID = 110, LiftName = liftName16dcb748-001a-4090-ad1a-9dab26ba354c, IsOpen = True, SeatsAmount = 252, LiftingTime = 189, QueueTime = 253, ConnectedSlopes =  }, Lift { LiftID = 153, LiftName = liftName175226a0-08dc-4fb8-a7f9-d81a484e7279, IsOpen = False, SeatsAmount = 218, LiftingTime = 224, QueueTime = 207, ConnectedSlopes =  }, Lift { LiftID = 143, LiftName = liftNamef1518cbe-9e3c-421d-a7d6-bfb047491db2, IsOpen = True, SeatsAmount = 239, LiftingTime = 76, QueueTime = 117, ConnectedSlopes =  }])"
+    },
+    {
+      "name": "package",
+      "value": "IntegrationTests.TestActionsWithLiftsLifts"
+    },
+    {
+      "name": "suite",
+      "value": "SuiteForTestingActionsWithLifts"
+    }
+  ],
+  "links": [],
+  "name": "IntegrationTests.TestActionsWithLiftsLifts.TestGetLiftsInfoAsync(initialLifts: [Lift { LiftID = 110, LiftName = liftName16dcb748-001a-4090-ad1a-9dab26ba354c, IsOpen = True, SeatsAmount = 252, LiftingTime = 189, QueueTime = 253, ConnectedSlopes =  }, Lift { LiftID = 153, LiftName = liftName175226a0-08dc-4fb8-a7f9-d81a484e7279, IsOpen = False, SeatsAmount = 218, LiftingTime = 224, QueueTime = 207, ConnectedSlopes =  }, Lift { LiftID = 143, LiftName = liftNamef1518cbe-9e3c-421d-a7d6-bfb047491db2, IsOpen = True, SeatsAmount = 239, LiftingTime = 76, QueueTime = 117, ConnectedSlopes =  }])",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1667497807300,
+  "stop": 1667497808050
+}

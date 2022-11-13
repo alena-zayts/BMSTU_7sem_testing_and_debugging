@@ -1,0 +1,46 @@
+{
+  "uuid": "f8411b42-ac9a-4aba-a3f6-039c76332b38-IntegrationTests.TestActionsWithUsers.TestAdminAddAutoIncrementUser",
+  "historyId": "IntegrationTests.TestActionsWithUsers.TestAdminAddAutoIncrementUser",
+  "fullName": "IntegrationTests.TestActionsWithUsers.TestAdminAddAutoIncrementUser",
+  "labels": [
+    {
+      "name": "thread",
+      "value": ".NET Long Running Task"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-TJ9D65N"
+    },
+    {
+      "name": "testClass",
+      "value": "IntegrationTests.TestActionsWithUsers"
+    },
+    {
+      "name": "testMethod",
+      "value": "IntegrationTests.TestActionsWithUsers.TestAdminAddAutoIncrementUser"
+    },
+    {
+      "name": "package",
+      "value": "IntegrationTests.TestActionsWithUsers"
+    },
+    {
+      "name": "suite",
+      "value": "SuiteForTestingActionsWithSlopes"
+    }
+  ],
+  "links": [],
+  "name": "IntegrationTests.TestActionsWithUsers.TestAdminAddAutoIncrementUser",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": ""
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1667497814432,
+  "stop": 1667497815038
+}

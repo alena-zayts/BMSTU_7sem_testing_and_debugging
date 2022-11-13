@@ -1,0 +1,12 @@
+{
+  "uuid": "53a02879-8307-43ed-8fee-78159f60eaf2-BL.Tests.CheckPermissionsServiceTests",
+  "name": "BL.Tests.CheckPermissionsServiceTests",
+  "children": [
+    "85ecb8f6-3fc9-4c68-b242-a73639594862-BL.Tests.CheckPermissionsServiceTests.AuthorizedHasAccessToAuthorizedFunctions(functionName: \"LogOutAsync\")"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1667497762200,
+  "stop": 1667497762205
+}
