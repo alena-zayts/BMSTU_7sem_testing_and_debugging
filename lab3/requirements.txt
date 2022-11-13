@@ -1,0 +1,4 @@
+colorama
+docker
+psutil
+django==3.0
