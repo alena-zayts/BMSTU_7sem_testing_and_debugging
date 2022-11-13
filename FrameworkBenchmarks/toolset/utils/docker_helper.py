@@ -175,11 +175,7 @@ class DockerHelper:
                 }
                 name = None
 
-            if self.benchmarker.config.network_mode is None:
-                sysctl = {'net.core.somaxconn': 65535}
-            else:
-                # Do not pass `net.*` kernel params when using host network mode
-                sysctl = None
+            sysctl = {'net.core.somaxconn': 65535}
 
             ulimit = [{
                 'name': 'nofile',
@@ -195,18 +191,14 @@ class DockerHelper:
             if hasattr(test, 'docker_cmd'):
                 docker_cmd = test.docker_cmd
 
-            # Expose ports in debugging mode
-            ports = {}
-            if self.benchmarker.config.mode == "debug":
-                ports = {test.port: test.port}
 
             container = self.server.containers.run(
                 "techempower/tfb.test.%s" % test.name,
                 name=name,
                 command=docker_cmd,
                 network=self.benchmarker.config.network,
-                network_mode=self.benchmarker.config.network_mode,
-                ports=ports,
+                network_mode=None,
+                ports={},
                 stderr=True,
                 detach=True,
                 init=True,
@@ -314,16 +306,10 @@ class DockerHelper:
         image_name = "techempower/%s:latest" % database
         log_prefix = image_name + ": "
 
-        if self.benchmarker.config.network_mode is None:
-            sysctl = {
-                'net.core.somaxconn': 65535,
-                'kernel.sem': "250 32000 256 512"
-            }
-        else:
-            # Do not pass `net.*` kernel params when using host network mode
-            sysctl = {
-                'kernel.sem': "250 32000 256 512"
-            }
+        sysctl = {
+            'net.core.somaxconn': 65535,
+            'kernel.sem': "250 32000 256 512"
+        }
 
         ulimit = [{'name': 'nofile', 'hard': 65535, 'soft': 65535}]
 
@@ -331,7 +317,7 @@ class DockerHelper:
             "techempower/%s" % database,
             name="tfb-database",
             network=self.benchmarker.config.network,
-            network_mode=self.benchmarker.config.network_mode,
+            network_mode=None,
             detach=True,
             ulimits=ulimit,
             sysctls=sysctl,
@@ -376,7 +362,7 @@ class DockerHelper:
                 remove=True,
                 log_config={'type': None},
                 network=self.benchmarker.config.network,
-                network_mode=self.benchmarker.config.network_mode)
+                network_mode=None)
         except Exception:
             return False
 
@@ -402,11 +388,7 @@ class DockerHelper:
                 for line in container.logs(stream=True):
                     log(line, file=benchmark_file)
 
-        if self.benchmarker.config.network_mode is None:
-            sysctl = {'net.core.somaxconn': 65535}
-        else:
-            # Do not pass `net.*` kernel params when using host network mode
-            sysctl = None
+        sysctl = {'net.core.somaxconn': 65535}
 
         ulimit = [{'name': 'nofile', 'hard': 65535, 'soft': 65535}]
 
@@ -416,7 +398,7 @@ class DockerHelper:
                 "/bin/bash /%s" % script,
                 environment=variables,
                 network=self.benchmarker.config.network,
-                network_mode=self.benchmarker.config.network_mode,
+                network_mode=None,
                 detach=True,
                 stderr=True,
                 ulimits=ulimit,

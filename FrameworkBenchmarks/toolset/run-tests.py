@@ -3,6 +3,7 @@ import socket
 import sys
 import signal
 import traceback
+
 from toolset.benchmark.benchmarker import Benchmarker
 from toolset.utils.benchmark_config import BenchmarkConfig
 from toolset.utils.output_helper import log

@@ -68,12 +68,10 @@ class Benchmarker:
                 self.results.load()
 
         # Parse results
-        if self.config.mode == "benchmark":
-            log("Parsing Results ...", border='=')
-            self.results.parse(self.tests)
+        log("Parsing Results ...", border='=')
+        self.results.parse(self.tests)
 
         self.results.set_completion_time()
-        self.results.upload()
         self.results.finish()
 
         return any_failed
@@ -94,13 +92,13 @@ class Benchmarker:
                 file=file,
                 color=Fore.RED if success else '')
         self.time_logger.log_test_end(log_prefix=prefix, file=file)
-        if self.config.mode == "benchmark":
-            # Sleep for 60 seconds to ensure all host connects are closed
-            log("Clean up: Sleep 60 seconds...", prefix=prefix, file=file)
-            time.sleep(60)
-            # After benchmarks are complete for all test types in this test,
-            # let's clean up leftover test images (techempower/tfb.test.test-name)
-            self.docker_helper.clean()
+
+        # Sleep for 60 seconds to ensure all host connects are closed
+        log("Clean up: Sleep 60 seconds...", prefix=prefix, file=file)
+        time.sleep(60)
+        # After benchmarks are complete for all test types in this test,
+        # let's clean up leftover test images (techempower/tfb.test.test-name)
+        self.docker_helper.clean()
 
         return success
 
@@ -115,22 +113,10 @@ class Benchmarker:
         # Start timing the total test duration
         self.time_logger.mark_test_start()
 
-        if self.config.mode == "benchmark":
-            log("Benchmarking %s" % test.name,
-                file=benchmark_log,
-                border='-')
 
-        # If the test is in the excludes list, we skip it
-        if self.config.exclude and test.name in self.config.exclude:
-            message = "Test {name} has been added to the excludes list. Skipping.".format(
-                name=test.name)
-            self.results.write_intermediate(test.name, message)
-            self.results.upload()
-            return self.__exit_test(
-                success=False,
-                message=message,
-                prefix=log_prefix,
-                file=benchmark_log)
+        log("Benchmarking %s" % test.name,
+            file=benchmark_log,
+            border='-')
 
         database_container = None
         try:
@@ -142,7 +128,6 @@ class Benchmarker:
                 if database_container is None:
                     message = "ERROR: Problem building/running database container"
                     self.results.write_intermediate(test.name, message)
-                    self.results.upload()
                     return self.__exit_test(
                         success=False,
                         message=message,
@@ -157,7 +142,6 @@ class Benchmarker:
                 message = "ERROR: Problem starting {name}".format(
                     name=test.name)
                 self.results.write_intermediate(test.name, message)
-                self.results.upload()
                 return self.__exit_test(
                     success=False,
                     message=message,
@@ -179,7 +163,6 @@ class Benchmarker:
             if not accepting_requests:
                 message = "ERROR: Framework is not accepting requests from client machine"
                 self.results.write_intermediate(test.name, message)
-                self.results.upload()
                 return self.__exit_test(
                     success=False,
                     message=message,
@@ -187,17 +170,6 @@ class Benchmarker:
                     file=benchmark_log)
 
             self.time_logger.mark_test_accepting_requests()
-
-            # Debug mode blocks execution here until ctrl+c
-            if self.config.mode == "debug":
-                msg = "Entering debug mode. Server http://localhost:%s has started. CTRL-c to stop.\r\n" % test.port
-                msg = msg + "From outside vagrant: http://localhost:%s" % (int(test.port) + 20000)
-                log(msg,
-                    prefix=log_prefix,
-                    file=benchmark_log,
-                    color=Fore.YELLOW)
-                while True:
-                    time.sleep(1)
 
             # Verify URLs and audit
             log("Verifying framework URLs", prefix=log_prefix)
@@ -208,11 +180,10 @@ class Benchmarker:
             # self.audit.audit_test_dir(test.directory)
 
             # Benchmark this test
-            if self.config.mode == "benchmark":
-                self.time_logger.mark_benchmarking_start()
-                self.__benchmark(test, benchmark_log)
-                self.time_logger.log_benchmarking_end(
-                    log_prefix=log_prefix, file=benchmark_log)
+            self.time_logger.mark_benchmarking_start()
+            self.__benchmark(test, benchmark_log)
+            self.time_logger.log_benchmarking_end(
+                log_prefix=log_prefix, file=benchmark_log)
 
             # Log test timing stats
             self.time_logger.log_build_flush(benchmark_log)
@@ -227,20 +198,10 @@ class Benchmarker:
                                                 "%Y%m%d%H%M%S",
                                                 time.localtime()))
 
-            # Upload the results thus far to another server (optional)
-            self.results.upload()
-
-            if self.config.mode == "verify" and not passed_verify:
-                return self.__exit_test(
-                    success=False,
-                    message="Failed verify!",
-                    prefix=log_prefix,
-                    file=benchmark_log)
         except Exception as e:
             tb = traceback.format_exc()
             self.results.write_intermediate(test.name,
                                             "error during test: " + str(e))
-            self.results.upload()
             log(tb, prefix=log_prefix, file=benchmark_log)
             return self.__exit_test(
                 success=False,

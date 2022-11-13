@@ -36,17 +36,7 @@ class Results:
         self.uuid = str(uuid.uuid4())
         self.name = datetime.now().strftime(self.config.results_name)
         self.environmentDescription = self.config.results_environment
-        try:
-            self.git = dict()
-            subprocess.call('git config --global --add safe.directory {}'.format(self.config.fw_root),
-                        shell=True,
-                        cwd=self.config.fw_root)
-            self.git['commitId'] = self.__get_git_commit_id()
-            self.git['repositoryUrl'] = self.__get_git_repository_url()
-            self.git['branchName'] = self.__get_git_branch_name()
-        except Exception:
-            #Could not read local git repository, which is fine.
-            self.git = None
+
         self.startTime = int(round(time.time() * 1000))
         self.completionTime = None
         self.concurrencyLevels = self.config.concurrency_levels
@@ -157,17 +147,6 @@ class Results:
 
         return results
 
-    def parse_all(self, framework_test):
-        '''
-        Method meant to be run for a given timestamp
-        '''
-        for test_type in framework_test.runTests:
-            if os.path.exists(
-                    self.get_raw_file(framework_test.name, test_type)):
-                results = self.parse_test(framework_test, test_type)
-                self.report_benchmark_results(framework_test, test_type,
-                                              results['results'])
-
     def write_intermediate(self, test_name, status_message):
         '''
         Writes the intermediate results for the given test_name and status_message
@@ -181,20 +160,6 @@ class Results:
         '''
         self.completionTime = int(round(time.time() * 1000))
         self.__write_results()
-
-    def upload(self):
-        '''
-        Attempts to upload the results.json to the configured results_upload_uri
-        '''
-        if self.config.results_upload_uri is not None:
-            try:
-                requests.post(
-                    self.config.results_upload_uri,
-                    headers={'Content-Type': 'application/json'},
-                    data=json.dumps(self.__to_jsonable(), indent=2),
-                    timeout=300)
-            except Exception:
-                log("Error uploading results.json")
 
     def load(self):
         '''
@@ -336,8 +301,7 @@ class Results:
         '''
         Counts the significant lines of code for all tests and stores in results.
         '''
-        frameworks = self.benchmarker.metadata.gather_frameworks(
-            self.config.test, self.config.exclude)
+        frameworks = self.benchmarker.metadata.gather_frameworks(self.config.test)
 
         framework_to_count = {}
 
@@ -368,8 +332,7 @@ class Results:
         '''
         Count the git commits for all the framework tests
         '''
-        frameworks = self.benchmarker.metadata.gather_frameworks(
-            self.config.test, self.config.exclude)
+        frameworks = self.benchmarker.metadata.gather_frameworks(self.config.test)
 
         def count_commit(directory, jsonResult):
             command = "git rev-list HEAD -- " + directory + " | sort -u | wc -l"

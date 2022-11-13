@@ -55,7 +55,7 @@ class Metadata:
             raise Exception(
                 "Unable to locate tests in test-dir: {!s}".format(test_dir))
 
-    def gather_tests(self, include=None, exclude=None):
+    def gather_tests(self, include=None):
         '''
         Given test names as strings, returns a list of FrameworkTest objects.
         For example, 'aspnet-mysql-raw' turns into a FrameworkTest object with
@@ -69,24 +69,15 @@ class Metadata:
 
         # Help callers out a bit
         include = include or []
-        exclude = exclude or []
 
         # Search for configuration files
         config_files = []
 
-        if self.benchmarker.config.test_lang:
-            self.benchmarker.config.test_dir = []
-            for lang in self.benchmarker.config.test_lang:
-                self.benchmarker.config.test_dir.extend(
-                    self.gather_language_tests(lang))
 
-        if self.benchmarker.config.test_dir:
-            for test_dir in self.benchmarker.config.test_dir:
-                config_files.append(self.get_framework_config(test_dir))
-        else:
-            config_files.extend(
-                glob.glob("{!s}/*/*/benchmark_config.json".format(
-                    self.benchmarker.config.lang_root)))
+
+        config_files.extend(
+            glob.glob("{!s}/*/*/benchmark_config.json".format(
+                self.benchmarker.config.lang_root)))
 
         tests = []
         for config_file_name in config_files:
@@ -108,15 +99,11 @@ class Metadata:
                 if hasattr(test, "tags"):
                     if "broken" in test.tags:
                         continue
-                    if self.benchmarker.config.tag:
-                        for t in self.benchmarker.config.tag:
-                            if t in test.tags and test.name not in exclude:
-                                tests.append(test)
-                                break
+
                 if len(include) > 0:
                     if test.name in include:
                         tests.append(test)
-                elif test.name not in exclude and not self.benchmarker.config.tag:
+                else:
                     tests.append(test)
 
         # Ensure we were able to locate everything that was
@@ -136,16 +123,15 @@ class Metadata:
         '''
         Gathers all tests for current benchmark run.
         '''
-        return self.gather_tests(self.benchmarker.config.test,
-                                 self.benchmarker.config.exclude)
+        return self.gather_tests(self.benchmarker.config.test)
 
-    def gather_frameworks(self, include=None, exclude=None):
+    def gather_frameworks(self, include=None):
         '''
         Return a dictionary mapping frameworks->[test1,test2,test3]
         for quickly grabbing all tests in a grouped manner.
         Args have the same meaning as gather_tests
         '''
-        tests = self.gather_tests(include, exclude)
+        tests = self.gather_tests(include)
         frameworks = dict()
 
         for test in tests:
