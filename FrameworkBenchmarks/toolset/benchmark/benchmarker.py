@@ -91,7 +91,7 @@ class Benchmarker:
         log("Clean up: Sleep 60 seconds...", prefix=prefix, file=file)
         time.sleep(60)
         # After benchmarks are complete for all test types in this test,
-        # let's clean up leftover test images (techempower/tfb.test.test-name)
+        # let's clean up leftover test images (techempower/bm.test.test-name)
         self.docker_helper.clean()
 
         return success

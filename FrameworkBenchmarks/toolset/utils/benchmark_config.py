@@ -24,8 +24,8 @@ class BenchmarkConfig:
             self.types = {t: types[t] for t in args.type}
 
         self.duration = 15
-        self.server_host = 'tfb-server'
-        self.database_host = 'tfb-database'
+        self.server_host = 'bm-server'
+        self.database_host = 'bm-database'
         self.list_tests = args.list_tests
 
         # self.concurrency_levels = [16, 32, 64, 128, 256, 512]
@@ -39,7 +39,7 @@ class BenchmarkConfig:
         self.results_name = '(unspecified, datetime = %Y-%m-%d %H:%M:%S)'
         self.test = args.test
 
-        self.network = 'tfb'
+        self.network = 'bm'
         self.server_docker_host = "unix://var/run/docker.sock"
         self.database_docker_host = "unix://var/run/docker.sock"
         self.client_docker_host = "unix://var/run/docker.sock"

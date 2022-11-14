@@ -104,24 +104,24 @@ class TimeLogger:
             color=Fore.YELLOW)
         log("Total time building so far: %s" % TimeLogger.output(
             self.build_total),
-            prefix="tfb: ",
+            prefix="bm: ",
             file=file,
             color=Fore.YELLOW)
         log("Total time verifying so far: %s" % TimeLogger.output(
             self.verify_total),
-            prefix="tfb: ",
+            prefix="bm: ",
             file=file,
             color=Fore.YELLOW)
         if self.benchmarking_total > 0:
             log("Total time benchmarking so far: %s" % TimeLogger.output(
                 self.benchmarking_total),
-                prefix="tfb: ",
+                prefix="bm: ",
                 file=file,
                 color=Fore.YELLOW)
         running_time = int(time.time() - self.start)
         log("Total execution time so far: %s" %
             TimeLogger.output(running_time),
-            prefix="tfb: ",
+            prefix="bm: ",
             file=file,
             color=Fore.YELLOW)
 

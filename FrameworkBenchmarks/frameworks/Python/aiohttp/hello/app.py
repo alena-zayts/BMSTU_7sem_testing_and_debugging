@@ -25,7 +25,7 @@ async def db_ctx(app: web.Application):
     dsn = str(URL.create(
         database='hello_world',
         password=os.getenv('PGPASS', 'benchmarkdbpass'),
-        host='tfb-database',
+        host='bm-database',
         port='5432',
         username=os.getenv('PGUSER', 'benchmarkdbuser'),
         drivername='postgresql+{}'.format('asyncpg'),

@@ -97,7 +97,7 @@ class DockerHelper:
         '''
         for image in self.server.images.list():
             if len(image.tags) > 0:
-                if 'tfb.test.'  in image.tags[0]:
+                if 'bm.test.'  in image.tags[0]:
                     try:
                         self.server.images.remove(image.id, force=True)
                     except Exception:
@@ -137,7 +137,7 @@ class DockerHelper:
                     'TFB_TEST_NAME': test.name,
                     'TFB_TEST_DATABASE': test_database
                 }),
-                tag="techempower/tfb.test.%s" % test.name)
+                tag="techempower/bm.test.%s" % test.name)
         except Exception:
             return 1
 
@@ -162,7 +162,7 @@ class DockerHelper:
                         log(line, prefix=log_prefix, file=run_log)
 
             extra_hosts = None
-            name = "tfb-server"
+            name = "bm-server"
 
 
             sysctl = {'net.core.somaxconn': 65535}
@@ -183,7 +183,7 @@ class DockerHelper:
 
 
             container = self.server.containers.run(
-                "techempower/tfb.test.%s" % test.name,
+                "techempower/bm.test.%s" % test.name,
                 name=name,
                 command=docker_cmd,
                 network=self.benchmarker.config.network,
@@ -236,7 +236,7 @@ class DockerHelper:
         for container in docker_client.containers.list():
             if len(container.image.tags) > 0 \
                     and 'techempower' in container.image.tags[0] \
-                    and 'tfb:latest' not in container.image.tags[0]:
+                    and 'bm:latest' not in container.image.tags[0]:
                 DockerHelper.__stop_container(container)
 
     def stop(self, containers=None):
@@ -305,7 +305,7 @@ class DockerHelper:
 
         container = self.database.containers.run(
             "techempower/%s" % database,
-            name="tfb-database",
+            name="bm-database",
             network=self.benchmarker.config.network,
             network_mode=None,
             detach=True,
@@ -330,7 +330,7 @@ class DockerHelper:
 
     def build_wrk(self):
         '''
-        Builds the techempower/tfb.wrk container
+        Builds the techempower/bm.wrk container
         '''
         self.__build(
             base_url=self.benchmarker.config.client_docker_host,
@@ -338,7 +338,7 @@ class DockerHelper:
             dockerfile="wrk.dockerfile",
             log_prefix="wrk: ",
             build_log_file=os.devnull,
-            tag="techempower/tfb.wrk")
+            tag="techempower/bm.wrk")
 
     def test_client_connection(self, url):
         '''
@@ -347,7 +347,7 @@ class DockerHelper:
         '''
         try:
             self.client.containers.run(
-                'techempower/tfb.wrk',
+                'techempower/bm.wrk',
                 'curl --fail --max-time 5 %s' % url,
                 remove=True,
                 log_config={'type': None},
@@ -384,7 +384,7 @@ class DockerHelper:
 
         watch_container(
             self.client.containers.run(
-                "techempower/tfb.wrk",
+                "techempower/bm.wrk",
                 "/bin/bash /%s" % script,
                 environment=variables,
                 network=self.benchmarker.config.network,
