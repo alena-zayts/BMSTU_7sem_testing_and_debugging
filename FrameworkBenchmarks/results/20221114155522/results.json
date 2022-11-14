@@ -1,0 +1,102 @@
+{
+  "rawData": {
+    "plaintext": {
+      "crax": [
+        {
+          "latencyAvg": "90.40ms", 
+          "latencyMax": "355.72ms", 
+          "latencyStdev": "54.00ms", 
+          "totalRequests": 405409, 
+          "startTime": 1668441619, 
+          "endTime": 1668441634
+        }
+      ]
+    }, 
+    "query": {
+      "crax": [
+        {
+          "latencyAvg": "3.55ms", 
+          "latencyMax": "32.76ms", 
+          "latencyStdev": "2.02ms", 
+          "totalRequests": 70380, 
+          "startTime": 1668441569, 
+          "endTime": 1668441584
+        }
+      ]
+    }, 
+    "json": {
+      "crax": [
+        {
+          "latencyAvg": "1.09ms", 
+          "timeout": 5, 
+          "latencyMax": "35.07ms", 
+          "latencyStdev": "1.55ms", 
+          "totalRequests": 300341, 
+          "write": 0, 
+          "read": 0, 
+          "connect": 0, 
+          "startTime": 1668441519, 
+          "endTime": 1668441534
+        }
+      ]
+    }
+  }, 
+  "git": null, 
+  "uuid": "fa21b3d8-04d1-4ba2-89af-0403825e5482", 
+  "succeeded": {
+    "plaintext": [
+      "crax"
+    ], 
+    "query": [
+      "crax"
+    ], 
+    "json": [
+      "crax"
+    ]
+  }, 
+  "failed": {
+    "plaintext": [], 
+    "query": [], 
+    "json": []
+  }, 
+  "verify": {
+    "crax": {
+      "plaintext": "pass", 
+      "query": "pass", 
+      "json": "pass"
+    }
+  }, 
+  "duration": 15, 
+  "testMetadata": [
+    {
+      "framework": "aiohttp", 
+      "project_name": "aiohttp", 
+      "name": "aiohttp", 
+      "database": "postgres"
+    }, 
+    {
+      "framework": "crax", 
+      "project_name": "crax", 
+      "name": "crax", 
+      "database": "postgres"
+    }
+  ], 
+  "frameworks": [
+    "crax"
+  ], 
+  "pipelineConcurrencyLevels": [
+    256
+  ], 
+  "completionTime": 1668441705105, 
+  "concurrencyLevels": [
+    16
+  ], 
+  "startTime": 1668441322480, 
+  "queryIntervals": [
+    1
+  ], 
+  "completed": {
+    "crax": "20221114160037"
+  }, 
+  "name": "(unspecified, datetime = 2022-11-14 15:55:22)"
+}

@@ -1,27 +1,25 @@
 {
   "framework": "crax",
-  "tests": [{
-    "default": {
+  "test": {
       "json_url": "/json",
-      "fortune_url": "/fortunes",
-      "plaintext_url": "/plaintext",
       "db_url": "/db",
       "query_url": "/queries?queries=",
-      "update_url": "/updates?queries=",
+      "plaintext_url": "/plaintext",
       "port": 8080,
-      "approach": "Realistic",
-      "classification": "micro",
+
+      "platform": "none",
+      "webserver": "none",
+      "orm": "raw",
+
+      "display_name": "crax",
       "framework": "crax",
-      "language": "Python",
-      "flavor": "Python3",
-      "platform": "None",
-      "webserver": "None",
-      "os": "Linux",
-      "orm": "Raw",
-      "database_os": "Linux",
-      "database": "Postgres",
-      "display_name": "Crax",
+
+      "os": "linux",
+      "database_os": "linux",
+      "approach": "realistic",
+      "database": "postgres",
+      "language": "python",
+      "flavor": "python3",
       "notes": ""
     }
-  }]
 }

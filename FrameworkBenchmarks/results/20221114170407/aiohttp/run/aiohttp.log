@@ -1,0 +1,11 @@
+aiohttp: [2022-11-14 17:05:06 +0000] [8] [INFO] Starting gunicorn 20.1.0
+aiohttp: [2022-11-14 17:05:06 +0000] [8] [INFO] Listening at: http://0.0.0.0:8080 (8)
+aiohttp: [2022-11-14 17:05:06 +0000] [8] [INFO] Using worker: aiohttp.worker.GunicornUVLoopWebWorker
+aiohttp: [2022-11-14 17:05:06 +0000] [10] [INFO] Booting worker with pid: 10
+aiohttp: [2022-11-14 17:05:06 +0000] [11] [INFO] Booting worker with pid: 11
+aiohttp: [2022-11-14 17:05:06 +0000] [12] [INFO] Booting worker with pid: 12
+aiohttp: [2022-11-14 17:05:06 +0000] [13] [INFO] Booting worker with pid: 13
+aiohttp: [2022-11-14 17:05:06 +0000] [14] [INFO] Booting worker with pid: 14
+aiohttp: [2022-11-14 17:05:06 +0000] [15] [INFO] Booting worker with pid: 15
+aiohttp: [2022-11-14 17:05:06 +0000] [16] [INFO] Booting worker with pid: 16
+aiohttp: [2022-11-14 17:05:06 +0000] [17] [INFO] Booting worker with pid: 17

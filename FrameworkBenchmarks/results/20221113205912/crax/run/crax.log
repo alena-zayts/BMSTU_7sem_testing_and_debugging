@@ -1,5 +1,0 @@
-crax: Running docker container: crax.dockerfile failed
-crax: Traceback (most recent call last):
-crax:   File "/FrameworkBenchmarks/toolset/utils/docker_helper.py", line 201, in run
-crax:     ports=ports,
-crax: NameError: global name 'ports' is not defined

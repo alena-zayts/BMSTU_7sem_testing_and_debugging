@@ -11,4 +11,4 @@ WORKDIR /aiohttp
 
 EXPOSE 8080
 
-CMD gunicorn app.gunicorn:app -c gunicorn_conf.py
+CMD gunicorn hello.app:app -c gunicorn_conf.py

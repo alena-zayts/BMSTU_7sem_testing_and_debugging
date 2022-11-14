@@ -62,4 +62,4 @@ URL_PATTERNS = [
     Route(Url('/db'), TestSingleQuery),
     Route(Url('/queries'), TestMultiQueries),
 ]
-app = Crax('hello.app', debug=True, on_startup=setup_database)
+app = Crax('hello.hello', debug=True, on_startup=setup_database)

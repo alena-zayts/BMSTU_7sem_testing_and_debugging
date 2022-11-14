@@ -11,16 +11,12 @@ import sys
 import time
 import shlex
 from pprint import pprint
-
 from colorama import Fore
 import numbers
 
 
 class Benchmarker:
     def __init__(self, config):
-        '''
-        Initialize the benchmarker.
-        '''
         self.config = config
         self.time_logger = TimeLogger()
         self.metadata = Metadata(self)
@@ -69,8 +65,6 @@ class Benchmarker:
 
         # Parse results
         log("Parsing Results ...", border='=')
-        self.results.parse(self.tests)
-
         self.results.set_completion_time()
         self.results.finish()
 

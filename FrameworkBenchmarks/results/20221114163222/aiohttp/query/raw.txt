@@ -1,0 +1,53 @@
+---------------------------------------------------------
+ Running Primer query
+ wrk -H 'Host: tfb-server' -H 'Accept: application/json,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 5 -c 8 --timeout 8 -t 8 "http://tfb-server:8080/queries/2"
+---------------------------------------------------------
+Running 5s test @ http://tfb-server:8080/queries/2
+  8 threads and 8 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     4.28ms    1.67ms  26.89ms   71.80%
+    Req/Sec   237.00     78.05   454.00     81.00%
+  Latency Distribution
+     50%    4.09ms
+     75%    5.02ms
+     90%    6.44ms
+     99%    8.58ms
+  9450 requests in 5.01s, 2.00MB read
+Requests/sec:   1887.83
+Transfer/sec:    408.45KB
+---------------------------------------------------------
+ Running Warmup query
+ wrk -H 'Host: tfb-server' -H 'Accept: application/json,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 15 -c 16 --timeout 8 -t 8 "http://tfb-server:8080/queries/2"
+---------------------------------------------------------
+Running 15s test @ http://tfb-server:8080/queries/2
+  8 threads and 16 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     6.62ms    3.23ms  60.00ms   82.57%
+    Req/Sec   312.32     66.43   515.00     65.83%
+  Latency Distribution
+     50%    5.63ms
+     75%    7.79ms
+     90%   10.12ms
+     99%   19.16ms
+  37348 requests in 15.03s, 7.89MB read
+Requests/sec:   2485.55
+Transfer/sec:    537.77KB
+---------------------------------------------------------
+ Queries: 1 for query
+ wrk -H 'Host: tfb-server' -H 'Accept: application/json,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 15 -c 16 --timeout 8 -t 8 "http://tfb-server:8080/queries/1"
+---------------------------------------------------------
+Running 15s test @ http://tfb-server:8080/queries/1
+  8 threads and 16 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     4.57ms    2.18ms  53.44ms   70.31%
+    Req/Sec   446.87    126.57   717.00     59.92%
+  Latency Distribution
+     50%    4.30ms
+     75%    5.63ms
+     90%    7.12ms
+     99%   11.26ms
+  53422 requests in 15.02s, 9.67MB read
+Requests/sec:   3557.50
+Transfer/sec:    659.31KB
+STARTTIME 1668443718
+ENDTIME 1668443733

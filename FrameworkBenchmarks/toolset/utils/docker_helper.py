@@ -164,16 +164,6 @@ class DockerHelper:
             extra_hosts = None
             name = "tfb-server"
 
-            if self.benchmarker.config.network is None:
-                extra_hosts = {
-                    socket.gethostname():
-                    str(self.benchmarker.config.server_host),
-                    'tfb-server':
-                    str(self.benchmarker.config.server_host),
-                    'tfb-database':
-                    str(self.benchmarker.config.database_host)
-                }
-                name = None
 
             sysctl = {'net.core.somaxconn': 65535}
 
@@ -352,7 +342,7 @@ class DockerHelper:
 
     def test_client_connection(self, url):
         '''
-        Tests that the app server at the given url responds successfully to a
+        Tests that the hello server at the given url responds successfully to a
         request.
         '''
         try:

@@ -5,11 +5,6 @@ from toolset.utils.output_helper import log
 
 
 class TimeLogger:
-    '''
-    Class for keeping track of and logging execution times
-    for suite actions
-    '''
-
     def __init__(self):
         self.start = time.time()
 

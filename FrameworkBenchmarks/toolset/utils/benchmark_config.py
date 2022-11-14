@@ -3,6 +3,7 @@ from toolset.test_types import test_types
 
 import os
 import time
+import socket
 
 
 class BenchmarkConfig:
@@ -14,7 +15,7 @@ class BenchmarkConfig:
         # Map type strings to their objects
         types = {}
         for type in test_types:
-            types[type] = test_types[type](self)
+            types[type] = test_types[type](self)  # Abstract test type
 
         # Turn type into a map instead of a list of strings
         if 'all' in args.type:
@@ -34,7 +35,7 @@ class BenchmarkConfig:
         self.pipeline_concurrency_levels = [256, ]
         self.query_levels = [1, ]
         self.max_concurrency = max(self.concurrency_levels)
-        self.results_environment = args.results_environment
+        self.results_environment = '(unspecified, hostname = %s)' % socket.gethostname()
         self.results_name = '(unspecified, datetime = %Y-%m-%d %H:%M:%S)'
         self.test = args.test
 

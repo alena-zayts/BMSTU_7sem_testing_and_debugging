@@ -1,0 +1,98 @@
+{
+  "rawData": {
+    "plaintext": {
+      "crax": [
+        {
+          "latencyAvg": "120.53ms", 
+          "latencyMax": "534.51ms", 
+          "latencyStdev": "79.56ms", 
+          "totalRequests": 317056, 
+          "startTime": 1668443437, 
+          "endTime": 1668443452
+        }
+      ]
+    }, 
+    "query": {
+      "crax": [
+        {
+          "latencyAvg": "5.24ms", 
+          "latencyMax": "42.95ms", 
+          "latencyStdev": "3.55ms", 
+          "totalRequests": 49215, 
+          "startTime": 1668443386, 
+          "endTime": 1668443401
+        }
+      ]
+    }, 
+    "json": {
+      "crax": [
+        {
+          "latencyAvg": "1.14ms", 
+          "latencyMax": "22.45ms", 
+          "latencyStdev": "1.44ms", 
+          "totalRequests": 277979, 
+          "startTime": 1668443336, 
+          "endTime": 1668443351
+        }
+      ]
+    }
+  }, 
+  "git": null, 
+  "uuid": "aedc0fc3-76e3-49e9-a3bc-2618d9fca932", 
+  "succeeded": {
+    "plaintext": [
+      "crax"
+    ], 
+    "query": [
+      "crax"
+    ], 
+    "json": [
+      "crax"
+    ]
+  }, 
+  "failed": {
+    "plaintext": [], 
+    "query": [], 
+    "json": []
+  }, 
+  "verify": {
+    "crax": {
+      "plaintext": "pass", 
+      "query": "pass", 
+      "json": "pass"
+    }
+  }, 
+  "duration": 15, 
+  "testMetadata": [
+    {
+      "framework": "aiohttp", 
+      "project_name": "aiohttp", 
+      "name": "aiohttp", 
+      "database": "postgres"
+    }, 
+    {
+      "framework": "crax", 
+      "project_name": "crax", 
+      "name": "crax", 
+      "database": "postgres"
+    }
+  ], 
+  "frameworks": [
+    "crax"
+  ], 
+  "pipelineConcurrencyLevels": [
+    256
+  ], 
+  "completionTime": 1668443522172, 
+  "concurrencyLevels": [
+    16
+  ], 
+  "startTime": 1668443140296, 
+  "queryIntervals": [
+    1
+  ], 
+  "completed": {
+    "crax": "20221114163054"
+  }, 
+  "name": "(unspecified, datetime = 2022-11-14 16:25:40)"
+}

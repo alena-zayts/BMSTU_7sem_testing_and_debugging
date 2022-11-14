@@ -35,7 +35,6 @@ class Results:
 
         self.uuid = str(uuid.uuid4())
         self.name = datetime.now().strftime(self.config.results_name)
-        self.environmentDescription = self.config.results_environment
 
         self.startTime = int(round(time.time() * 1000))
         self.completionTime = None
@@ -57,23 +56,6 @@ class Results:
     #############################################################################
     # PUBLIC FUNCTIONS
     #############################################################################
-
-    def parse(self, tests):
-        '''
-        Ensures that the system has all necessary software to run
-        the tests. This does not include that software for the individual
-        test, but covers software such as curl and weighttp that
-        are needed.
-        '''
-        # Run the method to get the commmit count of each framework.
-        self.__count_commits()
-        # Call the method which counts the sloc for each framework
-        self.__count_sloc()
-
-        # Time to create parsed files
-        # Aggregate JSON file
-        with open(self.file, "w") as f:
-            f.write(json.dumps(self.__to_jsonable(), indent=2))
 
     def parse_test(self, framework_test, test_type):
         '''
@@ -272,7 +254,6 @@ class Results:
 
         toRet['uuid'] = self.uuid
         toRet['name'] = self.name
-        toRet['environmentDescription'] = self.environmentDescription
         toRet['git'] = None
         toRet['startTime'] = self.startTime
         toRet['completionTime'] = self.completionTime
@@ -297,103 +278,6 @@ class Results:
         except IOError:
             log("Error writing results.json")
 
-    def __count_sloc(self):
-        '''
-        Counts the significant lines of code for all tests and stores in results.
-        '''
-        frameworks = self.benchmarker.metadata.gather_frameworks(self.config.test)
-
-        framework_to_count = {}
-
-        for framework, testlist in frameworks.items():
-
-            wd = testlist[0].directory
-
-            # Find the last instance of the word 'code' in the yaml output. This
-            # should be the line count for the sum of all listed files or just
-            # the line count for the last file in the case where there's only
-            # one file listed.
-            command = "cloc --yaml --follow-links . | grep code | tail -1 | cut -d: -f 2"
-
-            log("Running \"%s\" (cwd=%s)" % (command, wd))
-            try:
-                line_count = int(subprocess.check_output(command, cwd=wd, shell=True))
-            except (subprocess.CalledProcessError, ValueError) as e:
-                log("Unable to count lines of code for %s due to error '%s'" %
-                    (framework, e))
-                continue
-
-            log("Counted %s lines of code" % line_count)
-            framework_to_count[framework] = line_count
-
-        self.rawData['slocCounts'] = framework_to_count
-
-    def __count_commits(self):
-        '''
-        Count the git commits for all the framework tests
-        '''
-        frameworks = self.benchmarker.metadata.gather_frameworks(self.config.test)
-
-        def count_commit(directory, jsonResult):
-            command = "git rev-list HEAD -- " + directory + " | sort -u | wc -l"
-            try:
-                commitCount = subprocess.check_output(command, shell=True)
-                jsonResult[framework] = int(commitCount)
-            except subprocess.CalledProcessError:
-                pass
-
-        # Because git can be slow when run in large batches, this
-        # calls git up to 4 times in parallel. Normal improvement is ~3-4x
-        # in my trials, or ~100 seconds down to ~25
-        # This is safe to parallelize as long as each thread only
-        # accesses one key in the dictionary
-        threads = []
-        jsonResult = {}
-        # t1 = datetime.now()
-        for framework, testlist in frameworks.items():
-            directory = testlist[0].directory
-            t = threading.Thread(
-                target=count_commit, args=(directory, jsonResult))
-            t.start()
-            threads.append(t)
-            # Git has internal locks, full parallel will just cause contention
-            # and slowness, so we rate-limit a bit
-            if len(threads) >= 4:
-                threads[0].join()
-                threads.remove(threads[0])
-
-        # Wait for remaining threads
-        for t in threads:
-            t.join()
-        # t2 = datetime.now()
-        # print "Took %s seconds " % (t2 - t1).seconds
-
-        self.rawData['commitCounts'] = jsonResult
-        self.config.commits = jsonResult
-
-    def __get_git_commit_id(self):
-        '''
-        Get the git commit id for this benchmark
-        '''
-        return subprocess.check_output(
-            ["git", "rev-parse", "HEAD"], cwd=self.config.fw_root).strip()
-
-    def __get_git_repository_url(self):
-        '''
-        Gets the git repository url for this benchmark
-        '''
-        return subprocess.check_output(
-            ["git", "config", "--get", "remote.origin.url"],
-            cwd=self.config.fw_root).strip()
-
-    def __get_git_branch_name(self):
-        '''
-        Gets the git branch name for this benchmark
-        '''
-        return subprocess.check_output(
-            'git rev-parse --abbrev-ref HEAD',
-            shell=True,
-            cwd=self.config.fw_root).strip()
 
     def __parse_stats(self, framework_test, test_type, start_time, end_time,
                       interval):

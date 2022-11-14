@@ -9,4 +9,4 @@ RUN pip3 install cython==0.29.13 && \
 
 EXPOSE 8080
 
-CMD gunicorn hello.app:app -k uvicorn.workers.UvicornWorker -c crax_conf.py
+CMD gunicorn hello.app:app -k uvicorn.workers.UvicornWorker -c gunicorn_conf.py

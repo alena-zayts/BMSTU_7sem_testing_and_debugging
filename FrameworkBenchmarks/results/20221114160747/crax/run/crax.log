@@ -1,0 +1,48 @@
+crax: [2022-11-14 16:10:05 +0000] [10] [ERROR] Exception in worker process
+crax: Traceback (most recent call last):
+crax:   File "/usr/local/lib/python3.8/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+crax:     worker.init_process()
+crax:   File "/usr/local/lib/python3.8/site-packages/uvicorn/workers.py", line 61, in init_process
+crax:     super(UvicornWorker, self).init_process()
+crax:   File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 119, in init_process
+crax:     self.load_wsgi()
+crax:   File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+crax:     self.wsgi = self.app.wsgi()
+crax:   File "/usr/local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+crax:     self.callable = self.load()
+crax:   File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+crax:     return self.load_wsgiapp()
+crax:   File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+crax:     return util.import_app(self.app_uri)
+crax:   File "/usr/local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+crax:     mod = importlib.import_module(module)
+crax:   File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+crax:     return _bootstrap._gcd_import(name[level:], package, level)
+crax:   File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+crax:   File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+crax:   File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
+crax: ModuleNotFoundError: No module named 'app.gunicorn'
+crax: [2022-11-14 16:10:05 +0000] [11] [ERROR] Exception in worker process
+crax: Traceback (most recent call last):
+crax:   File "/usr/local/lib/python3.8/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+crax:     worker.init_process()
+crax:   File "/usr/local/lib/python3.8/site-packages/uvicorn/workers.py", line 61, in init_process
+crax:     super(UvicornWorker, self).init_process()
+crax:   File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 119, in init_process
+crax:     self.load_wsgi()
+crax:   File "/usr/local/lib/python3.8/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+crax:     self.wsgi = self.app.wsgi()
+crax:   File "/usr/local/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+crax:     self.callable = self.load()
+crax:   File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+crax:     return self.load_wsgiapp()
+crax:   File "/usr/local/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+crax:     return util.import_app(self.app_uri)
+crax:   File "/usr/local/lib/python3.8/site-packages/gunicorn/util.py", line 358, in import_app
+crax:     mod = importlib.import_module(module)
+crax:   File "/usr/local/lib/python3.8/importlib/__init__.py", line 127, in import_module
+crax:     return _bootstrap._gcd_import(name[level:], package, level)
+crax:   File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+crax:   File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+crax:   File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
+crax: ModuleNotFoundError: No module named 'app.gunicorn'

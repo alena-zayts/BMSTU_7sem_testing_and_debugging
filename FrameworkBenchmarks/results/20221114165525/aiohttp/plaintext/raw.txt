@@ -1,0 +1,53 @@
+---------------------------------------------------------
+ Running Primer plaintext
+ wrk -H 'Host: tfb-server' -H 'Accept: text/plain,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 5 -c 8 --timeout 8 -t 8 http://tfb-server:8080/plaintext
+---------------------------------------------------------
+Running 5s test @ http://tfb-server:8080/plaintext
+  8 threads and 8 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   478.72us    1.12ms  32.76ms   97.89%
+    Req/Sec     2.73k   705.99     4.14k    62.16%
+  Latency Distribution
+     50%  318.00us
+     75%  454.00us
+     90%  520.00us
+     99%    4.14ms
+  110765 requests in 5.10s, 15.74MB read
+Requests/sec:  21718.68
+Transfer/sec:      3.09MB
+---------------------------------------------------------
+ Running Warmup plaintext
+ wrk -H 'Host: tfb-server' -H 'Accept: text/plain,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 15 -c 16 --timeout 8 -t 8 http://tfb-server:8080/plaintext
+---------------------------------------------------------
+Running 15s test @ http://tfb-server:8080/plaintext
+  8 threads and 16 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   810.73us  831.97us  17.63ms   96.66%
+    Req/Sec     2.79k     1.09k    6.04k    80.58%
+  Latency Distribution
+     50%  690.00us
+     75%    0.89ms
+     90%    1.17ms
+     99%    5.28ms
+  333585 requests in 15.01s, 47.40MB read
+Requests/sec:  22217.30
+Transfer/sec:      3.16MB
+---------------------------------------------------------
+ Concurrency: 256 for plaintext
+ wrk -H 'Host: tfb-server' -H 'Accept: text/plain,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 15 -c 256 --timeout 8 -t 8 http://tfb-server:8080/plaintext -s pipeline.lua -- 16
+---------------------------------------------------------
+Running 15s test @ http://tfb-server:8080/plaintext
+  8 threads and 256 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    63.89ms   38.47ms 245.19ms   66.13%
+    Req/Sec     5.08k     1.44k    8.77k    67.54%
+  Latency Distribution
+     50%   60.33ms
+     75%   88.73ms
+     90%  113.62ms
+     99%  173.40ms
+  606478 requests in 15.09s, 86.18MB read
+Requests/sec:  40194.85
+Transfer/sec:      5.71MB
+STARTTIME 1668445148
+ENDTIME 1668445163

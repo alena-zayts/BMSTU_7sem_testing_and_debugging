@@ -1,9 +1,0 @@
---------------------------------------------------------------------------------
-Benchmarking crax
---------------------------------------------------------------------------------
-crax: ERROR: Problem starting crax
-crax: Total test time: 2m 13s
-tfb: Total time building so far: 2m 12s
-tfb: Total time verifying so far: 0s
-tfb: Total execution time so far: 2m 18s
-crax: Clean up: Sleep 60 seconds...

@@ -1,0 +1,122 @@
+{
+  "rawData": {
+    "plaintext": {
+      "crax": [
+        {
+          "latencyAvg": "94.46ms", 
+          "latencyMax": "357.06ms", 
+          "latencyStdev": "51.28ms", 
+          "totalRequests": 372556, 
+          "startTime": 1668437984, 
+          "endTime": 1668437999
+        }
+      ]
+    }, 
+    "query": {
+      "crax": [
+        {
+          "latencyAvg": "4.02ms", 
+          "latencyMax": "58.08ms", 
+          "latencyStdev": "3.00ms", 
+          "totalRequests": 65228, 
+          "startTime": 1668437933, 
+          "endTime": 1668437949
+        }
+      ]
+    }, 
+    "json": {
+      "crax": [
+        {
+          "latencyAvg": "1.18ms", 
+          "latencyMax": "30.30ms", 
+          "latencyStdev": "1.56ms", 
+          "totalRequests": 277703, 
+          "startTime": 1668437883, 
+          "endTime": 1668437898
+        }
+      ]
+    }
+  }, 
+  "git": null, 
+  "uuid": "0dbe9a55-d47f-422c-b036-a009669640cc", 
+  "succeeded": {
+    "plaintext": [
+      "crax"
+    ], 
+    "query": [
+      "crax"
+    ], 
+    "json": [
+      "crax"
+    ]
+  }, 
+  "failed": {
+    "plaintext": [], 
+    "query": [], 
+    "json": []
+  }, 
+  "verify": {
+    "crax": {
+      "plaintext": "pass", 
+      "query": "pass", 
+      "json": "pass"
+    }
+  }, 
+  "duration": 15, 
+  "testMetadata": [
+    {
+      "versus": "", 
+      "project_name": "aiohttp", 
+      "display_name": "aiohttp", 
+      "name": "aiohttp", 
+      "classification": "", 
+      "database": "postgres", 
+      "language": "python", 
+      "os": "linux", 
+      "notes": "uses aiopg with sqlalchemy for database access", 
+      "tags": [], 
+      "framework": "aiohttp", 
+      "webserver": "gunicorn", 
+      "orm": "full", 
+      "platform": "asyncio", 
+      "database_os": "linux", 
+      "approach": "realistic"
+    }, 
+    {
+      "versus": "", 
+      "project_name": "crax", 
+      "display_name": "crax", 
+      "name": "crax", 
+      "classification": "", 
+      "database": "postgres", 
+      "language": "python", 
+      "os": "linux", 
+      "notes": "", 
+      "tags": [], 
+      "framework": "crax", 
+      "webserver": "none", 
+      "orm": "raw", 
+      "platform": "none", 
+      "database_os": "linux", 
+      "approach": "realistic"
+    }
+  ], 
+  "frameworks": [
+    "crax"
+  ], 
+  "pipelineConcurrencyLevels": [
+    256
+  ], 
+  "completionTime": 1668438069595, 
+  "concurrencyLevels": [
+    16
+  ], 
+  "startTime": 1668437685919, 
+  "queryIntervals": [
+    1
+  ], 
+  "completed": {
+    "crax": "20221114150001"
+  }, 
+  "name": "(unspecified, datetime = 2022-11-14 14:54:45)"
+}

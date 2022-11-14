@@ -1,0 +1,54 @@
+---------------------------------------------------------
+ Running Primer json
+ wrk -H 'Host: tfb-server' -H 'Accept: application/json,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 5 -c 8 --timeout 8 -t 8 http://tfb-server:8080/json
+---------------------------------------------------------
+Running 5s test @ http://tfb-server:8080/json
+  8 threads and 8 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   508.70us  243.20us   9.05ms   79.96%
+    Req/Sec     2.00k   708.75     3.79k    63.05%
+  Latency Distribution
+     50%  458.00us
+     75%  587.00us
+     90%  773.00us
+     99%    1.19ms
+  80914 requests in 5.10s, 12.89MB read
+Requests/sec:  15866.45
+Transfer/sec:      2.53MB
+---------------------------------------------------------
+ Running Warmup json
+ wrk -H 'Host: tfb-server' -H 'Accept: application/json,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 15 -c 16 --timeout 8 -t 8 "http://tfb-server:8080/json"
+---------------------------------------------------------
+Running 15s test @ http://tfb-server:8080/json
+  8 threads and 16 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.07ms    1.26ms  20.18ms   92.88%
+    Req/Sec     2.38k     0.97k    4.53k    52.17%
+  Latency Distribution
+     50%  641.00us
+     75%    1.24ms
+     90%    1.94ms
+     99%    7.49ms
+  284013 requests in 15.04s, 45.23MB read
+  Socket errors: connect 0, read 0, write 0, timeout 15
+Requests/sec:  18883.94
+Transfer/sec:      3.01MB
+---------------------------------------------------------
+ Concurrency: 16 for json
+ wrk -H 'Host: tfb-server' -H 'Accept: application/json,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 15 -c 16 --timeout 8 -t 8 "http://tfb-server:8080/json"
+---------------------------------------------------------
+Running 15s test @ http://tfb-server:8080/json
+  8 threads and 16 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     0.89ms  558.52us  11.87ms   76.53%
+    Req/Sec     2.34k     1.14k    8.03k    73.38%
+  Latency Distribution
+     50%  793.00us
+     75%    1.14ms
+     90%    1.57ms
+     99%    2.50ms
+  279332 requests in 15.10s, 44.49MB read
+Requests/sec:  18500.17
+Transfer/sec:      2.95MB
+STARTTIME 1668440850
+ENDTIME 1668440865

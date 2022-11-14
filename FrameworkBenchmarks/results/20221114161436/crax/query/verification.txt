@@ -1,0 +1,29 @@
+--------------------------------------------------------------------------------
+VERIFYING QUERY
+--------------------------------------------------------------------------------
+   FAIL for http://tfb-server:8080/queries?queries=2
+     Invalid JSON: No JSON object could be decoded
+   FAIL for http://tfb-server:8080/queries?queries=2
+     Invalid Content-Type header, found "text/html; charset=utf-8", did not match "^application/json(; ?charset=(UTF|utf)-8)?$".
+   FAIL for http://tfb-server:8080/queries?queries=0
+     Invalid JSON: No JSON object could be decoded
+   FAIL for http://tfb-server:8080/queries?queries=0
+     Invalid Content-Type header, found "text/html; charset=utf-8", did not match "^application/json(; ?charset=(UTF|utf)-8)?$".
+   FAIL for http://tfb-server:8080/queries?queries=foo
+     Invalid JSON: No JSON object could be decoded
+   FAIL for http://tfb-server:8080/queries?queries=foo
+     Invalid Content-Type header, found "text/html; charset=utf-8", did not match "^application/json(; ?charset=(UTF|utf)-8)?$".
+   FAIL for http://tfb-server:8080/queries?queries=501
+     Invalid JSON: No JSON object could be decoded
+   FAIL for http://tfb-server:8080/queries?queries=501
+     Invalid Content-Type header, found "text/html; charset=utf-8", did not match "^application/json(; ?charset=(UTF|utf)-8)?$".
+   FAIL for http://tfb-server:8080/queries?queries=
+     Invalid JSON: No JSON object could be decoded
+   FAIL for http://tfb-server:8080/queries?queries=
+     Invalid Content-Type header, found "text/html; charset=utf-8", did not match "^application/json(; ?charset=(UTF|utf)-8)?$".
+   FAIL for http://tfb-server:8080/queries?queries=20
+     4 failed transactions.
+   FAIL for http://tfb-server:8080/queries?queries=20
+     Only 0 executed queries in the database out of roughly 320 expected.
+   FAIL for http://tfb-server:8080/queries?queries=20
+     Only 0 rows read in the database out of roughly 320 expected.

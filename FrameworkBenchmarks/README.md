@@ -11,6 +11,14 @@
 - ?Multiple Database Queries: A variation of Test #2 and also uses the World table. Multiple rows are fetched to more dramatically punish the database driver and connection pool. At the highest queries-per-request tested (20), this test demonstrates all frameworks' convergence toward zero requests-per-second as database activity increases.
 - Plaintext: An exercise of the request-routing fundamentals only, designed to demonstrate the capacity of high-performance platforms in particular. Requests will be sent using HTTP pipelining. The response payload is still small, meaning good performance is still necessary in order to saturate the gigabit Ethernet of the test environment.
 
+
+# Gunicorn 
+
+Веб-сервер, в нашем случае Nginx, принимает и обрабатывает HTTP-запрос браузера, затем передаёт его в Application-сервер — Gunicorn.
+Gunicorn получает данные от Nginx, разбирает их и исходя из своей конфигурации по протоколу WSGI передаёт их в Django.
+Django обрабатывает полученные данные и возвращает результат работы обратно в Gunicorn, а он в свою очередь отдаёт результат в Nginx, который возвращает клиенту готовую HTML-страницу.
+
+
 # wrk - a HTTP benchmarking tool
 
   wrk is a modern HTTP benchmarking tool capable of generating significant
@@ -56,3 +64,127 @@
 
         --timeout:     record a timeout if a response is not received within
                        this amount of time.
+
+
+
+оба "classification": "Micro",
+```buildoutcfg
+{
+  "rawData": {
+    "plaintext": {
+      "crax": [
+        {
+          "latencyAvg": "94.05ms",
+          "latencyMax": "330.23ms",
+          "latencyStdev": "54.34ms",
+          "totalRequests": 385172,
+          "startTime": 1668374170,
+          "endTime": 1668374186
+        }
+      ]
+    },
+    "query": {},
+    "json": {
+      "crax": [
+        {
+          "latencyAvg": "1.09ms",
+          "latencyMax": "33.22ms",
+          "latencyStdev": "1.52ms",
+          "totalRequests": 292335,
+          "startTime": 1668374120,
+          "endTime": 1668374135
+        }
+      ]
+    },
+    "commitCounts": {
+      "crax": 0
+    },
+    "slocCounts": {
+      "crax": 124
+    }
+  },
+  "environmentDescription": "(unspecified, hostname = 46deb9083dc7)",
+  "git": null,
+  "uuid": "a56113a7-19a4-4832-8b68-e348ddc58954",
+  "succeeded": {
+    "plaintext": [
+      "crax"
+    ],
+    "query": [],
+    "json": [
+      "crax"
+    ]
+  },
+  "failed": {
+    "plaintext": [],
+    "query": [
+      "crax"
+    ],
+    "json": []
+  },
+  "verify": {
+    "crax": {
+      "plaintext": "pass",
+      "query": "fail",
+      "json": "pass"
+    }
+  },
+  "duration": 15,
+  "testMetadata": [
+    {
+      "versus": "",
+      "project_name": "aiohttp",
+      "display_name": "aiohttp",
+      "name": "aiohttp",
+      "classification": "micro",
+      "database": "postgres",
+      "language": "python",
+      "os": "linux",
+      "notes": "uses aiopg with sqlalchemy for database access",
+      "tags": [],
+      "framework": "aiohttp",
+      "webserver": "gunicorn",
+      "orm": "full",
+      "platform": "asyncio",
+      "database_os": "linux",
+      "approach": "realistic"
+    },
+    {
+      "versus": "",
+      "project_name": "crax",
+      "display_name": "Crax",
+      "name": "crax",
+      "classification": "micro",
+      "database": "postgres",
+      "language": "python",
+      "os": "linux",
+      "notes": "",
+      "tags": [],
+      "framework": "crax",
+      "webserver": "none",
+      "orm": "raw",
+      "platform": "none",
+      "database_os": "linux",
+      "approach": "realistic"
+    }
+  ],
+  "frameworks": [
+    "crax"
+  ],
+  "pipelineConcurrencyLevels": [
+    256
+  ],
+  "completionTime": 1668374257009,
+  "concurrencyLevels": [
+    16
+  ],
+  "startTime": 1668373925906,
+  "queryIntervals": [
+    1
+  ],
+  "completed": {
+    "crax": "20221113211628"
+  },
+  "name": "(unspecified, datetime = 2022-11-13 21:12:05)"
+}
+```

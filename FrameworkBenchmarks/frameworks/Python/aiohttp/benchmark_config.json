@@ -1,27 +1,25 @@
 {
   "framework": "aiohttp",
-  "tests": [{
-    "default": {
+  "test": {
       "json_url": "/json",
       "db_url": "/db",
       "query_url": "/queries/",
-      "fortune_url": "/fortunes",
-      "update_url": "/updates/",
       "plaintext_url": "/plaintext",
       "port": 8080,
-      "approach": "Realistic",
-      "classification": "Micro",
-      "database": "Postgres",
-      "framework": "aiohttp",
-      "language": "Python",
-      "flavor": "Python3",
-      "orm": "Full",
+
       "platform": "asyncio",
       "webserver": "gunicorn",
-      "os": "Linux",
-      "database_os": "Linux",
+      "orm": "full",
+
       "display_name": "aiohttp",
+      "framework": "aiohttp",
+
+      "os": "linux",
+      "database_os": "linux",
+      "approach": "realistic",
+      "database": "postgres",
+      "language": "python",
+      "flavor": "python3",
       "notes": "uses aiopg with sqlalchemy for database access"
-    }
-  }]
+  }
 }

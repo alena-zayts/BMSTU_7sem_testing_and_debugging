@@ -1,0 +1,65 @@
+{
+  "rawData": {
+    "plaintext": {}, 
+    "query": {}, 
+    "json": {}
+  }, 
+  "git": null, 
+  "uuid": "5ec690f3-0d99-41f4-a9fe-0dccc11125eb", 
+  "succeeded": {
+    "plaintext": [], 
+    "query": [], 
+    "json": []
+  }, 
+  "failed": {
+    "plaintext": [
+      "crax"
+    ], 
+    "query": [
+      "crax"
+    ], 
+    "json": [
+      "crax"
+    ]
+  }, 
+  "verify": {
+    "crax": {
+      "plaintext": "fail", 
+      "query": "fail", 
+      "json": "fail"
+    }
+  }, 
+  "duration": 15, 
+  "testMetadata": [
+    {
+      "framework": "aiohttp", 
+      "project_name": "aiohttp", 
+      "name": "aiohttp", 
+      "database": "postgres"
+    }, 
+    {
+      "framework": "crax", 
+      "project_name": "crax", 
+      "name": "crax", 
+      "database": "postgres"
+    }
+  ], 
+  "frameworks": [
+    "crax"
+  ], 
+  "pipelineConcurrencyLevels": [
+    256
+  ], 
+  "completionTime": 1668442696476, 
+  "concurrencyLevels": [
+    16
+  ], 
+  "startTime": 1668442476685, 
+  "queryIntervals": [
+    1
+  ], 
+  "completed": {
+    "crax": "20221114161708"
+  }, 
+  "name": "(unspecified, datetime = 2022-11-14 16:14:36)"
+}
