@@ -1,0 +1,25 @@
+{
+  "framework": "aiohttp",
+  "test": {
+      "json_url": "/json",
+      "db_url": "/db",
+      "query_url": "/queries/",
+      "plaintext_url": "/plaintext",
+      "port": 8080,
+
+      "platform": "asyncio",
+      "webserver": "gunicorn",
+      "orm": "full",
+
+      "display_name": "aiohttp",
+      "framework": "aiohttp",
+
+      "os": "linux",
+      "database_os": "linux",
+      "approach": "realistic",
+      "database": "postgres",
+      "language": "python",
+      "flavor": "python3",
+      "notes": "uses aiopg with sqlalchemy for database access"
+  }
+}
