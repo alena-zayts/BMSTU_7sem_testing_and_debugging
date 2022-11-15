@@ -28,8 +28,7 @@ class Results:
         except OSError:
             pass
         self.file = os.path.join(self.directory, "results.json")
-
-        self.name = datetime.now().strftime('(unspecified, datetime = %Y-%m-%d %H:%M:%S)')
+        self.name = datetime.now().strftime('(happened at datetime = %Y-%m-%d %H:%M:%S)')
 
         self.startTime = int(round(time.time() * 1000))
         self.completionTime = None
@@ -188,35 +187,7 @@ class Results:
                 self.failed[test_type].append(framework_test.name)
 
     def finish(self):
-        '''
-        Finishes these results.
-        '''
-
-        # Normally you don't have to use Fore.BLUE before each line, but
-        # Travis-CI seems to reset color codes on newline (see travis-ci/travis-ci#2692)
-        # or stream flush, so we have to ensure that the color code is printed repeatedly
-        log("Verification Summary",
-            border='=',
-            border_bottom='-',
-            color=Fore.CYAN)
-        for test in self.benchmarker.tests:
-            log(Fore.CYAN + "| {!s}".format(test.name))
-            if test.name in self.verify.keys():
-                for test_type, result in self.verify[
-                        test.name].iteritems():
-                    if result.upper() == "PASS":
-                        color = Fore.GREEN
-                    elif result.upper() == "WARN":
-                        color = Fore.YELLOW
-                    else:
-                        color = Fore.RED
-                    log(Fore.CYAN + "|       " + test_type.ljust(13) +
-                        ' : ' + color + result.upper())
-            else:
-                log(Fore.CYAN + "|      " + Fore.RED +
-                    "NO RESULTS (Did framework launch?)")
         log('', border='=', border_bottom='', color=Fore.CYAN)
-
         log("Results are saved in " + self.directory)
 
     #############################################################################
@@ -296,77 +267,3 @@ class Results:
                     row_dict[header][sub_header[item_num]] = float(column)
                 stats_dict[time] = row_dict
         return stats_dict
-
-    def __calculate_average_stats(self, raw_stats):
-        '''
-        We have a large amount of raw data for the statistics that may be useful
-        for the stats nerds, but most people care about a couple of numbers. For
-        now, we're only going to supply:
-          * Average CPU
-          * Average Memory
-          * Total network use
-          * Total disk use
-        More may be added in the future. If they are, please update the above list.
-
-        Note: raw_stats is directly from the __parse_stats method.
-
-        Recall that this consists of a dictionary of timestamps, each of which
-        contain a dictionary of stat categories which contain a dictionary of stats
-        '''
-        raw_stat_collection = dict()
-
-        for time_dict in raw_stats.items()[1]:
-            for main_header, sub_headers in time_dict.items():
-                item_to_append = None
-                if 'cpu' in main_header:
-                    # We want to take the idl stat and subtract it from 100
-                    # to get the time that the CPU is NOT idle.
-                    item_to_append = sub_headers['idl'] - 100.0
-                elif main_header == 'memory usage':
-                    item_to_append = sub_headers['used']
-                elif 'net' in main_header:
-                    # Network stats have two parts - recieve and send. We'll use a tuple of
-                    # style (recieve, send)
-                    item_to_append = (sub_headers['recv'], sub_headers['send'])
-                elif 'dsk' or 'io' in main_header:
-                    # Similar for network, except our tuple looks like (read, write)
-                    item_to_append = (sub_headers['read'], sub_headers['writ'])
-                if item_to_append is not None:
-                    if main_header not in raw_stat_collection:
-                        raw_stat_collection[main_header] = list()
-                    raw_stat_collection[main_header].append(item_to_append)
-
-        # Simple function to determine human readable size
-        # http://stackoverflow.com/questions/1094841/reusable-library-to-get-human-readable-version-of-file-size
-        def sizeof_fmt(num):
-            # We'll assume that any number we get is convertable to a float, just in case
-            num = float(num)
-            for x in ['bytes', 'KB', 'MB', 'GB']:
-                if 1024.0 > num > -1024.0:
-                    return "%3.1f%s" % (num, x)
-                num /= 1024.0
-            return "%3.1f%s" % (num, 'TB')
-
-        # Now we have our raw stats in a readable format - we need to format it for display
-        # We need a floating point sum, so the built in sum doesn't cut it
-        display_stat_collection = dict()
-        for header, values in raw_stat_collection.items():
-            display_stat = None
-            if 'cpu' in header:
-                display_stat = sizeof_fmt(math.fsum(values) / len(values))
-            elif main_header == 'memory usage':
-                display_stat = sizeof_fmt(math.fsum(values) / len(values))
-            elif 'net' in main_header:
-                receive, send = zip(*values)  # unzip
-                display_stat = {
-                    'receive': sizeof_fmt(math.fsum(receive)),
-                    'send': sizeof_fmt(math.fsum(send))
-                }
-            else:  # if 'dsk' or 'io' in header:
-                read, write = zip(*values)  # unzip
-                display_stat = {
-                    'read': sizeof_fmt(math.fsum(read)),
-                    'write': sizeof_fmt(math.fsum(write))
-                }
-            display_stat_collection[header] = display_stat
-        return display_stat
