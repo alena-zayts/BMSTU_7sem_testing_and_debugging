@@ -1,0 +1,20 @@
+--------------------------------------------------------------------------------
+Benchmarking crax
+--------------------------------------------------------------------------------
+BENCHMARKING JSON ... 
+crax: Traceback (most recent call last):
+crax:   File "/MyBenchmark/toolset/benchmark/benchmarker.py", line 151, in __run_test
+crax:     self.__benchmark(test, benchmark_log)
+crax:   File "/MyBenchmark/toolset/benchmark/benchmarker.py", line 200, in __benchmark
+crax:     results = self.results.parse_test(framework_test, test_type)
+crax:   File "/MyBenchmark/toolset/utils/results.py", line 113, in parse_test
+crax:     rawData["startTime"], rawData["endTime"], 1)
+crax:   File "/MyBenchmark/toolset/utils/results.py", line 232, in __parse_stats
+crax:     with open(stats_file) as stats:
+crax: IOError: [Errno 2] No such file or directory: u'/MyBenchmark/results/20221115184445/crax/json/stats.txt'
+crax: Error during test: crax
+crax: Total test time: 6m 27s
+bm: Total time building so far: 4m 8s
+bm: Total time verifying so far: 0s
+bm: Total execution time so far: 6m 33s
+crax: Clean up: Sleep 60 seconds...

@@ -202,7 +202,6 @@ class Benchmarker:
             self.results.report_benchmark_results(framework_test, test_type, results['results'])
             log("Complete", file=benchmark_log)
 
-    # TODO maybe delete
     def __begin_logging(self, framework_test, test_type):
         '''
         Starts a thread to monitor the resource usage, to be synced with the client's time.

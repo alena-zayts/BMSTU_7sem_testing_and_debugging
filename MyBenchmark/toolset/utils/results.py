@@ -41,7 +41,6 @@ class Results:
         self.completed = dict()
         self.succeeded = dict()
         self.failed = dict()
-        self.verify = dict()
         for type in test_types:
             self.rawData[type] = dict()
             self.failed[type] = []
@@ -60,8 +59,7 @@ class Results:
         stats = []
 
         if os.path.exists(self.get_raw_file(framework_test.name, test_type)):
-            with open(self.get_raw_file(framework_test.name,
-                                        test_type)) as raw_data:
+            with open(self.get_raw_file(framework_test.name, test_type)) as raw_data:
 
                 is_warmup = True
                 rawData = None
@@ -78,8 +76,7 @@ class Results:
                             rawData = dict()
                             results['results'].append(rawData)
                         if "Latency" in line:
-                            m = re.findall(r"([0-9]+\.*[0-9]*[us|ms|s|m|%]+)",
-                                           line)
+                            m = re.findall(r"([0-9]+\.*[0-9]*[us|ms|s|m|%]+)", line)
                             if len(m) == 4:
                                 rawData['latencyAvg'] = m[0]
                                 rawData['latencyStdev'] = m[1]
@@ -102,8 +99,7 @@ class Results:
                                 m = re.search("timeout ([0-9]+)", line)
                                 rawData['timeout'] = int(m.group(1))
                         if "Non-2xx" in line:
-                            m = re.search("Non-2xx or 3xx responses: ([0-9]+)",
-                                          line)
+                            m = re.search("Non-2xx or 3xx responses: ([0-9]+)", line)
                             if m != None:
                                 rawData['5xx'] = int(m.group(1))
                         if "STARTTIME" in line:
@@ -122,9 +118,6 @@ class Results:
         return results
 
     def write_intermediate(self, test_name, status_message):
-        '''
-        Writes the intermediate results for the given test_name and status_message
-        '''
         self.completed[test_name] = status_message
         self.__write_results()
 
@@ -140,10 +133,10 @@ class Results:
             pass
 
     def get_raw_file(self, test_name, test_type):
-        '''
+        """
         Returns the output file for this test_name and test_type
         Example: fw_root/results/timestamp/test_type/test_name/raw.txt
-        '''
+        """
         path = os.path.join(self.directory, test_name, test_type, "raw.txt")
         try:
             os.makedirs(os.path.dirname(path))
@@ -162,7 +155,6 @@ class Results:
         except OSError:
             pass
         return path
-
 
     def report_benchmark_results(self, framework_test, test_type, results):
         '''
@@ -212,7 +204,6 @@ class Results:
         toRet['completed'] = self.completed
         toRet['succeeded'] = self.succeeded
         toRet['failed'] = self.failed
-        toRet['verify'] = self.verify
 
         return toRet
 

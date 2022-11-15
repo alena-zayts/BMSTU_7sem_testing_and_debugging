@@ -1,0 +1,48 @@
+{
+  "name": "(happened at datetime = 2022-11-15 18:44:46)", 
+  "succeeded": {
+    "plaintext": [], 
+    "query": [], 
+    "json": []
+  }, 
+  "failed": {
+    "plaintext": [], 
+    "query": [], 
+    "json": []
+  }, 
+  "completionTime": 1668538346365, 
+  "frameworks": [
+    "crax"
+  ], 
+  "pipelineConcurrencyLevels": [
+    256, 
+    1024, 
+    4096, 
+    16384
+  ], 
+  "concurrencyLevels": [
+    16, 
+    32, 
+    64, 
+    128, 
+    256, 
+    512
+  ], 
+  "startTime": 1668537886006, 
+  "queryIntervals": [
+    1, 
+    5, 
+    10, 
+    15, 
+    20
+  ], 
+  "completed": {
+    "crax": "error during test: [Errno 2] No such file or directory: u'/MyBenchmark/results/20221115184445/crax/json/stats.txt'"
+  }, 
+  "duration": 15, 
+  "rawData": {
+    "plaintext": {}, 
+    "query": {}, 
+    "json": {}
+  }
+}
