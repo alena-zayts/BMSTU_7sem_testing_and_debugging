@@ -22,7 +22,7 @@ class Metadata:
         include = include or []
 
         # Search for configuration files
-        config_files = glob.glob("{!s}/*/*/benchmark_config.json".format(self.benchmarker.config.lang_root))
+        config_files = glob.glob("{!s}/*/benchmark_config.json".format(self.benchmarker.config.frameworks_root))
 
         tests = []
         for config_file_name in config_files:

@@ -1,0 +1,475 @@
+crax: Step 1/6 : FROM python:3.8
+crax:  ---> 900972ffeecd
+crax: Step 2/6 : ADD ./ /crax
+crax:  ---> c7ed971dec7a
+crax: Step 3/6 : WORKDIR /crax
+crax:  ---> Running in e694d30a5d71
+crax: Removing intermediate container e694d30a5d71
+crax:  ---> 96dd1bedf784
+crax: Step 4/6 : RUN pip3 install cython==0.29.13 &&     pip3 install -r /crax/requirements.txt
+crax:  ---> Running in eab0dde71c25
+crax: Collecting cython==0.29.13
+crax:   Downloading Cython-0.29.13.tar.gz (2.1 MB)
+crax:   Preparing metadata (setup.py): started
+crax:   Preparing metadata (setup.py): finished with status 'done'
+crax: Building wheels for collected packages: cython
+crax:   Building wheel for cython (setup.py): started
+crax:   Building wheel for cython (setup.py): still running...
+crax:   Building wheel for cython (setup.py): finished with status 'error'
+crax:   error: subprocess-exited-with-error
+crax:       Unable to find pgen, not compiling formal grammar.
+crax:       running bdist_wheel
+crax:       running build
+crax:       running build_py
+crax:       creating build
+crax:       creating build/lib.linux-x86_64-3.8
+crax:       copying cython.py -> build/lib.linux-x86_64-3.8
+crax:       creating build/lib.linux-x86_64-3.8/Cython
+crax:       copying Cython/Shadow.py -> build/lib.linux-x86_64-3.8/Cython
+crax:       copying Cython/StringIOTree.py -> build/lib.linux-x86_64-3.8/Cython
+crax:       copying Cython/Coverage.py -> build/lib.linux-x86_64-3.8/Cython
+crax:       copying Cython/Utils.py -> build/lib.linux-x86_64-3.8/Cython
+crax:       copying Cython/CodeWriter.py -> build/lib.linux-x86_64-3.8/Cython
+crax:       copying Cython/TestUtils.py -> build/lib.linux-x86_64-3.8/Cython
+crax:       copying Cython/Debugging.py -> build/lib.linux-x86_64-3.8/Cython
+crax:       copying Cython/__init__.py -> build/lib.linux-x86_64-3.8/Cython
+crax:       creating build/lib.linux-x86_64-3.8/Cython/Build
+crax:       copying Cython/Build/Cythonize.py -> build/lib.linux-x86_64-3.8/Cython/Build
+crax:       copying Cython/Build/Dependencies.py -> build/lib.linux-x86_64-3.8/Cython/Build
+crax:       copying Cython/Build/Distutils.py -> build/lib.linux-x86_64-3.8/Cython/Build
+crax:       copying Cython/Build/Inline.py -> build/lib.linux-x86_64-3.8/Cython/Build
+crax:       copying Cython/Build/BuildExecutable.py -> build/lib.linux-x86_64-3.8/Cython/Build
+crax:       copying Cython/Build/__init__.py -> build/lib.linux-x86_64-3.8/Cython/Build
+crax:       copying Cython/Build/IpythonMagic.py -> build/lib.linux-x86_64-3.8/Cython/Build
+crax:       creating build/lib.linux-x86_64-3.8/Cython/Compiler
+crax:       copying Cython/Compiler/Scanning.py -> build/lib.linux-x86_64-3.8/Cython/Compiler
+crax:       copying Cython/Compiler/Lexicon.py -> build/lib.linux-x86_64-3.8/Cython/Compiler
+crax:       copying Cython/Compiler/PyrexTypes.py -> build/lib.linux-x86_64-3.8/Cython/Compiler
+crax:       copying Cython/Compiler/Main.py -> build/lib.linux-x86_64-3.8/Cython/Compiler
+crax:       copying Cython/Compiler/Pipeline.py -> build/lib.linux-x86_64-3.8/Cython/Compiler
+crax:       copying Cython/Compiler/ModuleNode.py -> build/lib.linux-x86_64-3.8/Cython/Compiler
+crax:       copying Cython/Compiler/Naming.py -> build/lib.linux-x86_64-3.8/Cython/Compiler
+crax:       copying Cython/Compiler/CmdLine.py -> build/lib.linux-x86_64-3.8/Cython/Compiler
+crax:       copying Cython/Compiler/FlowControl.py -> build/lib.linux-x86_64-3.8/Cython/Compiler
+crax:       copying Cython/Compiler/FusedNode.py -> build/lib.linux-x86_64-3.8/Cython/Compiler
+crax:       copying Cython/Compiler/Errors.py -> build/lib.linux-x86_64-3.8/Cython/Compiler
+crax:       copying Cython/Compiler/AutoDocTransforms.py -> build/lib.linux-x86_64-3.8/Cython/Compiler
+crax:       copying Cython/Compiler/Future.py -> build/lib.linux-x86_64-3.8/Cython/Compiler
+crax:       copying Cython/Compiler/Code.py -> build/lib.linux-x86_64-3.8/Cython/Compiler
+crax:       copying Cython/Compiler/DebugFlags.py -> build/lib.linux-x86_64-3.8/Cython/Compiler
+crax:       copying Cython/Compiler/Buffer.py -> build/lib.linux-x86_64-3.8/Cython/Compiler
+crax:       copying Cython/Compiler/TypeSlots.py -> build/lib.linux-x86_64-3.8/Cython/Compiler
+crax:       copying Cython/Compiler/Pythran.py -> build/lib.linux-x86_64-3.8/Cython/Compiler
+crax:       copying Cython/Compiler/TreeFragment.py -> build/lib.linux-x86_64-3.8/Cython/Compiler
+crax:       copying Cython/Compiler/AnalysedTreeTransforms.py -> build/lib.linux-x86_64-3.8/Cython/Compiler
+crax:       copying Cython/Compiler/Symtab.py -> build/lib.linux-x86_64-3.8/Cython/Compiler
+crax:       copying Cython/Compiler/CodeGeneration.py -> build/lib.linux-x86_64-3.8/Cython/Compiler
+crax:       copying Cython/Compiler/TreePath.py -> build/lib.linux-x86_64-3.8/Cython/Compiler
+crax:       copying Cython/Compiler/StringEncoding.py -> build/lib.linux-x86_64-3.8/Cython/Compiler
+crax:       copying Cython/Compiler/Interpreter.py -> build/lib.linux-x86_64-3.8/Cython/Compiler
+crax:       copying Cython/Compiler/Builtin.py -> build/lib.linux-x86_64-3.8/Cython/Compiler
+crax:       copying Cython/Compiler/ParseTreeTransforms.py -> build/lib.linux-x86_64-3.8/Cython/Compiler
+crax:       copying Cython/Compiler/Options.py -> build/lib.linux-x86_64-3.8/Cython/Compiler
+crax:       copying Cython/Compiler/Visitor.py -> build/lib.linux-x86_64-3.8/Cython/Compiler
+crax:       copying Cython/Compiler/Version.py -> build/lib.linux-x86_64-3.8/Cython/Compiler
+crax:       copying Cython/Compiler/MemoryView.py -> build/lib.linux-x86_64-3.8/Cython/Compiler
+crax:       copying Cython/Compiler/Annotate.py -> build/lib.linux-x86_64-3.8/Cython/Compiler
+crax:       copying Cython/Compiler/ExprNodes.py -> build/lib.linux-x86_64-3.8/Cython/Compiler
+crax:       copying Cython/Compiler/UtilityCode.py -> build/lib.linux-x86_64-3.8/Cython/Compiler
+crax:       copying Cython/Compiler/CythonScope.py -> build/lib.linux-x86_64-3.8/Cython/Compiler
+crax:       copying Cython/Compiler/Parsing.py -> build/lib.linux-x86_64-3.8/Cython/Compiler
+crax:       copying Cython/Compiler/__init__.py -> build/lib.linux-x86_64-3.8/Cython/Compiler
+crax:       copying Cython/Compiler/UtilNodes.py -> build/lib.linux-x86_64-3.8/Cython/Compiler
+crax:       copying Cython/Compiler/TypeInference.py -> build/lib.linux-x86_64-3.8/Cython/Compiler
+crax:       copying Cython/Compiler/Optimize.py -> build/lib.linux-x86_64-3.8/Cython/Compiler
+crax:       copying Cython/Compiler/Nodes.py -> build/lib.linux-x86_64-3.8/Cython/Compiler
+crax:       creating build/lib.linux-x86_64-3.8/Cython/Runtime
+crax:       copying Cython/Runtime/__init__.py -> build/lib.linux-x86_64-3.8/Cython/Runtime
+crax:       creating build/lib.linux-x86_64-3.8/Cython/Distutils
+crax:       copying Cython/Distutils/build_ext.py -> build/lib.linux-x86_64-3.8/Cython/Distutils
+crax:       copying Cython/Distutils/old_build_ext.py -> build/lib.linux-x86_64-3.8/Cython/Distutils
+crax:       copying Cython/Distutils/__init__.py -> build/lib.linux-x86_64-3.8/Cython/Distutils
+crax:       copying Cython/Distutils/extension.py -> build/lib.linux-x86_64-3.8/Cython/Distutils
+crax:       creating build/lib.linux-x86_64-3.8/Cython/Debugger
+crax:       copying Cython/Debugger/Cygdb.py -> build/lib.linux-x86_64-3.8/Cython/Debugger
+crax:       copying Cython/Debugger/DebugWriter.py -> build/lib.linux-x86_64-3.8/Cython/Debugger
+crax:       copying Cython/Debugger/libpython.py -> build/lib.linux-x86_64-3.8/Cython/Debugger
+crax:       copying Cython/Debugger/libcython.py -> build/lib.linux-x86_64-3.8/Cython/Debugger
+crax:       copying Cython/Debugger/__init__.py -> build/lib.linux-x86_64-3.8/Cython/Debugger
+crax:       creating build/lib.linux-x86_64-3.8/Cython/Debugger/Tests
+crax:       copying Cython/Debugger/Tests/test_libpython_in_gdb.py -> build/lib.linux-x86_64-3.8/Cython/Debugger/Tests
+crax:       copying Cython/Debugger/Tests/TestLibCython.py -> build/lib.linux-x86_64-3.8/Cython/Debugger/Tests
+crax:       copying Cython/Debugger/Tests/test_libcython_in_gdb.py -> build/lib.linux-x86_64-3.8/Cython/Debugger/Tests
+crax:       copying Cython/Debugger/Tests/__init__.py -> build/lib.linux-x86_64-3.8/Cython/Debugger/Tests
+crax:       creating build/lib.linux-x86_64-3.8/Cython/Plex
+crax:       copying Cython/Plex/Actions.py -> build/lib.linux-x86_64-3.8/Cython/Plex
+crax:       copying Cython/Plex/Errors.py -> build/lib.linux-x86_64-3.8/Cython/Plex
+crax:       copying Cython/Plex/Lexicons.py -> build/lib.linux-x86_64-3.8/Cython/Plex
+crax:       copying Cython/Plex/Transitions.py -> build/lib.linux-x86_64-3.8/Cython/Plex
+crax:       copying Cython/Plex/Scanners.py -> build/lib.linux-x86_64-3.8/Cython/Plex
+crax:       copying Cython/Plex/Machines.py -> build/lib.linux-x86_64-3.8/Cython/Plex
+crax:       copying Cython/Plex/Regexps.py -> build/lib.linux-x86_64-3.8/Cython/Plex
+crax:       copying Cython/Plex/DFA.py -> build/lib.linux-x86_64-3.8/Cython/Plex
+crax:       copying Cython/Plex/__init__.py -> build/lib.linux-x86_64-3.8/Cython/Plex
+crax:       copying Cython/Plex/Timing.py -> build/lib.linux-x86_64-3.8/Cython/Plex
+crax:       copying Cython/Plex/Traditional.py -> build/lib.linux-x86_64-3.8/Cython/Plex
+crax:       creating build/lib.linux-x86_64-3.8/Cython/Tests
+crax:       copying Cython/Tests/xmlrunner.py -> build/lib.linux-x86_64-3.8/Cython/Tests
+crax:       copying Cython/Tests/TestCythonUtils.py -> build/lib.linux-x86_64-3.8/Cython/Tests
+crax:       copying Cython/Tests/TestJediTyper.py -> build/lib.linux-x86_64-3.8/Cython/Tests
+crax:       copying Cython/Tests/TestStringIOTree.py -> build/lib.linux-x86_64-3.8/Cython/Tests
+crax:       copying Cython/Tests/__init__.py -> build/lib.linux-x86_64-3.8/Cython/Tests
+crax:       copying Cython/Tests/TestCodeWriter.py -> build/lib.linux-x86_64-3.8/Cython/Tests
+crax:       creating build/lib.linux-x86_64-3.8/Cython/Build/Tests
+crax:       copying Cython/Build/Tests/TestStripLiterals.py -> build/lib.linux-x86_64-3.8/Cython/Build/Tests
+crax:       copying Cython/Build/Tests/__init__.py -> build/lib.linux-x86_64-3.8/Cython/Build/Tests
+crax:       copying Cython/Build/Tests/TestIpythonMagic.py -> build/lib.linux-x86_64-3.8/Cython/Build/Tests
+crax:       copying Cython/Build/Tests/TestCyCache.py -> build/lib.linux-x86_64-3.8/Cython/Build/Tests
+crax:       copying Cython/Build/Tests/TestInline.py -> build/lib.linux-x86_64-3.8/Cython/Build/Tests
+crax:       creating build/lib.linux-x86_64-3.8/Cython/Compiler/Tests
+crax:       copying Cython/Compiler/Tests/TestTreeFragment.py -> build/lib.linux-x86_64-3.8/Cython/Compiler/Tests
+crax:       copying Cython/Compiler/Tests/TestFlowControl.py -> build/lib.linux-x86_64-3.8/Cython/Compiler/Tests
+crax:       copying Cython/Compiler/Tests/TestTypes.py -> build/lib.linux-x86_64-3.8/Cython/Compiler/Tests
+crax:       copying Cython/Compiler/Tests/TestSignatureMatching.py -> build/lib.linux-x86_64-3.8/Cython/Compiler/Tests
+crax:       copying Cython/Compiler/Tests/TestBuffer.py -> build/lib.linux-x86_64-3.8/Cython/Compiler/Tests
+crax:       copying Cython/Compiler/Tests/TestParseTreeTransforms.py -> build/lib.linux-x86_64-3.8/Cython/Compiler/Tests
+crax:       copying Cython/Compiler/Tests/TestVisitor.py -> build/lib.linux-x86_64-3.8/Cython/Compiler/Tests
+crax:       copying Cython/Compiler/Tests/TestTreePath.py -> build/lib.linux-x86_64-3.8/Cython/Compiler/Tests
+crax:       copying Cython/Compiler/Tests/TestMemView.py -> build/lib.linux-x86_64-3.8/Cython/Compiler/Tests
+crax:       copying Cython/Compiler/Tests/TestUtilityLoad.py -> build/lib.linux-x86_64-3.8/Cython/Compiler/Tests
+crax:       copying Cython/Compiler/Tests/TestCmdLine.py -> build/lib.linux-x86_64-3.8/Cython/Compiler/Tests
+crax:       copying Cython/Compiler/Tests/TestGrammar.py -> build/lib.linux-x86_64-3.8/Cython/Compiler/Tests
+crax:       copying Cython/Compiler/Tests/__init__.py -> build/lib.linux-x86_64-3.8/Cython/Compiler/Tests
+crax:       creating build/lib.linux-x86_64-3.8/Cython/Utility
+crax:       copying Cython/Utility/__init__.py -> build/lib.linux-x86_64-3.8/Cython/Utility
+crax:       creating build/lib.linux-x86_64-3.8/Cython/Tempita
+crax:       copying Cython/Tempita/_looper.py -> build/lib.linux-x86_64-3.8/Cython/Tempita
+crax:       copying Cython/Tempita/_tempita.py -> build/lib.linux-x86_64-3.8/Cython/Tempita
+crax:       copying Cython/Tempita/__init__.py -> build/lib.linux-x86_64-3.8/Cython/Tempita
+crax:       copying Cython/Tempita/compat3.py -> build/lib.linux-x86_64-3.8/Cython/Tempita
+crax:       creating build/lib.linux-x86_64-3.8/pyximport
+crax:       copying pyximport/pyximport.py -> build/lib.linux-x86_64-3.8/pyximport
+crax:       copying pyximport/pyxbuild.py -> build/lib.linux-x86_64-3.8/pyximport
+crax:       copying pyximport/__init__.py -> build/lib.linux-x86_64-3.8/pyximport
+crax:       creating build/lib.linux-x86_64-3.8/Cython/Includes
+crax:       copying Cython/Includes/openmp.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes
+crax:       creating build/lib.linux-x86_64-3.8/Cython/Includes/libc
+crax:       copying Cython/Includes/libc/float.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/libc
+crax:       copying Cython/Includes/libc/limits.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/libc
+crax:       copying Cython/Includes/libc/stdlib.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/libc
+crax:       copying Cython/Includes/libc/errno.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/libc
+crax:       copying Cython/Includes/libc/__init__.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/libc
+crax:       copying Cython/Includes/libc/locale.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/libc
+crax:       copying Cython/Includes/libc/time.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/libc
+crax:       copying Cython/Includes/libc/stdint.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/libc
+crax:       copying Cython/Includes/libc/setjmp.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/libc
+crax:       copying Cython/Includes/libc/signal.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/libc
+crax:       copying Cython/Includes/libc/string.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/libc
+crax:       copying Cython/Includes/libc/math.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/libc
+crax:       copying Cython/Includes/libc/stddef.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/libc
+crax:       copying Cython/Includes/libc/stdio.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/libc
+crax:       creating build/lib.linux-x86_64-3.8/Cython/Includes/numpy
+crax:       copying Cython/Includes/numpy/__init__.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/numpy
+crax:       copying Cython/Includes/numpy/math.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/numpy
+crax:       creating build/lib.linux-x86_64-3.8/Cython/Includes/libcpp
+crax:       copying Cython/Includes/libcpp/typeindex.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/libcpp
+crax:       copying Cython/Includes/libcpp/vector.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/libcpp
+crax:       copying Cython/Includes/libcpp/deque.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/libcpp
+crax:       copying Cython/Includes/libcpp/limits.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/libcpp
+crax:       copying Cython/Includes/libcpp/pair.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/libcpp
+crax:       copying Cython/Includes/libcpp/__init__.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/libcpp
+crax:       copying Cython/Includes/libcpp/list.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/libcpp
+crax:       copying Cython/Includes/libcpp/utility.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/libcpp
+crax:       copying Cython/Includes/libcpp/memory.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/libcpp
+crax:       copying Cython/Includes/libcpp/typeinfo.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/libcpp
+crax:       copying Cython/Includes/libcpp/algorithm.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/libcpp
+crax:       copying Cython/Includes/libcpp/unordered_set.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/libcpp
+crax:       copying Cython/Includes/libcpp/queue.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/libcpp
+crax:       copying Cython/Includes/libcpp/functional.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/libcpp
+crax:       copying Cython/Includes/libcpp/forward_list.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/libcpp
+crax:       copying Cython/Includes/libcpp/set.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/libcpp
+crax:       copying Cython/Includes/libcpp/cast.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/libcpp
+crax:       copying Cython/Includes/libcpp/unordered_map.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/libcpp
+crax:       copying Cython/Includes/libcpp/complex.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/libcpp
+crax:       copying Cython/Includes/libcpp/stack.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/libcpp
+crax:       copying Cython/Includes/libcpp/string.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/libcpp
+crax:       copying Cython/Includes/libcpp/iterator.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/libcpp
+crax:       copying Cython/Includes/libcpp/map.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/libcpp
+crax:       creating build/lib.linux-x86_64-3.8/Cython/Includes/Deprecated
+crax:       copying Cython/Includes/Deprecated/python_number.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/Deprecated
+crax:       copying Cython/Includes/Deprecated/stdlib.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/Deprecated
+crax:       copying Cython/Includes/Deprecated/python_version.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/Deprecated
+crax:       copying Cython/Includes/Deprecated/python.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/Deprecated
+crax:       copying Cython/Includes/Deprecated/python_getargs.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/Deprecated
+crax:       copying Cython/Includes/Deprecated/python_buffer.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/Deprecated
+crax:       copying Cython/Includes/Deprecated/python_mapping.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/Deprecated
+crax:       copying Cython/Includes/Deprecated/python_int.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/Deprecated
+crax:       copying Cython/Includes/Deprecated/python_bytes.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/Deprecated
+crax:       copying Cython/Includes/Deprecated/python_oldbuffer.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/Deprecated
+crax:       copying Cython/Includes/Deprecated/python_method.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/Deprecated
+crax:       copying Cython/Includes/Deprecated/python_instance.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/Deprecated
+crax:       copying Cython/Includes/Deprecated/python_string.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/Deprecated
+crax:       copying Cython/Includes/Deprecated/python_type.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/Deprecated
+crax:       copying Cython/Includes/Deprecated/python_unicode.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/Deprecated
+crax:       copying Cython/Includes/Deprecated/stl.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/Deprecated
+crax:       copying Cython/Includes/Deprecated/python_sequence.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/Deprecated
+crax:       copying Cython/Includes/Deprecated/python_tuple.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/Deprecated
+crax:       copying Cython/Includes/Deprecated/python_pycapsule.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/Deprecated
+crax:       copying Cython/Includes/Deprecated/python_complex.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/Deprecated
+crax:       copying Cython/Includes/Deprecated/python_bool.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/Deprecated
+crax:       copying Cython/Includes/Deprecated/python_cobject.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/Deprecated
+crax:       copying Cython/Includes/Deprecated/python_weakref.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/Deprecated
+crax:       copying Cython/Includes/Deprecated/python_float.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/Deprecated
+crax:       copying Cython/Includes/Deprecated/python_iterator.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/Deprecated
+crax:       copying Cython/Includes/Deprecated/python_list.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/Deprecated
+crax:       copying Cython/Includes/Deprecated/python_dict.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/Deprecated
+crax:       copying Cython/Includes/Deprecated/python_module.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/Deprecated
+crax:       copying Cython/Includes/Deprecated/python_exc.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/Deprecated
+crax:       copying Cython/Includes/Deprecated/python_set.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/Deprecated
+crax:       copying Cython/Includes/Deprecated/python_long.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/Deprecated
+crax:       copying Cython/Includes/Deprecated/python_function.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/Deprecated
+crax:       copying Cython/Includes/Deprecated/python_mem.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/Deprecated
+crax:       copying Cython/Includes/Deprecated/python_ref.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/Deprecated
+crax:       copying Cython/Includes/Deprecated/python_object.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/Deprecated
+crax:       copying Cython/Includes/Deprecated/stdio.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/Deprecated
+crax:       creating build/lib.linux-x86_64-3.8/Cython/Includes/cpython
+crax:       copying Cython/Includes/cpython/float.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/cpython
+crax:       copying Cython/Includes/cpython/type.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/cpython
+crax:       copying Cython/Includes/cpython/mem.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/cpython
+crax:       copying Cython/Includes/cpython/long.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/cpython
+crax:       copying Cython/Includes/cpython/__init__.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/cpython
+crax:       copying Cython/Includes/cpython/slice.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/cpython
+crax:       copying Cython/Includes/cpython/mapping.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/cpython
+crax:       copying Cython/Includes/cpython/version.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/cpython
+crax:       copying Cython/Includes/cpython/list.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/cpython
+crax:       copying Cython/Includes/cpython/longintrepr.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/cpython
+crax:       copying Cython/Includes/cpython/sequence.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/cpython
+crax:       copying Cython/Includes/cpython/function.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/cpython
+crax:       copying Cython/Includes/cpython/bytes.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/cpython
+crax:       copying Cython/Includes/cpython/int.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/cpython
+crax:       copying Cython/Includes/cpython/cobject.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/cpython
+crax:       copying Cython/Includes/cpython/ref.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/cpython
+crax:       copying Cython/Includes/cpython/exc.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/cpython
+crax:       copying Cython/Includes/cpython/tuple.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/cpython
+crax:       copying Cython/Includes/cpython/method.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/cpython
+crax:       copying Cython/Includes/cpython/getargs.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/cpython
+crax:       copying Cython/Includes/cpython/pylifecycle.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/cpython
+crax:       copying Cython/Includes/cpython/instance.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/cpython
+crax:       copying Cython/Includes/cpython/pythread.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/cpython
+crax:       copying Cython/Includes/cpython/array.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/cpython
+crax:       copying Cython/Includes/cpython/oldbuffer.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/cpython
+crax:       copying Cython/Includes/cpython/bytearray.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/cpython
+crax:       copying Cython/Includes/cpython/buffer.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/cpython
+crax:       copying Cython/Includes/cpython/dict.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/cpython
+crax:       copying Cython/Includes/cpython/pycapsule.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/cpython
+crax:       copying Cython/Includes/cpython/ceval.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/cpython
+crax:       copying Cython/Includes/cpython/bool.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/cpython
+crax:       copying Cython/Includes/cpython/set.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/cpython
+crax:       copying Cython/Includes/cpython/number.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/cpython
+crax:       copying Cython/Includes/cpython/object.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/cpython
+crax:       copying Cython/Includes/cpython/pystate.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/cpython
+crax:       copying Cython/Includes/cpython/weakref.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/cpython
+crax:       copying Cython/Includes/cpython/unicode.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/cpython
+crax:       copying Cython/Includes/cpython/complex.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/cpython
+crax:       copying Cython/Includes/cpython/string.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/cpython
+crax:       copying Cython/Includes/cpython/iterator.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/cpython
+crax:       copying Cython/Includes/cpython/module.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/cpython
+crax:       copying Cython/Includes/cpython/datetime.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/cpython
+crax:       creating build/lib.linux-x86_64-3.8/Cython/Includes/posix
+crax:       copying Cython/Includes/posix/select.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/posix
+crax:       copying Cython/Includes/posix/stdlib.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/posix
+crax:       copying Cython/Includes/posix/__init__.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/posix
+crax:       copying Cython/Includes/posix/strings.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/posix
+crax:       copying Cython/Includes/posix/resource.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/posix
+crax:       copying Cython/Includes/posix/mman.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/posix
+crax:       copying Cython/Includes/posix/time.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/posix
+crax:       copying Cython/Includes/posix/fcntl.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/posix
+crax:       copying Cython/Includes/posix/dlfcn.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/posix
+crax:       copying Cython/Includes/posix/signal.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/posix
+crax:       copying Cython/Includes/posix/ioctl.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/posix
+crax:       copying Cython/Includes/posix/unistd.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/posix
+crax:       copying Cython/Includes/posix/wait.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/posix
+crax:       copying Cython/Includes/posix/types.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/posix
+crax:       copying Cython/Includes/posix/stat.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/posix
+crax:       copying Cython/Includes/posix/stdio.pxd -> build/lib.linux-x86_64-3.8/Cython/Includes/posix
+crax:       copying Cython/Compiler/ParseTreeTransforms.pxd -> build/lib.linux-x86_64-3.8/Cython/Compiler
+crax:       copying Cython/Compiler/Visitor.pxd -> build/lib.linux-x86_64-3.8/Cython/Compiler
+crax:       copying Cython/Compiler/FlowControl.pxd -> build/lib.linux-x86_64-3.8/Cython/Compiler
+crax:       copying Cython/Compiler/Scanning.pxd -> build/lib.linux-x86_64-3.8/Cython/Compiler
+crax:       copying Cython/Compiler/Parsing.pxd -> build/lib.linux-x86_64-3.8/Cython/Compiler
+crax:       copying Cython/Compiler/Code.pxd -> build/lib.linux-x86_64-3.8/Cython/Compiler
+crax:       copying Cython/Runtime/refnanny.pyx -> build/lib.linux-x86_64-3.8/Cython/Runtime
+crax:       copying Cython/Debugger/Tests/codefile -> build/lib.linux-x86_64-3.8/Cython/Debugger/Tests
+crax:       copying Cython/Debugger/Tests/cfuncs.c -> build/lib.linux-x86_64-3.8/Cython/Debugger/Tests
+crax:       copying Cython/Plex/Actions.pxd -> build/lib.linux-x86_64-3.8/Cython/Plex
+crax:       copying Cython/Plex/Scanners.pxd -> build/lib.linux-x86_64-3.8/Cython/Plex
+crax:       copying Cython/Utility/TestCyUtilityLoader.pyx -> build/lib.linux-x86_64-3.8/Cython/Utility
+crax:       copying Cython/Utility/TestCythonScope.pyx -> build/lib.linux-x86_64-3.8/Cython/Utility
+crax:       copying Cython/Utility/MemoryView.pyx -> build/lib.linux-x86_64-3.8/Cython/Utility
+crax:       copying Cython/Utility/CppConvert.pyx -> build/lib.linux-x86_64-3.8/Cython/Utility
+crax:       copying Cython/Utility/CpdefEnums.pyx -> build/lib.linux-x86_64-3.8/Cython/Utility
+crax:       copying Cython/Utility/CConvert.pyx -> build/lib.linux-x86_64-3.8/Cython/Utility
+crax:       copying Cython/Utility/ObjectHandling.c -> build/lib.linux-x86_64-3.8/Cython/Utility
+crax:       copying Cython/Utility/ExtensionTypes.c -> build/lib.linux-x86_64-3.8/Cython/Utility
+crax:       copying Cython/Utility/MemoryView_C.c -> build/lib.linux-x86_64-3.8/Cython/Utility
+crax:       copying Cython/Utility/Coroutine.c -> build/lib.linux-x86_64-3.8/Cython/Utility
+crax:       copying Cython/Utility/Complex.c -> build/lib.linux-x86_64-3.8/Cython/Utility
+crax:       copying Cython/Utility/CMath.c -> build/lib.linux-x86_64-3.8/Cython/Utility
+crax:       copying Cython/Utility/Capsule.c -> build/lib.linux-x86_64-3.8/Cython/Utility
+crax:       copying Cython/Utility/AsyncGen.c -> build/lib.linux-x86_64-3.8/Cython/Utility
+crax:       copying Cython/Utility/Printing.c -> build/lib.linux-x86_64-3.8/Cython/Utility
+crax:       copying Cython/Utility/Builtins.c -> build/lib.linux-x86_64-3.8/Cython/Utility
+crax:       copying Cython/Utility/CythonFunction.c -> build/lib.linux-x86_64-3.8/Cython/Utility
+crax:       copying Cython/Utility/Profile.c -> build/lib.linux-x86_64-3.8/Cython/Utility
+crax:       copying Cython/Utility/Overflow.c -> build/lib.linux-x86_64-3.8/Cython/Utility
+crax:       copying Cython/Utility/Buffer.c -> build/lib.linux-x86_64-3.8/Cython/Utility
+crax:       copying Cython/Utility/ModuleSetupCode.c -> build/lib.linux-x86_64-3.8/Cython/Utility
+crax:       copying Cython/Utility/CommonStructures.c -> build/lib.linux-x86_64-3.8/Cython/Utility
+crax:       copying Cython/Utility/TestUtilityLoader.c -> build/lib.linux-x86_64-3.8/Cython/Utility
+crax:       copying Cython/Utility/TypeConversion.c -> build/lib.linux-x86_64-3.8/Cython/Utility
+crax:       copying Cython/Utility/FunctionArguments.c -> build/lib.linux-x86_64-3.8/Cython/Utility
+crax:       copying Cython/Utility/Embed.c -> build/lib.linux-x86_64-3.8/Cython/Utility
+crax:       copying Cython/Utility/StringTools.c -> build/lib.linux-x86_64-3.8/Cython/Utility
+crax:       copying Cython/Utility/Exceptions.c -> build/lib.linux-x86_64-3.8/Cython/Utility
+crax:       copying Cython/Utility/Optimize.c -> build/lib.linux-x86_64-3.8/Cython/Utility
+crax:       copying Cython/Utility/ImportExport.c -> build/lib.linux-x86_64-3.8/Cython/Utility
+crax:       copying Cython/Utility/arrayarray.h -> build/lib.linux-x86_64-3.8/Cython/Utility
+crax:       copying Cython/Utility/CppSupport.cpp -> build/lib.linux-x86_64-3.8/Cython/Utility
+crax:       running build_ext
+crax:       building 'Cython.Plex.Scanners' extension
+crax:       creating build/temp.linux-x86_64-3.8
+crax:       creating build/temp.linux-x86_64-3.8/tmp
+crax:       creating build/temp.linux-x86_64-3.8/tmp/pip-install-ijtq0dkq
+crax:       creating build/temp.linux-x86_64-3.8/tmp/pip-install-ijtq0dkq/cython_954e397322c8437b9481e58d0ece38dc
+crax:       creating build/temp.linux-x86_64-3.8/tmp/pip-install-ijtq0dkq/cython_954e397322c8437b9481e58d0ece38dc/Cython
+crax:       creating build/temp.linux-x86_64-3.8/tmp/pip-install-ijtq0dkq/cython_954e397322c8437b9481e58d0ece38dc/Cython/Plex
+crax:       gcc -pthread -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -fPIC -I/usr/local/include/python3.8 -c /tmp/pip-install-ijtq0dkq/cython_954e397322c8437b9481e58d0ece38dc/Cython/Plex/Scanners.c -o build/temp.linux-x86_64-3.8/tmp/pip-install-ijtq0dkq/cython_954e397322c8437b9481e58d0ece38dc/Cython/Plex/Scanners.o
+crax:       gcc -pthread -shared build/temp.linux-x86_64-3.8/tmp/pip-install-ijtq0dkq/cython_954e397322c8437b9481e58d0ece38dc/Cython/Plex/Scanners.o -L/usr/local/lib -o build/lib.linux-x86_64-3.8/Cython/Plex/Scanners.cpython-38-x86_64-linux-gnu.so
+crax:       building 'Cython.Plex.Actions' extension
+crax:       gcc -pthread -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -fPIC -I/usr/local/include/python3.8 -c /tmp/pip-install-ijtq0dkq/cython_954e397322c8437b9481e58d0ece38dc/Cython/Plex/Actions.c -o build/temp.linux-x86_64-3.8/tmp/pip-install-ijtq0dkq/cython_954e397322c8437b9481e58d0ece38dc/Cython/Plex/Actions.o
+crax:       gcc -pthread -shared build/temp.linux-x86_64-3.8/tmp/pip-install-ijtq0dkq/cython_954e397322c8437b9481e58d0ece38dc/Cython/Plex/Actions.o -L/usr/local/lib -o build/lib.linux-x86_64-3.8/Cython/Plex/Actions.cpython-38-x86_64-linux-gnu.so
+crax:       building 'Cython.Compiler.Scanning' extension
+crax:       creating build/temp.linux-x86_64-3.8/tmp/pip-install-ijtq0dkq/cython_954e397322c8437b9481e58d0ece38dc/Cython/Compiler
+crax:       gcc -pthread -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -fPIC -I/usr/local/include/python3.8 -c /tmp/pip-install-ijtq0dkq/cython_954e397322c8437b9481e58d0ece38dc/Cython/Compiler/Scanning.c -o build/temp.linux-x86_64-3.8/tmp/pip-install-ijtq0dkq/cython_954e397322c8437b9481e58d0ece38dc/Cython/Compiler/Scanning.o
+crax:       gcc -pthread -shared build/temp.linux-x86_64-3.8/tmp/pip-install-ijtq0dkq/cython_954e397322c8437b9481e58d0ece38dc/Cython/Compiler/Scanning.o -L/usr/local/lib -o build/lib.linux-x86_64-3.8/Cython/Compiler/Scanning.cpython-38-x86_64-linux-gnu.so
+crax:       building 'Cython.Compiler.Visitor' extension
+crax:       gcc -pthread -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -fPIC -I/usr/local/include/python3.8 -c /tmp/pip-install-ijtq0dkq/cython_954e397322c8437b9481e58d0ece38dc/Cython/Compiler/Visitor.c -o build/temp.linux-x86_64-3.8/tmp/pip-install-ijtq0dkq/cython_954e397322c8437b9481e58d0ece38dc/Cython/Compiler/Visitor.o
+crax:       gcc -pthread -shared build/temp.linux-x86_64-3.8/tmp/pip-install-ijtq0dkq/cython_954e397322c8437b9481e58d0ece38dc/Cython/Compiler/Visitor.o -L/usr/local/lib -o build/lib.linux-x86_64-3.8/Cython/Compiler/Visitor.cpython-38-x86_64-linux-gnu.so
+crax:       building 'Cython.Compiler.FlowControl' extension
+crax:       gcc -pthread -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -fPIC -I/usr/local/include/python3.8 -c /tmp/pip-install-ijtq0dkq/cython_954e397322c8437b9481e58d0ece38dc/Cython/Compiler/FlowControl.c -o build/temp.linux-x86_64-3.8/tmp/pip-install-ijtq0dkq/cython_954e397322c8437b9481e58d0ece38dc/Cython/Compiler/FlowControl.o
+crax:       gcc -pthread -shared build/temp.linux-x86_64-3.8/tmp/pip-install-ijtq0dkq/cython_954e397322c8437b9481e58d0ece38dc/Cython/Compiler/FlowControl.o -L/usr/local/lib -o build/lib.linux-x86_64-3.8/Cython/Compiler/FlowControl.cpython-38-x86_64-linux-gnu.so
+crax:       building 'Cython.Runtime.refnanny' extension
+crax:       creating build/temp.linux-x86_64-3.8/tmp/pip-install-ijtq0dkq/cython_954e397322c8437b9481e58d0ece38dc/Cython/Runtime
+crax:       gcc -pthread -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -fPIC -I/usr/local/include/python3.8 -c /tmp/pip-install-ijtq0dkq/cython_954e397322c8437b9481e58d0ece38dc/Cython/Runtime/refnanny.c -o build/temp.linux-x86_64-3.8/tmp/pip-install-ijtq0dkq/cython_954e397322c8437b9481e58d0ece38dc/Cython/Runtime/refnanny.o
+crax:       gcc -pthread -shared build/temp.linux-x86_64-3.8/tmp/pip-install-ijtq0dkq/cython_954e397322c8437b9481e58d0ece38dc/Cython/Runtime/refnanny.o -L/usr/local/lib -o build/lib.linux-x86_64-3.8/Cython/Runtime/refnanny.cpython-38-x86_64-linux-gnu.so
+crax:       building 'Cython.Compiler.FusedNode' extension
+crax:       gcc -pthread -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -fPIC -I/usr/local/include/python3.8 -c /tmp/pip-install-ijtq0dkq/cython_954e397322c8437b9481e58d0ece38dc/Cython/Compiler/FusedNode.c -o build/temp.linux-x86_64-3.8/tmp/pip-install-ijtq0dkq/cython_954e397322c8437b9481e58d0ece38dc/Cython/Compiler/FusedNode.o
+crax:       gcc -pthread -shared build/temp.linux-x86_64-3.8/tmp/pip-install-ijtq0dkq/cython_954e397322c8437b9481e58d0ece38dc/Cython/Compiler/FusedNode.o -L/usr/local/lib -o build/lib.linux-x86_64-3.8/Cython/Compiler/FusedNode.cpython-38-x86_64-linux-gnu.so
+crax:       building 'Cython.Tempita._tempita' extension
+crax:       creating build/temp.linux-x86_64-3.8/tmp/pip-install-ijtq0dkq/cython_954e397322c8437b9481e58d0ece38dc/Cython/Tempita
+crax:       gcc -pthread -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -fPIC -I/usr/local/include/python3.8 -c /tmp/pip-install-ijtq0dkq/cython_954e397322c8437b9481e58d0ece38dc/Cython/Tempita/_tempita.c -o build/temp.linux-x86_64-3.8/tmp/pip-install-ijtq0dkq/cython_954e397322c8437b9481e58d0ece38dc/Cython/Tempita/_tempita.o
+crax:       /tmp/pip-install-ijtq0dkq/cython_954e397322c8437b9481e58d0ece38dc/Cython/Tempita/_tempita.c:9908:1: internal compiler error: Segmentation fault
+crax:        9908 | }
+crax:             | ^
+crax:       Please submit a full bug report,
+crax:       with preprocessed source if appropriate.
+crax:       See <file:///usr/share/doc/gcc-10/README.Bugs> for instructions.
+crax:       error: command 'gcc' failed with exit status 1
+crax:       [end of output]
+crax:   note: This error originates from a subprocess, and is likely not a problem with pip.
+crax:   ERROR: Failed building wheel for cython
+crax:   Running setup.py clean for cython
+crax: Failed to build cython
+crax: Installing collected packages: cython
+crax:   Running setup.py install for cython: started
+crax:   Running setup.py install for cython: still running...
+crax:   Running setup.py install for cython: finished with status 'done'
+crax:   DEPRECATION: cython was installed using the legacy 'setup.py install' method, because a wheel could not be built for it. A possible replacement is to fix the wheel build issue reported above. Discussion can be found at https://github.com/pypa/pip/issues/8368
+crax: Successfully installed cython-0.29.13
+crax: WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+crax: WARNING: You are using pip version 22.0.4; however, version 22.3.1 is available.
+crax: You should consider upgrading via the '/usr/local/bin/python -m pip install --upgrade pip' command.
+crax: Collecting crax[postgresql]==0.1.5
+crax:   Downloading crax-0.1.5.tar.gz (2.7 MB)
+crax:   Preparing metadata (setup.py): started
+crax:   Preparing metadata (setup.py): finished with status 'done'
+crax: Collecting gunicorn==20.0.4
+crax:   Downloading gunicorn-20.0.4-py2.py3-none-any.whl (77 kB)
+crax: Collecting uvloop==0.14.0
+crax:   Downloading uvloop-0.14.0-cp38-cp38-manylinux2010_x86_64.whl (4.7 MB)
+crax: Collecting uvicorn==0.11.8
+crax:   Downloading uvicorn-0.11.8-py3-none-any.whl (43 kB)
+crax: Collecting aiofiles
+crax:   Downloading aiofiles-22.1.0-py3-none-any.whl (14 kB)
+crax: Collecting jinja2
+crax:   Downloading Jinja2-3.1.2-py3-none-any.whl (133 kB)
+crax: Collecting python-multipart
+crax:   Downloading python-multipart-0.0.5.tar.gz (32 kB)
+crax:   Preparing metadata (setup.py): started
+crax:   Preparing metadata (setup.py): finished with status 'done'
+crax: Collecting itsdangerous
+crax:   Downloading itsdangerous-2.1.2-py3-none-any.whl (15 kB)
+crax: Collecting sqlalchemy
+crax:   Downloading SQLAlchemy-1.4.44-cp38-cp38-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.6 MB)
+crax: Collecting databases
+crax:   Downloading databases-0.6.2-py3-none-any.whl (21 kB)
+crax: Collecting alembic
+crax:   Downloading alembic-1.8.1-py3-none-any.whl (209 kB)
+crax: Collecting asyncpg
+crax:   Downloading asyncpg-0.27.0-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_28_x86_64.whl (3.1 MB)
+crax: Collecting psycopg2-binary
+crax:   Downloading psycopg2_binary-2.9.5-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.0 MB)
+crax: Requirement already satisfied: setuptools>=3.0 in /usr/local/lib/python3.8/site-packages (from gunicorn==20.0.4->-r /crax/requirements.txt (line 2)) (57.5.0)
+crax: Collecting httptools==0.1.*
+crax:   Downloading httptools-0.1.2-cp38-cp38-manylinux1_x86_64.whl (229 kB)
+crax: Collecting click==7.*
+crax:   Downloading click-7.1.2-py2.py3-none-any.whl (82 kB)
+crax: Collecting websockets==8.*
+crax:   Downloading websockets-8.1-cp38-cp38-manylinux2010_x86_64.whl (78 kB)
+crax: Collecting h11<0.10,>=0.8
+crax:   Downloading h11-0.9.0-py2.py3-none-any.whl (53 kB)
+crax: Collecting importlib-resources
+crax:   Downloading importlib_resources-5.10.0-py3-none-any.whl (34 kB)
+crax: Collecting Mako
+crax:   Downloading Mako-1.2.3-py3-none-any.whl (78 kB)
+crax: Collecting importlib-metadata
+crax:   Downloading importlib_metadata-5.0.0-py3-none-any.whl (21 kB)
+crax: Collecting greenlet!=0.4.17
+crax:   Downloading greenlet-2.0.1-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (544 kB)
+crax: Collecting sqlalchemy
+crax:   Downloading SQLAlchemy-1.4.41-cp38-cp38-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (1.6 MB)
+crax: Collecting MarkupSafe>=2.0
+crax:   Downloading MarkupSafe-2.1.1-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (25 kB)
+crax: Collecting six>=1.4.0
+crax:   Downloading six-1.16.0-py2.py3-none-any.whl (11 kB)
+crax: Collecting zipp>=0.5
+crax:   Downloading zipp-3.10.0-py3-none-any.whl (6.2 kB)
+crax: Building wheels for collected packages: crax, python-multipart
+crax:   Building wheel for crax (setup.py): started
+crax:   Building wheel for crax (setup.py): finished with status 'done'
+crax:   Created wheel for crax: filename=crax-0.1.5-py3-none-any.whl size=2700551 sha256=9f0b7d7c9dfa3307349aa993eb41060005786e22cdcf9b82bc624036c5641b19
+crax:   Stored in directory: /root/.cache/pip/wheels/89/a6/7c/d9ad6f53b71883ea44140e783bb552eabdad40ed209a00260f
+crax:   Building wheel for python-multipart (setup.py): started
+crax:   Building wheel for python-multipart (setup.py): finished with status 'done'
+crax:   Created wheel for python-multipart: filename=python_multipart-0.0.5-py3-none-any.whl size=31678 sha256=92de58f354f5495ac25fc6671352adcf88e94a96e9091b1a4c24da29f2ed5aae
+crax:   Stored in directory: /root/.cache/pip/wheels/9e/fc/1c/cf980e6413d3ee8e70cd8f39e2366b0f487e3e221aeb452eb0
+crax: Successfully built crax python-multipart
+crax: Installing collected packages: uvloop, httptools, h11, zipp, websockets, six, psycopg2-binary, MarkupSafe, itsdangerous, gunicorn, greenlet, click, asyncpg, aiofiles, uvicorn, sqlalchemy, python-multipart, Mako, jinja2, importlib-resources, importlib-metadata, databases, crax, alembic
+crax: Successfully installed Mako-1.2.3 MarkupSafe-2.1.1 aiofiles-22.1.0 alembic-1.8.1 asyncpg-0.27.0 click-7.1.2 crax-0.1.5 databases-0.6.2 greenlet-2.0.1 gunicorn-20.0.4 h11-0.9.0 httptools-0.1.2 importlib-metadata-5.0.0 importlib-resources-5.10.0 itsdangerous-2.1.2 jinja2-3.1.2 psycopg2-binary-2.9.5 python-multipart-0.0.5 six-1.16.0 sqlalchemy-1.4.41 uvicorn-0.11.8 uvloop-0.14.0 websockets-8.1 zipp-3.10.0
+crax: WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+crax: WARNING: You are using pip version 22.0.4; however, version 22.3.1 is available.
+crax: You should consider upgrading via the '/usr/local/bin/python -m pip install --upgrade pip' command.
+crax: Removing intermediate container eab0dde71c25
+crax:  ---> b18893aaa80f
+crax: Step 5/6 : EXPOSE 8080
+crax:  ---> Running in 2b84d5bf3e18
+crax: Removing intermediate container 2b84d5bf3e18
+crax:  ---> 2b52d5acfc99
+crax: Step 6/6 : CMD gunicorn hello.app:app -k uvicorn.workers.UvicornWorker -c gunicorn_conf.py
+crax:  ---> Running in af2b2e717cb1
+crax: Removing intermediate container af2b2e717cb1
+crax:  ---> 2e211ee01a5b
+crax: [Warning] One or more build-args [BENCHMARK_ENV TFB_TEST_DATABASE TFB_TEST_NAME] were not consumed
+crax: Successfully built 2e211ee01a5b
+crax: Successfully tagged my_bm/bm.test.crax:latest
+crax: Build time: 3m 0s

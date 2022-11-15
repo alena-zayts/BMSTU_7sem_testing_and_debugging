@@ -14,7 +14,7 @@ the [Python README](../).
 
 ## Test Paths & Sources
 
-All of the test implementations are located within a single file ([app.py](frameworks/Python/crax/hello/app.py)).
+All of the test implementations are located within a single file ([app.py](frameworks/crax/hello/app.py)).
 
 ## Resources
 

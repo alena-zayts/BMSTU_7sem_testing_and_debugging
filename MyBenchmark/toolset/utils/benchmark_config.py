@@ -49,7 +49,7 @@ class BenchmarkConfig:
         # Remember directories
         self.fw_root = os.getenv('FWROOT')
         self.db_root = os.path.join(self.fw_root, "toolset", "databases")
-        self.lang_root = os.path.join(self.fw_root, "frameworks")
+        self.frameworks_root = os.path.join(self.fw_root, "frameworks")
         self.results_root = os.path.join(self.fw_root, "results")
         self.wrk_root = os.path.join(self.fw_root, "toolset", "wrk")
 

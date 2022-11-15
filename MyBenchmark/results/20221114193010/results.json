@@ -1,0 +1,100 @@
+{
+  "name": "(unspecified, datetime = 2022-11-14 19:30:10)", 
+  "succeeded": {
+    "plaintext": [
+      "crax"
+    ], 
+    "query": [
+      "crax"
+    ], 
+    "json": [
+      "crax"
+    ]
+  }, 
+  "failed": {
+    "plaintext": [], 
+    "query": [], 
+    "json": []
+  }, 
+  "verify": {
+    "crax": {
+      "plaintext": "pass", 
+      "query": "pass", 
+      "json": "pass"
+    }
+  }, 
+  "completionTime": 1668454590663, 
+  "testMetadata": [
+    {
+      "framework": "aiohttp", 
+      "project_name": "aiohttp", 
+      "name": "aiohttp", 
+      "database": "postgres"
+    }, 
+    {
+      "framework": "crax", 
+      "project_name": "crax", 
+      "name": "crax", 
+      "database": "postgres"
+    }
+  ], 
+  "frameworks": [
+    "crax"
+  ], 
+  "pipelineConcurrencyLevels": [
+    256
+  ], 
+  "concurrencyLevels": [
+    16
+  ], 
+  "startTime": 1668454210664, 
+  "queryIntervals": [
+    1
+  ], 
+  "completed": {
+    "crax": "20221114193522"
+  }, 
+  "duration": 15, 
+  "rawData": {
+    "plaintext": {
+      "crax": [
+        {
+          "latencyAvg": "89.01ms", 
+          "latencyMax": "313.78ms", 
+          "latencyStdev": "47.21ms", 
+          "totalRequests": 391157, 
+          "startTime": 1668454505, 
+          "endTime": 1668454520
+        }
+      ]
+    }, 
+    "query": {
+      "crax": [
+        {
+          "latencyAvg": "3.41ms", 
+          "timeout": 6, 
+          "latencyMax": "31.86ms", 
+          "latencyStdev": "1.66ms", 
+          "totalRequests": 72613, 
+          "write": 0, 
+          "read": 0, 
+          "connect": 0, 
+          "startTime": 1668454455, 
+          "endTime": 1668454470
+        }
+      ]
+    }, 
+    "json": {
+      "crax": [
+        {
+          "latencyAvg": "0.98ms", 
+          "latencyMax": "40.77ms", 
+          "latencyStdev": "1.69ms", 
+          "totalRequests": 329364, 
+          "startTime": 1668454405, 
+          "endTime": 1668454420
+        }
+      ]
+    }
+  }
+}

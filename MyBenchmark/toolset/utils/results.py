@@ -33,7 +33,6 @@ class Results:
             pass
         self.file = os.path.join(self.directory, "results.json")
 
-        self.uuid = str(uuid.uuid4())
         self.name = datetime.now().strftime(self.config.results_name)
 
         self.startTime = int(round(time.time() * 1000))
@@ -252,9 +251,7 @@ class Results:
         '''
         toRet = dict()
 
-        toRet['uuid'] = self.uuid
         toRet['name'] = self.name
-        toRet['git'] = None
         toRet['startTime'] = self.startTime
         toRet['completionTime'] = self.completionTime
         toRet['concurrencyLevels'] = self.concurrencyLevels

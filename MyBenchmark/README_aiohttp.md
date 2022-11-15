@@ -26,7 +26,7 @@ the [Python README](../).
 This is the Python aiohttp portion of a [benchmarking tests suite](../../) 
 comparing a variety of frameworks.
 
-All test implementations are located within ([./app](frameworks/Python/aiohttp/hello)).
+All test implementations are located within ([./app](frameworks/aiohttp/hello)).
 
 ## Description
 

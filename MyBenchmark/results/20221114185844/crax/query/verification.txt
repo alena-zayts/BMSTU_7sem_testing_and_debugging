@@ -1,0 +1,9 @@
+--------------------------------------------------------------------------------
+VERIFYING QUERY
+--------------------------------------------------------------------------------
+   FAIL for http://bm-server:8080/queries?queries=20
+     16 failed transactions.
+   FAIL for http://bm-server:8080/queries?queries=20
+     Only 0 executed queries in the database out of roughly 320 expected.
+   FAIL for http://bm-server:8080/queries?queries=20
+     Only 0 rows read in the database out of roughly 320 expected.

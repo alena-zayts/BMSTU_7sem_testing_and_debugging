@@ -1,0 +1,96 @@
+{
+  "name": "(unspecified, datetime = 2022-11-15 08:03:28)", 
+  "succeeded": {
+    "plaintext": [
+      "aiohttp"
+    ], 
+    "query": [
+      "aiohttp"
+    ], 
+    "json": [
+      "aiohttp"
+    ]
+  }, 
+  "failed": {
+    "plaintext": [], 
+    "query": [], 
+    "json": []
+  }, 
+  "verify": {
+    "aiohttp": {
+      "plaintext": "pass", 
+      "query": "pass", 
+      "json": "pass"
+    }
+  }, 
+  "completionTime": 1668499714768, 
+  "testMetadata": [
+    {
+      "framework": "aiohttp", 
+      "project_name": "aiohttp", 
+      "name": "aiohttp", 
+      "database": "postgres"
+    }, 
+    {
+      "framework": "crax", 
+      "project_name": "crax", 
+      "name": "crax", 
+      "database": "postgres"
+    }
+  ], 
+  "frameworks": [
+    "aiohttp"
+  ], 
+  "pipelineConcurrencyLevels": [
+    256
+  ], 
+  "concurrencyLevels": [
+    16
+  ], 
+  "startTime": 1668499408606, 
+  "queryIntervals": [
+    1
+  ], 
+  "completed": {
+    "aiohttp": "20221115080725"
+  }, 
+  "duration": 15, 
+  "rawData": {
+    "plaintext": {
+      "aiohttp": [
+        {
+          "latencyAvg": "82.20ms", 
+          "latencyMax": "340.06ms", 
+          "latencyStdev": "55.79ms", 
+          "totalRequests": 522583, 
+          "startTime": 1668499628, 
+          "endTime": 1668499643
+        }
+      ]
+    }, 
+    "query": {
+      "aiohttp": [
+        {
+          "latencyAvg": "5.73ms", 
+          "latencyMax": "38.06ms", 
+          "latencyStdev": "3.20ms", 
+          "totalRequests": 43232, 
+          "startTime": 1668499578, 
+          "endTime": 1668499593
+        }
+      ]
+    }, 
+    "json": {
+      "aiohttp": [
+        {
+          "latencyAvg": "1.22ms", 
+          "latencyMax": "30.98ms", 
+          "latencyStdev": "1.86ms", 
+          "totalRequests": 303022, 
+          "startTime": 1668499528, 
+          "endTime": 1668499543
+        }
+      ]
+    }
+  }
+}
