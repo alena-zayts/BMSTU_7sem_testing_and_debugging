@@ -74,10 +74,7 @@ class TimeLogger:
 
     def log_build_flush(self, file):
         for b_log in self.build_logs:
-            log(b_log['str'],
-                prefix=b_log['log_prefix'],
-                file=file,
-                color=Fore.YELLOW)
+            log(b_log['str'], prefix=b_log['log_prefix'], file=file, color=Fore.YELLOW)
         self.build_logs = []
 
     def mark_test_starting(self):

@@ -1,0 +1,53 @@
+---------------------------------------------------------
+ Running Primer json
+ wrk -H 'Host: bm-server' -H 'Accept: application/json,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 5 -c 8 --timeout 8 -t 8 http://bm-server:8080/json
+---------------------------------------------------------
+Running 5s test @ http://bm-server:8080/json
+  8 threads and 8 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   503.39us  389.95us  13.33ms   97.44%
+    Req/Sec     2.08k   532.41     3.27k    71.11%
+  Latency Distribution
+     50%  476.00us
+     75%  577.00us
+     90%  639.00us
+     99%    1.38ms
+  83989 requests in 5.10s, 13.38MB read
+Requests/sec:  16469.40
+Transfer/sec:      2.62MB
+---------------------------------------------------------
+ Running Warmup json
+ wrk -H 'Host: bm-server' -H 'Accept: application/json,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 15 -c 16 --timeout 8 -t 8 "http://bm-server:8080/json"
+---------------------------------------------------------
+Running 15s test @ http://bm-server:8080/json
+  8 threads and 16 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.21ms    1.52ms  22.27ms   92.56%
+    Req/Sec     2.22k     1.09k    4.85k    71.00%
+  Latency Distribution
+     50%  775.00us
+     75%    1.24ms
+     90%    2.12ms
+     99%    8.66ms
+  265551 requests in 15.04s, 42.29MB read
+Requests/sec:  17656.88
+Transfer/sec:      2.81MB
+---------------------------------------------------------
+ Concurrency: 16 for json
+ wrk -H 'Host: bm-server' -H 'Accept: application/json,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 15 -c 16 --timeout 8 -t 8 "http://bm-server:8080/json"
+---------------------------------------------------------
+Running 15s test @ http://bm-server:8080/json
+  8 threads and 16 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.28ms    1.65ms  29.71ms   92.99%
+    Req/Sec     2.08k   786.80     4.34k    68.75%
+  Latency Distribution
+     50%  815.00us
+     75%    1.25ms
+     90%    2.20ms
+     99%    9.24ms
+  248483 requests in 15.07s, 39.57MB read
+Requests/sec:  16490.89
+Transfer/sec:      2.63MB
+STARTTIME 1668535430
+ENDTIME 1668535445

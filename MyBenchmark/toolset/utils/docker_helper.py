@@ -97,7 +97,7 @@ class DockerHelper:
         '''
         for image in self.server.images.list():
             if len(image.tags) > 0:
-                if 'bm.test.'  in image.tags[0]:
+                if 'bm.test.' in image.tags[0]:
                     try:
                         self.server.images.remove(image.id, force=True)
                     except Exception:
@@ -264,7 +264,8 @@ class DockerHelper:
             self.server.containers.prune()
             self.client.containers.prune()
 
-    def build_databases(self):
+    # TODO only 1 here
+    def build_database(self):
         '''
         Builds all the databases necessary to run the list of benchmarker tests
         '''
@@ -341,10 +342,9 @@ class DockerHelper:
             tag="my_bm/bm.wrk")
 
     def test_client_connection(self, url):
-        '''
-        Tests that the hello server at the given url responds successfully to a
-        request.
-        '''
+        """
+        Tests that the hello server at the given url responds successfully to a request.
+        """
         try:
             self.client.containers.run(
                 'my_bm/bm.wrk',
@@ -353,10 +353,12 @@ class DockerHelper:
                 log_config={'type': None},
                 network=self.benchmarker.config.network,
                 network_mode=None)
-        except Exception:
+            return True
+
+        except:
             return False
 
-        return True
+
 
     def server_container_exists(self, container_id_or_name):
         '''

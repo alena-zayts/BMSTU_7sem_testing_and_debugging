@@ -20,20 +20,16 @@ from colorama import Fore, Style
 
 class Results:
     def __init__(self, benchmarker):
-        '''
-        Constructor
-        '''
         self.benchmarker = benchmarker
         self.config = benchmarker.config
-        self.directory = os.path.join(self.config.results_root,
-                                      self.config.timestamp)
+        self.directory = self.config.results_directory
         try:
             os.makedirs(self.directory)
         except OSError:
             pass
         self.file = os.path.join(self.directory, "results.json")
 
-        self.name = datetime.now().strftime(self.config.results_name)
+        self.name = datetime.now().strftime('(unspecified, datetime = %Y-%m-%d %H:%M:%S)')
 
         self.startTime = int(round(time.time() * 1000))
         self.completionTime = None
@@ -57,9 +53,9 @@ class Results:
     #############################################################################
 
     def parse_test(self, framework_test, test_type):
-        '''
+        """
         Parses the given test and test_type from the raw_file.
-        '''
+        """
         results = dict()
         results['results'] = []
         stats = []
@@ -121,9 +117,7 @@ class Results:
                                 framework_test, test_type,
                                 rawData["startTime"], rawData["endTime"], 1)
                             stats.append(test_stats)
-        with open(
-                self.get_stats_file(framework_test.name, test_type) + ".json",
-                "w") as stats_file:
+        with open(self.get_stats_file(framework_test.name, test_type) + ".json", "w") as stats_file:
             json.dump(stats, stats_file, indent=2)
 
         return results
@@ -136,16 +130,10 @@ class Results:
         self.__write_results()
 
     def set_completion_time(self):
-        '''
-        Sets the completionTime for these results and writes the results
-        '''
         self.completionTime = int(round(time.time() * 1000))
         self.__write_results()
 
     def load(self):
-        '''
-        Load the results.json file
-        '''
         try:
             with open(self.file) as f:
                 self.__dict__.update(json.load(f))
@@ -176,16 +164,6 @@ class Results:
             pass
         return path
 
-    def report_verify_results(self, framework_test, test_type, result):
-        '''
-        Used by FrameworkTest to add verification details to our results
-
-        TODO: Technically this is an IPC violation - we are accessing
-        the parent process' memory from the child process
-        '''
-        if framework_test.name not in self.verify.keys():
-            self.verify[framework_test.name] = dict()
-        self.verify[framework_test.name][test_type] = result
 
     def report_benchmark_results(self, framework_test, test_type, results):
         '''
@@ -264,7 +242,6 @@ class Results:
         toRet['succeeded'] = self.succeeded
         toRet['failed'] = self.failed
         toRet['verify'] = self.verify
-        toRet['testMetadata'] = self.benchmarker.metadata.to_jsonable()
 
         return toRet
 
