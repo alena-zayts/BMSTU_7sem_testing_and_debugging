@@ -1,0 +1,73 @@
+---------------------------------------------------------
+ Running Primer json
+ wrk -H 'Host: bm-server' -H 'Accept: application/json,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 5 -c 8 --timeout 8 -t 8 http://bm-server:8080/json
+---------------------------------------------------------
+Running 5s test @ http://bm-server:8080/json
+  8 threads and 8 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   494.26us  438.15us  19.88ms   98.09%
+    Req/Sec     2.12k   538.81     3.39k    69.46%
+  Latency Distribution
+     50%  465.00us
+     75%  574.00us
+     90%  617.00us
+     99%    1.25ms
+  85503 requests in 5.10s, 13.62MB read
+Requests/sec:  16765.88
+Transfer/sec:      2.67MB
+---------------------------------------------------------
+ Running Warmup json
+ wrk -H 'Host: bm-server' -H 'Accept: application/json,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 15 -c 32 --timeout 8 -t 8 "http://bm-server:8080/json"
+---------------------------------------------------------
+Running 15s test @ http://bm-server:8080/json
+  8 threads and 32 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.67ms    1.77ms  32.13ms   94.21%
+    Req/Sec     2.81k   773.18     5.15k    68.08%
+  Latency Distribution
+     50%    1.30ms
+     75%    1.81ms
+     90%    2.72ms
+     99%    9.93ms
+  336106 requests in 15.03s, 53.53MB read
+Requests/sec:  22358.58
+Transfer/sec:      3.56MB
+---------------------------------------------------------
+ Concurrency: 16 for json
+ wrk -H 'Host: bm-server' -H 'Accept: application/json,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 15 -c 16 --timeout 8 -t 8 "http://bm-server:8080/json"
+---------------------------------------------------------
+Running 15s test @ http://bm-server:8080/json
+  8 threads and 16 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     0.88ms  699.06us  25.15ms   94.02%
+    Req/Sec     2.41k   662.70     5.25k    77.81%
+  Latency Distribution
+     50%  772.00us
+     75%    1.04ms
+     90%    1.36ms
+     99%    2.51ms
+  288243 requests in 15.10s, 45.91MB read
+Requests/sec:  19089.47
+Transfer/sec:      3.04MB
+STARTTIME 1668602808
+ENDTIME 1668602823
+---------------------------------------------------------
+ Concurrency: 32 for json
+ wrk -H 'Host: bm-server' -H 'Accept: application/json,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 15 -c 32 --timeout 8 -t 8 "http://bm-server:8080/json"
+---------------------------------------------------------
+Running 15s test @ http://bm-server:8080/json
+  8 threads and 32 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     2.07ms    2.49ms  31.32ms   89.69%
+    Req/Sec     2.67k     1.01k    5.34k    64.75%
+  Latency Distribution
+     50%    1.23ms
+     75%    2.18ms
+     90%    4.74ms
+     99%   11.38ms
+  320041 requests in 15.06s, 50.97MB read
+  Socket errors: connect 0, read 0, write 0, timeout 27
+Requests/sec:  21245.73
+Transfer/sec:      3.38MB
+STARTTIME 1668602825
+ENDTIME 1668602840

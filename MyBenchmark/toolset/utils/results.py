@@ -108,12 +108,6 @@ class Results:
                         if "ENDTIME" in line:
                             m = re.search("[0-9]+", line)
                             rawData["endTime"] = int(m.group(0))
-                            test_stats = self.__parse_stats(
-                                framework_test, test_type,
-                                rawData["startTime"], rawData["endTime"], 1)
-                            stats.append(test_stats)
-        with open(self.get_stats_file(framework_test.name, test_type) + ".json", "w") as stats_file:
-            json.dump(stats, stats_file, indent=2)
 
         return results
 
@@ -138,18 +132,6 @@ class Results:
         Example: fw_root/results/timestamp/test_type/test_name/raw.txt
         """
         path = os.path.join(self.directory, test_name, test_type, "raw.txt")
-        try:
-            os.makedirs(os.path.dirname(path))
-        except OSError:
-            pass
-        return path
-
-    def get_stats_file(self, test_name, test_type):
-        '''
-        Returns the stats file name for this test_name and
-        Example: fw_root/results/timestamp/test_type/test_name/stats.txt
-        '''
-        path = os.path.join(self.directory, test_name, test_type, "stats.txt")
         try:
             os.makedirs(os.path.dirname(path))
         except OSError:
@@ -213,48 +195,3 @@ class Results:
                 f.write(json.dumps(self.__to_jsonable(), indent=2))
         except IOError:
             log("Error writing results.json")
-
-
-    def __parse_stats(self, framework_test, test_type, start_time, end_time,
-                      interval):
-        '''
-        For each test type, process all the statistics, and return a multi-layered
-        dictionary that has a structure as follows:
-
-        (timestamp)
-        | (main header) - group that the stat is in
-        | | (sub header) - title of the stat
-        | | | (stat) - the stat itself, usually a floating point number
-        '''
-        stats_dict = dict()
-        stats_file = self.get_stats_file(framework_test.name, test_type)
-        with open(stats_file) as stats:
-            # dstat doesn't output a completely compliant CSV file - we need to strip the header
-            for _ in range(4):
-                stats.next()
-            stats_reader = csv.reader(stats)
-            main_header = stats_reader.next()
-            sub_header = stats_reader.next()
-            time_row = sub_header.index("epoch")
-            int_counter = 0
-            for row in stats_reader:
-                time = float(row[time_row])
-                int_counter += 1
-                if time < start_time:
-                    continue
-                elif time > end_time:
-                    return stats_dict
-                if int_counter % interval != 0:
-                    continue
-                row_dict = dict()
-                for nextheader in main_header:
-                    if nextheader != "":
-                        row_dict[nextheader] = dict()
-                header = ""
-                for item_num, column in enumerate(row):
-                    if len(main_header[item_num]) != 0:
-                        header = main_header[item_num]
-                    # all the stats are numbers, so we want to make sure that they stay that way in json
-                    row_dict[header][sub_header[item_num]] = float(column)
-                stats_dict[time] = row_dict
-        return stats_dict

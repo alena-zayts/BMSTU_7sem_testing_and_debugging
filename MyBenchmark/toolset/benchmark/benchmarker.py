@@ -182,9 +182,6 @@ class Benchmarker:
                     pass
 
             if not test.failed:
-                # Begin resource usage metrics collection
-                self.__begin_logging(framework_test, test_type)
-
                 script = self.config.types[test_type].get_script_name()
                 script_variables = self.config.types[test_type].get_script_variables(
                     test.name,
@@ -192,33 +189,12 @@ class Benchmarker:
 
                 self.docker_helper.benchmark(script, script_variables, raw_file)
 
-                # End resource usage metrics collection
-                self.__end_logging()
-
             results = self.results.parse_test(framework_test, test_type)
             log("Benchmark results:", file=benchmark_log)
             pprint(results)
 
             self.results.report_benchmark_results(framework_test, test_type, results['results'])
             log("Complete", file=benchmark_log)
-
-    def __begin_logging(self, framework_test, test_type):
-        '''
-        Starts a thread to monitor the resource usage, to be synced with the client's time.
-        '''
-        output_file = "{file_name}".format(file_name=self.results.get_stats_file(framework_test.name, test_type))
-        dstat_string = "dstat -Tafilmprs --aio --fs --ipc --lock --socket --tcp \
-                                      --raw --udp --unix --vm --disk-util \
-                                      --rpc --rpcd --output {output_file}".format(output_file=output_file)
-        cmd = shlex.split(dstat_string)
-        self.subprocess_handle = subprocess.Popen(cmd, stdout=FNULL, stderr=subprocess.STDOUT)
-
-    def __end_logging(self):
-        """
-        Stops the logger thread and blocks until shutdown is complete.
-        """
-        self.subprocess_handle.terminate()
-        self.subprocess_handle.communicate()
 
     def _gather_tests(self, include):
         # Given test names as strings, returns a list of FrameworkTest objects.

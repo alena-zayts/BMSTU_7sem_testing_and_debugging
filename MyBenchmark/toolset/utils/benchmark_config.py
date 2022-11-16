@@ -42,10 +42,10 @@ class BenchmarkConfig:
                                               time.strftime("%Y%m%d%H%M%S", time.localtime()))
 
 
-        self.concurrency_levels = [16, 32, 64, 128, 256, 512]
-        self.pipeline_concurrency_levels = [256, 1024, 4096, 16384]
-        self.query_levels = [1, 5, 10, 15, 20]
+        # self.concurrency_levels = [16, 32, 64, 128, 256, 512]
+        # self.pipeline_concurrency_levels = [256, 1024, 4096, 16384]
+        # self.query_levels = [1, 5, 10, 15, 20]
 
-        # self.concurrency_levels = [16, ]
-        # self.pipeline_concurrency_levels = [256, ]
-        # self.query_levels = [1, ]
+        self.concurrency_levels = [16, 32]
+        self.pipeline_concurrency_levels = [256, ]
+        self.query_levels = [1, 5, 10]
