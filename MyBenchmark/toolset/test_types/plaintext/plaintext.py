@@ -16,10 +16,10 @@ class TestType(AbstractTestType):
 
     def get_script_variables(self, name, url):
         return {
-            'max_concurrency': max(self.config.concurrency_levels),
+            'max_concurrency': max(self.config.json_concurrency_levels),
             'name': name,
             'duration': self.config.duration,
-            'levels': " ".join("{}".format(item) for item in self.config.pipeline_concurrency_levels),
+            'levels': " ".join("{}".format(item) for item in self.config.plaintext_concurrency_levels),
             'server_host': self.config.server_host,
             'url': url,
             'pipeline': 16,

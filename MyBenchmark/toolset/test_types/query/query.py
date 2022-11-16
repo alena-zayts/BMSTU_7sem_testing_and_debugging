@@ -16,7 +16,7 @@ class TestType(AbstractTestType):
 
     def get_script_variables(self, name, url):
         return {
-            'max_concurrency': max(self.config.concurrency_levels),
+            'max_concurrency': max(self.config.json_concurrency_levels),
             'name': name,
             'duration': self.config.duration,
             'levels': " ".join("{}".format(item) for item in self.config.query_levels),

@@ -1,0 +1,102 @@
+{
+  "name": "(happened at datetime = 2022-11-16 17:17:48)", 
+  "succeeded": {
+    "plaintext": [
+      "crax"
+    ], 
+    "query": [
+      "crax"
+    ], 
+    "json": [
+      "crax"
+    ]
+  }, 
+  "failed": {
+    "plaintext": [], 
+    "query": [], 
+    "json": []
+  }, 
+  "duration": 15, 
+  "frameworks": [
+    "crax"
+  ], 
+  "completionTime": 1668619573276, 
+  "rawData": {
+    "plaintext": {
+      "crax": [
+        {
+          "latencyAvg": "102.96ms", 
+          "latencyMax": "381.04ms", 
+          "latencyStdev": "59.15ms", 
+          "totalRequests": 342869, 
+          "startTime": 1668619488, 
+          "endTime": 1668619503
+        }
+      ]
+    }, 
+    "query": {
+      "crax": [
+        {
+          "latencyAvg": "9.09ms", 
+          "latencyMax": "74.66ms", 
+          "latencyStdev": "5.51ms", 
+          "totalRequests": 55125, 
+          "startTime": 1668619403, 
+          "endTime": 1668619418
+        }, 
+        {
+          "latencyAvg": "15.06ms", 
+          "latencyMax": "126.21ms", 
+          "latencyStdev": "10.73ms", 
+          "totalRequests": 34912, 
+          "startTime": 1668619420, 
+          "endTime": 1668619435
+        }, 
+        {
+          "latencyAvg": "17.45ms", 
+          "latencyMax": "85.94ms", 
+          "latencyStdev": "8.84ms", 
+          "totalRequests": 28254, 
+          "startTime": 1668619437, 
+          "endTime": 1668619452
+        }
+      ]
+    }, 
+    "json": {
+      "crax": [
+        {
+          "latencyAvg": "1.36ms", 
+          "latencyMax": "30.26ms", 
+          "latencyStdev": "2.00ms", 
+          "totalRequests": 260048, 
+          "startTime": 1668619336, 
+          "endTime": 1668619351
+        }, 
+        {
+          "latencyAvg": "2.23ms", 
+          "latencyMax": "41.41ms", 
+          "latencyStdev": "2.87ms", 
+          "totalRequests": 295324, 
+          "startTime": 1668619353, 
+          "endTime": 1668619368
+        }
+      ]
+    }
+  }, 
+  "startTime": 1668619068783, 
+  "queryIntervals": [
+    1, 
+    5, 
+    10
+  ], 
+  "plaintextConcurrencyLevels": [
+    256
+  ], 
+  "jsonConcurrencyLevels": [
+    16, 
+    32
+  ], 
+  "completed": {
+    "crax": "20221116172505"
+  }
+}

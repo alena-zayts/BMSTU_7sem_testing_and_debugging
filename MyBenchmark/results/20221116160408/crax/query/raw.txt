@@ -1,0 +1,53 @@
+---------------------------------------------------------
+ Running Primer query
+ wrk -H 'Host: bm-server' -H 'Accept: application/json,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 5 -c 8 --timeout 8 -t 8 "http://bm-server:8080/queries?queries=2"
+---------------------------------------------------------
+Running 5s test @ http://bm-server:8080/queries?queries=2
+  8 threads and 8 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    21.98ms   74.67ms 465.55ms   93.37%
+    Req/Sec   369.78     67.19   470.00     85.33%
+  Latency Distribution
+     50%    2.53ms
+     75%    3.08ms
+     90%    6.10ms
+     99%  409.73ms
+  13658 requests in 5.02s, 2.66MB read
+Requests/sec:   2722.42
+Transfer/sec:    543.87KB
+---------------------------------------------------------
+ Running Warmup query
+ wrk -H 'Host: bm-server' -H 'Accept: application/json,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 15 -c 16 --timeout 8 -t 8 "http://bm-server:8080/queries?queries=2"
+---------------------------------------------------------
+Running 15s test @ http://bm-server:8080/queries?queries=2
+  8 threads and 16 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     4.80ms    2.50ms  37.77ms   87.49%
+    Req/Sec   434.03    106.74   717.00     66.75%
+  Latency Distribution
+     50%    4.24ms
+     75%    5.43ms
+     90%    7.32ms
+     99%   14.94ms
+  51907 requests in 15.02s, 10.13MB read
+Requests/sec:   3455.86
+Transfer/sec:    690.34KB
+---------------------------------------------------------
+ Queries: 1 for query
+ wrk -H 'Host: bm-server' -H 'Accept: application/json,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 15 -c 16 --timeout 8 -t 8 "http://bm-server:8080/queries?queries=1"
+---------------------------------------------------------
+Running 15s test @ http://bm-server:8080/queries?queries=1
+  8 threads and 16 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     4.25ms    2.41ms  40.31ms   88.28%
+    Req/Sec   494.58     98.85   686.00     67.92%
+  Latency Distribution
+     50%    3.53ms
+     75%    4.87ms
+     90%    6.80ms
+     99%   14.03ms
+  59198 requests in 15.04s, 9.75MB read
+Requests/sec:   3935.63
+Transfer/sec:    664.05KB
+STARTTIME 1668614935
+ENDTIME 1668614950

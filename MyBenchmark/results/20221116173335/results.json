@@ -1,0 +1,102 @@
+{
+  "name": "(happened at datetime = 2022-11-16 17:33:36)", 
+  "succeeded": {
+    "plaintext": [
+      "aiohttp"
+    ], 
+    "query": [
+      "aiohttp"
+    ], 
+    "json": [
+      "aiohttp"
+    ]
+  }, 
+  "failed": {
+    "plaintext": [], 
+    "query": [], 
+    "json": []
+  }, 
+  "duration": 15, 
+  "frameworks": [
+    "aiohttp"
+  ], 
+  "completionTime": 1668620426946, 
+  "rawData": {
+    "plaintext": {
+      "aiohttp": [
+        {
+          "latencyAvg": "66.84ms", 
+          "latencyMax": "257.02ms", 
+          "latencyStdev": "41.78ms", 
+          "totalRequests": 591690, 
+          "startTime": 1668620341, 
+          "endTime": 1668620356
+        }
+      ]
+    }, 
+    "query": {
+      "aiohttp": [
+        {
+          "latencyAvg": "9.98ms", 
+          "latencyMax": "117.04ms", 
+          "latencyStdev": "6.65ms", 
+          "totalRequests": 50941, 
+          "startTime": 1668620257, 
+          "endTime": 1668620272
+        }, 
+        {
+          "latencyAvg": "26.96ms", 
+          "latencyMax": "154.06ms", 
+          "latencyStdev": "13.42ms", 
+          "totalRequests": 17949, 
+          "startTime": 1668620274, 
+          "endTime": 1668620289
+        }, 
+        {
+          "latencyAvg": "58.22ms", 
+          "latencyMax": "299.20ms", 
+          "latencyStdev": "46.57ms", 
+          "totalRequests": 9350, 
+          "startTime": 1668620291, 
+          "endTime": 1668620306
+        }
+      ]
+    }, 
+    "json": {
+      "aiohttp": [
+        {
+          "latencyAvg": "0.96ms", 
+          "latencyMax": "29.72ms", 
+          "latencyStdev": "1.74ms", 
+          "totalRequests": 381181, 
+          "startTime": 1668620189, 
+          "endTime": 1668620204
+        }, 
+        {
+          "latencyAvg": "1.99ms", 
+          "latencyMax": "40.54ms", 
+          "latencyStdev": "2.81ms", 
+          "totalRequests": 397329, 
+          "startTime": 1668620206, 
+          "endTime": 1668620221
+        }
+      ]
+    }
+  }, 
+  "startTime": 1668620016017, 
+  "queryLevels": [
+    1, 
+    5, 
+    10
+  ], 
+  "plaintextConcurrencyLevels": [
+    256
+  ], 
+  "jsonConcurrencyLevels": [
+    16, 
+    32
+  ], 
+  "completed": {
+    "aiohttp": "20221116173918"
+  }
+}

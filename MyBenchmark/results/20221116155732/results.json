@@ -1,0 +1,79 @@
+{
+  "name": "(happened at datetime = 2022-11-16 15:57:32)", 
+  "succeeded": {
+    "plaintext": [
+      "crax"
+    ], 
+    "query": [
+      "crax"
+    ], 
+    "json": [
+      "crax"
+    ]
+  }, 
+  "failed": {
+    "plaintext": [], 
+    "query": [], 
+    "json": []
+  }, 
+  "duration": 15, 
+  "frameworks": [
+    "crax"
+  ], 
+  "completionTime": 1668614643360, 
+  "rawData": {
+    "plaintext": {
+      "crax": [
+        {
+          "latencyAvg": "104.31ms", 
+          "latencyMax": "370.79ms", 
+          "latencyStdev": "62.17ms", 
+          "totalRequests": 353400, 
+          "startTime": 1668614558, 
+          "endTime": 1668614573
+        }
+      ]
+    }, 
+    "query": {
+      "crax": [
+        {
+          "latencyAvg": "4.24ms", 
+          "latencyMax": "36.21ms", 
+          "latencyStdev": "2.32ms", 
+          "totalRequests": 58993, 
+          "startTime": 1668614508, 
+          "endTime": 1668614523
+        }
+      ]
+    }, 
+    "json": {
+      "crax": [
+        {
+          "latencyAvg": "1.31ms", 
+          "timeout": 16, 
+          "latencyMax": "32.05ms", 
+          "latencyStdev": "1.74ms", 
+          "totalRequests": 247289, 
+          "write": 0, 
+          "read": 0, 
+          "connect": 0, 
+          "startTime": 1668614458, 
+          "endTime": 1668614473
+        }
+      ]
+    }
+  }, 
+  "startTime": 1668614252509, 
+  "queryLevels": [
+    1
+  ], 
+  "plaintextConcurrencyLevels": [
+    256
+  ], 
+  "jsonConcurrencyLevels": [
+    16
+  ], 
+  "completed": {
+    "crax": "20221116160255"
+  }
+}

@@ -32,9 +32,9 @@ class Results:
 
         self.startTime = int(round(time.time() * 1000))
         self.completionTime = None
-        self.concurrencyLevels = self.config.concurrency_levels
-        self.pipelineConcurrencyLevels = self.config.pipeline_concurrency_levels
-        self.queryIntervals = self.config.query_levels
+        self.jsonConcurrencyLevels = self.config.json_concurrency_levels
+        self.plaintextConcurrencyLevels = self.config.plaintext_concurrency_levels
+        self.queryLevels = self.config.query_levels
         self.frameworks = [t.name for t in benchmarker.tests]
         self.duration = self.config.duration
         self.rawData = dict()
@@ -177,9 +177,9 @@ class Results:
         toRet['name'] = self.name
         toRet['startTime'] = self.startTime
         toRet['completionTime'] = self.completionTime
-        toRet['concurrencyLevels'] = self.concurrencyLevels
-        toRet['pipelineConcurrencyLevels'] = self.pipelineConcurrencyLevels
-        toRet['queryIntervals'] = self.queryIntervals
+        toRet['jsonConcurrencyLevels'] = self.jsonConcurrencyLevels
+        toRet['plaintextConcurrencyLevels'] = self.plaintextConcurrencyLevels
+        toRet['queryLevels'] = self.queryLevels
         toRet['frameworks'] = self.frameworks
         toRet['duration'] = self.duration
         toRet['rawData'] = self.rawData
