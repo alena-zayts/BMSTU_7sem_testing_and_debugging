@@ -20,19 +20,14 @@ class DockerHelper:
     def __init__(self, benchmarker=None):
         self.benchmarker = benchmarker
 
-        self.client = docker.DockerClient(
-            base_url=self.benchmarker.config.client_docker_host)
-        self.server = docker.DockerClient(
-            base_url=self.benchmarker.config.server_docker_host)
-        self.database = docker.DockerClient(
-            base_url=self.benchmarker.config.database_docker_host)
+        self.client = docker.DockerClient(base_url=self.benchmarker.config.client_docker_host)
+        self.server = docker.DockerClient(base_url=self.benchmarker.config.server_docker_host)
+        self.database = docker.DockerClient(base_url=self.benchmarker.config.database_docker_host)
 
-    def __build(self, base_url, path, build_log_file, log_prefix, dockerfile,
-                tag, buildargs={}):
-        '''
+    def __build(self, base_url, path, build_log_file, log_prefix, dockerfile, tag, buildargs={}):
+        """
         Builds docker containers using docker-py low-level api
-        '''
-
+        """
         self.benchmarker.time_logger.mark_build_start()
         with open(build_log_file, 'w') as build_log:
             try:
@@ -92,9 +87,9 @@ class DockerHelper:
                 log_prefix=log_prefix, file=build_log)
 
     def clean(self):
-        '''
+        """
         Cleans all the docker test images from the system and prunes
-        '''
+        """
         for image in self.server.images.list():
             if len(image.tags) > 0:
                 if 'bm.test.' in image.tags[0]:
@@ -106,9 +101,9 @@ class DockerHelper:
         self.database.images.prune()
 
     def build(self, test, build_log_dir=os.devnull):
-        '''
+        """
         Builds the test docker containers
-        '''
+        """
         log_prefix = "%s: " % test.name
 
         # Build the test image
@@ -120,20 +115,15 @@ class DockerHelper:
             test_database = test.database
         build_log_file = build_log_dir
         if build_log_dir is not os.devnull:
-            build_log_file = os.path.join(
-                build_log_dir,
-                "%s.log" % test_docker_file.replace(".dockerfile", "").lower())
+            build_log_file = os.path.join(build_log_dir, "%s.log" % test_docker_file.replace(".dockerfile", "").lower())
 
         try:
             self.__build(
                 base_url=self.benchmarker.config.server_docker_host,
-                build_log_file=build_log_file,
-                log_prefix=log_prefix,
-                path=test.directory,
-                dockerfile=test_docker_file,
+                build_log_file=build_log_file, log_prefix=log_prefix,
+                path=test.directory, dockerfile=test_docker_file,
                 buildargs=({
-                    'BENCHMARK_ENV':
-                        self.benchmarker.config.results_environment,
+                    'BENCHMARK_ENV': self.benchmarker.config.results_environment,
                     'TFB_TEST_NAME': test.name,
                     'TFB_TEST_DATABASE': test_database
                 }),
@@ -144,9 +134,9 @@ class DockerHelper:
         return 0
 
     def run(self, test, run_log_dir):
-        '''
+        """
         Run the given Docker container(s)
-        '''
+        """
 
         log_prefix = "%s: " % test.name
         container = None
@@ -361,9 +351,6 @@ class DockerHelper:
 
 
     def server_container_exists(self, container_id_or_name):
-        '''
-        Returns True if the container still exists on the server.
-        '''
         try:
             self.server.containers.get(container_id_or_name)
             return True
