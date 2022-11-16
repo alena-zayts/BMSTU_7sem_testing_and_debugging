@@ -3,19 +3,23 @@ import os
 from prettytable import PrettyTable
 from run_combination import N_REPEATS
 import re
-
+from openpyxl import Workbook
+import csv
+import pandas as pd
+pd.options.display.width = 0
 #N_REPEATS = 1
 
 res_dir = '/results/'
 res_name = '/results.json'
-res_filenames = list(map(lambda sub_dir: res_dir[1:] + sub_dir + res_name, os.listdir(os.getcwd() + res_dir)[-N_REPEATS * 2:]))
-print(res_filenames)
+res_filenames = list(map(lambda sub_dir: res_dir[1:] + sub_dir + res_name, os.listdir(os.getcwd() + res_dir)[-N_REPEATS * 2 - 1:]))
+res_filenames.remove('results/excel/results.json')
+#print(res_filenames)
 
 first_res_filename = res_filenames[0]
 with open(first_res_filename) as res_f:
     data = json.load(res_f)
-for x in data.items():
-    print(x)
+# for x in data.items():
+#     print(x)
 
 
 
@@ -50,7 +54,7 @@ for filename in res_filenames:
     test_results = data['rawData']
     for test_name, _test_results in test_results.items():
         test_results = _test_results[fw_name]
-        print(test_name, test_results)
+        # print(test_name, test_results)
         for i, test_result in enumerate(test_results):
             results_sum[fw_name][test_name][i]['totalRequests'] += test_result['totalRequests']
             results_sum[fw_name][test_name][i]['totalSeconds'] += (test_result['endTime'] - test_result['startTime'])
@@ -60,15 +64,6 @@ for filename in res_filenames:
             results_sum[fw_name][test_name][i]['maxLatencyMax'] = max(float(test_result['latencyMax'][:-2]),
                                                                       results_sum[fw_name][test_name][i]['maxLatencyMax'])
 
-
-# results_sum = {
-#     fw_name: {
-#         tes_name:
-#             [{'totalRequests': 0, 'totalSeconds': 0, 'totalAvg': 0, 'totalLatencyAvg': 0, 'maxLatencyMax': 0}
-#              for _ in range(lengths[tes_name])]
-#         for tes_name in ['plaintext', 'query', 'json']
-#     } for fw_name in ['aiohttp', 'crax']
-# }
 
 results_final = {
     fw_name: {
@@ -86,12 +81,12 @@ results_final = {
 
 
 
-for fw_name, res_fw in results_final.items():
-    print()
-    print(fw_name)
-
-    for k, v in res_fw.items():
-        print(k, v)
+# for fw_name, res_fw in results_final.items():
+#     print()
+#     print(fw_name)
+#
+#     for k, v in res_fw.items():
+#         print(k, v)
 
 
 
@@ -109,21 +104,33 @@ for test_name in ['plaintext', 'query', 'json']:
                                results_final[fw_name][test_name][i]['latencyAvg'],
                                results_final[fw_name][test_name][i]['latencyMax'],
                                ])
+
+    #print(res_table)
+    tbl_as_csv = res_table.get_csv_string().replace('\r', '')
+    csv_filename = res_dir[1:] + 'excel/' + f"{test_name}_from_{re.findall(r'/(.*?)/', res_filenames[0])[0]}" \
+                                 f"_to_{re.findall(r'/(.*?)/', res_filenames[-1])[0]}.csv"
+    with open(csv_filename, "w") as text_file:
+        text_file.write(tbl_as_csv)
+
+    df = pd.read_csv(csv_filename)
+    df.to_excel(f'{csv_filename[:-4]}.xlsx')
+
     print()
     print(test_name)
-    print(res_table)
-    tbl_as_csv = res_table.get_csv_string().replace('\r', '')
-    print(res_filenames)
-    text_file = open(res_dir[1:] +
-                     f"{test_name}_from_{re.findall(r'/(.*?)/', res_filenames[0][:-5])[0]}"
-                     f"_to_{re.findall(r'/(.*?)/', res_filenames[-1][:-5])[0]}.csv", "w")
-    n = text_file.write(tbl_as_csv)
-    text_file.close()
+    print('Sorted by requestsPerSecond')
+    df = df.sort_values(by='requestsPerSecond', ascending=False)
+    print(df)
+    print('Sorted by latencyAvg')
+    df = df.sort_values(by='latencyAvg', ascending=True)
+    print(df)
+
+    # wb = Workbook()
+    # ws = wb.active
+    # with open(csv_filename, 'r') as f:
+    #     for row in csv.reader(f):
+    #         ws.append(row)
+    # wb.save(f'{csv_filename[:-4]}.xlsx')
 
 
-# res_table.add_column("queryLevels", queryLevels)
-# res_table.add_column("jsonConcurrencyLevels", jsonConcurrencyLevels)
-# res_table.add_column("plaintextConcurrencyLevels", plaintextConcurrencyLevels)
-
-
+print(fails)
 
