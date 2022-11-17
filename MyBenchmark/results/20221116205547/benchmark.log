@@ -1,0 +1,24 @@
+--------------------------------------------------------------------------------
+Benchmarking aiohttp
+--------------------------------------------------------------------------------
+BENCHMARKING JSON ... 
+Benchmark results:
+Complete
+BENCHMARKING QUERY ... 
+Benchmark results:
+Complete
+BENCHMARKING PLAINTEXT ... 
+Benchmark results:
+Complete
+aiohttp: Benchmarking time: 3m 55s
+wrk: Build time: 3s
+my_bm/postgres:latest: Build time: 2s
+aiohttp: Build time: 39s
+aiohttp: Time starting database: 4s
+aiohttp: Time until accepting requests: 3s
+aiohttp: Total test time: 4m 54s
+bm: Total time building so far: 44s
+bm: Total time verifying so far: 0s
+bm: Total time benchmarking so far: 3m 55s
+bm: Total execution time so far: 5m 0s
+aiohttp: Clean up: Sleep 60 seconds...

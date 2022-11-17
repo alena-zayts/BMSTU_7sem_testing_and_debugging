@@ -1,6 +1,6 @@
 import os
 
-N_REPEATS = 2
+N_REPEATS = 5
 smth_failed = False
 
 

@@ -1,0 +1,91 @@
+---------------------------------------------------------
+ Running Primer query
+ wrk -H 'Host: bm-server' -H 'Accept: application/json,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 5 -c 8 --timeout 8 -t 8 "http://bm-server:8080/queries/2"
+---------------------------------------------------------
+Running 5s test @ http://bm-server:8080/queries/2
+  8 threads and 8 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    32.13ms   95.24ms 565.13ms   92.35%
+    Req/Sec   187.35     85.46   450.00     85.56%
+  Latency Distribution
+     50%    5.72ms
+     75%    7.01ms
+     90%   10.32ms
+     99%  495.04ms
+  6785 requests in 5.01s, 1.43MB read
+Requests/sec:   1354.84
+Transfer/sec:    293.15KB
+---------------------------------------------------------
+ Running Warmup query
+ wrk -H 'Host: bm-server' -H 'Accept: application/json,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 15 -c 128 --timeout 8 -t 8 "http://bm-server:8080/queries/2"
+---------------------------------------------------------
+Running 15s test @ http://bm-server:8080/queries/2
+  8 threads and 128 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    54.64ms   53.14ms 733.52ms   89.64%
+    Req/Sec   341.27    221.18   780.00     61.47%
+  Latency Distribution
+     50%   38.14ms
+     75%   80.78ms
+     90%  109.13ms
+     99%  242.44ms
+  40384 requests in 15.02s, 8.53MB read
+Requests/sec:   2687.88
+Transfer/sec:    581.58KB
+---------------------------------------------------------
+ Queries: 1 for query
+ wrk -H 'Host: bm-server' -H 'Accept: application/json,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 15 -c 128 --timeout 8 -t 8 "http://bm-server:8080/queries/1"
+---------------------------------------------------------
+Running 15s test @ http://bm-server:8080/queries/1
+  8 threads and 128 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    34.58ms   21.26ms 410.90ms   87.70%
+    Req/Sec   484.33    142.52   750.00     56.83%
+  Latency Distribution
+     50%   29.89ms
+     75%   41.21ms
+     90%   56.35ms
+     99%   99.78ms
+  57911 requests in 15.04s, 10.48MB read
+Requests/sec:   3851.07
+Transfer/sec:    713.74KB
+STARTTIME 1668631953
+ENDTIME 1668631968
+---------------------------------------------------------
+ Queries: 10 for query
+ wrk -H 'Host: bm-server' -H 'Accept: application/json,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 15 -c 128 --timeout 8 -t 8 "http://bm-server:8080/queries/10"
+---------------------------------------------------------
+Running 15s test @ http://bm-server:8080/queries/10
+  8 threads and 128 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   169.44ms   81.74ms 543.52ms   69.47%
+    Req/Sec    95.07     30.67   190.00     68.09%
+  Latency Distribution
+     50%  162.01ms
+     75%  220.24ms
+     90%  276.20ms
+     99%  395.58ms
+  11365 requests in 15.06s, 5.17MB read
+Requests/sec:    754.42
+Transfer/sec:    351.30KB
+STARTTIME 1668631970
+ENDTIME 1668631985
+---------------------------------------------------------
+ Queries: 20 for query
+ wrk -H 'Host: bm-server' -H 'Accept: application/json,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 15 -c 128 --timeout 8 -t 8 "http://bm-server:8080/queries/20"
+---------------------------------------------------------
+Running 15s test @ http://bm-server:8080/queries/20
+  8 threads and 128 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   317.45ms  196.81ms   1.35s    67.32%
+    Req/Sec    52.02     27.13   151.00     63.42%
+  Latency Distribution
+     50%  272.07ms
+     75%  426.82ms
+     90%  603.87ms
+     99%  906.41ms
+  6136 requests in 15.04s, 4.65MB read
+Requests/sec:    407.91
+Transfer/sec:    316.55KB
+STARTTIME 1668631987
+ENDTIME 1668632003

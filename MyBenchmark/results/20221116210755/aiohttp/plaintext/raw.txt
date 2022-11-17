@@ -1,0 +1,72 @@
+---------------------------------------------------------
+ Running Primer plaintext
+ wrk -H 'Host: bm-server' -H 'Accept: text/plain,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 5 -c 8 --timeout 8 -t 8 http://bm-server:8080/plaintext
+---------------------------------------------------------
+Running 5s test @ http://bm-server:8080/plaintext
+  8 threads and 8 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   457.27us  232.38us  12.00ms   83.69%
+    Req/Sec     2.21k   739.97     4.17k    77.34%
+  Latency Distribution
+     50%  441.00us
+     75%  539.00us
+     90%  720.00us
+     99%    0.94ms
+  89367 requests in 5.10s, 12.70MB read
+Requests/sec:  17523.68
+Transfer/sec:      2.49MB
+---------------------------------------------------------
+ Running Warmup plaintext
+ wrk -H 'Host: bm-server' -H 'Accept: text/plain,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 15 -c 128 --timeout 8 -t 8 http://bm-server:8080/plaintext
+---------------------------------------------------------
+Running 15s test @ http://bm-server:8080/plaintext
+  8 threads and 128 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     4.58ms    3.34ms  32.53ms   70.10%
+    Req/Sec     3.75k     1.54k   10.99k    75.73%
+  Latency Distribution
+     50%    3.80ms
+     75%    6.15ms
+     90%    9.82ms
+     99%   15.03ms
+  448540 requests in 15.09s, 63.74MB read
+Requests/sec:  29724.29
+Transfer/sec:      4.22MB
+---------------------------------------------------------
+ Concurrency: 256 for plaintext
+ wrk -H 'Host: bm-server' -H 'Accept: text/plain,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 15 -c 256 --timeout 8 -t 8 http://bm-server:8080/plaintext -s pipeline.lua -- 16
+---------------------------------------------------------
+Running 15s test @ http://bm-server:8080/plaintext
+  8 threads and 256 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency    62.85ms   40.52ms 259.92ms   66.53%
+    Req/Sec     5.30k     1.59k    9.65k    66.78%
+  Latency Distribution
+     50%   56.63ms
+     75%   88.85ms
+     90%  117.57ms
+     99%  180.06ms
+  633125 requests in 15.09s, 89.97MB read
+Requests/sec:  41965.73
+Transfer/sec:      5.96MB
+STARTTIME 1668633133
+ENDTIME 1668633148
+---------------------------------------------------------
+ Concurrency: 1024 for plaintext
+ wrk -H 'Host: bm-server' -H 'Accept: text/plain,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 15 -c 1024 --timeout 8 -t 8 http://bm-server:8080/plaintext -s pipeline.lua -- 16
+---------------------------------------------------------
+Running 15s test @ http://bm-server:8080/plaintext
+  8 threads and 1024 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   260.10ms  167.11ms   1.37s    67.76%
+    Req/Sec     4.88k     1.41k   29.76k    76.95%
+  Latency Distribution
+     50%  235.82ms
+     75%  359.50ms
+     90%  482.51ms
+     99%  703.27ms
+  575206 requests in 15.10s, 81.74MB read
+Requests/sec:  38092.38
+Transfer/sec:      5.41MB
+STARTTIME 1668633150
+ENDTIME 1668633165

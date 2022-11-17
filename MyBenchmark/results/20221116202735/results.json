@@ -1,0 +1,120 @@
+{
+  "name": "(happened at datetime = 2022-11-16 20:27:35)", 
+  "succeeded": {
+    "plaintext": [
+      "crax"
+    ], 
+    "query": [
+      "crax"
+    ], 
+    "json": [
+      "crax"
+    ]
+  }, 
+  "failed": {
+    "plaintext": [], 
+    "query": [], 
+    "json": []
+  }, 
+  "completed": {
+    "crax": "20221116203343"
+  }, 
+  "frameworks": [
+    "crax"
+  ], 
+  "queryLevels": [
+    1, 
+    10, 
+    20
+  ], 
+  "completionTime": 1668630891945, 
+  "rawData": {
+    "plaintext": {
+      "crax": [
+        {
+          "latencyAvg": "85.38ms", 
+          "latencyMax": "350.09ms", 
+          "latencyStdev": "54.89ms", 
+          "totalRequests": 361789, 
+          "startTime": 1668630789, 
+          "endTime": 1668630804
+        }, 
+        {
+          "latencyAvg": "468.78ms", 
+          "latencyMax": "1.58s", 
+          "latencyStdev": "313.67ms", 
+          "totalRequests": 346772, 
+          "startTime": 1668630806, 
+          "endTime": 1668630821
+        }
+      ]
+    }, 
+    "query": {
+      "crax": [
+        {
+          "latencyAvg": "24.27ms", 
+          "latencyMax": "245.89ms", 
+          "latencyStdev": "16.34ms", 
+          "totalRequests": 84580, 
+          "startTime": 1668630705, 
+          "endTime": 1668630720
+        }, 
+        {
+          "latencyAvg": "54.98ms", 
+          "latencyMax": "421.39ms", 
+          "latencyStdev": "39.83ms", 
+          "totalRequests": 37039, 
+          "startTime": 1668630722, 
+          "endTime": 1668630737
+        }, 
+        {
+          "latencyAvg": "80.47ms", 
+          "latencyMax": "507.65ms", 
+          "latencyStdev": "50.13ms", 
+          "totalRequests": 24717, 
+          "startTime": 1668630739, 
+          "endTime": 1668630754
+        }
+      ]
+    }, 
+    "json": {
+      "crax": [
+        {
+          "latencyAvg": "1.19ms", 
+          "latencyMax": "40.41ms", 
+          "latencyStdev": "2.16ms", 
+          "totalRequests": 308082, 
+          "startTime": 1668630620, 
+          "endTime": 1668630635
+        }, 
+        {
+          "latencyAvg": "2.04ms", 
+          "latencyMax": "31.07ms", 
+          "latencyStdev": "2.26ms", 
+          "totalRequests": 311689, 
+          "startTime": 1668630637, 
+          "endTime": 1668630652
+        }, 
+        {
+          "latencyAvg": "5.81ms", 
+          "latencyMax": "112.63ms", 
+          "latencyStdev": "5.08ms", 
+          "totalRequests": 363225, 
+          "startTime": 1668630654, 
+          "endTime": 1668630669
+        }
+      ]
+    }
+  }, 
+  "startTime": 1668630455563, 
+  "duration": 15, 
+  "plaintextConcurrencyLevels": [
+    256, 
+    1024
+  ], 
+  "jsonConcurrencyLevels": [
+    16, 
+    32, 
+    128
+  ]
+}

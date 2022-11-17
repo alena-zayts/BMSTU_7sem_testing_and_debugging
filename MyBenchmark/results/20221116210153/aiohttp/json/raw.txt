@@ -1,0 +1,92 @@
+---------------------------------------------------------
+ Running Primer json
+ wrk -H 'Host: bm-server' -H 'Accept: application/json,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 5 -c 8 --timeout 8 -t 8 http://bm-server:8080/json
+---------------------------------------------------------
+Running 5s test @ http://bm-server:8080/json
+  8 threads and 8 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   417.26us  138.20us  10.39ms   93.75%
+    Req/Sec     2.41k   247.70     4.19k    84.94%
+  Latency Distribution
+     50%  410.00us
+     75%  471.00us
+     90%  501.00us
+     99%  714.00us
+  97028 requests in 5.10s, 17.03MB read
+Requests/sec:  19024.57
+Transfer/sec:      3.34MB
+---------------------------------------------------------
+ Running Warmup json
+ wrk -H 'Host: bm-server' -H 'Accept: application/json,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 15 -c 128 --timeout 8 -t 8 "http://bm-server:8080/json"
+---------------------------------------------------------
+Running 15s test @ http://bm-server:8080/json
+  8 threads and 128 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     4.80ms    4.95ms  59.82ms   86.11%
+    Req/Sec     4.25k     1.69k    8.67k    62.41%
+  Latency Distribution
+     50%    2.91ms
+     75%    5.97ms
+     90%    9.94ms
+     99%   25.20ms
+  508430 requests in 15.09s, 89.22MB read
+Requests/sec:  33699.65
+Transfer/sec:      5.91MB
+---------------------------------------------------------
+ Concurrency: 16 for json
+ wrk -H 'Host: bm-server' -H 'Accept: application/json,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 15 -c 16 --timeout 8 -t 8 "http://bm-server:8080/json"
+---------------------------------------------------------
+Running 15s test @ http://bm-server:8080/json
+  8 threads and 16 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     0.93ms    1.42ms  30.38ms   94.27%
+    Req/Sec     3.03k     0.95k    6.84k    65.78%
+  Latency Distribution
+     50%  593.00us
+     75%  847.00us
+     90%    1.14ms
+     99%    8.33ms
+  362148 requests in 15.10s, 63.55MB read
+  Socket errors: connect 0, read 0, write 0, timeout 12
+Requests/sec:  23986.66
+Transfer/sec:      4.21MB
+STARTTIME 1668632599
+ENDTIME 1668632614
+---------------------------------------------------------
+ Concurrency: 32 for json
+ wrk -H 'Host: bm-server' -H 'Accept: application/json,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 15 -c 32 --timeout 8 -t 8 "http://bm-server:8080/json"
+---------------------------------------------------------
+Running 15s test @ http://bm-server:8080/json
+  8 threads and 32 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.98ms    2.83ms  41.07ms   88.43%
+    Req/Sec     3.39k     1.35k    7.74k    66.64%
+  Latency Distribution
+     50%    0.94ms
+     75%    1.61ms
+     90%    5.36ms
+     99%   13.49ms
+  405236 requests in 15.07s, 71.11MB read
+Requests/sec:  26894.44
+Transfer/sec:      4.72MB
+STARTTIME 1668632616
+ENDTIME 1668632631
+---------------------------------------------------------
+ Concurrency: 128 for json
+ wrk -H 'Host: bm-server' -H 'Accept: application/json,text/html;q=0.9,application/xhtml+xml;q=0.9,application/xml;q=0.8,*/*;q=0.7' -H 'Connection: keep-alive' --latency -d 15 -c 128 --timeout 8 -t 8 "http://bm-server:8080/json"
+---------------------------------------------------------
+Running 15s test @ http://bm-server:8080/json
+  8 threads and 128 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     4.70ms    4.18ms  51.17ms   82.97%
+    Req/Sec     3.92k     1.93k   10.49k    66.53%
+  Latency Distribution
+     50%    3.31ms
+     75%    6.19ms
+     90%    9.89ms
+     99%   19.93ms
+  469199 requests in 15.09s, 82.33MB read
+Requests/sec:  31102.24
+Transfer/sec:      5.46MB
+STARTTIME 1668632633
+ENDTIME 1668632648

@@ -1,0 +1,24 @@
+--------------------------------------------------------------------------------
+Benchmarking crax
+--------------------------------------------------------------------------------
+BENCHMARKING JSON ... 
+Benchmark results:
+Complete
+BENCHMARKING QUERY ... 
+Benchmark results:
+Complete
+BENCHMARKING PLAINTEXT ... 
+Benchmark results:
+Complete
+crax: Benchmarking time: 3m 55s
+wrk: Build time: 2s
+my_bm/postgres:latest: Build time: 8s
+crax: Build time: 2m 0s
+crax: Time starting database: 4s
+crax: Time until accepting requests: 3s
+crax: Total test time: 6m 13s
+bm: Total time building so far: 2m 10s
+bm: Total time verifying so far: 0s
+bm: Total time benchmarking so far: 3m 55s
+bm: Total execution time so far: 6m 24s
+crax: Clean up: Sleep 60 seconds...

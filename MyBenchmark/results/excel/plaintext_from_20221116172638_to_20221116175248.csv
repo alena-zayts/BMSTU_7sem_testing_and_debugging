@@ -1,3 +1,0 @@
-framework,plaintextConcurrencyLevels,totalRequests,seconds,requestsPerSecond,latencyAvg,latencyMax
-aiohttp,256,602599.5,15.0,40173.3,63.615,170.605
-crax,256,326303.5,15.0,21753.566666666666,111.95,224.905

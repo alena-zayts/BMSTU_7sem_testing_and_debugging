@@ -41,9 +41,10 @@ wrk -H "Host: $server_host" -H "Accept: $accept" -H "Connection: keep-alive" --l
 'url': url,
 ```
 
-## JSON Serialization: JSON responses per second
+## JSON Serialization: число JSON ответов в секунду
 
-Exercises the framework fundamentals including keep-alive support, request routing, request header parsing, object instantiation, JSON serialization, response header generation, and request count throughput.
+Проверяет основы фреймворка, включая поддержку keep-alive, маршрутизацию запросов, синтаксический анализ заголовка запроса, создание экземпляра объекта, сериализацию JSON, генерацию заголовка ответа и пропускную способность.
+
 
 ### script
 concurrency.sh
@@ -70,9 +71,8 @@ crax.response_types.JSONResponse
 return JSONResponse(None, {'message': 'Hello, world!'})
 ```
 
-## Plaintext: Plaintext responses per second,
-
-An exercise of the request-routing fundamentals only, designed to demonstrate the capacity of high-performance platforms in particular. Requests will be sent using HTTP pipelining. The response payload is still small, meaning good performance is still necessary in order to saturate the gigabit Ethernet of the test environment.
+## Plaintext: число Plaintext ответов в секунду
+Проверяет только по основы маршрутизации запросов, предназначено для демонстрации возможностей высокопроизводительных платформ. Запросы будут отправляться с использованием конвейерной обработки HTTP. 
 
 ### script
 pipeline.sh -> lua
@@ -131,11 +131,9 @@ return BaseResponse(None, b'Hello, world!')
 
 
 
-## Multiple Query: Responses per second
+## Multiple Query: число ответов в секунду
 
-Single Database Query: Exercises the framework's object-relational mapper (ORM), random number generator, database driver, and database connection pool.
-
-Multiple Database Queries: A variation of Test #2 and also uses the World table. Multiple rows are fetched to more dramatically punish the database driver and connection pool. At the highest queries-per-request tested (20), this test demonstrates all frameworks' convergence toward zero requests-per-second as database activity increases.
+Проверяется объектно-реляционное сопоставление фреймворка (ORM), генератор случайных чисел, драйвер базы данных и пул подключений к базе данных. Извлекается несколько строк, чтобы более эффективно нагрузить драйвер базы данных и пул подключений. 
 
 
 ### script
@@ -183,5 +181,120 @@ class TestMultiQueries(JSONView):
 ```
 
 
+# Gunicorn 
+
+WSGI (англ. Web Server Gateway Interface) — стандарт взаимодействия между Python-программой, выполняющейся на стороне сервера, и самим веб-сервером
+
+ASGI (Asynchronous Server Gateway Interface)
+
+Веб-сервер, в нашем случае Nginx, принимает и обрабатывает HTTP-запрос браузера, затем передаёт его в Application-сервер — Gunicorn.
+Gunicorn получает данные от Nginx, разбирает их и исходя из своей конфигурации по протоколу WSGI передаёт их в Django.
+Django обрабатывает полученные данные и возвращает результат работы обратно в Gunicorn, а он в свою очередь отдаёт результат в Nginx, который возвращает клиенту готовую HTML-страницу.
+
+gunicorn -- это WSGI-сервер
+WSGI-серверы появились потому, что веб-серверы в то время не умели взаимодействовать с приложениями, написанными на языке Python. WSGI (произносится как «whiz-gee»)
+
+В простейшем случае WSGI состоит из двух основных сущностей:
+
+Веб-сервер (Nginx, Apache и т. д.);
+Веб-приложение, написанное на языке Python.
+
+При размещении веб-приложения Python на продакшене вы не сможете обойтись без использования сервера WSGI и веб-сервера.
+
+Gunicorn и Nginx - это самые надежные и популярные варианты таких приложений. Почему они используются в связке?
+
+Nginx и Gunicorn работают вместе
+Nginx принимает все запросы из Интернета. Он может обрабатывать их очень быстро и обычно настраивается так, чтобы пропускать только те запросы, которые действительно должны поступить в ваше веб-приложение. Остальные он блокирует.
+
+Gunicorn переводит запросы, полученные от Nginx, в формат, который может обрабатывать ваше веб-приложение, и обеспечивает выполнение кода при необходимости.
+
+# more
+
+aiohttp with [sqlalchemy] for database access.
+
+# Results
+
+## plaintext
+
+Sorted by requestsPerSecond
+```
+  framework  plaintextConcurrencyLevels  totalRequests  seconds  requestsPerSecond  latencyAvg  latencyMax
+0   aiohttp                         256       626258.2     15.0       41750.546667      61.274      57.934
+1   aiohttp                        1024       584364.6     15.2       38462.738333     229.756     179.186
+2      crax                         256       376826.6     15.2       24824.633333      98.626     120.270
+3      crax                        1024       349369.6     15.0       23291.306667     364.840       0.320
+```
+
+Sorted by latencyAvg
+```
+
+  framework  plaintextConcurrencyLevels  totalRequests  seconds  requestsPerSecond  latencyAvg  latencyMax
+0   aiohttp                         256       626258.2     15.0       41750.546667      61.274      57.934
+2      crax                         256       376826.6     15.2       24824.633333      98.626     120.270
+1   aiohttp                        1024       584364.6     15.2       38462.738333     229.756     179.186
+3      crax                        1024       349369.6     15.0       23291.306667     364.840       0.320
+
+```
+
+## json
+
+Sorted by requestsPerSecond
+```
+  framework  jsonConcurrencyLevels  totalRequests  seconds  requestsPerSecond  latencyAvg  latencyMax
+2   aiohttp                    128       467888.2     15.0       31192.546667       4.664      10.234
+1   aiohttp                     32       395850.4     15.0       26390.026667       1.888       8.214
+5      crax                    128       362972.4     15.4       23592.465833       5.716      22.526
+0   aiohttp                     16       347400.4     15.2       22882.076667       1.099       6.076
+4      crax                     32       313170.4     15.0       20878.026667       1.996       8.590
+3      crax                     16       295702.2     15.2       19467.260833       1.160       8.082
+```
+
+Sorted by latencyAvg
+```
+  framework  jsonConcurrencyLevels  totalRequests  seconds  requestsPerSecond  latencyAvg  latencyMax
+0   aiohttp                     16       347400.4     15.2       22882.076667       1.099       6.076
+3      crax                     16       295702.2     15.2       19467.260833       1.160       8.082
+1   aiohttp                     32       395850.4     15.0       26390.026667       1.888       8.214
+4      crax                     32       313170.4     15.0       20878.026667       1.996       8.590
+2   aiohttp                    128       467888.2     15.0       31192.546667       4.664      10.234
+5      crax                    128       362972.4     15.4       23592.465833       5.716      22.526
+```
 
 
+## query
+Sorted by requestsPerSecond
+```
+
+  framework  queryLevels  totalRequests  seconds  requestsPerSecond  latencyAvg  latencyMax
+3      crax            1        84023.8     15.0        5601.586667      25.700      72.772
+0   aiohttp            1        58368.0     15.0        3891.200000      34.278      82.180
+4      crax           10        35491.4     15.0        2366.093333      56.656     114.594
+5      crax           20        24197.4     15.0        1613.160000      80.592     101.530
+1   aiohttp           10        11385.4     15.2         750.574167     170.912     186.710
+2   aiohttp           20         6347.2     15.4         412.698333     304.884     175.472
+
+```
+Sorted by latencyAvg
+```
+  framework  queryLevels  totalRequests  seconds  requestsPerSecond  latencyAvg  latencyMax
+3      crax            1        84023.8     15.0        5601.586667      25.700      72.772
+0   aiohttp            1        58368.0     15.0        3891.200000      34.278      82.180
+4      crax           10        35491.4     15.0        2366.093333      56.656     114.594
+5      crax           20        24197.4     15.0        1613.160000      80.592     101.530
+1   aiohttp           10        11385.4     15.2         750.574167     170.912     186.710
+2   aiohttp           20         6347.2     15.4         412.698333     304.884     175.472
+```
+
+
+По plaintext и json выигрывает aiohttp, по query -- crax
+
+
+orm - object relational mapper 
+
+В aiohttp -- full, в crax -- raw
+
+The ORM is a common conversion point among the majority of developers who work with Django. Most Django developers are going to have a comfort level with the Django orm. Most tutorials, plugins, and examples leverage the orm to interface with the database. I've even seen some junior devs who don't even know SQL queries and only know how to use the ORM.
+
+RAW SQL will be more efficient in a lot of cases, however you then bypass the abstraction benefits the ORM provides.
+
+If you truly care about optimizing then RAW SQL will be inevitable, but if you care more about (depending on the team) consistency and leveraging the abstraction then stick with the ORM.

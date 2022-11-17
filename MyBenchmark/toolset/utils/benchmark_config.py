@@ -45,6 +45,6 @@ class BenchmarkConfig:
         # self.plaintext_concurrency_levels = [256, 1024, 4096, 16384]
         # self.query_levels = [1, 5, 10, 15, 20]
 
-        self.plaintext_concurrency_levels = [256, ]
-        self.json_concurrency_levels = [16, 32]
-        self.query_levels = [1, 5, 10]
+        self.plaintext_concurrency_levels = [256, 1024]
+        self.json_concurrency_levels = [16, 32, 128]
+        self.query_levels = [1, 10, 20]
