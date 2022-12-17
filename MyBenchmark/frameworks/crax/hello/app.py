@@ -8,7 +8,6 @@ from crax.urls import Route, Url
 from crax.views import JSONView, TemplateView
 
 READ_ROW_SQL = 'SELECT "id", "randomnumber" FROM "world" WHERE id = $1'
-WRITE_ROW_SQL = 'UPDATE "world" SET "randomnumber"=$1 WHERE id=$2'
 
 
 async def setup_database():

@@ -73,6 +73,7 @@ return JSONResponse(None, {'message': 'Hello, world!'})
 
 ## Plaintext: число Plaintext ответов в секунду
 Проверяет только по основы маршрутизации запросов, предназначено для демонстрации возможностей высокопроизводительных платформ. Запросы будут отправляться с использованием конвейерной обработки HTTP. 
+HTTP pipelining is enabled and higher client-side concurrency levels are used
 
 ### script
 pipeline.sh -> lua
